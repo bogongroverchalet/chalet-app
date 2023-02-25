@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>trip-data.kml</name>
+	<open>1</open>
+	<Schema name="schema0" id="schema0">
+		<SimpleField type="string" name="Description"></SimpleField>
+		<SimpleField type="string" name="pdfmaps_photos"><displayName>Photos</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="msn_ltblu-blank">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-blank</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-blank</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ltblu-blank">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+		<gx:IconStackStyle>
+		</gx:IconStackStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>8000aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>8000aa55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ltblu-blank">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+		<gx:IconStackStyle>
+		</gx:IconStackStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ffff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>8000aa55</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>8000aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="style0">
+		<IconStyle>
+			<color>802f80ff</color>
+			<Icon>
+				<href>http://download.avenza.com/images/pdfmaps_icons/red_pin.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>802f80ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="style17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style16">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style14">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style1">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style13">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style10">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style12">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style11">
+		<LineStyle>
+			<color>ff589b2f</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style20">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style25</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style24</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style25">
+		<LineStyle>
+			<color>ffffa43e</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style24">
+		<LineStyle>
+			<color>ffffa43e</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style23">
+		<LineStyle>
+			<color>ffffa43e</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style22">
+		<LineStyle>
+			<color>ffffa43e</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style2">
+		<LineStyle>
+			<color>ffffa43e</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style3">
+		<LineStyle>
+			<color>ff212121</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style31</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style31">
+		<LineStyle>
+			<color>ff212121</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style41">
+		<LineStyle>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style40">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style41</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style4">
+		<LineStyle>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style5">
+		<LineStyle>
+			<color>ff48d1ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style614">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style613">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style68</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style62</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style612">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style6">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style611">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style64</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style69</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style62">
+		<LineStyle>
+			<color>ff7f55ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style610">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style66</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style612</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style69">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style68">
+		<LineStyle>
+			<color>ff7f55ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style60">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style64">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style67">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style65</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style60</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style65">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style63">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style61">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style614</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style66">
+		<LineStyle>
+			<color>ff2f80ff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style79">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style710">
+		<LineStyle>
+			<color>ff00aaaa</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style71">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style73</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style74</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style73">
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style77">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style72</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style710</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style70">
+		<LineStyle>
+			<color>ff4145f8</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style76">
+		<LineStyle>
+			<color>ff4145f8</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="style75">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style76</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style78</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style78">
+		<LineStyle>
+			<color>ff4145f8</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style72">
+		<LineStyle>
+			<color>ff00aaaa</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style74">
+		<LineStyle>
+			<color>ffff0055</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style7">
+		<LineStyle>
+			<color>ff4145f8</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Paths</name>
+		<open>1</open>
+		<styleUrl>#style0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#schema0">
+			</SchemaData>
+		</ExtendedData>
+		<Placemark>
+			<name>Falls Creek (windy corner) to Wallace turnoff</name>
+			<TimeStamp><when>2023-02-17T00:08:58+11:00</when>
+</TimeStamp>
+			<styleUrl>#style17</styleUrl>
+			<LineString>
+				<coordinates>
+					147.286902089953,-36.8648007582598,0 147.286436202207,-36.8651649104936,0 147.286476031832,-36.8654839714547,0 147.286795949694,-36.8657615007401,0 147.287777308483,-36.8662387779791,0 147.288047367122,-36.8665031357283,0 147.288284398847,-36.8668947884966,0 147.28803701467,-36.8674063868823,0 147.287887084104,-36.8690466188701,0 147.287744467167,-36.8694666099349,0 147.287294062704,-36.8700533603174,0 147.286741913041,-36.870469232191,0 147.286397398724,-36.8708829032165,0 147.286223085949,-36.8712569560982,0 147.2865677267,-36.8718434478273,0 147.287132932459,-36.8721231618069,0 147.287636363836,-36.8722995039435,0 147.288055624037,-36.8725370400286,0 147.288553243375,-36.8725904574157,0 147.288997747152,-36.8726670179082,0 147.289682191134,-36.8726731316871,0 147.2904109584308,-36.87307711308358,0 147.2911947141991,-36.87323950370214,0 147.29181124692,-36.8735172826958,0 147.292318547996,-36.87404069167587,0 147.2928812845359,-36.87408516888136,0 147.2943388139707,-36.87395291869638,0 147.294576708464,-36.87386969032631,0 147.2959484676925,-36.8730563393469,0 147.296983445161,-36.8724562418006,0 147.297393503724,-36.8724942398141,0 147.29799373662,-36.87292273665,0 147.2986616425895,-36.87386389641329,0 147.2989408337972,-36.87462010396845,0 147.2992354003865,-36.87489187733131,0 147.3001366056603,-36.87510768234889,0 147.3007983600621,-36.87504814938294,0 147.3014541103935,-36.87468196005453,0 147.3025582784965,-36.87430060201648,0 147.3028862794667,-36.87402163392369,0 147.3031741646977,-36.87340570009913,0 147.3034373621861,-36.87258323714042,0 147.3038584761606,-36.87213980533672,0 147.3042358449379,-36.87192799656496,0 147.3044542581777,-36.87176229338038,0 147.3047391930955,-36.87149014319291,0 147.3053739588483,-36.87126279260204,0 147.305834327489,-36.8711425354478,0 147.3063338821959,-36.87095477536323,0 147.3069938808636,-36.87021924811093,0 147.3073321322604,-36.87005376552692,0 147.3084490611193,-36.86983054402673,0 147.3088655626282,-36.86988776954043,0 147.3088603103238,-36.86988890130569,0 147.309190228772,-36.8700640876238,0 147.3096995871067,-36.87039905453966,0 147.31012314556,-36.87048781222898,0 147.3110971763094,-36.87048643893664,0 147.3119874960317,-36.87082377351763,0 147.3124202789227,-36.87091522878119,0 147.3129893776576,-36.87095516107056,0 147.3134766661949,-36.87096002779457,0 147.3140077330037,-36.87085523889153,0 147.3151264805549,-36.87094574523241,0 147.3156398245852,-36.87119020263305,0 147.315900037126,-36.87123132402397,0 147.3165814012035,-36.87108439057108,0 147.3168442925073,-36.87121171867133,0 147.3172024852583,-36.87146987133737,0 147.3174540662143,-36.87156187059708,0 147.3179521385489,-36.87159046874476,0 147.3181203314116,-36.87174603667146,0 147.3181330990004,-36.87192372607586,0 147.3175563692618,-36.87221794456971,0 147.3173939753136,-36.87241929083695,0 147.3174228389181,-36.87268590462654,0 147.317472872344,-36.8728631219517,0 147.317596987007,-36.8733350311353,0 147.317542442855,-36.87360753984214,0 147.3171954323008,-36.87391736776034,0 147.3170578444278,-36.87444497328744,0 147.3171016787603,-36.87488673419938,0 147.3171480547487,-36.87516860182352,0 147.3169878130089,-36.8756487300916,0 147.3169897720962,-36.87592883984843,0 147.3172376431988,-36.8762485184921,0 147.3179815292196,-36.87667242407399,0 147.3192206631841,-36.87757405202652,0 147.3209661032479,-36.87895179992057,0 147.3212974305526,-36.87929388665544,0 147.3219152787509,-36.88028483494252,0 147.3218529001723,-36.8810553550268,0 147.321764957773,-36.8814420194638,0 147.3210228261609,-36.88233320082117,0 147.3205579554536,-36.88277069954841,0 147.3201628930274,-36.88317662085873,0 147.3197172326913,-36.88346910211567,0 147.3200229228495,-36.88434093425723,0 147.320376349268,-36.88493774932928,0 147.3201981407753,-36.88518142580254,0 147.3200987398073,-36.88553165657174,0 147.320352076754,-36.88586124650217,0 147.3207177375253,-36.88616225562907,0 147.3208791222334,-36.8864664905838,0 147.3210563959028,-36.88722383456407,0 147.3219066764229,-36.88811825985774,0 147.3227223361259,-36.88869499673761,0 147.3232145725564,-36.88922021797075,0 147.3234077693602,-36.89000360686194,0 147.323519897857,-36.89069724495837,0 147.3234311926325,-36.8908706241312,0 147.3232301033896,-36.89101511315983,0 147.3228585683469,-36.89106223826855,0 147.3224500927406,-36.89098357321113,0 147.3220541721687,-36.8910256636179,0 147.3213205144703,-36.89092570049108,0 147.3205043265909,-36.89101019553019,0 147.3200900307177,-36.89079335998613,0 147.3196795290637,-36.89119497361879,0 147.3184359911054,-36.89158663369367,0 147.3177785460137,-36.89178592553557,0 147.317487451326,-36.8920946055061,0 147.3171346890986,-36.89228766625398,0 147.3169142385071,-36.89277257474723,0 147.3165440925117,-36.89329383399939,0 147.3159449745054,-36.89365861734409,0 147.3147734837069,-36.89338017881003,0 147.314392470971,-36.89344438125688,0 147.3119400826793,-36.89323985936845,0 147.3110054821968,-36.89346463725557,0 147.3105455042988,-36.89344954840271,0 147.3103001343556,-36.89349169521695,0 147.3099454169236,-36.89350666985169,0 147.3097131452654,-36.8936365422345,0 147.309692721802,-36.89395583431558,0 147.3101803293973,-36.89447498813823,0 147.3103709649116,-36.89479567929974,0 147.3104346483397,-36.89522308352171,0 147.3104509073687,-36.89559019508344,0 147.3110573401294,-36.89578743879077,0 147.3118752919849,-36.89614175578989,0 147.3121453976988,-36.896505192149,0 147.3123232956281,-36.89708002931561,0 147.3128908733335,-36.89763139694755,0 147.3129866503314,-36.89779409847054,0 147.3130100642072,-36.89796722061275,0 147.3128904690543,-36.89817728622627,0 147.3125022110246,-36.898283218753,0 147.3120377731998,-36.898437559733,0 147.3115279118798,-36.89880868991549,0 147.3110746438743,-36.89900778945812,0 147.3110246144199,-36.89905917402017,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Chalet to LW turnoff</name>
+			<open>1</open>
+			<TimeStamp><when>2023-01-27T07:19:41+11:00</when>
+</TimeStamp>
+			<styleUrl>#style71</styleUrl>
+			<LineString>
+				<coordinates>
+					147.303127199998,-36.90415311832088,0 147.3022452383515,-36.90448298810961,0 147.3017925792883,-36.90491993038719,0 147.3008958950947,-36.90510460025909,0 147.2998946309875,-36.90551422188884,0 147.2997290910185,-36.90562812098239,0 147.2996846120662,-36.90577884179652,0 147.2998994961361,-36.90587973455373,0 147.3001635684051,-36.9059906802058,0 147.300485789083,-36.90635845977186,0 147.3008552471389,-36.90674601335773,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Chalet to Wallace turnoff</name>
+			<TimeStamp><when>2023-01-26T00:33:00+11:00</when>
+</TimeStamp>
+			<styleUrl>#style61</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3031584066253,-36.90415204747561,0 147.3037953835761,-36.90397544429158,0 147.3039532111586,-36.90390775845061,0 147.3046660300143,-36.90348101325495,0 147.3050795548341,-36.90312627848687,0 147.3053564994396,-36.90291571169435,0 147.305655507011,-36.90274248860793,0 147.3059286359117,-36.90259963054405,0 147.306194598252,-36.90247322472368,0 147.3064868622421,-36.90235322473223,0 147.3069145512558,-36.90216953906722,0 147.3072649027889,-36.90198582707357,0 147.3076544777265,-36.90180866798824,0 147.30805574616,-36.9016824104907,0 147.30817167434,-36.90162617850297,0 147.3084294205383,-36.90141660932186,0 147.3087347377162,-36.90115818770798,0 147.3092270707481,-36.9008696832685,0 147.3095582490937,-36.90039961640454,0 147.3097501207052,-36.89998836977969,0 147.3098207323533,-36.89990586651015,0 147.3099272064345,-36.89985269803407,0 147.3100981959265,-36.89979696845018,0 147.3104677844301,-36.8997233380276,0 147.310744092612,-36.8995167586956,0 147.3110043120419,-36.89907098224399,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Chalet to Tow Hut</name>
+			<styleUrl>#style77</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					147.303136778355,-36.90414851066276,0 147.3029148136601,-36.90414989734213,0 147.3020389884449,-36.90399565799004,0 147.3012761251861,-36.9035434821581,0 147.3011691866386,-36.90337591824627,0 147.3012971467413,-36.90317461045873,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>LW turnoff to Cope Hut</name>
+			<TimeStamp><when>2023-01-27T07:19:41+11:00</when>
+</TimeStamp>
+			<styleUrl>#style79</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3008552471389,-36.90674601335773,0 147.3006825029593,-36.90693990103478,0 147.2993031984845,-36.90761437873462,0 147.2984345072254,-36.90767814219998,0 147.297966073122,-36.907648404249,0 147.297393226642,-36.9073476112692,0 147.296406417622,-36.9073696111663,0 147.296110175949,-36.9074329857086,0 147.295488312853,-36.9072656233722,0 147.295287724293,-36.9072508630264,0 147.294606984446,-36.907032598579,0 147.293548506003,-36.9066537739074,0 147.292452171745,-36.9064584232583,0 147.292452171745,-36.9064584232583,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>LW turnoff to Langford West</name>
+			<TimeStamp><when>2023-02-16T23:55:15+11:00</when>
+</TimeStamp>
+			<styleUrl>#style30</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3008597263728,-36.90678712957309,0 147.3029796007922,-36.90565557997714,0 147.3035259875219,-36.90549765153255,0 147.3047719354506,-36.90555032541777,0 147.3054851535021,-36.90581055669942,0 147.3055155227469,-36.90618001941899,0 147.3051275824456,-36.90673065874954,0 147.3047692144194,-36.9070224533644,0 147.3033925969582,-36.90769978096181,0 147.3027018549164,-36.90835125981373,0 147.302072899973,-36.90916418421164,0 147.3010732921423,-36.90990930675839,0 147.3005664593661,-36.91015108426105,0 147.2993135472199,-36.91064730640343,0 147.2989153687549,-36.91098424877859,0 147.2983397963139,-36.91118861383925,0 147.296698635111,-36.91135412805126,0 147.2960316395647,-36.91153250517286,0 147.296001624511,-36.91168014299913,0 147.296250889568,-36.91216667974884,0 147.2965134218953,-36.91228693619966,0 147.2965212760225,-36.91228682967819,0 147.2976175613863,-36.91284693587579,0 147.2988883853095,-36.91364051576193,0 147.298976549707,-36.9138691653284,0 147.2988045750389,-36.91417710681738,0 147.298582257294,-36.91430077505934,0 147.2991346436593,-36.9148703554663,0 147.299795154494,-36.91589261212601,0 147.3004946600619,-36.91662872390751,0 147.3008453240537,-36.91739037079198,0 147.3008854361625,-36.91778269571075,0 147.3015494410236,-36.91792190028944,0 147.3019263770468,-36.9181874097103,0 147.302499596775,-36.9185847002443,0 147.3027944260359,-36.91895739464149,0 147.302675501985,-36.91918345883619,0 147.3019373995415,-36.91960364532726,0 147.3015170722105,-36.9198243489048,0 147.3015752341311,-36.92005641664824,0 147.3022089140171,-36.92041084757867,0 147.3032771665319,-36.92128876058378,0 147.3035453163953,-36.92204398496195,0 147.3040029197891,-36.92233511707259,0 147.3048706075126,-36.92268047452955,0 147.3051943356531,-36.9230548642409,0 147.3051542375493,-36.92339999202466,0 147.3049742149977,-36.92369634136421,0 147.3046253671691,-36.92402423487115,0 147.3045696989156,-36.92423064962796,0 147.3046398591611,-36.92465046346834,0 147.304625082627,-36.92520681381478,0 147.3056003064215,-36.92566124380369,0 147.3062422057139,-36.92597769991038,0 147.3067019577661,-36.92607880700724,0 147.3070022805675,-36.92631061210718,0 147.3070687829145,-36.9265209531565,0 147.3070335986791,-36.926826381849,0 147.3067938126411,-36.92711945947816,0 147.3063854813657,-36.92747067386686,0 147.306147295004,-36.92776076806679,0 147.3059071096697,-36.92799445293291,0 147.3056934996315,-36.92826791686286,0 147.3056225563437,-36.9285347900223,0 147.305687343584,-36.92896475824755,0 147.3056795636417,-36.92936158544337,0 147.3055543708705,-36.92951464607452,0 147.3053481909491,-36.92966084295043,0 147.304985552694,-36.92959194624054,0 147.3045415732149,-36.92944313052267,0 147.3041529337001,-36.92941568072534,0 147.3033142022944,-36.92919301858982,0 147.3023955251271,-36.92921441858833,0 147.301767004548,-36.92907691232043,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Wallace turnoff to Wallaces Hut</name>
+			<TimeStamp><when>2023-01-26T00:33:00+11:00</when>
+</TimeStamp>
+			<styleUrl>#style613</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3110000805621,-36.89906720594946,0 147.3108449279518,-36.89904363029167,0 147.3103150823228,-36.89893920668741,0 147.309653291935,-36.89855062768368,0 147.3091495253596,-36.89799107466975,0 147.3085880028837,-36.89783939772899,0 147.3079828433906,-36.89745668712237,0 147.3075706407107,-36.8970975928556,0 147.3073878096034,-36.89675952486598,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Wallace turnoff to Wallaces via Wilkinsons</name>
+			<TimeStamp><when>2023-01-27T07:25:30+11:00</when>
+</TimeStamp>
+			<styleUrl>#style15</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3073862924399,-36.8967599905485,0 147.3072659866608,-36.89704857665369,0 147.307344262884,-36.89752172912959,0 147.3079581290147,-36.89787555085621,0 147.3082798733068,-36.89854845368769,0 147.3081630567987,-36.89926496616688,0 147.3083128986504,-36.89841242319461,0 147.3085306288372,-36.89803510303277,0 147.3089666947605,-36.89794849370949,0 147.3091469709958,-36.89799351952969,0 147.3096489912871,-36.89854916268013,0 147.3103101052031,-36.89893834201214,0 147.3108329079378,-36.89903969343474,0 147.3109897736239,-36.89908026404795,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Wallace turnoff to Maddisons Hut</name>
+			<TimeStamp><when>2023-02-16T23:38:52+11:00</when>
+</TimeStamp>
+			<styleUrl>#style40</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3110088173636,-36.89907261186976,0 147.3111005576222,-36.89899309254321,0 147.3115312123591,-36.89880710945948,0 147.312003155374,-36.89844657360775,0 147.3128347565977,-36.8981999681175,0 147.3129753081108,-36.89805938443422,0 147.3130039239887,-36.89786610644023,0 147.3128649513233,-36.89759736732114,0 147.3126900698251,-36.8974887175948,0 147.3123176849279,-36.89707639012502,0 147.3121741784745,-36.89658946563049,0 147.3119470968326,-36.89621980422399,0 147.3117633843906,-36.89610515512683,0 147.3104343080335,-36.89556674554185,0 147.3104018481356,-36.89482036466493,0 147.3099864112503,-36.89425875739671,0 147.3097138362895,-36.89397859978737,0 147.309713538242,-36.89364493904334,0 147.3099496953184,-36.89351058202268,0 147.3109786546364,-36.89348106779136,0 147.311814490711,-36.89325302391614,0 147.3143043389592,-36.89343557885021,0 147.3147693857645,-36.89337245028443,0 147.315938432558,-36.89364047139036,0 147.3165329348842,-36.89329008547518,0 147.3169360951818,-36.89275399399597,0 147.317135052996,-36.89228803206852,0 147.3174948049369,-36.89209438811557,0 147.317765506842,-36.89177010921453,0 147.318386180474,-36.89162667382833,0 147.3189052075469,-36.89140608778126,0 147.3196121871565,-36.89123413078836,0 147.3198893187769,-36.89079580050007,0 147.3200159717212,-36.88991625256637,0 147.3206057380298,-36.88978835088021,0 147.3209209452429,-36.88978150355668,0 147.3210046003741,-36.88957217626564,0 147.3209757536839,-36.88935976596461,0 147.3206008291176,-36.88898842301816,0 147.3201729792109,-36.88873585554844,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Wallaces to Basalt Hill</name>
+			<TimeStamp><when>2023-02-16T23:30:28+11:00</when>
+</TimeStamp>
+			<styleUrl>#style610</styleUrl>
+			<LineString>
+				<coordinates>
+					147.307203233304,-36.8966687882645,0 147.307041007265,-36.8952695390715,0 147.307965805284,-36.8931162884175,0 147.310169016295,-36.8889669130797,0 147.314487134212,-36.8862942637704,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Cope Hut to Cope Carpark</name>
+			<TimeStamp><when>2023-02-16T22:59:01+11:00</when>
+</TimeStamp>
+			<styleUrl>#style10</styleUrl>
+			<LineString>
+				<coordinates>
+					147.292474154036,-36.9064511233259,0 147.291042591574,-36.9062233819986,0 147.289182837179,-36.9055991957222,0 147.289182837179,-36.9055991957222,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Cope Carpark to Wallaces Hut</name>
+			<TimeStamp><when>2023-01-27T07:22:53+11:00</when>
+</TimeStamp>
+			<styleUrl>#style611</styleUrl>
+			<LineString>
+				<coordinates>
+					147.289156371386,-36.9055939522861,0 147.289929632363,-36.9044955810046,0 147.290905428059,-36.9034406049726,0 147.29305337844,-36.9021830602113,0 147.294601676113,-36.9014792829101,0 147.296888637856,-36.9010079644128,0 147.299426546537,-36.9005962169027,0 147.300927453423,-36.9002789962754,0 147.301901231641,-36.8998353544455,0 147.302935906506,-36.8990151975486,0 147.303953503524,-36.8979719893574,0 147.304705968401,-36.8970267017097,0 147.305735192812,-36.8962287703552,0 147.30639990042,-36.8964040765549,0 147.307262319659,-36.896717820387,0 147.307262319659,-36.896717820387,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Cope Carpark to Rocky Nobs</name>
+			<TimeStamp><when>2023-02-16T23:43:08+11:00</when>
+</TimeStamp>
+			<styleUrl>#style63</styleUrl>
+			<LineString>
+				<coordinates>
+					147.289219757465,-36.9055013859478,0 147.284192470029,-36.9007943554407,0 147.283066829893,-36.8985197340872,0 147.2839407818,-36.8944211314613,0 147.282741288539,-36.8927612514678,0 147.283359538947,-36.8914574065638,0 147.281904933469,-36.8893116564375,0 147.278635578218,-36.8900923896094,0 147.277251952061,-36.8896317398316,0 147.277251952061,-36.8896317398316,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Cope Carpark to Mt Cope</name>
+			<TimeStamp><when>2023-02-16T23:01:17+11:00</when>
+</TimeStamp>
+			<styleUrl>#style21</styleUrl>
+			<LineString>
+				<coordinates>
+					147.2892204620675,-36.90560058586428,0 147.2888497956972,-36.90642631570532,0 147.2888180823873,-36.90701191370503,0 147.2894546828973,-36.9099714118556,0 147.2898702079863,-36.91104587397106,0 147.2890940019979,-36.91399296508178,0 147.2859650095706,-36.92141138950709,0 147.286013637035,-36.9249713831731,0 147.2852844807436,-36.9256674086377,0 147.2833818699003,-36.92626106821203,0 147.2826329914959,-36.92692397137218,0 147.2816809338313,-36.92672886818787,0 147.2810783987559,-36.92707352067798,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Cope Carpark to Cope Saddle Hut</name>
+			<TimeStamp><when>2023-02-17T00:00:11+11:00</when>
+</TimeStamp>
+			<styleUrl>#style20</styleUrl>
+			<LineString>
+				<coordinates>
+					147.289180512247,-36.9056188611701,0 147.286287357399,-36.9091040437523,0 147.284661472041,-36.9107543291172,0 147.281594506448,-36.9131963669693,0 147.279588457311,-36.9149705550034,0 147.277033098136,-36.9177705552686,0 147.275036009774,-36.9182929213046,0 147.273291463362,-36.9187319431111,0 147.270876874733,-36.9200107897857,0 147.269678209528,-36.9212542267365,0 147.267736312586,-36.9220678598923,0 147.265336479169,-36.9226275420059,0 147.263491977834,-36.9226001862492,0 147.261246794395,-36.9220134876654,0 147.261246794395,-36.9220134876654,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Cope Carpark to Investiture Point</name>
+			<TimeStamp><when>2023-02-16T23:48:56+11:00</when>
+</TimeStamp>
+			<styleUrl>#style67</styleUrl>
+			<LineString>
+				<coordinates>
+					147.2892656828683,-36.90563381938299,0 147.2896773269753,-36.90475764118415,0 147.2904964356472,-36.90377990938595,0 147.2906473860531,-36.90299328450308,0 147.2909067958974,-36.90168051553211,0 147.2915426848461,-36.90085648988793,0 147.291532821912,-36.90049986365064,0 147.2913760887958,-36.9002507545602,0 147.2914348242224,-36.90005313787425,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Langford West to Strawbery Saddle</name>
+			<TimeStamp><when>2023-02-17T00:13:35+11:00</when>
+</TimeStamp>
+			<styleUrl>#style75</styleUrl>
+			<LineString>
+				<coordinates>
+					147.3017817796595,-36.92908344490281,0 147.3018762748397,-36.92931746115824,0 147.3033627134579,-36.93072502962218,0 147.3044806646292,-36.93161861180729,0 147.3049939043973,-36.93227202316512,0 147.3057485585497,-36.93273637718431,0 147.3064064910674,-36.93323640093326,0 147.3073142298357,-36.93484615119984,0 147.307970381658,-36.93527682673506,0 147.3096154310801,-36.93558964137207,0 147.3104312517922,-36.93555597439239,0 147.311654849699,-36.93564299532186,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Strawberry Saddle to Raspberry Hill</name>
+			<TimeStamp><when>2023-02-17T00:16:42+11:00</when>
+</TimeStamp>
+			<styleUrl>#style63</styleUrl>
+			<LineString>
+				<coordinates>
+					147.311490850527,-36.9358655663251,0 147.31203930943,-36.9363567102003,0 147.312378853458,-36.937145148968,0 147.312847084082,-36.9376112832003,0 147.315480402565,-36.9388708081616,0 147.316579449156,-36.9392995030038,0 147.317007223189,-36.9396924336028,0 147.3168515212,-36.9402164592721,0 147.316417249147,-36.9405359541989,0 147.315973260613,-36.9408481456325,0 147.31607899921,-36.9412655470636,0 147.316848590707,-36.9413841861166,0 147.317372418966,-36.9419979923897,0 147.318149868744,-36.942314348275,0 147.319637239417,-36.9422998909693,0 147.319637239417,-36.9422998909693,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Raspberry Hill to Buckety Plain</name>
+			<TimeStamp><when>2023-02-17T00:18:27+11:00</when>
+</TimeStamp>
+			<styleUrl>#style5</styleUrl>
+			<LineString>
+				<coordinates>
+					147.31964460224,-36.9423052349734,0 147.322319680076,-36.9418501870818,0 147.32475184796,-36.9414606868749,0 147.326733825506,-36.9414613084444,0 147.3280055174,-36.9410804171539,0 147.328562086413,-36.9407578099171,0 147.329489613959,-36.9404767848527,0 147.329713618621,-36.9401573723008,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Buckety Plain to Faithfuls Hut</name>
+			<TimeStamp><when>2023-02-17T00:22:57+11:00</when>
+</TimeStamp>
+			<styleUrl>#style18</styleUrl>
+			<LineString>
+				<coordinates>
+					147.329568500138,-36.94033759414,0 147.32785133647,-36.940592969765,0 147.32730687554,-36.940273155539,0 147.327536275059,-36.9386729831123,0 147.327660945258,-36.9381635602474,0 147.328194365272,-36.9376969015898,0 147.328006708127,-36.936734352654,0 147.328103461882,-36.9360239208106,0 147.327970519033,-36.9350848090506,0 147.328302345409,-36.9337912171756,0 147.328078884667,-36.9332593399866,0 147.328078884667,-36.9332593399866,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Buckety Plain to McNamara hut via shortcut</name>
+			<TimeStamp><when>2023-02-17T00:26:12+11:00</when>
+</TimeStamp>
+			<styleUrl>#style23</styleUrl>
+			<LineString>
+				<coordinates>
+					147.329624678583,-36.9402505918437,0 147.330578993632,-36.9403632577739,0 147.331308639284,-36.940757453524,0 147.331788882515,-36.941377697775,0 147.331865831607,-36.9422468921267,0 147.332116891199,-36.9426496405017,0 147.332896463814,-36.9430276447173,0 147.334303483321,-36.9435786741973,0 147.335247124271,-36.9444176146067,0 147.33570893652,-36.9452711455563,0 147.335730236484,-36.945941366273,0 147.335131320552,-36.9471403177567,0 147.334760867881,-36.9483556248086,0 147.333857325252,-36.9499895663143,0 147.333873600772,-36.9514286131616,0 147.333710974738,-36.9553172303035,0 147.333710974738,-36.9553172303035,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Geofences</name>
+		<open>1</open>
+		<Placemark>
+			<name>Home Slope</name>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							147.3008428665685,-36.90328835762158,0 147.3003842561845,-36.90370403267136,0 147.3001772363343,-36.90409252461126,0 147.3002709271443,-36.90438707170511,0 147.3008082920538,-36.90512740148604,0 147.3017896044773,-36.90492233240554,0 147.3022155330361,-36.90447678507275,0 147.3031442605539,-36.90419369168644,0 147.303423570471,-36.90396075556954,0 147.3033982702554,-36.90376596113685,0 147.3034127155435,-36.90301164243146,0 147.3025187718225,-36.90276898297408,0 147.3015473280616,-36.90290183759762,0 147.3008428665685,-36.90328835762158,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Valley Slope</name>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							147.3008130956424,-36.90513147384385,0 147.3013915388655,-36.90550233088718,0 147.3017566162366,-36.90591943519488,0 147.3019279125647,-36.90570945326065,0 147.3020982313527,-36.90550629146113,0 147.3024219264824,-36.90525063974216,0 147.3036814810956,-36.90473614228158,0 147.3037854981602,-36.90397297150955,0 147.3034268653596,-36.90396704768131,0 147.3031346135562,-36.90420072594092,0 147.3022208916289,-36.90447531841043,0 147.3017965858993,-36.90492505765828,0 147.3008130956424,-36.90513147384385,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Playground</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							147.2911007501934,-36.90706762265233,0 147.2906520238725,-36.9082527735173,0 147.291512143034,-36.9093904160392,0 147.2927102244967,-36.90979196435648,0 147.2941818717146,-36.90957923273145,0 147.2955090131871,-36.90896118698906,0 147.2968193195022,-36.9081943865328,0 147.2941155112445,-36.90699614312679,0 147.2926095935863,-36.90716729914968,0 147.2911007501934,-36.90706762265233,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Waypoints</name>
+		<open>1</open>
+		<Placemark>
+			<name>Investiture Point</name>
+			<TimeStamp><when>2005-01-07</when>
+</TimeStamp>
+			<styleUrl>#msn_ltblu-blank</styleUrl>
+			<ExtendedData>
+				<Data name="gc_num">
+					<value>GCMFPW</value>
+				</Data>
+				<Data name="gc_name">
+					<value>Outdoors Type Point</value>
+				</Data>
+				<Data name="gc_placer">
+					<value>telefreaks</value>
+				</Data>
+				<Data name="gc_placer_id">
+					<value>288859</value>
+				</Data>
+				<Data name="gc_placed">
+					<value>07-Jan-2005</value>
+				</Data>
+				<Data name="gc_diff_stars">
+					<value>stars2</value>
+				</Data>
+				<Data name="gc_terr_stars">
+					<value>stars4</value>
+				</Data>
+				<Data name="gc_cont_icon">
+					<value>small</value>
+				</Data>
+				<Data name="gc_issues">
+				</Data>
+				<Data name="gc_lat">
+					<value>-36.900050</value>
+				</Data>
+				<Data name="gc_lon">
+					<value>147.291400</value>
+				</Data>
+				<Data name="gc_type">
+					<value>Traditional Cache</value>
+				</Data>
+				<Data name="gc_icon">
+					<value>https://www.geocaching.com/images/kml/2.png</value>
+				</Data>
+				<Data name="gc_short_desc">
+					<value>This cache is a short walk from the road, there is no track or car park, but it is not hard to get to.</value>
+				</Data>
+				<Data name="gc_long_desc">
+					<value>*Could someone please add some more paper till we get there to replace the log book * Welcome to a very special place, this spot is mainly used in winter and occasionally in summer by the Rover Section of the Scout Association. There is a plaque there in memory of Bill Waters who was a pioneer of bushwalking and skiing in the area. The cache is a 500ml sistema clip top container and contains all the usual goodies but no pen. (you may have to dig if there is a lot of white stuff)</value>
+				</Data>
+				<Data name="gc_logs">
+					<value><![CDATA[<p><b>Didn't find it</b> by Ray1532022-02-20<br />I saw the messages that a new log was needed so brought a small notepad to leave, but nil sign of the cache sadly. Ray153 - Bogong Rover</p><p><b>Found it</b> by smitychips2021-12-02<br />Number 3 for the day. One of those views that you only realise how good it is when your there. Tftc</p><p><b>Found it</b> by Brocks222021-04-03<br />Found it randomly while watching the sunset!</p><p><b>Found it</b> by hairypanic2021-02-20<br />Good to see Bill’s spirit is still alive with the Falls Creek PS leaving a nice note in the cache. Good to see them getting off track.
+I just managed to make enough room to park on the side of the road at the closest spot, its not as overgrown as it looks at the top.
+A surprisingly good view from up here.
+Thanks</p><p><b>Enable Listing</b> by Bunjil2020-12-24<br />----------
+
+###**CACHE OWNER PLEASE NOTE**###
+
+----------
+
+This cache is carrying a Needs Maintenance log/attribute, but it would seem to have had some action on behalf of the CO by a good Samaritan 'skullracing', so it fortunately lives for another day.  
+
+Please remember that cache  maintenance arrangements need to be proactive, not reactive. This means regular visits (by the CO) to check on the cache and not relying on or expect passing seekers to fix issues or replace missing caches. 
+
+Your prompt attention to any log that indicates things could be amiss will be warmly welcomed and valued by all seekers, and your future assistance in this aspect of geocaching will be greatly appreciated. 
+
+**JUST A HINT:-** In case you are not aware, there is a new Geocaching Dash Board designed to assist a Cache Owner in managing the caches they own. Have a read about it [**HERE.**](https://www.geocaching.com/blog/2020/07/welcome-to-the-cache-owner-dashboard/?newsletter=PM)  You will find your very own dash board [**HERE**](https://www.geocaching.com/play/owner?utm_source=geocaching&amp;utm_medium=blog&amp;utm_campaign=COD)</p><p><b>Write note</b> by skullracing2020-11-08<br />We were up here walking around in circles, and we called in here and replaced the broken cache with a fresh 200ml sistema and a new logbook.
+That should keep it going until the CO can come up for a look.
+Cheers</p><p><b>Write note</b> by telefreaks2020-09-19<br />Due to the current stage 4 Melbourne lock down we are unable to travel up to repack the log book</p><p><b>Temporarily Disable Listing</b> by Bunjil2020-09-19<br />----------
+
+### **OWNER MAINTENANCE REQUIRED PLEASE** ###
+
+----------
+
+Hi there Cache Owner,
+
+It looks like this cache might need some attention, as one or more seekers have indicated there is an issue with the placement. The cache is being temporarily disabled, so as to remove it from search listings and discourage people from visiting this location until the issues/s with this cache can be addressed.
+
+Whilst it is recognized that as a result of the current COVID19 situation, it might not be possible for a Cache Owner to just pop out and check on a cache, we still need to know that you are on top of the issue. 
+
+CO's of caches disabled during the current COVID19 crisis will be given some extra time to react.  Caches where the cache owner does not currently feel it is safe to maintain will not be archived in the normal time frame, as long as there is some indication from the CO. **Don't let a lack of communication kill this cache.**
+
+#What should you do:-#
+- Should the regional Health and State Government requirements allow it **AND** you feel it safe for you to maintain this cache now, please feel free to do so. Don't forget to log an 'Owner Maintenance ' log and also Enable the cache once the issue is fixed.
+
+- **Alternatively,** what you need to do is place a Write Note log indicating a date when you you expect you might be able to attend to the issue/s.
+
+#Please Note#
+When the cache is next checked by a Reviewer, if the issue has not been addressed, or there is no acknowledgment from the CO as requested above, it will be assumed the cache has been abandoned and processed accordingly. 
+
+**JUST A HINT:-** In case you are not aware, there is a new Geocaching Dash Board designed to assist a Cache Owner in managing the caches they own. Have a read about it [**HERE.**](https://www.geocaching.com/blog/2020/07/welcome-to-the-cache-owner-dashboard/?newsletter=PM)  You will find your very own dash board [**HERE**](https://www.geocaching.com/play/owner?utm_source=geocaching&amp;utm_medium=blog&amp;utm_campaign=COD)
+
+Thanks for you cooperation,
+
+Bunjil
+
+
+{#af5040ed3dd11d7beccac2d45cca0543}</p><p><b>Found it</b> by adamslaura2019-09-25<br />Thanks for good catche, #snowventure2019w13</p><p><b>Found it</b> by MitchellEverett2019-09-25<br />Found weeks 13 Snow venture</p><p><b>Needs Maintenance</b> by James01162019-07-20<br />This geocacher reported that the logbook is full.</p><p><b>Found it</b> by jarh2019-07-19<br />Jarh</p><p><b>Found it</b> by Steffi_JT2019-07-19<br />Trip for snow venture sa 2019 :)</p><p><b>Found it</b> by James01162019-07-15<br />Great hide while on snow Venturer SA
+
+Swapped for 2 badges for 2 badges
+
+logbook full and needs to be replaced when possible
+
+I will put in a maintenance check but advisor in the area needs to know that this an alpine country area and access is limited at this time of year, mainly people who are staying at nearby rover accomodation would visit this cache
+
+james0116</p><p><b>Found it</b> by Jump Pilot2019-01-05<br />Another one done. Woo Hoo! I enjoyed finding this one at 10:16:37 AM with OzGeoBerries, Jackson Lightning and 8yo geokid on a camping trip..
+
+I love the challenge of the geocache hunt - read the notes, decipher the cache requirements, and go searching for the hide. This is an amazing world-wide game of hide and seek. I love it! I also enjoy caching with my 2 boys, and meeting fellow cachers. It really is a small world when I read over cache logs and see names of my friends who have found caches around the country. Thanks go to **** for making the effort to place this cache and maintain it. It's a great contribution to the Geocaching community and it is very much appreciated.
+
+TFTC! Cheers. *Jump Pilot* [8D]</p><p><b>Found it</b> by The Kettles2019-01-04<br />The Kettles were planning their (what seems to have become) annual summer holiday to the Victorian High country. For part of the family, the attraction is the seemingly endless choice of mountain bike trails to ride. So while the riders discussed what trails were their top picks to ride, Ma Kettle had an idea....I wonder if Kettle Twin 2 and I could complete the Victorian 1700m challenge while the riders were having their fun? A quick look at the geocaching map confirmed that there were enough possibilities close to the MTB trails.
+
+Having explored the ridges around Mt Buller and trekked all over the top of Mt Bogong, we had found 12 qualifying caches for the 1700m challenge and with one day remaining before we travelled back to South Australia, it was agreed that we would spend the day at Falls Creek – plenty of MTB tracks to ride, enough caches hidden above 1700m to complete the challenge and weather that was sooo much cooler than the 40+ degrees it was unless we headed up to the top of the mountains. 
+
+With 2 caches already found in the Falls Creek area plus the actual 1700m challenge cache, there was just one more to find to complete the challenge and this looked like a good option While the riders were enjoying the last run down of the day Ma Kettle and Kettle Twin 2 calculated that they had enough time to drive round to this cache and still get to the bottom to pick the riders up again without them having to wait too long.
+
+As we got closer, it became obvious where we needed go and a suitable parking spot was found with an easy walk in. It wasn’t long before we had the cache in hand and could say… ‘Challenge completed’. What great views there were as we stood on top and what a great experience we had shared.
+
+Great to find another one of the older caches in the area.</p><p><b>Found it</b> by OzGeoBerries2019-01-04<br />A wonderful week away camping in the Victorian High Plains! I have never been to this part fo the country, it is absolutely breathtaking. Gorgeous weather, incredible scenery and some caches to top it off. Beautiful view from the top, well worth the climb! Can't wait for a return trip. TFTC</p><p><b>Found it</b> by chipnputt502019-01-01<br />The note book is full using back cover. Storm passed through as we searched. Good  views to the dam.</p><p><b>Found it</b> by Polkinghorne2019-01-01<br />Round &amp; round the rock , then there it was. Super view back over Rocky Valley.</p><p><b>Found it</b> by Rasbro2018-01-20<br />Nice view tftc</p>]]></value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>147.2914,-36.90005,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

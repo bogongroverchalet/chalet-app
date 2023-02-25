@@ -1,0 +1,12 @@
+diff --git a/node_modules/leaflet-kml/L.KML.js b/node_modules/leaflet-kml/L.KML.js
+index 49acd87..17e0964 100644
+--- a/node_modules/leaflet-kml/L.KML.js
++++ b/node_modules/leaflet-kml/L.KML.js
+@@ -246,6 +246,7 @@ L.Util.extend(L.KML, {
+ 		}
+ 
+ 		if (name) {
++			layer.name = name
+ 			layer.on('add', function () {
+ 				layer.bindPopup('<h2>' + name + '</h2>' + descr, { className: 'kml-popup'});
+ 			});

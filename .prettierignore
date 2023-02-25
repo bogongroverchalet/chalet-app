@@ -1,0 +1,6 @@
+/**/package.json
+/**/package-lock.json
+/**/*.md
+/**/node_modules/**
+/.npm/anonymous-cli-metrics.json
+/build
