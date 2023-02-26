@@ -13,6 +13,7 @@ import tripKmlData from './trip-data.kml'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import classnames from 'classnames'
 import CircularProgress from '@mui/material/CircularProgress'
+import tripData from './trips.yaml'
 
 const ChaletIcon = leaflet.divIcon({
   html: renderToString(<FontAwesomeIcon icon={faLocationDot} className='text-3xl text-red-600' />),
@@ -186,7 +187,13 @@ function Tracks({ tripName }) {
     Array.from(kml.getElementsByTagName('styleUrl')).forEach((x) => x.parentNode.removeChild(x))
 
     const track = new leaflet.KML(kml)
-    const pathsForTrip = _.get(layersForTrips, tripName, new Set())
+    let pathsForTrip
+    const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
+    if (process.env.NEW_TRIP_DATA) {
+      pathsForTrip = new Set(tripInfoData.route.map(({ name }) => name))
+    } else {
+      pathsForTrip = _.get(layersForTrips, tripName, new Set())
+    }
     if (!tripName) {
       map.addLayer(track)
       map.fitBounds(track.getBounds())

@@ -10,6 +10,12 @@ module.exports = {
         type: 'asset/source',
       })
 
+      const rule = webpackConfig.module.rules.find(({ oneOf }) => !!oneOf)
+      rule.oneOf.unshift({
+        test: /\.ya?ml$/,
+        use: 'yaml-loader',
+      })
+
       return webpackConfig
     },
   },

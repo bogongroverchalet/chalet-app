@@ -47,10 +47,12 @@ export default function App() {
         ))}
       </ul>
       <h2 className='text-xl mb-2'>Level 3</h2>
-      <ul>
+      <ul className='mb-4'>
         <li>Fake place</li>
       </ul>
-      <Link to='/map'>All</Link>
+      <Link to='/map' className='text-xl mb-2'>
+        Show all <ChevronRightIcon className='ml-1' />
+      </Link>
     </Wrapper>
   )
 }

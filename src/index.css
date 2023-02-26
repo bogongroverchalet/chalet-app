@@ -14,3 +14,8 @@ body,
   background: transparent !important;
   border: none !important;
 }
+
+.trip-info-table td {
+  @apply pr-2;
+  @apply last:pr-0;
+}

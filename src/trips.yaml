@@ -1,0 +1,196 @@
+template: trip-template.docx # alternatively .odt
+
+gis-files:
+  - name: trip-data
+    file: trip-data.kml
+
+trips:
+  - name: Mount Mattress
+    image: image-file.jpg
+    description: asdf
+    long-description: asdf
+
+  - name: Home Slope
+    image: home-slope.jpg
+    description: Snow play, tobogganing, snowboards and ski tow.
+    long-description: >-
+      Snow play, tobogganing, snowboards and ski tow. The sloped area around
+      the chalet and down into the valley is great for beginners that need a
+      confidence boost.
+
+    difficulty-level: 1
+    turnback-points:
+      weather: None
+      time: None
+
+    show_elevation: false
+
+    geofence:
+      - { gis-file: trip-data, layer: Geofences, name: Home Slope }
+      - { gis-file: trip-data, layer: Geofences, name: Valley Slope }
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Tow Hut }
+
+  - name: Cope Hut
+    image: cope-hut.jpg
+    description: The first hut constructed for tourists, and location of the first winter parties.
+    long-description: >-
+      This hut was first constructed in 1929 by the Ski Club of Victoria as a tourist hut following
+      a surge in skiing in the 1920s. This was the location of the first winter parties. The hut was
+      called "The Menzies of the High Plains" by early skiers and walkers because of its size and
+      comfort. Spectacular views down into the valley and the surrounding highplains. On a clear day,
+      you can see as far as Benambra on the other side of the Great Dividing Range.
+
+    geocaches:
+      - name: The High Country Hilton
+        ref: GC7H08C
+
+    difficulty-level: 1
+    turnback-points:
+      weather:
+      time:
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+
+  - name: Playground
+    description: The gentle slope behind Cope Hut; Great for learning to ski (ski school)
+    long-description:
+
+    difficulty-level: 1
+    turnback-points:
+      weather: None
+      time: None
+
+    geofence:
+      - { gis-file: trip-data, layer: Geofences, name: Playground }
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Playground }
+
+  - name: Wallace's Hut
+    image: wallice-hut.jpg
+    description: The oldest hut on the high plains, most recent restoration work in 2012 Geocache.
+    long-description: >-
+      First constructed back in 
+      A nearby slope is somewhat sheltered and another option for ski school
+
+    geocaches:
+      - name: Seldom Seen Inn
+        ref: GC475QQ
+
+    difficulty-level: 1
+    turnback-points:
+      weather:
+        - { gis-file: trip-data, layer: Waypoints, name: somewhere along aqueduct }
+        - { gis-file: trip-data, layer: Waypoints, name: Wallace Turnoff }
+      time:
+
+    routes:
+      - name: direct route
+        route:
+          - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+          - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces Hut }
+      - name: via Wilkinsons lodge
+        route:
+          - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+          - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces via Wilkinsons }
+
+  - name: Investiture Point
+    description: A very special location for Alpine and Bogong Rovering. Plaque. Distance via Cope Hut.
+
+    has-geocache: true
+    disable-infocard: true
+
+    difficulty-level: 1
+    turnback-points:
+      weather:
+      time:
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Investigure Point }
+
+  - name: Three Hut Tour
+    description: Visit Cope, Wallace's and the Wilkinson's Lodge ruins. Ruin visibility depends on snow.
+
+    circuit: true
+    geocaches:
+      - name: Outdoors Type Point
+        ref: GCMFPW
+
+    difficulty-level: 1
+    turnback-points:
+      weather:
+      time:
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Wallaces Hut }
+      - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces via Wilkinsons }
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+
+  - name: Basalt Hill
+    description: A broad flat top. Don't ski into the quarry (well fenced). The SEC side can develop a cornice
+    long-description: >-
+      The area is filled with columnar basalt rubble, particularly on the southern side of the hill.
+      Basalt mounds have been formed through disintegration of basalt columns through many freeze-thaw
+      cycles or frost wedging. Some interesting geological features indicate this may have been a
+      site with volcanic activity many thousands or milions of years ago.
+
+    difficulty-level: 1
+    turnback-points:
+      weather:
+      time:
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+
+  - name: Maddisons Hut
+    description: A newer highcountry hut
+    difficulty-level: 1
+    long-description: >-
+      A little bit further than Wallace's Hut. Not the most exciting hut, but a good trip option when the weather isn't helping.
+
+  - name: Cope Saddle Hut
+    description: More a reference point along other longer trips than a destination itself.
+    difficulty-level: 1
+    turnback-points:
+      weather:
+        - Cope Hut
+
+  - name: Falls Creek
+    description: Visit the place you started.
+    difficulty-level: 1
+    long-description: >-
+      Whilst the one way trip is easy, don't forget that as a tour you need to go twice as far 😀
+
+  - name: Langfords West
+    description: A good beginner trip.
+    difficulty-level: 1
+    turnback-points:
+      weather:
+        - The weirs along the way can be sketchy in the wrong weather.
+    long-description: >-
+      Sheltered from northerly(?) weather, so a good option when the high plains are a bit too breezy.
+
+  - name: Rocky Nobs
+    description: Great views, and nice calm runs.
+    difficulty-level: 1
+    turnback-points:
+      weather:
+        - Cope Hut
+
+  - name: Mt Cope (direct)
+    description: A nice high peak close to the Chalet.
+    difficulty-level: 2
+    turnback-points:
+      weather:
+        - Cope Hut
+    long-description: >-
+      This is the more direct, but harder option. There is an alternative route up the ridge that is a bit calmer closer to Cope Saddle Hut.
