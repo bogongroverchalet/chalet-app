@@ -91,12 +91,16 @@ const LocationIcon = leaflet.divIcon({
 function MyLocation() {
   const map = useMap()
   const [position, setPosition] = React.useState()
+  const [accuracy, setAccuracy] = React.useState()
   React.useEffect(() => {
     let animate = false
     let oldPosition = position
     const watchId = navigator.geolocation.watchPosition(
       (position) => {
         const newPosition = [position.coords.latitude, position.coords.longitude]
+        if (!_.isEqual(accuracy, position.coords.accuracy)) {
+          setAccuracy(position.coords.accuracy)
+        }
         if (_.isEqual(newPosition, oldPosition)) return
         setPosition(newPosition)
         if (false) {
@@ -113,7 +117,7 @@ function MyLocation() {
   return (
     position && (
       <Marker position={position} icon={LocationIcon}>
-        <Popup>Me</Popup>
+        <Popup>Me{accuracy && ` - accuracy: ${accuracy}m`}</Popup>
       </Marker>
     )
   )
