@@ -20,17 +20,34 @@ clientsClaim()
 const MAP_REVISION = '1'
 precache([{ url: '/Bogong_High_Plains.pmtiles', revision: MAP_REVISION }])
 
+function uninstallWorker() {
+  self.skipWaiting()
+  self.registration
+    .unregister()
+    .then(function () {
+      return self.clients.matchAll()
+    })
+    .then(function (clients) {
+      clients.forEach((client) => client.navigate(client.url))
+    })
+}
+
 registerRoute(
   ({ url }) => url.pathname.endsWith('.pmtiles'),
   async ({ request }) => {
     const cache = await caches.open(cacheNames.precache)
-    let response
+    let response,
+      failureTimeout = null
     await (async function getFromCache() {
       response = await cache.match(getCacheKeyForURL('/Bogong_High_Plains.pmtiles'))
       if (!response) {
+        if (!failureTimeout) {
+          failureTimeout = setTimeout(uninstallWorker, 60e3)
+        }
         return new Promise((resolve) => setTimeout(() => getFromCache().then(resolve), 200))
       }
     })()
+    clearTimeout(failureTimeout)
     return createPartialResponse(request, response)
   }
 )
