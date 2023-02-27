@@ -194,3 +194,12 @@ trips:
         - Cope Hut
     long-description: >-
       This is the more direct, but harder option. There is an alternative route up the ridge that is a bit calmer closer to Cope Saddle Hut.
+
+  - name: Waterfalls
+    description: A surprise waterfall in the highplains.
+    difficulty-level: 2
+    turnback-points:
+      weather:
+        - Cope Hut
+    long-description: >-
+      Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good easy-intermediate trip, although on the longer side. Detour via Ryders Yards, and the option of returning via the southern side of Mt Cope.

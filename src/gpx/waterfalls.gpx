@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPSBabel - https://www.gpsbabel.org" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <time>2023-02-27T09:58:55.866Z</time>
+    <bounds minlat="-36.941253000" minlon="147.243082000" maxlat="-36.921901000" maxlon="147.261028000"/>
+  </metadata>
+  <trk>
+    <name>Cope Saddle Hut to the Waterfalls</name>
+    <trkseg>
+      <trkpt lat="-36.922059000" lon="147.261028000">
+        <ele>1874.000</ele>
+      </trkpt>
+      <trkpt lat="-36.921901000" lon="147.260413000">
+        <ele>1869.000</ele>
+      </trkpt>
+      <trkpt lat="-36.923417000" lon="147.257803000">
+        <ele>1869.000</ele>
+      </trkpt>
+      <trkpt lat="-36.923978000" lon="147.257705000">
+        <ele>1868.800</ele>
+      </trkpt>
+      <trkpt lat="-36.926029000" lon="147.255146000">
+        <ele>1868.400</ele>
+      </trkpt>
+      <trkpt lat="-36.926429000" lon="147.255383000">
+        <ele>1868.400</ele>
+      </trkpt>
+      <trkpt lat="-36.927372000" lon="147.255161000">
+        <ele>1868.400</ele>
+      </trkpt>
+      <trkpt lat="-36.927727000" lon="147.255499000">
+        <ele>1868.600</ele>
+      </trkpt>
+      <trkpt lat="-36.928362000" lon="147.255366000">
+        <ele>1868.600</ele>
+      </trkpt>
+      <trkpt lat="-36.930582000" lon="147.256556000">
+        <ele>1872.600</ele>
+      </trkpt>
+      <trkpt lat="-36.932366000" lon="147.255583000">
+        <ele>1872.000</ele>
+      </trkpt>
+      <trkpt lat="-36.933933000" lon="147.253241000">
+        <ele>1871.200</ele>
+      </trkpt>
+      <trkpt lat="-36.933677000" lon="147.250959000">
+        <ele>1870.400</ele>
+      </trkpt>
+      <trkpt lat="-36.932632000" lon="147.248918000">
+        <ele>1870.200</ele>
+      </trkpt>
+      <trkpt lat="-36.932000000" lon="147.247008000">
+        <ele>1870.000</ele>
+      </trkpt>
+      <trkpt lat="-36.932016000" lon="147.244967000">
+        <ele>1870.000</ele>
+      </trkpt>
+      <trkpt lat="-36.933301000" lon="147.243099000">
+        <ele>1870.800</ele>
+      </trkpt>
+      <trkpt lat="-36.937319000" lon="147.243082000">
+        <ele>1802.400</ele>
+      </trkpt>
+      <trkpt lat="-36.938415000" lon="147.243491000">
+        <ele>1797.400</ele>
+      </trkpt>
+      <trkpt lat="-36.939754000" lon="147.243134000">
+        <ele>1793.200</ele>
+      </trkpt>
+      <trkpt lat="-36.941253000" lon="147.245096000">
+        <ele>1785.600</ele>
+      </trkpt>
+      <trkpt lat="-36.941113000" lon="147.246398000">
+        <ele>1782.200</ele>
+      </trkpt>
+      <trkpt lat="-36.940087000" lon="147.247528000">
+        <ele>1774.000</ele>
+      </trkpt>
+      <trkpt lat="-36.939642000" lon="147.247579000">
+        <ele>1761.200</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

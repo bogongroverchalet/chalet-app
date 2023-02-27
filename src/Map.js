@@ -8,12 +8,14 @@ import { useParams, Link } from 'react-router-dom'
 import { PMTiles, leafletRasterLayer } from 'pmtiles'
 import _ from 'lodash'
 import 'leaflet-kml'
+import 'leaflet-gpx'
 import './leaflet-setup'
 import tripKmlData from './trip-data.kml'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import classnames from 'classnames'
 import CircularProgress from '@mui/material/CircularProgress'
 import tripData from './trips.yaml'
+import waterfalls from './gpx/waterfalls.gpx'
 
 const ChaletIcon = leaflet.divIcon({
   html: renderToString(<FontAwesomeIcon icon={faLocationDot} className='text-3xl text-red-600' />),
@@ -175,8 +177,28 @@ export const layersForTrips = {
     'Cope Hut to Cope Carpark',
     'Cope Carpark to Mt Cope',
   ]),
-  'Cope Saddle Hut': new Set(['Chalet to LW turnoff', 'Cope Carpark to Cope Saddle Hut']), // TODO not via Cope Hut
+  'Cope Saddle Hut': new Set([
+    'Chalet to LW turnoff',
+    'LW turnoff to Cope Hut',
+    'Cope Hut to Cope Carpark',
+    'Cope Carpark to Cope Saddle Hut',
+  ]), // TODO not via Cope Hut
   'Langfords West': new Set(['Chalet to LW turnoff', 'LW turnoff to Langford West']),
+  Waterfalls: new Set([
+    'Chalet to LW turnoff',
+    'LW turnoff to Cope Hut',
+    'Cope Hut to Cope Carpark',
+    'Cope Carpark to Cope Saddle Hut',
+  ]),
+}
+
+const gpxTrips = {
+  Waterfalls: [waterfalls],
+}
+
+const gpxOptions = {
+  marker_options: { startIconUrl: false, endIconUrl: false },
+  polyline_options: { color: 'red' },
 }
 
 function Tracks({ tripName }) {
@@ -194,8 +216,18 @@ function Tracks({ tripName }) {
     } else {
       pathsForTrip = _.get(layersForTrips, tripName, new Set())
     }
+    new leaflet.GPX(waterfalls, gpxOptions).addTo(map)
     if (!tripName) {
+      _(gpxTrips)
+        .values()
+        .flatten()
+        .uniq()
+        .forEach((t) => new leaflet.GPX(waterfalls, gpxOptions).addTo(map))
       map.addLayer(track)
+      track.eachLayer(function handleLayer(l) {
+        l.options.icon = leaflet.Icon.Default
+        if (l.eachLayer) l.eachLayer(handleLayer)
+      })
       map.fitBounds(track.getBounds())
       return
     }
@@ -203,14 +235,25 @@ function Tracks({ tripName }) {
     track.eachLayer(function handleLayer(l) {
       l.options.icon = leaflet.Icon.Default
       track.setStyle({ color: 'red' })
+      if (l.eachLayer) l.eachLayer(handleLayer)
       if (!l.name) {
-        l.eachLayer(handleLayer)
         return
       }
       if (pathsForTrip.has(l.name)) {
         layersForTrip = layersForTrip.concat(l)
       }
     })
+    _(gpxTrips[tripName] || [])
+      .uniq()
+      .forEach((t) => {
+        const gpxTrack = new leaflet.GPX(t, gpxOptions).addTo(map).eachLayer(function handleLayer(l) {
+          l.options.icon = leaflet.Icon.Default
+          track.setStyle({ color: 'red' })
+          if (l.eachLayer) l.eachLayer(handleLayer)
+          layersForTrip = layersForTrip.concat(l)
+        })
+        gpxTrack.bindPopup(`<h2>${gpxTrack.get_name()}</h2>`, { className: 'kml-popup' })
+      })
     if (layersForTrip.length) {
       window.layersForTrip = layersForTrip
       const featureGroup = leaflet.featureGroup(layersForTrip).addTo(map)

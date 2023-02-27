@@ -6,7 +6,7 @@ module.exports = {
       }
 
       webpackConfig.module.rules.push({
-        test: /\.kml$/,
+        test: /\.(kml|gpx)$/,
         type: 'asset/source',
       })
 

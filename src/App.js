@@ -42,7 +42,7 @@ export default function App() {
       </ul>
       <h2 className='text-xl mb-2'>Level 2</h2>
       <ul>
-        {['Mt Cope (direct)'].map((t) => (
+        {['Mt Cope (direct)', 'Waterfalls'].map((t) => (
           <TripLink key={t} tripName={t} />
         ))}
       </ul>

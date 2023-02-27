@@ -19,6 +19,7 @@
     "husky": "^8.0.3",
     "leaflet": "^1.9.3",
     "leaflet-edgebuffer": "^1.0.6",
+    "leaflet-gpx": "^1.7.0",
     "leaflet-kml": "^1.0.1",
     "lint-staged": "^13.1.2",
     "lodash": "^4.17.21",
