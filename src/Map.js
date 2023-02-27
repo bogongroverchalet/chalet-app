@@ -2,7 +2,7 @@ import React from 'react'
 import leaflet from 'leaflet'
 import { renderToString } from 'react-dom/server'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { MapContainer, Marker, Popup, useMap } from 'react-leaflet'
 import { useParams, Link } from 'react-router-dom'
 import { PMTiles, leafletRasterLayer } from 'pmtiles'
@@ -14,6 +14,9 @@ import tripKmlData from './trip-data.kml'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import classnames from 'classnames'
 import CircularProgress from '@mui/material/CircularProgress'
+import DownloadIcon from '@mui/icons-material/Download'
+import fileDownload from 'js-file-download'
+import togpx from 'togpx'
 import tripData from './trips.yaml'
 import waterfalls from './gpx/waterfalls.gpx'
 
@@ -29,6 +32,7 @@ const chaletPosition = Object.freeze([-36.9040535, 147.3031153])
 export default function Map() {
   const { tripName } = useParams()
   const [showPosition, setShowPosition] = React.useState()
+  const [forDownload, setForDownload] = React.useState()
   const [actualMapDataReady, setActualMapDataReady] = React.useState(mapDataReady)
   React.useEffect(() => {
     navigator.serviceWorker.ready.then((registration) => {
@@ -51,14 +55,17 @@ export default function Map() {
           </Link>
           <span className='max-sm:hidden'>Bogong Rover Chalet map:</span> {tripName}
           <button className='ml-4' onClick={() => setShowPosition(!showPosition)}>
-            <FontAwesomeIcon icon='location' className={classnames(showPosition && 'text-blue-500')} />
+            <FontAwesomeIcon icon={faLocation} className={classnames(showPosition && 'text-blue-500')} />
+          </button>
+          <button className='ml-4' onClick={() => fileDownload(forDownload, `${tripName}.gpx`)}>
+            <DownloadIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
           </button>
         </h1>
       </div>
       {actualMapDataReady ? (
         <MapContainer center={chaletPosition} zoom={16} scrollWheelZoom={false} maxNativeZoom={17} maxZoom={19}>
           <PMTilesLayer />
-          <Tracks tripName={tripName} />
+          <Tracks tripName={tripName} forDownload={setForDownload} />
           {showPosition && <MyLocation />}
           <Marker position={chaletPosition} icon={ChaletIcon}>
             <Popup>Bogong Rover Chalet 🎉</Popup>
@@ -201,7 +208,7 @@ const gpxOptions = {
   polyline_options: { color: 'red' },
 }
 
-function Tracks({ tripName }) {
+function Tracks({ tripName, forDownload }) {
   const map = useMap()
   React.useEffect(() => {
     const parser = new DOMParser()
@@ -257,8 +264,20 @@ function Tracks({ tripName }) {
     if (layersForTrip.length) {
       window.layersForTrip = layersForTrip
       const featureGroup = leaflet.featureGroup(layersForTrip).addTo(map)
+      const trackGeojson = featureGroup.toGeoJSON()
+      if (false) {
+        const target = trackGeojson.features[0]
+        _(trackGeojson.features)
+          .tail()
+          .forEach(
+            ({ geometry: { coordinates } }) =>
+              (target.geometry.coordinates = target.geometry.coordinates.concat(coordinates))
+          )
+        trackGeojson.features = [target]
+      }
+      forDownload(togpx(trackGeojson))
       map.fitBounds(featureGroup.getBounds(), { padding: [50, 50] })
       map.setZoom(16)
     }
-  }, [map, tripName])
+  }, [map, tripName, forDownload])
 }
