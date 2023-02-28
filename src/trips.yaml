@@ -3,6 +3,8 @@ template: trip-template.docx # alternatively .odt
 gis-files:
   - name: trip-data
     file: trip-data.kml
+  - name: waterfalls
+    file: waterfalls.gpx
 
 trips:
   - name: Mount Mattress
@@ -113,7 +115,7 @@ trips:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
       - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
-      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Investigure Point }
+      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Investiture Point }
 
   - name: Three Hut Tour
     description: Visit Cope, Wallace's and the Wilkinson's Lodge ruins. Ruin visibility depends on snow.
@@ -150,12 +152,17 @@ trips:
 
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces Hut }
+      - { gis-file: trip-data, layer: Paths, name: Wallace to Basalt Hill }
 
   - name: Maddisons Hut
     description: A newer highcountry hut
     difficulty-level: 1
     long-description: >-
       A little bit further than Wallace's Hut. Not the most exciting hut, but a good trip option when the weather isn't helping.
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Maddison Hut }
 
   - name: Cope Saddle Hut
     description: More a reference point along other longer trips than a destination itself.
@@ -163,12 +170,20 @@ trips:
     turnback-points:
       weather:
         - Cope Hut
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Cope Saddle Hut }
 
   - name: Falls Creek
     description: Visit the place you started.
     difficulty-level: 1
     long-description: >-
       Whilst the one way trip is easy, don't forget that as a tour you need to go twice as far 😀
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Falls Creek (windy corner) to Wallace Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
 
   - name: Langfords West
     description: A good beginner trip.
@@ -177,7 +192,11 @@ trips:
       weather:
         - The weirs along the way can be sketchy in the wrong weather.
     long-description: >-
-      Sheltered from northerly(?) weather, so a good option when the high plains are a bit too breezy.
+      Sheltered from westerly weather, so a good option when the high plains are a bit too breezy.
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Langford West }
 
   - name: Rocky Nobs
     description: Great views, and nice calm runs.
@@ -185,15 +204,23 @@ trips:
     turnback-points:
       weather:
         - Cope Hut
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Rocky Nobs }
 
-  - name: Mt Cope (direct)
+  - name: Mt Cope (via road)
     description: A nice high peak close to the Chalet.
     difficulty-level: 2
     turnback-points:
       weather:
         - Cope Hut
-    long-description: >-
-      This is the more direct, but harder option. There is an alternative route up the ridge that is a bit calmer closer to Cope Saddle Hut.
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Mt Cope via road }
 
   - name: Waterfalls
     description: A surprise waterfall in the highplains.
@@ -202,4 +229,13 @@ trips:
       weather:
         - Cope Hut
     long-description: >-
-      Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good easy-intermediate trip, although on the longer side. Detour via Ryders Yards, and the option of returning via the southern side of Mt Cope.
+      Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good intermediate trip, although on the longer side. Detour via Ryders Yards, and the option of returning via the aqueduct and the southern side of Mt Cope.
+
+      Great place for lunch 🥪
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Cope Saddle Hut }
+      - { gis-file: waterfalls, name: Cope Saddle Hut to the Waterfalls }

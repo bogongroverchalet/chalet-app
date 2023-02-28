@@ -44,7 +44,7 @@ export default function TripInfo() {
                       <h3>Notes:</h3>
                     </td>
                     <td>
-                      <p>{tripInfoData['long-description']}</p>
+                      <p className='whitespace-pre-line'>{tripInfoData['long-description']}</p>
                     </td>
                   </tr>
                 )}

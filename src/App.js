@@ -2,6 +2,8 @@ import React from 'react'
 import Wrapper from './Wrapper'
 import { Link } from 'react-router-dom'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
+import tripData from './trips.yaml'
+import _ from 'lodash'
 
 function TripLink({ tripName }) {
   return (
@@ -14,6 +16,10 @@ function TripLink({ tripName }) {
 }
 
 export default function App() {
+  const groupedTripNames = _(tripData.trips)
+    .groupBy('difficulty-level')
+    .mapValues((v) => _.map(v, 'name'))
+    .value()
   return (
     <Wrapper>
       <h1 className='text-3xl mb-4'>Bogong Rover Chalet trip ideas</h1>
@@ -23,33 +29,18 @@ export default function App() {
         Don't follow them verbatim and ensure you undertake a risk assessment and alter (or abandon) the trip as
         required.
       </p>
-      <h2 className='text-xl mb-2'>Level 1</h2>
-      <ul>
-        {[
-          'Cope Hut',
-          'Falls Creek',
-          'Rocky Nobs',
-          'Basalt Hill',
-          'Investiture Point',
-          'Maddisons Hut',
-          'Langfords West',
-          'Cope Saddle Hut',
-        ]
-          .sort()
-          .map((t) => (
-            <TripLink key={t} tripName={t} />
-          ))}
-      </ul>
-      <h2 className='text-xl mb-2'>Level 2</h2>
-      <ul>
-        {['Mt Cope (direct)', 'Waterfalls'].map((t) => (
-          <TripLink key={t} tripName={t} />
-        ))}
-      </ul>
-      <h2 className='text-xl mb-2'>Level 3</h2>
-      <ul className='mb-4'>
-        <li>Fake place</li>
-      </ul>
+      {['1', '2', '3'].map((level) => (
+        <React.Fragment key={level}>
+          <h2 className='text-xl mb-2'>Level {level}</h2>
+          <ul>
+            {!groupedTripNames[level] ? (
+              <div className='italic mb-2'>None</div>
+            ) : (
+              groupedTripNames[level].sort().map((t) => <TripLink key={t} tripName={t} />)
+            )}
+          </ul>
+        </React.Fragment>
+      ))}
       <Link to='/map' className='text-xl mb-2'>
         Show all <ChevronRightIcon className='ml-1' />
       </Link>
