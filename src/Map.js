@@ -223,7 +223,6 @@ function Tracks({ tripName, forDownload }) {
     } else {
       pathsForTrip = _.get(layersForTrips, tripName, new Set())
     }
-    new leaflet.GPX(waterfalls, gpxOptions).addTo(map)
     if (!tripName) {
       _(gpxTrips)
         .values()
