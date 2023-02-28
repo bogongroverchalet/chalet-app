@@ -168,7 +168,9 @@ function Tracks({ tripName, forDownload }) {
       return
     }
     const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
-    const route = (tripInfoData?.routes ? _.first(tripInfoData?.routes).route : tripInfoData?.route) || []
+    const route = ((tripInfoData?.routes ? _.first(tripInfoData?.routes).route : tripInfoData?.route) || []).concat(
+      tripInfoData?.geofence || []
+    )
     const pathsForTrip = new Set(route.map(({ name }) => name))
     let layersForTrip = []
     function handleLayer(l) {
