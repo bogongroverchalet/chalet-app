@@ -73,11 +73,14 @@ trips:
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut } # TODO, Playground route is missing
 
   - name: Wallace's Hut
-    image: wallice-hut.jpg
+    image: wallace-hut.jpg
     description: The oldest hut on the high plains, most recent restoration work in 2012 Geocache.
     long-description: >-
-      First constructed back in 
-      A nearby slope is somewhat sheltered and another option for ski school
+      First constructed back in 1889, and remains the oldest surviving hut in the Victorian Alps.
+
+      A nearby slope (north east, behind the hut to the right) is somewhat sheltered and another option for ski school. It's easy to access but not as beginner friendly as the Cope Hut ski school slope.
+
+      Use the Wilkinson's alternative if avoiding the weather at the Wallace's turnoff.
 
     geocaches:
       - name: Seldom Seen Inn
@@ -86,19 +89,25 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
-        - { gis-file: trip-data, layer: Waypoints, name: somewhere along aqueduct }
-        - { gis-file: trip-data, layer: Waypoints, name: Wallace Turnoff }
-      time:
+        - Along the aqueduct.
+        - Wallace turnoff - generally the most exposed part of the trip, it's more sheltered on the aqueduct and after the turn off in the trees up to Wallace's after the turnoff.
+      time: [None]
 
-    routes:
-      - name: direct route
-        route:
-          - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
-          - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces Hut }
-      - name: via Wilkinsons lodge
-        route:
-          - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
-          - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces via Wilkinsons }
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces Hut }
+
+  - name: Wallace's Hut (via Wilkinson's Lodge ruins)
+    difficulty-level: 1
+    description: As per Wallace's hut, but try and see the ruins of Wilkinson's Lodge.
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces via Wilkinsons }
+    image: wallice-hut.jpg
+    turnback-points:
+      weather:
+        - Along the aqueduct.
+      time: [None]
 
   - name: Investiture Point
     description: A very special location for Alpine and Bogong Rovering. Plaque. Distance via Cope Hut.
