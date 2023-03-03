@@ -15,7 +15,7 @@ trips:
   - name: Home Slope
     image: home-slope.jpg
     description: Snow play, tobogganing, snowboards and ski tow.
-    long-description: >-
+    long-description: |
       Snow play, tobogganing, snowboards and ski tow. The sloped area around
       the chalet and down into the valley is great for beginners that need a
       confidence boost.
@@ -36,7 +36,7 @@ trips:
   - name: Cope Hut
     image: cope-hut.jpg
     description: The first hut constructed for tourists, and location of the first winter parties.
-    long-description: >-
+    long-description: |
       This hut was first constructed in 1929 by the Ski Club of Victoria as a tourist hut following
       a surge in skiing in the 1920s. This was the location of the first winter parties. The hut was
       called "The Menzies of the High Plains" by early skiers and walkers because of its size and
@@ -76,7 +76,7 @@ trips:
   - name: Wallace's Hut
     image: wallace-hut.jpg
     description: The oldest hut on the high plains, most recent restoration work in 2012 Geocache.
-    long-description: >-
+    long-description: |
       First constructed back in 1889, and remains the oldest surviving hut in the Victorian Alps.
 
       A nearby slope (north east, behind the hut to the right) is somewhat sheltered and another option for ski school. It's easy to access but not as beginner friendly as the Cope Hut ski school slope.
@@ -100,7 +100,7 @@ trips:
 
   - name: Wallace's Hut (via Wilkinson's Lodge ruins)
     difficulty-level: 1
-    description: As per Wallace's hut, but try and see the ruins of Wilkinson's Lodge.
+    description: As per [Wallace's hut](/trip/Wallace's%20Hut), but try and see the ruins of Wilkinson's Lodge.
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Wallaces via Wilkinsons }
@@ -113,7 +113,7 @@ trips:
   - name: Investiture Point
     description: A very special location for Alpine and Bogong Rovering. Plaque. Distance via Cope Hut is approx 2.5km.
 
-    long-description: >-
+    long-description: |
       Many go up the valley in nicer weather, following either side depending on conditions. This variation is generally not as simple as following the pole line. Normally the South face is nicer, it varies depending on the wind direction - can be blown hardpack on either (or both) sides.
 
     has-geocache: true
@@ -123,7 +123,7 @@ trips:
     turnback-points:
       weather:
         - Cope Hut carpark.
-        - As per the Cope Hut trip.
+        - As per the [Cope Hut trip](/trip/Cope%20Hut).
       time:
         - Cope Hut carpark/the road.
 
@@ -144,10 +144,10 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
-        - As per Cope Hut and Wallace's Hut tours.
+        - As per [Cope Hut](/trip/Cope%20Hut) and [Wallace's Hut](/trip/Wallace's%20Hut) tours.
         - The road section from the Cope Hut carpark towards investiture point can be a bit too exposed, but isn't too long.
       time:
-        - As per Cope Hut and Wallace's Hut tours.
+        - As per [Cope Hut](/trip/Cope%20Hut) and [Wallace's Hut](/trip/Wallace's%20Hut) tours.
         - Generally not required unless departing the Chalet well into the afternoon.
 
     route:
@@ -159,7 +159,7 @@ trips:
 
   - name: Basalt Hill
     description: A broad flat top. Don't ski into the quarry (well fenced - except in a whiteout). The SEC side can develop a cornice
-    long-description: >-
+    long-description: |
       The area is filled with columnar basalt rubble, particularly on the southern side of the hill.
       Basalt mounds have been formed through disintegration of basalt columns through many freeze-thaw
       cycles or frost wedging. Some interesting geological features indicate this may have been a
@@ -168,7 +168,7 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
-        - As per Wallace's hut.
+        - As per [Wallace's Hut](/trip/Wallace's%20Hut).
         - The whole track after Wallace's is very exposed to westerly or easterly weather with little cover available - return if weather poor after the Wallace's carpark.
       time: [None]
 
@@ -180,7 +180,7 @@ trips:
   - name: Maddisons Hut
     description: A newer highcountry hut
     difficulty-level: 1
-    long-description: >-
+    long-description: |
       A little bit further than Wallace's Hut. Not the most exciting hut, but a good trip option when the weather isn't helping.
 
       Not far off the aqueduct, so quite well sheltered (as per the ski in to the Chalet).
@@ -210,7 +210,7 @@ trips:
   - name: Falls Creek
     description: Visit the place you started.
     difficulty-level: 1
-    long-description: >-
+    long-description: |
       Whilst the one way trip is easy, don't forget that as a tour you need to go twice as far 😀
 
       Do not go via the carpark entry at Langfords Gap - use the road/car bridge and leave/join the aqueduct track south of the crossing.
@@ -240,7 +240,7 @@ trips:
         - The weirs along the way can be sketchy in the wrong weather.
       time:
         - Return if not making the distance in time.
-    long-description: >-
+    long-description: |
       Sheltered from westerly weather, so a good option when the high plains are a bit too breezy.
 
       Easy to return anywhere along the way.
@@ -253,7 +253,7 @@ trips:
 
   - name: Rocky Nobs
     description: Great views, and nice calm runs.
-    long-description: >-
+    long-description: |
       Nice slopes for ski school with a more advanced group.
 
       Can return via Mt Cope if keen.
@@ -271,7 +271,7 @@ trips:
 
   - name: Mt Cope (via road)
     description: A nice high peak close to the Chalet.
-    long-description: >-
+    long-description: |
       Great views, but exposed in poorer weather.
 
       Not a trivial descent - pick the best face for the conditions and your party. Consider aborting the climb if the snow or weather conditions aren't helping.
@@ -302,7 +302,7 @@ trips:
         - Ryder's Huts if not making it before 11 30am.
         - Cope West Aqueduct road before descent to the waterfall before 12pm.
         - Depart the waterfalls by 1pm to 1 30pm.
-    long-description: >-
+    long-description: |
       Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good intermediate trip, although on the longer side. Detour via Ryders Yards, and the option of returning via the aqueduct and the southern side of Mt Cope.
 
       Hopefully see some brumbies :-)
@@ -321,10 +321,10 @@ trips:
     difficulty-level: 2
     turnback-points:
       weather:
-        - As per waterfalls via normal route.
+        - As per [waterfalls](/trip/Waterfalls) via normal route.
       time:
-        - As per waterfalls via normal route.
-    long-description: >-
+        - As per [waterfalls](/trip/Waterfalls) via normal route.
+    long-description: |
       An alternative - and slightly harder - way to the waterfalls.
 
       If making good time, and the party are in good spirits, a good alternative for the return.
@@ -340,7 +340,7 @@ trips:
   - name: Falls Creek (via Investiture Point)
     description: Visit the place you started, but the other way around the lake.
     difficulty-level: 2
-    long-description: >-
+    long-description: |
       More exposed and more elevation than the normal way
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
@@ -358,7 +358,7 @@ trips:
   - name: Marum Point
     description: A nice spot not far from Langford's Gap.
     difficulty-level: 1
-    long-description: >-
+    long-description: |
       A nice little spot to visit.
     route: [] # TODO
     turnback-points:
@@ -370,7 +370,7 @@ trips:
   - name: Edmondson hut and Mt Nelse
     description: Mt Nelse is a great peak, but the descent can be dicey. Longer trip.
     difficulty-level: 3
-    long-description: >-
+    long-description: |
       A nice trip for days with nice weather. Start reasonably early and take lunch.
 
       Ensure you pay attention to the snow conditions whilst climbing Mt Nelse to ensure it will be safe descending.
@@ -392,7 +392,7 @@ trips:
   - name: Fitzgeralds Hut and Kelly Hut
     description: Hut visiting expedition.
     difficulty-level: 2
-    long-description: >-
+    long-description: |
       Take lunch.
     route: [] # TODO
     turnback-points:
@@ -405,7 +405,7 @@ trips:
   - name: Mt Jim
     description: Lovely peak with a steady descent and nice views.
     difficulty-level: 2
-    long-description: >-
+    long-description: |
       Great trip in nice weather, easy to turn back along the way.
 
       Hopefully see some brumbies :-)
@@ -427,7 +427,7 @@ trips:
   - name: Mt McKay
     description: Windiest place on the highplains.
     difficulty-level: 2
-    long-description: >-
+    long-description: |
       A great trip for the runs.
 
       The ascent and descent make this harder level, but there are lower slopes that can be skied by intermediate skiers - don't ascend if not feeling it, or in poor conditions.
@@ -461,7 +461,7 @@ trips:
   - name: Weston's hut
     description: Lovely hut with a tougher descent into it.
     difficulty-level: 3
-    long-description: >-
+    long-description: |
       Great hut on the edge of the high plains.
 
       Longer trip but very rewarding. The descent into the hut requires a bit of skill as it can be a bit steep and narrow (especially in poor snow). The climb out is hard work too. Can choose not to descend to reduce the technical difficulty.
@@ -481,7 +481,7 @@ trips:
   - name: Pretty Valley
     description: Visit a different pondage, and a hut.
     difficulty-level: 2
-    long-description: >-
+    long-description: |
       Good intermediate trip option.
 
       Has a hut for eating lunch in.

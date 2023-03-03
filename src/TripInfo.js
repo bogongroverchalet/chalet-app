@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import capitalize from 'capitalize'
 import tripData from './trips.yaml'
+import ReactMarkdown from 'react-markdown'
 import _ from 'lodash'
 
 export default function TripInfo() {
@@ -29,7 +30,7 @@ export default function TripInfo() {
                     <h3>Overview:</h3>
                   </td>
                   <td>
-                    <p>{tripInfoData.description}</p>
+                    <ReactMarkdown>{tripInfoData.description}</ReactMarkdown>
                   </td>
                 </tr>
                 <tr>
@@ -46,12 +47,12 @@ export default function TripInfo() {
                       <h3>Notes:</h3>
                     </td>
                     <td>
-                      <p className='whitespace-pre-line'>{tripInfoData['long-description']}</p>
+                      <ReactMarkdown>{tripInfoData['long-description']}</ReactMarkdown>
                     </td>
                   </tr>
                 )}
                 <tr>
-                  <td colspan='2' className='pt-4'>
+                  <td colSpan='2' className='pt-4'>
                     <h2 className='text-lg'>Turnback points</h2>
                   </td>
                 </tr>
@@ -64,7 +65,9 @@ export default function TripInfo() {
                       <div className='pl-4'>
                         <ul className='list-disc'>
                           {tripInfoData['turnback-points'][type].map((desc) => (
-                            <li key={desc}>{desc}</li>
+                            <li key={desc}>
+                              <ReactMarkdown>{desc}</ReactMarkdown>
+                            </li>
                           ))}
                         </ul>
                       </div>

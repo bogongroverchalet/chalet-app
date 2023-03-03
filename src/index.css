@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  @apply underline;
+}
+
 body,
 #root,
 .leaflet-container {
@@ -15,13 +19,22 @@ body,
   border: none !important;
 }
 
+.trip-info-table p {
+  @apply mb-2;
+  @apply last:mb-0;
+}
+
 .trip-info-table td {
-  @apply pr-2;
+  @apply px-2;
   @apply last:pr-0;
 
-  @apply pb-4;
+  @apply py-2;
 
   @apply first:min-w-[6em];
+
+  @apply border;
+  @apply border-solid;
+  @apply border-slate-200;
 }
 
 .trip-info-table tr:last-child td {
