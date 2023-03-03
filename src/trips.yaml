@@ -9,8 +9,8 @@ gis-files:
 trips:
   - name: Mount Mattress
     image: image-file.jpg
-    description: asdf
-    long-description: asdf
+    description: Explore your imagination and count some sheep.
+    long-description: Test the quality of Mount Mattress, hopefully you picked a good one.
 
   - name: Home Slope
     image: home-slope.jpg
@@ -22,8 +22,8 @@ trips:
 
     difficulty-level: 1
     turnback-points:
-      weather: None
-      time: None
+      weather: [N/A]
+      time: [N/A]
 
     show_elevation: false
 
@@ -50,7 +50,8 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
-      time:
+        - Continual, if you can't see pole to pole, or the weather is too strong down the valley.
+      time: [None]
 
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
@@ -62,8 +63,8 @@ trips:
 
     difficulty-level: 1
     turnback-points:
-      weather: None
-      time: None
+      weather: [N/A]
+      time: [N/A]
 
     geofence:
       - { gis-file: trip-data, layer: Geofences, name: Playground }
@@ -110,7 +111,10 @@ trips:
       time: [None]
 
   - name: Investiture Point
-    description: A very special location for Alpine and Bogong Rovering. Plaque. Distance via Cope Hut.
+    description: A very special location for Alpine and Bogong Rovering. Plaque. Distance via Cope Hut is approx 2.5km.
+
+    long-description: >-
+      Many go up the valley in nicer weather, following either side depending on conditions. This variation is generally not as simple as following the pole line. Normally the South face is nicer, it varies depending on the wind direction - can be blown hardpack on either (or both) sides.
 
     has-geocache: true
     disable-infocard: true
@@ -118,7 +122,10 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
+        - Cope Hut carpark.
+        - As per the Cope Hut trip.
       time:
+        - Cope Hut carpark/the road.
 
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
@@ -137,7 +144,11 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
+        - As per Cope Hut and Wallace's Hut tours.
+        - The road section from the Cope Hut carpark towards investiture point can be a bit too exposed, but isn't too long.
       time:
+        - As per Cope Hut and Wallace's Hut tours.
+        - Generally not required unless departing the Chalet well into the afternoon.
 
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
@@ -147,7 +158,7 @@ trips:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
 
   - name: Basalt Hill
-    description: A broad flat top. Don't ski into the quarry (well fenced). The SEC side can develop a cornice
+    description: A broad flat top. Don't ski into the quarry (well fenced - except in a whiteout). The SEC side can develop a cornice
     long-description: >-
       The area is filled with columnar basalt rubble, particularly on the southern side of the hill.
       Basalt mounds have been formed through disintegration of basalt columns through many freeze-thaw
@@ -157,7 +168,9 @@ trips:
     difficulty-level: 1
     turnback-points:
       weather:
-      time:
+        - As per Wallace's hut.
+        - The whole track after Wallace's is very exposed to westerly or easterly weather with little cover available - return if weather poor after the Wallace's carpark.
+      time: [None]
 
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
@@ -169,16 +182,25 @@ trips:
     difficulty-level: 1
     long-description: >-
       A little bit further than Wallace's Hut. Not the most exciting hut, but a good trip option when the weather isn't helping.
+
+      Not far off the aqueduct, so quite well sheltered (as per the ski in to the Chalet).
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Wallace Turnoff to Maddison Hut }
+    turnback-points:
+      weather:
+        - Along the aqueduct if poor enough weather (unlikely).
+      time: [None]
 
   - name: Cope Saddle Hut
     description: More a reference point along other longer trips than a destination itself.
     difficulty-level: 1
     turnback-points:
       weather:
-        - Cope Hut
+        - Cope Hut carpark
+      time:
+        - Cope Hut carpark/the road.
+
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
@@ -190,9 +212,21 @@ trips:
     difficulty-level: 1
     long-description: >-
       Whilst the one way trip is easy, don't forget that as a tour you need to go twice as far 😀
+
+      Do not go via the carpark entry at Langfords gap - use the road/car bridge and leave/join the aqueduct track south of the crossing.
+
     route:
       - { gis-file: trip-data, layer: Paths, name: Falls Creek (windy corner) to Wallace Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
+
+    turnback-points:
+      weather:
+        - Langfords Gap
+        - Road section after Langfords Gap
+      time:
+        - Langfords Gap, ~1/5 way point.
+        - Watchbed Creek, ~1/4 way point.
+        - Falls creek, 1/2 way point 😀 (don't forget to leave time for a parma at Falls)
 
   - name: Langfords West
     description: A good beginner trip.
@@ -200,8 +234,14 @@ trips:
     turnback-points:
       weather:
         - The weirs along the way can be sketchy in the wrong weather.
+      time:
+        - Return if not making the distance in time.
     long-description: >-
       Sheltered from westerly weather, so a good option when the high plains are a bit too breezy.
+
+      Easy to return anywhere along the way.
+
+      Continue onwards for the two fruits tour (Strawberry Saddle and Raspberry Hill) in good snow, if you have the time (take lunch).
 
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
@@ -209,10 +249,16 @@ trips:
 
   - name: Rocky Nobs
     description: Great views, and nice calm runs.
+    long-description: >-
+      Nice slopes for ski school with a more advanced group.
+
+      Can return via Mt Cope if keen.
     difficulty-level: 1
     turnback-points:
       weather:
-        - Cope Hut
+        - Cope Hut carpark
+      time:
+        - Cope Hut carpark
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
@@ -221,10 +267,19 @@ trips:
 
   - name: Mt Cope (via road)
     description: A nice high peak close to the Chalet.
+    long-description: >-
+      Great views, but exposed in poorer weather.
+
+      Not a trivial descent - pick the best face for the conditions and your party. Consider aborting the climb if the snow or weather conditions aren't helping.
+
+      Can be linked with a trip to the Rocky Nobs for a bigger trip that doesn't stray too far from the Chalet.
     difficulty-level: 2
     turnback-points:
       weather:
-        - Cope Hut
+        - Cope Hut carpark.
+        - Whilst climbing the mountain, beware dangerous snow conditions.
+      time:
+        - Cope Hut carpark.
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
@@ -236,9 +291,17 @@ trips:
     difficulty-level: 2
     turnback-points:
       weather:
-        - Cope Hut
+        - Cope Hut carpark.
+        - Cope West Aqueduct road in southerly weather.
+      time:
+        - Cope West Aqueduct road if not making it before 11am.
+        - Ryder's Huts if not making it before 11 30am.
+        - Cope West Aqueduct road before descent to the waterfall before 12pm.
+        - Depart the waterfalls by 1pm to 1 30pm.
     long-description: >-
       Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good intermediate trip, although on the longer side. Detour via Ryders Yards, and the option of returning via the aqueduct and the southern side of Mt Cope.
+
+      Hopefully see some brumbies :-)
 
       Great place for lunch 🥪
 
@@ -248,3 +311,181 @@ trips:
       - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
       - { gis-file: trip-data, layer: Paths, name: Cope Carpark to Cope Saddle Hut }
       - { gis-file: waterfalls, name: Cope Saddle Hut to the Waterfalls }
+
+  - name: Waterfalls (via aqueduct and Mt Cope)
+    description: A surprise waterfall in the highplains.
+    difficulty-level: 2
+    turnback-points:
+      weather:
+        - As per waterfalls via normal route.
+      time:
+        - As per waterfalls via normal route.
+    long-description: >-
+      An alternative - and slightly harder - way to the waterfalls.
+
+      If making good time, and the party are in good spirits, a good alternative for the return.
+
+      Good option for going past Ryders Yards.
+
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: waterfalls, name: Waterfalls (via Aqueduct and Mt Cope) } # TODO trim
+
+  - name: Falls Creek (via Rocky Nobs)
+    description: Visit the place you started, but the other way around the lake.
+    difficulty-level: 2
+    long-description: >-
+      More exposed and more elevation than the normal way
+    route:
+      - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
+      - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
+      - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
+      - { gis-file: waterfalls, name: Falls Creek (via Rocky Nobs) } # TODO trim
+
+    turnback-points:
+      weather:
+        - Cope Hut carpark.
+        - Cope West Aqueduct road in southerly weather.
+      time:
+        - Falls creek, slightly less than the 1/2 way point (easier there than back) - don't forget to leave time for a parma at Falls.
+
+  - name: Marum Point
+    description: A nice spot not far from Langford's Gap.
+    difficulty-level: 1
+    long-description: >-
+      A nice little spot to visit.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Langford's Gap
+      time:
+        - Langford's Gap, ~1/3 point.
+
+  - name: Edmondson hut and Mt Nelse
+    description: Mt Nelse is a great peak, but the descent can be dicey. Longer trip.
+    difficulty-level: 3
+    long-description: >-
+      A nice trip for days with nice weather. Start reasonably early and take lunch.
+
+      Ensure you pay attention to the snow conditions whilst climbing Mt Nelse to ensure it will be safe descending.
+
+      Could visit the hut without visiting the peak of Mt Nelse (more appropriate for less experienced groups).
+
+      The hut is a nice spot for lunch.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Langford's Gap.
+        - Any point after Langford's Gap.
+        - Dynamic based on conditions.
+      time:
+        - Langford's Gap, ~1/5 point.
+        - Before ascending Mt Nelse, 1/2 way point (ensure you have time for lunch).
+        - Dynamic based on conditions.
+
+  - name: Fitzgeralds Hut and Kelly Hut
+    description: Hut visiting expedition.
+    difficulty-level: 2
+    long-description: >-
+      Take lunch.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Langford's Gap.
+        - Any point after Langford's Gap if the weather is coming in.
+      time:
+        - Langford's Gap, ~1/4 point.
+
+  - name: Mt Jim
+    description: Lovely peak with a steady descent and nice views.
+    difficulty-level: 2
+    long-description: >-
+      Great trip in nice weather, easy to turn back along the way.
+
+      Hopefully see some brumbies :-)
+
+      Take lunch and eat it on the peak.
+
+      A good trip for early intermediates or strong beginners.
+
+      Magnetic anomaly.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Cope Hut carpark.
+        - Anywhere on the highplains if the weather sets in.
+      time:
+        - Have lunch at the top.
+        - Cope Saddle Hut, ~2/5 point.
+
+  - name: Mt McKay
+    description: Windiest place on the highplains.
+    difficulty-level: 2
+    long-description: >-
+      A great trip for the runs.
+
+      The ascent and descent make this harder level, but there are lower slopes that can be skied by intermediate skiers - don't ascend if not feeling it, or in poor conditions.
+
+      Nice views.
+
+      Take lunch and enjoy it in the hut at the top (if the conditions are good) or at the road fork at the bottom if not climbing.
+
+      Consider Falls Creek if needing to abort the trip due to the proximity of Ruined Castle.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Cope Hut carpark.
+        - Whilst traversing the Rocky Nobs.
+      time:
+        - Have lunch at Mt McKay.
+        - Don't ascend if not their by lunchtime.
+
+  - name: Mt Jaithmathang
+    description: Long trip
+    difficulty-level: 3
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Cope Hut Carpark.
+        - Dynamic based on conditions.
+      time:
+        - Dynamic based on conditions.
+        - Be there for lunch.
+
+  - name: Weston's hut
+    description: Lovely hut with a tougher descent into it.
+    difficulty-level: 3
+    long-description: >-
+      Great hut on the edge of the high plains.
+
+      Longer trip but very rewarding. The descent into the hut requires a bit of skill as it can be a bit steep and narrow (especially in poor snow). The climb out is hard work too. Can choose not to descend to reduce the technical difficulty.
+
+      Return via pole 333. # TODO add a marker.
+
+      Take lunch.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Cope Hut Carpark.
+        - Dynamic based on conditions.
+      time:
+        - Dynamic based on conditions.
+        - Be at the hut for lunch.
+
+  - name: Pretty Valley
+    description: Visit a different pondage, and a hut.
+    difficulty-level: 2
+    long-description: >-
+      Good intermediate trip option.
+
+      Has a hut for eating lunch in.
+
+      Often linked with other trips, e.g. Mt Jim.
+    route: [] # TODO
+    turnback-points:
+      weather:
+        - Cope Hut Carpark.
+      time:
+        - Be at the hut for lunch.
