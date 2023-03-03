@@ -3,6 +3,7 @@ import Wrapper from './Wrapper'
 import { useParams, Link } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import tripData from './trips.yaml'
+import _ from 'lodash'
 
 export default function TripInfo() {
   const { tripName } = useParams()
@@ -52,11 +53,13 @@ export default function TripInfo() {
             </table>
           </>
         )}
-        <div className='mb-4 text-xl text-center'>
-          <Link className='font-bold' to={`/map/${tripName}`}>
-            Show map
-          </Link>
-        </div>
+        {_.isEmpty(tripInfoData['route']) ? null : (
+          <div className='mb-4 text-xl text-center'>
+            <Link className='font-bold' to={`/map/${tripName}`}>
+              Show map
+            </Link>
+          </div>
+        )}
       </Wrapper>
     </>
   )
