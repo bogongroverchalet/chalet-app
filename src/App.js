@@ -22,7 +22,7 @@ export default function App() {
     .value()
   return (
     <Wrapper>
-      <h1 className='text-3xl mb-4'>Bogong Rover Chalet trip ideas</h1>
+      <h1 className='text-3xl my-4'>Bogong Rover Chalet trip ideas</h1>
       <p className='italic max-w-md'>
         Note: The trips provided here are ideas only.
         <br />
