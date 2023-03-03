@@ -23,7 +23,7 @@ export default function App() {
   return (
     <Wrapper>
       <h1 className='text-3xl my-4'>Bogong Rover Chalet trip ideas</h1>
-      <p className='italic max-w-md'>
+      <p className='italic max-w-md mb-4'>
         Note: The trips provided here are ideas only.
         <br />
         Don't follow them verbatim and ensure you undertake a risk assessment and alter (or abandon) the trip as
@@ -31,7 +31,7 @@ export default function App() {
       </p>
       {['1', '2', '3'].map((level) => (
         <React.Fragment key={level}>
-          <h2 className='text-xl mb-2'>Level {level}</h2>
+          <h2 className='text-2xl mb-2'>Level {level}</h2>
           <ul>
             {!groupedTripNames[level] ? (
               <div className='italic mb-2'>None</div>
