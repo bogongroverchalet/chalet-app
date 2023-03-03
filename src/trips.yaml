@@ -331,9 +331,9 @@ trips:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
       - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
-      - { gis-file: waterfalls, name: Waterfalls (via Aqueduct and Mt Cope) } # TODO trim
+      - { gis-file: waterfalls, name: Waterfalls (via Aqueduct and Mt Cope) }
 
-  - name: Falls Creek (via Rocky Nobs)
+  - name: Falls Creek (via Investiture Point)
     description: Visit the place you started, but the other way around the lake.
     difficulty-level: 2
     long-description: >-
@@ -342,7 +342,7 @@ trips:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
       - { gis-file: trip-data, layer: Paths, name: Cope Hut to Cope Carpark }
-      - { gis-file: waterfalls, name: Falls Creek (via Rocky Nobs) } # TODO trim
+      - { gis-file: waterfalls, name: Falls Creek (via Investiture Point) }
 
     turnback-points:
       weather:

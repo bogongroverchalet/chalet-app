@@ -19,6 +19,8 @@ import fileDownload from 'js-file-download'
 import togpx from 'togpx'
 import tripData from './trips.yaml'
 import waterfalls from './gpx/waterfalls.gpx'
+import waterfallsCope from './gpx/waterfalls-cope-aqueduct.gpx'
+import fallsRuinedCastle from './gpx/falls-investiture-point.gpx'
 
 const ChaletIcon = leaflet.divIcon({
   html: renderToString(<FontAwesomeIcon icon={faLocationDot} className='text-3xl text-red-600' />),
@@ -134,7 +136,7 @@ function MyLocation() {
   )
 }
 
-const gpxFiles = [waterfalls]
+const gpxFiles = [waterfalls, waterfallsCope, fallsRuinedCastle]
 
 const gpxOptions = {
   marker_options: { startIconUrl: false, endIconUrl: false },
