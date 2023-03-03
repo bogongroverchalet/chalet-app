@@ -18,4 +18,12 @@ body,
 .trip-info-table td {
   @apply pr-2;
   @apply last:pr-0;
+
+  @apply pb-4;
+
+  @apply first:min-w-[6em];
+}
+
+.trip-info-table tr:last-child td {
+  @apply pb-0;
 }

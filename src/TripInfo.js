@@ -2,6 +2,7 @@ import React from 'react'
 import Wrapper from './Wrapper'
 import { useParams, Link } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import capitalize from 'capitalize'
 import tripData from './trips.yaml'
 import _ from 'lodash'
 
@@ -49,6 +50,27 @@ export default function TripInfo() {
                     </td>
                   </tr>
                 )}
+                <tr>
+                  <td colspan='2' className='pt-4'>
+                    <h2 className='text-lg'>Turnback points</h2>
+                  </td>
+                </tr>
+                {['weather', 'time'].map((type) => (
+                  <tr key={type}>
+                    <td>
+                      <h3>{capitalize(type)}:</h3>
+                    </td>
+                    <td>
+                      <div className='pl-4'>
+                        <ul className='list-disc'>
+                          {tripInfoData['turnback-points'][type].map((desc) => (
+                            <li key={desc}>{desc}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </>
