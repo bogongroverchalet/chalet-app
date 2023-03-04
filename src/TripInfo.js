@@ -11,8 +11,8 @@ export default function TripInfo() {
   const { tripName } = useParams()
   const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
   return (
-    <>
-      <div className='text-center pt-2 border-b-2 border-slate-900 h-[3.5rem]'>
+    <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
+      <div className='text-center pt-2 border-b-2 border-slate-900'>
         <h1 className='text-3xl'>
           <Link to='/'>
             <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
@@ -86,6 +86,6 @@ export default function TripInfo() {
           </div>
         )}
       </Wrapper>
-    </>
+    </div>
   )
 }

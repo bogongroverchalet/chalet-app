@@ -50,19 +50,21 @@ export default function Map() {
     return () => navigator.serviceWorker.removeEventListener('message', listener)
   })
   return (
-    <>
-      <div className='text-center pt-2 border-b-2 border-slate-900 h-[3.5rem]'>
+    <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
+      <div className='text-center pt-2 border-b-2 border-slate-900'>
         <h1 className='text-3xl'>
           <Link to={tripName ? `/trip/${tripName}` : '/'}>
             <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
           </Link>
           <span className='max-sm:hidden'>Bogong Rover Chalet map{tripName ? ':' : ''}</span> {tripName}
-          <button className='ml-4' onClick={() => setShowPosition(!showPosition)}>
-            <FontAwesomeIcon icon={faLocation} className={classnames(showPosition && 'text-blue-500')} />
-          </button>
-          <button className='ml-4' onClick={() => fileDownload(forDownload, `${tripName}.gpx`)}>
-            <DownloadIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
-          </button>
+          <div className='whitespace-nowrap inline-block'>
+            <button className='ml-4' onClick={() => setShowPosition(!showPosition)}>
+              <FontAwesomeIcon icon={faLocation} className={classnames(showPosition && 'text-blue-500')} />
+            </button>
+            <button className='ml-4' onClick={() => fileDownload(forDownload, `${tripName}.gpx`)}>
+              <DownloadIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
+            </button>
+          </div>
         </h1>
       </div>
       {actualMapDataReady ? (
@@ -79,7 +81,7 @@ export default function Map() {
           <CircularProgress />
         </div>
       )}
-    </>
+    </div>
   )
 }
 
