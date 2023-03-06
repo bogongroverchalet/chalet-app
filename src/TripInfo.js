@@ -7,6 +7,24 @@ import tripData from './trips.yaml'
 import ReactMarkdown from 'react-markdown'
 import _ from 'lodash'
 
+function Markdown({ children }) {
+  return (
+    <ReactMarkdown
+      components={{
+        a: ({ href, children }) => {
+          return (
+            <Link to={`../${href}`} relative='path'>
+              {children}
+            </Link>
+          )
+        },
+      }}
+    >
+      {children}
+    </ReactMarkdown>
+  )
+}
+
 export default function TripInfo() {
   const { tripName } = useParams()
   const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
@@ -30,7 +48,7 @@ export default function TripInfo() {
                     <h3>Overview:</h3>
                   </td>
                   <td>
-                    <ReactMarkdown>{tripInfoData.description}</ReactMarkdown>
+                    <Markdown>{tripInfoData.description}</Markdown>
                   </td>
                 </tr>
                 <tr>
@@ -47,7 +65,9 @@ export default function TripInfo() {
                       <h3>Notes:</h3>
                     </td>
                     <td>
-                      <ReactMarkdown>{tripInfoData['long-description']}</ReactMarkdown>
+                      <Markdown components={{ a: (props) => <Link {...props} /> }}>
+                        {tripInfoData['long-description']}
+                      </Markdown>
                     </td>
                   </tr>
                 )}
@@ -66,7 +86,7 @@ export default function TripInfo() {
                         <ul className='list-disc'>
                           {tripInfoData['turnback-points'][type].map((desc) => (
                             <li key={desc}>
-                              <ReactMarkdown>{desc}</ReactMarkdown>
+                              <Markdown>{desc}</Markdown>
                             </li>
                           ))}
                         </ul>
