@@ -23,11 +23,13 @@ export default function Trips() {
     .value()
   return (
     <Wrapper>
-      <h1 className='text-3xl my-4 -ml-10'>
+      <h1 className='text-3xl my-4 -indent-10 max-sm:pl-10'>
         <Link to='..'>
           <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
         </Link>
-        Bogong Rover Chalet trip ideas
+        <span className='max-sm:hidden'>Bogong Rover Chalet trip </span>
+        <span className='sm:hidden'>Trip </span>
+        ideas
       </h1>
       <p className='italic max-w-md mb-4'>
         Note: The trips provided here are ideas only.
