@@ -12,9 +12,9 @@ export default function TripInfo() {
   const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
   return (
     <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
-      <div className='text-center pt-2 border-b-2 border-slate-900'>
+      <div className='text-center pt-2'>
         <h1 className='text-3xl'>
-          <Link to='/'>
+          <Link to='../..' relative='path'>
             <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
           </Link>
           <span className='max-sm:hidden'>Bogong Rover Chalet trip:</span> {tripName}
@@ -80,7 +80,7 @@ export default function TripInfo() {
         )}
         {_.isEmpty(tripInfoData['route']) ? null : (
           <div className='mb-4 text-xl text-center'>
-            <Link className='font-bold' to={`/map/${tripName}`}>
+            <Link className='font-bold' to={`../../map/${tripName}`} relative='path'>
               Show map
             </Link>
           </div>

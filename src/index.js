@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 import App from './App'
+import Trips from './Trips'
 import TripInfo from './TripInfo'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
@@ -15,8 +16,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/map/:tripName?' element={<Map />} />
-        <Route path='/trip/:tripName' element={<TripInfo />} />
+        <Route path='/trips' element={<Trips />} />
+        <Route path='/trips/map/:tripName?' element={<Map />} />
+        <Route path='/trips/trip/:tripName' element={<TripInfo />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
