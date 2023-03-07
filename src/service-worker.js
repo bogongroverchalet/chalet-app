@@ -17,6 +17,13 @@ import { getCacheKeyForURL } from 'workbox-precaching'
 skipWaiting()
 clientsClaim()
 
+self.addEventListener('activate', async () => {
+  const tabs = await self.clients.matchAll({ type: 'window' })
+  tabs.forEach((tab) => {
+    tab.navigate(tab.url)
+  })
+})
+
 const MAP_REVISION = '1'
 precache([{ url: '/Bogong_High_Plains.pmtiles', revision: MAP_REVISION }])
 
