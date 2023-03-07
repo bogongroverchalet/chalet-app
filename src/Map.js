@@ -53,7 +53,7 @@ export default function Map() {
     return <Navigate replace to='../..' relative='path' />
   }
   return (
-    <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
+    <div className='grid grid-rows-[min-content,1fr] h-screen overflow-hidden'>
       <div className='text-center max-sm:text-left pt-2 border-b-2 border-slate-900'>
         <h1 className='text-3xl'>
           <Link to={tripName ? `../../trip/${tripName}` : '..'} relative='path'>
