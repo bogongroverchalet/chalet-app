@@ -1,6 +1,6 @@
 import React from 'react'
 import Wrapper from './Wrapper'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, Navigate } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import capitalize from 'capitalize'
 import tripData from './trips.yaml'
@@ -28,6 +28,9 @@ function Markdown({ children }) {
 export default function TripInfo() {
   const { tripName } = useParams()
   const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
+  if (!tripInfoData) {
+    return <Navigate replace to='../..' relative='path' />
+  }
   return (
     <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
       <div className='text-center max-sm:text-left pt-2'>

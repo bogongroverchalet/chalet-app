@@ -7,7 +7,7 @@ import Trips from './Trips'
 import TripInfo from './TripInfo'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Map from './Map'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -19,6 +19,7 @@ root.render(
         <Route path='/trips' element={<Trips />} />
         <Route path='/trips/map/:tripName?' element={<Map />} />
         <Route path='/trips/trip/:tripName' element={<TripInfo />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

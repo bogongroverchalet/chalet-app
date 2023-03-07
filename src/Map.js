@@ -4,7 +4,7 @@ import { renderToString } from 'react-dom/server'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { MapContainer, Marker, Popup, useMap } from 'react-leaflet'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, Navigate } from 'react-router-dom'
 import { PMTiles, leafletRasterLayer } from 'pmtiles'
 import _ from 'lodash'
 import 'leaflet-kml'
@@ -49,6 +49,9 @@ export default function Map() {
     navigator.serviceWorker.addEventListener('message', listener)
     return () => navigator.serviceWorker.removeEventListener('message', listener)
   })
+  if (tripName && !tripData.trips.find(({ name }) => name === tripName)) {
+    return <Navigate replace to='../..' relative='path' />
+  }
   return (
     <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
       <div className='text-center max-sm:text-left pt-2 border-b-2 border-slate-900'>
