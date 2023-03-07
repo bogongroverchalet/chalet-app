@@ -39,3 +39,16 @@ body,
 .trip-info-table tr:last-child td {
   @apply pb-0;
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.gps-loading-position {
+  animation: fadein 0.5s linear alternate infinite;
+}

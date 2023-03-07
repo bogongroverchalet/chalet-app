@@ -21,6 +21,7 @@ import tripData from './trips.yaml'
 import waterfalls from './gpx/waterfalls.gpx'
 import waterfallsCope from './gpx/waterfalls-cope-aqueduct.gpx'
 import fallsRuinedCastle from './gpx/falls-investiture-point.gpx'
+import Tooltip from '@mui/material/Tooltip'
 
 const ChaletIcon = leaflet.divIcon({
   html: renderToString(<FontAwesomeIcon icon={faLocationDot} className='text-3xl text-red-600' />),
@@ -35,6 +36,7 @@ const maxZoom = 17
 export default function Map() {
   const { tripName } = useParams()
   const [showPosition, setShowPosition] = React.useState()
+  const [positionStatus, setPositionStatus] = React.useState()
   const [forDownload, setForDownload] = React.useState()
   const [actualMapDataReady, setActualMapDataReady] = React.useState(mapDataReady)
   React.useEffect(() => {
@@ -52,6 +54,10 @@ export default function Map() {
   if (tripName && !tripData.trips.find(({ name }) => name === tripName)) {
     return <Navigate replace to='../..' relative='path' />
   }
+  const toggleShowPosition = () => {
+    setShowPosition(!showPosition)
+    setPositionStatus(false)
+  }
   return (
     <div className='grid grid-rows-[min-content,1fr] h-screen overflow-hidden'>
       <div className='text-center max-sm:text-left pt-2 border-b-2 border-slate-900'>
@@ -61,9 +67,23 @@ export default function Map() {
           </Link>
           <span className='max-sm:hidden'>Bogong Rover Chalet map{tripName ? ':' : ''}</span> {tripName}
           <div className='whitespace-nowrap inline-block'>
-            <button className='ml-4' onClick={() => setShowPosition(!showPosition)}>
-              <FontAwesomeIcon icon={faLocation} className={classnames(showPosition && 'text-blue-500')} />
-            </button>
+            <Tooltip
+              title={positionStatus?.message}
+              arrow
+              open={!!positionStatus?.message}
+              classes={{ tooltip: 'text-center !text-[1rem]' }}
+            >
+              <button className='ml-4' onClick={toggleShowPosition}>
+                <FontAwesomeIcon
+                  icon={faLocation}
+                  className={classnames(
+                    showPosition && positionStatus == null && 'gps-loading-position',
+                    showPosition && positionStatus === true && 'text-blue-500',
+                    showPosition && positionStatus?.message && 'text-red-500'
+                  )}
+                />
+              </button>
+            </Tooltip>
             <button className='ml-4' onClick={() => fileDownload(forDownload, `${tripName}.gpx`)}>
               <DownloadIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
             </button>
@@ -74,10 +94,10 @@ export default function Map() {
         <MapContainer center={chaletPosition} zoom={16} scrollWheelZoom={false} maxNativeZoom={17} maxZoom={19}>
           <PMTilesLayer />
           <Tracks tripName={tripName} forDownload={setForDownload} />
-          {showPosition && <MyLocation />}
           <Marker position={chaletPosition} icon={ChaletIcon}>
             <Popup>Bogong Rover Chalet 🎉</Popup>
           </Marker>
+          {showPosition && <MyLocation onPositionStatus={(e) => setPositionStatus(e)} />}
         </MapContainer>
       ) : (
         <div className='flex w-full h-full items-center justify-center'>
@@ -106,15 +126,17 @@ const LocationIcon = leaflet.divIcon({
   iconAnchor: [10, 33],
 })
 
-function MyLocation() {
+function MyLocation({ onPositionStatus }) {
   const map = useMap()
   const [position, setPosition] = React.useState()
   const [accuracy, setAccuracy] = React.useState()
+  const positionError = React.useRef()
   React.useEffect(() => {
     let animate = false
     let oldPosition = position
     const watchId = navigator.geolocation.watchPosition(
       (position) => {
+        onPositionStatus(true)
         const newPosition = [position.coords.latitude, position.coords.longitude]
         if (!_.isEqual(accuracy, position.coords.accuracy)) {
           setAccuracy(position.coords.accuracy)
@@ -127,7 +149,12 @@ function MyLocation() {
           animate = true
         }
       },
-      (e) => console.log(e),
+      (e) => {
+        if (positionError.current?.message !== e.message) {
+          positionError.current = e
+          onPositionStatus(e)
+        }
+      },
       { enableHighAccuracy: true, maximumAge: 5 * 60e3, timeout: 30e3 }
     )
     return () => navigator.geolocation.clearWatch(watchId)
