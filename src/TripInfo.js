@@ -33,9 +33,9 @@ export default function TripInfo() {
     return <Navigate replace to='../..' relative='path' />
   }
   return (
-    <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
-      <div className='text-center max-sm:text-left pt-2'>
-        <h1 className='text-3xl'>
+    <div className='grid grid-rows-[min-content,1fr] min-h-screen max-sm:p-3'>
+      <div className='text-center max-sm:text-left'>
+        <h1 className='text-3xl my-4 -indent-12 max-sm:pl-10'>
           <Link to='../..' relative='path'>
             <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
           </Link>

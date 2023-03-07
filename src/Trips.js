@@ -23,7 +23,7 @@ export default function Trips() {
     .value()
   return (
     <Wrapper>
-      <h1 className='text-3xl my-4 -indent-10 max-sm:pl-10'>
+      <h1 className='text-3xl my-4 -indent-12 max-sm:pl-10'>
         <Link to='..'>
           <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
         </Link>
