@@ -18,10 +18,12 @@ export default function App() {
         <br />
       </p>
       <ul className='text-2xl'>
-        <li className='mb-1'>
+        <li className='mb-2'>
           <Link to='trips' className='flex items-center'>
             Trips ideas <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>
+        </li>
+        <li>
           <Link
             to='https://www.youtube.com/playlist?list=PLPY3isagL_7H0x_XfVkldG_iSRP8Qo2oB'
             className='flex items-center'
