@@ -26,6 +26,7 @@ function Markdown({ children }) {
 }
 
 export default function TripInfo() {
+  React.useEffect(() => window.scrollTo(0, 0))
   const { tripName } = useParams()
   const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
   if (!tripInfoData) {
