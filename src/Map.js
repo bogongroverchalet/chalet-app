@@ -161,7 +161,7 @@ function MyLocation({ onPositionStatus }) {
   })
   return (
     position && (
-      <Marker position={position} icon={LocationIcon}>
+      <Marker position={position} icon={LocationIcon} zIndexOffset={10}>
         <Popup>Me{accuracy && ` - accuracy: ${accuracy}m`}</Popup>
       </Marker>
     )
