@@ -56,7 +56,7 @@ export default function Map() {
     <div className='grid grid-rows-[min-content,1fr] min-h-screen'>
       <div className='text-center max-sm:text-left pt-2 border-b-2 border-slate-900'>
         <h1 className='text-3xl'>
-          <Link to={tripName ? '../..' : '..'} relative='path'>
+          <Link to={tripName ? `../../trip/${tripName}` : '..'} relative='path'>
             <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
           </Link>
           <span className='max-sm:hidden'>Bogong Rover Chalet map{tripName ? ':' : ''}</span> {tripName}
