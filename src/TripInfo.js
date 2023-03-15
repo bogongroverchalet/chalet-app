@@ -69,9 +69,25 @@ export default function TripInfo() {
                       <h3>Notes:</h3>
                     </td>
                     <td>
-                      <Markdown components={{ a: (props) => <Link {...props} /> }}>
-                        {tripInfoData['long-description']}
-                      </Markdown>
+                      <Markdown>{tripInfoData['long-description']}</Markdown>
+                    </td>
+                  </tr>
+                )}
+                {tripInfoData['hazards'] && (
+                  <tr>
+                    <td>
+                      <h3>Hazards:</h3>
+                    </td>
+                    <td>
+                      <div className='pl-4'>
+                        <ul className='list-disc'>
+                          {tripInfoData['hazards'].map((desc) => (
+                            <li key={desc}>
+                              <Markdown>{desc}</Markdown>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </td>
                   </tr>
                 )}
