@@ -40,6 +40,7 @@
     "react-pdf-html": "^1.1.18",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "source-map-explorer": "^2.5.3",
     "tailwindcss": "^3.2.7",
     "togpx": "^0.5.4",
     "web-vitals": "^2.1.4",
@@ -58,6 +59,7 @@
     "yaml-loader": "^0.8.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
