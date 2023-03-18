@@ -181,6 +181,11 @@ trips:
 
     distance: 2km each way, approx.
     difficulty-level: 1
+    hazards:
+      - Don't fall in the aqueduct.
+      - Don't fall in the quarry.
+      - Don't fall off the cornice.
+
     turnback-points:
       weather:
         - As per [Wallace's Hut](Wallace's%20Hut).
@@ -298,6 +303,8 @@ trips:
       Great views, but exposed in poorer weather.
 
       Can be linked with a trip to the Rocky Nobs for a bigger trip that doesn't stray too far from the Chalet.
+
+      Do a descending traverse via the SSE and SE faces for a nice easier descent as an alternative to the way you climbed, and then go ENE around the mountain to rejoin your earlier tracks back to the Chalet.
     difficulty-level: 2
     distance: 5km each way, approx.
     hazards:
@@ -332,7 +339,9 @@ trips:
         - Cope West Aqueduct road before descent to the waterfall before 12pm.
         - Depart the waterfalls by 1pm to 1 30pm.
     long-description: |
-      Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good intermediate trip, although on the longer side. Detour via Ryders Yards, and the option of returning via the aqueduct and the southern side of Mt Cope.
+      Not everyone expects a waterfall on the highplains, but this is a fun little tucked away one. Good intermediate trip, although on the longer side.
+
+      Detour via Ryders Yards, and the option of returning [via the aqueduct and the southern side of Mt Cope](Waterfalls%20(via%20aqueduct%20and%20Mt%20Cope)).
 
       Hopefully see some brumbies :-)
 
@@ -358,7 +367,7 @@ trips:
       - As per [waterfalls](Waterfalls) via normal route.
       - Be careful around weirs on the aqueduct.
     long-description: |
-      An alternative - and slightly harder - way to the waterfalls.
+      An alternative - and slightly harder - way to (or from) the waterfalls.
 
       If making good time, and the party are in good spirits, a good alternative for the return.
 
