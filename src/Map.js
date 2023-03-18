@@ -19,6 +19,9 @@ import fileDownload from 'js-file-download'
 import togpx from 'togpx'
 import tripData from './trips.yaml'
 import waterfalls from './gpx/waterfalls.gpx'
+import mtJim from './gpx/mt-jim.gpx'
+import westonsHut from './gpx/westons-hut.gpx'
+import pole333 from './gpx/pole-333.gpx'
 import waterfallsCope from './gpx/waterfalls-cope-aqueduct.gpx'
 import fallsRuinedCastle from './gpx/falls-investiture-point.gpx'
 import Tooltip from '@mui/material/Tooltip'
@@ -171,10 +174,15 @@ function MyLocation({ onPositionStatus }) {
   )
 }
 
-const gpxFiles = [waterfalls, waterfallsCope, fallsRuinedCastle]
+const gpxFiles = [waterfalls, waterfallsCope, fallsRuinedCastle, mtJim, pole333, westonsHut]
 
 const gpxOptions = {
-  marker_options: { startIconUrl: false, endIconUrl: false },
+  marker_options: {
+    startIconUrl: false,
+    endIconUrl: false,
+    shadowUrl: false,
+    wptIcons: { '': leaflet.Icon.DefaultInstance },
+  },
   polyline_options: { color: 'red' },
 }
 
@@ -212,7 +220,7 @@ export const getLayersForTrip = (tripName) => {
     .forEach((t) => {
       const gpxTrack = new leaflet.GPX(t, gpxOptions).eachLayer(function handleLayer(l) {
         l.options.icon = leaflet.Icon.Default
-        l.setStyle({ color: 'red' })
+        if (l.setStyle) l.setStyle({ color: 'red' })
         if (l.eachLayer) l.eachLayer(handleLayer)
       })
       if (pathsForTrip.has(gpxTrack.get_name())) {

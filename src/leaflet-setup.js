@@ -9,3 +9,7 @@ leaflet.Icon.Default = leaflet.DivIcon.extend({
   iconSize: [20, 20],
   iconAnchor: [10, 33],
 })
+
+leaflet.Marker.prototype.options.icon = leaflet.Icon.DefaultInstance = new leaflet.Icon.Default({
+  html: renderToString(<FontAwesomeIcon icon={faLocationDot} className='text-3xl text-black-700' />),
+})
