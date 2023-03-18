@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import '@fortawesome/fontawesome-free/js/all.js'
 import App from './App'
 import Trips from './Trips'
 import TripInfo from './TripInfo'
