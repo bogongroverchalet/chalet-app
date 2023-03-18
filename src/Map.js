@@ -33,7 +33,6 @@ const ChaletIcon = leaflet.divIcon({
 let mapDataReady = process.env.NODE_ENV === 'production' ? false : true
 
 const chaletPosition = Object.freeze([-36.9040535, 147.3031153])
-const maxZoom = 17
 export default function Map({ edit }) {
   const { tripName } = useParams()
   const [showPosition, setShowPosition] = React.useState()
@@ -92,7 +91,7 @@ export default function Map({ edit }) {
         </h1>
       </div>
       {actualMapDataReady ? (
-        <MapContainer center={chaletPosition} zoom={16} scrollWheelZoom={false} maxNativeZoom={17} maxZoom={19}>
+        <MapContainer center={chaletPosition} zoom={16} scrollWheelZoom={false} maxNativeZoom={17} maxZoom={18}>
           <React.Suspense fallback={<CircularProgress />}>
             {edit && <EditControls tripName={tripName} />}
           </React.Suspense>
@@ -267,7 +266,7 @@ function Tracks({ tripName, forDownload }) {
           l.setStyle({ color: '#3388ff' })
         }
       })
-      map.fitBounds(kmlTracks.getBounds(), { maxZoom })
+      map.fitBounds(kmlTracks.getBounds(), { maxZoom: 17 })
       return
     }
     const layersForTrip = getLayersForTrip(tripName)
