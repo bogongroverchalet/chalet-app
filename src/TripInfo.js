@@ -1,11 +1,13 @@
 import React from 'react'
 import Wrapper from './Wrapper'
-import { useParams, Link, Navigate } from 'react-router-dom'
+import { useSearchParams, useParams, Link, Navigate } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import capitalize from 'capitalize'
 import tripData from './trips.yaml'
 import ReactMarkdown from 'react-markdown'
 import _ from 'lodash'
+import { PDFDownloadLink } from '@react-pdf/renderer'
+import { TripDocument as TripInfoPDF } from './TripInfoPDF'
 
 function Markdown({ children }) {
   return (
@@ -28,6 +30,7 @@ function Markdown({ children }) {
 export default function TripInfo() {
   React.useEffect(() => window.scrollTo(0, 0))
   const { tripName } = useParams()
+  const [search] = useSearchParams()
   const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
   if (!tripInfoData) {
     return <Navigate replace to='../..' relative='path' />
@@ -117,6 +120,13 @@ export default function TripInfo() {
               </tbody>
             </table>
           </>
+        )}
+        {search.has('pdfLink') && (
+          <div className='mb-4 text-xl text-center'>
+            <PDFDownloadLink document={<TripInfoPDF tripInfo={tripInfoData} />} fileName={`${tripName}.pdf`}>
+              Download trip info
+            </PDFDownloadLink>
+          </div>
         )}
         {_.isEmpty(tripInfoData['route']) ? null : (
           <div className='mb-4 text-xl text-center'>

@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
 })
 
-const TripDocument = ({ tripInfo } = {}) => {
+export const TripDocument = ({ tripInfo } = {}) => {
   return (
     <Document>
       <Page size='A4' style={styles.page} orientation='landscape'>
