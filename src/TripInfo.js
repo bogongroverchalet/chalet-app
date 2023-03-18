@@ -20,6 +20,7 @@ function Markdown({ children }) {
             </Link>
           )
         },
+        ul: (props) => <ul {...props} className='list-disc' />,
       }}
     >
       {children}
