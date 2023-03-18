@@ -7,8 +7,8 @@ import capitalize from 'capitalize'
 import tripData from './trips.yaml'
 import ReactMarkdown from 'react-markdown'
 import _ from 'lodash'
-import { PDFDownloadLink } from '@react-pdf/renderer'
-import { TripDocument as TripInfoPDF } from './TripInfoPDF'
+const PDFDownloadLink = React.lazy(() => import('./TripInfoPDFRendererLazy'))
+const TripInfoPDF = React.lazy(() => import('./TripInfoPDFDocumentLazy'))
 
 function Markdown({ children }) {
   return (
