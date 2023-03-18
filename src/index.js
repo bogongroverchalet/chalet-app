@@ -19,6 +19,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/trips' element={<Trips />} />
+        <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
         <Route path='/trips/map/:tripName?' element={<Map />} />
         <Route path='/trips/trip/:tripName' element={<TripInfo />} />
         <Route path='/trips/trip/:tripName.pdf' element={<TripInfoPDF />} />

@@ -22,6 +22,7 @@ import waterfalls from './gpx/waterfalls.gpx'
 import waterfallsCope from './gpx/waterfalls-cope-aqueduct.gpx'
 import fallsRuinedCastle from './gpx/falls-investiture-point.gpx'
 import Tooltip from '@mui/material/Tooltip'
+const EditControls = React.lazy(() => import('./MapEdit'))
 
 const ChaletIcon = leaflet.divIcon({
   html: renderToString(<FontAwesomeIcon icon={faLocationDot} className='text-3xl text-red-600' />),
@@ -33,7 +34,7 @@ let mapDataReady = process.env.NODE_ENV === 'production' ? false : true
 
 const chaletPosition = Object.freeze([-36.9040535, 147.3031153])
 const maxZoom = 17
-export default function Map() {
+export default function Map({ edit }) {
   const { tripName } = useParams()
   const [showPosition, setShowPosition] = React.useState()
   const [positionStatus, setPositionStatus] = React.useState()
@@ -51,7 +52,7 @@ export default function Map() {
     navigator.serviceWorker.addEventListener('message', listener)
     return () => navigator.serviceWorker.removeEventListener('message', listener)
   })
-  if (tripName && !tripData.trips.find(({ name }) => name === tripName)) {
+  if (!edit && tripName && !tripData.trips.find(({ name }) => name === tripName)) {
     return <Navigate replace to='../..' relative='path' />
   }
   const toggleShowPosition = () => {
@@ -92,6 +93,9 @@ export default function Map() {
       </div>
       {actualMapDataReady ? (
         <MapContainer center={chaletPosition} zoom={16} scrollWheelZoom={false} maxNativeZoom={17} maxZoom={19}>
+          <React.Suspense fallback={<CircularProgress />}>
+            {edit && <EditControls tripName={tripName} />}
+          </React.Suspense>
           <PMTilesLayer />
           <Tracks tripName={tripName} forDownload={setForDownload} />
           <Marker position={chaletPosition} icon={ChaletIcon}>
