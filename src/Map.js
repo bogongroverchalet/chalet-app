@@ -175,21 +175,86 @@ const gpxOptions = {
   polyline_options: { color: 'red' },
 }
 
+const getKmlTracks = () => {
+  const parser = new DOMParser()
+  const kml = parser.parseFromString(tripKmlData, 'text/xml')
+  Array.from(kml.getElementsByTagName('styleUrl')).forEach((x) => x.parentNode.removeChild(x))
+
+  return new leaflet.KML(kml)
+}
+
+export const getLayersForTrip = (tripName) => {
+  const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
+  const route = ((tripInfoData?.routes ? _.first(tripInfoData?.routes).route : tripInfoData?.route) || []).concat(
+    tripInfoData?.geofence || []
+  )
+  const pathsForTrip = new Set(route.map(({ name }) => name))
+  let layersForTrip = []
+  const kmlTracks = getKmlTracks()
+  kmlTracks.setStyle({ color: 'red' })
+  function handleLayer(l) {
+    l.options.icon = leaflet.Icon.Default
+    l.setStyle({ color: 'red' })
+    if (l.eachLayer) l.eachLayer(handleLayer)
+    if (!l.name) {
+      return
+    }
+    if (pathsForTrip.has(l.name)) {
+      layersForTrip = layersForTrip.concat(l)
+    }
+  }
+  kmlTracks.eachLayer(handleLayer)
+  _(gpxFiles)
+    .uniq()
+    .forEach((t) => {
+      const gpxTrack = new leaflet.GPX(t, gpxOptions).eachLayer(function handleLayer(l) {
+        l.options.icon = leaflet.Icon.Default
+        l.setStyle({ color: 'red' })
+        if (l.eachLayer) l.eachLayer(handleLayer)
+      })
+      if (pathsForTrip.has(gpxTrack.get_name())) {
+        gpxTrack.bindPopup(`<h2>${gpxTrack.get_name()}</h2>`, { className: 'kml-popup' })
+        layersForTrip = layersForTrip.concat(gpxTrack)
+      }
+    })
+  return layersForTrip
+}
+
+export const getTripDistance = (tripName) => {
+  let distance = 0
+  const layers = getLayersForTrip(tripName)
+  if (!_.isEmpty(layers)) {
+    layers.forEach((l) => {
+      const trackDistance = _.invoke(l, 'get_distance')
+      if (trackDistance) {
+        distance += trackDistance
+      } else {
+        l.getLatLngs().reduce((p, ll) => {
+          console.log(distance)
+          distance += p.distanceTo(ll)
+          return ll
+        })
+      }
+    })
+  }
+  return distance
+}
+
 function Tracks({ tripName, forDownload }) {
   const map = useMap()
+  map.on('click', function (e) {
+    const { lat, lng } = e.latlng
+    console.log(`You clicked the map at latitude: ${lat} and longitude: ${lng}`)
+  })
   React.useEffect(() => {
-    const parser = new DOMParser()
-    const kml = parser.parseFromString(tripKmlData, 'text/xml')
-    Array.from(kml.getElementsByTagName('styleUrl')).forEach((x) => x.parentNode.removeChild(x))
-
-    const track = new leaflet.KML(kml)
     if (!tripName) {
       _(gpxFiles)
         .values()
         .flatten()
         .uniq()
         .forEach((t) => new leaflet.GPX(t, gpxOptions).addTo(map))
-      map.addLayer(track)
+      const kmlTracks = getKmlTracks()
+      map.addLayer(kmlTracks)
       map.eachLayer(function handleLayer(l) {
         l.options.icon = leaflet.Icon.Default
         if (l.eachLayer) l.eachLayer(handleLayer)
@@ -198,40 +263,10 @@ function Tracks({ tripName, forDownload }) {
           l.setStyle({ color: '#3388ff' })
         }
       })
-      map.fitBounds(track.getBounds(), { maxZoom })
+      map.fitBounds(kmlTracks.getBounds(), { maxZoom })
       return
     }
-    const tripInfoData = tripData.trips.find(({ name }) => name === tripName)
-    const route = ((tripInfoData?.routes ? _.first(tripInfoData?.routes).route : tripInfoData?.route) || []).concat(
-      tripInfoData?.geofence || []
-    )
-    const pathsForTrip = new Set(route.map(({ name }) => name))
-    let layersForTrip = []
-    function handleLayer(l) {
-      l.options.icon = leaflet.Icon.Default
-      track.setStyle({ color: 'red' })
-      if (l.eachLayer) l.eachLayer(handleLayer)
-      if (!l.name) {
-        return
-      }
-      if (pathsForTrip.has(l.name)) {
-        layersForTrip = layersForTrip.concat(l)
-      }
-    }
-    track.eachLayer(handleLayer)
-    _(gpxFiles)
-      .uniq()
-      .forEach((t) => {
-        const gpxTrack = new leaflet.GPX(t, gpxOptions).eachLayer(function handleLayer(l) {
-          l.options.icon = leaflet.Icon.Default
-          track.setStyle({ color: 'red' })
-          if (l.eachLayer) l.eachLayer(handleLayer)
-        })
-        if (pathsForTrip.has(gpxTrack.get_name())) {
-          gpxTrack.bindPopup(`<h2>${gpxTrack.get_name()}</h2>`, { className: 'kml-popup' })
-          layersForTrip = layersForTrip.concat(gpxTrack)
-        }
-      })
+    const layersForTrip = getLayersForTrip(tripName)
     if (layersForTrip.length) {
       window.layersForTrip = layersForTrip
       const featureGroup = leaflet.featureGroup(layersForTrip).addTo(map)

@@ -9,8 +9,10 @@ gis-files:
 trips:
   - name: Mount Mattress
     image: image-file.jpg
+    difficulty-level: 0
     description: Explore your imagination and count some sheep.
     long-description: Test the quality of Mount Mattress, hopefully you picked a good one.
+    distance: As far as your mind takes you.
 
   - name: Home Slope
     image: home-slope.jpg
@@ -21,6 +23,7 @@ trips:
       confidence boost.
 
     difficulty-level: 1
+    distance: N/A
     turnback-points:
       weather: [N/A]
       time: [N/A]
@@ -48,6 +51,7 @@ trips:
         ref: GC7H08C
 
     difficulty-level: 1
+    distance: 1km each way, approx.
     turnback-points:
       weather:
         - Continual, if you can't see pole to pole, or the weather is too strong down the valley.
@@ -90,6 +94,7 @@ trips:
         ref: GC475QQ
 
     difficulty-level: 1
+    distance: 1km each way, approx.
     turnback-points:
       weather:
         - Along the aqueduct.
@@ -102,6 +107,7 @@ trips:
 
   - name: Wallace's Hut (via Wilkinson's Lodge ruins)
     difficulty-level: 1
+    distance: 1km each way, approx.
     description: As per [Wallace's hut](Wallace's%20Hut), but try and see the ruins of Wilkinson's Lodge.
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
@@ -124,6 +130,7 @@ trips:
     disable-infocard: true
 
     difficulty-level: 1
+    distance: 3km each way, approx.
     turnback-points:
       weather:
         - Cope Hut carpark.
@@ -146,6 +153,7 @@ trips:
         ref: GCMFPW
 
     difficulty-level: 1
+    distance: 5km loop, approx.
     hazards:
       - Don't fall in the aqueduct.
     turnback-points:
@@ -171,6 +179,7 @@ trips:
       cycles or frost wedging. Some interesting geological features indicate this may have been a
       site with volcanic activity many thousands or milions of years ago.
 
+    distance: 2km each way, approx.
     difficulty-level: 1
     turnback-points:
       weather:
@@ -186,6 +195,7 @@ trips:
   - name: Maddisons Hut
     description: A newer highcountry hut
     difficulty-level: 1
+    distance: 3km each way, approx.
     long-description: |
       A little bit further than Wallace's Hut. Not the most exciting hut, but a good trip option when the weather isn't helping.
 
@@ -203,6 +213,7 @@ trips:
   - name: Cope Saddle Hut
     description: More a reference point along other longer trips than a destination itself.
     difficulty-level: 1
+    distance: 5km each way, approx.
     hazards:
       - Don't fall in the aqueduct near the hut.
     turnback-points:
@@ -220,6 +231,7 @@ trips:
   - name: Falls Creek
     description: Visit the place you started.
     difficulty-level: 1
+    distance: 11km each way, approx.
     long-description: |
       Whilst the one way trip is easy, don't forget that as a tour you need to go twice as far 😀
 
@@ -244,6 +256,7 @@ trips:
   - name: Langfords West
     description: A good beginner trip.
     difficulty-level: 1
+    distance: 5km each way, approx.
     turnback-points:
       weather:
         - The weirs along the way can be sketchy in the wrong weather.
@@ -267,6 +280,7 @@ trips:
 
       Can return via Mt Cope if keen.
     difficulty-level: 1
+    distance: 4km each way, approx (depending on the Nob).
     turnback-points:
       weather:
         - Cope Hut carpark
@@ -285,6 +299,7 @@ trips:
 
       Can be linked with a trip to the Rocky Nobs for a bigger trip that doesn't stray too far from the Chalet.
     difficulty-level: 2
+    distance: 5km each way, approx.
     hazards:
       - Not a trivial descent - pick the best face for the conditions and your party. Consider aborting the climb if the snow or weather conditions aren't helping.
     turnback-points:
@@ -302,6 +317,7 @@ trips:
   - name: Waterfalls
     description: A surprise waterfall in the highplains.
     difficulty-level: 2
+    distance: 10km each way, approx.
     hazards:
       - Don't fall in the aqueduct (e.g. near Cope Saddle Hut).
       - Don't fall in the creek.
@@ -332,6 +348,7 @@ trips:
   - name: Waterfalls (via aqueduct and Mt Cope)
     description: A surprise waterfall in the highplains.
     difficulty-level: 2
+    distance: 12km each way, approx.
     turnback-points:
       weather:
         - As per [waterfalls](Waterfalls) via normal route.

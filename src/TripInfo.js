@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrapper from './Wrapper'
+import { getTripDistance } from './Map'
 import { useSearchParams, useParams, Link, Navigate } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import capitalize from 'capitalize'
@@ -36,6 +37,9 @@ export default function TripInfo() {
   if (!tripInfoData) {
     return <Navigate replace to='../..' relative='path' />
   }
+  if (!tripInfoData.distance) {
+    console.log(`Approx distance: ${Math.ceil(getTripDistance(tripName) / 1000)}km`)
+  }
   return (
     <div className='grid grid-rows-[min-content,1fr] min-h-screen max-sm:p-3'>
       <div className='text-center max-sm:text-left'>
@@ -67,6 +71,14 @@ export default function TripInfo() {
                     <p>{tripInfoData['difficulty-level']}</p>
                   </td>
                 </tr>
+                {tripInfoData.distance && (
+                  <tr>
+                    <td>
+                      <h3>Distance:</h3>
+                    </td>
+                    <td>{tripInfoData.distance}</td>
+                  </tr>
+                )}
                 {tripInfoData['long-description'] && (
                   <tr>
                     <td>
