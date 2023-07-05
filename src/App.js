@@ -5,6 +5,8 @@ import Tooltip from '@mui/material/Tooltip'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import LaunchIcon from '@mui/icons-material/Launch'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
+import FileDownloadIcon from '@mui/icons-material/FileDownload'
+import pantryInventory from './Pantry_Inventory.pdf'
 
 export default function App() {
   return (
@@ -45,6 +47,23 @@ export default function App() {
             </Tooltip>
             <LaunchIcon className='ml-2' />
           </Link>
+        </li>
+        <li className='mb-4'>
+          <a href={pantryInventory} download='Pantry_Inventory.pdf' className='flex items-center'>
+            Winter pantry ingredient list
+            <Tooltip
+              title={
+                <div>
+                  A document listing all the ingredients in our pantry items to assist those with special dietary
+                  requirements.
+                </div>
+              }
+              arrow
+              classes={{ tooltip: 'text-center !text-[1rem]' }}
+            >
+              <FileDownloadIcon className='ml-2' />
+            </Tooltip>
+          </a>
         </li>
         <li className='mb-4'>
           <Link to='http://www.bom.gov.au/vic/forecasts/fallscreek.shtml' className='flex items-center'>

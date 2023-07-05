@@ -10,6 +10,11 @@ module.exports = {
         type: 'asset/source',
       })
 
+      webpackConfig.module.rules.push({
+        test: /\.pdf$/,
+        type: 'asset/inline',
+      })
+
       const rule = webpackConfig.module.rules.find(({ oneOf }) => !!oneOf)
       rule.oneOf.unshift({
         test: /\.ya?ml$/,
