@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import Trips from './Trips'
 import TripInfo from './TripInfo'
+import InitialDialog from './InitialDialog'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
@@ -14,6 +15,7 @@ const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    <InitialDialog />
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
