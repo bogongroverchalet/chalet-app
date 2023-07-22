@@ -28,10 +28,6 @@ export default function InitialDialog() {
         <DialogContentText>
           Take it easy out there, have fun, and follow the Scouting, Rovering, and Chalet ways ️️️️🙂
         </DialogContentText>
-
-        <DialogContentText>
-          <b>P.S. This app should work offline - so it's great for trip planning :-)</b>
-        </DialogContentText>
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose} variant='contained'>
