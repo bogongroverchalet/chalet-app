@@ -79,7 +79,7 @@ export default function App() {
         </li>
       </ul>
       <p class='w-[20em]'>
-        The trips in this app should work offline, so it's great for planning your trips before the next day :-)
+        The trips in this app should work offline, so it's great for planning your trips for the next day :-)
       </p>
     </Wrapper>
   )
