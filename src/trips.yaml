@@ -455,6 +455,7 @@ trips:
   - name: Mt Jim
     description: Lovely peak with a steady descent and nice views.
     difficulty-level: 2
+    distance: 10km each way, approx.
     long-description: |
       Great trip in nice weather, easy to turn back along the way.
 
@@ -516,6 +517,7 @@ trips:
   - name: Weston's hut
     description: Lovely hut with a tougher descent into it.
     difficulty-level: 3
+    distance: 14km each way, approx.
     long-description: |
       Great hut on the edge of the high plains.
 
