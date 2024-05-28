@@ -55,7 +55,7 @@ export default function App() {
               title={
                 <div>
                   A document listing all the ingredients in our pantry items to assist those with special dietary
-                  requirements.
+                  requirements. Updated for 2024.
                 </div>
               }
               arrow
