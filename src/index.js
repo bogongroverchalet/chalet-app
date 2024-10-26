@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
+import Packing from './Packing'
 import Trips from './Trips'
 import TripInfo from './TripInfo'
 import InitialDialog from './InitialDialog'
@@ -19,6 +20,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />} />
+        <Route path='/packing' element={<Packing />} />
         <Route path='/trips' element={<Trips />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
         <Route path='/trips/map/:tripName?' element={<Map />} />

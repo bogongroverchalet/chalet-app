@@ -10,6 +10,7 @@ body,
 #root,
 .leaflet-container {
   width: 100vw;
+  max-width: 100%;
   margin: 0;
 }
 
