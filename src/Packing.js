@@ -1,7 +1,7 @@
 import EventEmitter from 'events'
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useMemo } from 'react'
-import { useLocalStorage, useUnmount } from 'usehooks-ts'
+import { useLocalStorage, useUnmount, useBoolean, useClickAnyWhere } from 'usehooks-ts'
 import Wrapper from './Wrapper'
 import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
@@ -214,7 +214,7 @@ function Item({ label, resetStorageEventEmitter, info, optional }) {
   label = useMemo(
     () =>
       optional ? (
-        <Tooltip enterTouchDelay={0} title={<span className='text-lg'>Optional item.</span>} arrow>
+        <Tooltip title={<span className='text-lg'>Optional item.</span>} arrow>
           <span className='italic'>{label}</span>
         </Tooltip>
       ) : (
@@ -223,11 +223,23 @@ function Item({ label, resetStorageEventEmitter, info, optional }) {
     [optional, label]
   )
 
+  const { value, setTrue, setFalse, toggle } = useBoolean(false)
+  const toggleRef = useRef()
+  useClickAnyWhere((e) => toggleRef.current.contains(e.target) || setFalse())
+
   return (
     <div>
-      <Tooltip title={<div className='text-lg'>{info}</div>} arrow>
-        <InfoOutlinedIcon className={classnames(info ? '' : 'invisible', 'mr-1', 'cursor-pointer', '-ml-7')} />
-      </Tooltip>
+      <span
+        ref={toggleRef}
+        onTouchStart={() => toggle()}
+        onMouseEnter={() => setTrue()}
+        onMouseLeave={() => setFalse()}
+        className={classnames(info ? '' : 'invisible', 'mr-1', 'cursor-pointer', '-ml-7')}
+      >
+        <Tooltip title={<div className='text-lg'>{info}</div>} arrow open={value}>
+          <InfoOutlinedIcon />
+        </Tooltip>
+      </span>
       <FormControlLabel control={<Checkbox onChange={() => setChecked(!checked)} {...{ checked }} />} {...{ label }} />
     </div>
   )
