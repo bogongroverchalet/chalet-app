@@ -214,7 +214,7 @@ function Item({ label, resetStorageEventEmitter, info, optional }) {
   label = useMemo(
     () =>
       optional ? (
-        <Tooltip title={<span className='text-lg'>Optional item.</span>} arrow>
+        <Tooltip enterTouchDelay={0} title={<span className='text-lg'>Optional item.</span>} arrow>
           <span className='italic'>{label}</span>
         </Tooltip>
       ) : (
