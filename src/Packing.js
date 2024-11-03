@@ -34,7 +34,7 @@ export default function Packing() {
           </Link>
         </h1>
         <p className='max-w-md mb-4 italic'>Last updated: 2024.</p>
-        <h2 className='text-2xl my-4' id='wearing'>
+        <h2 className='text-2xl my-4' id='overview'>
           Overview
         </h2>
         <p className='max-w-md mb-4 italic'>
