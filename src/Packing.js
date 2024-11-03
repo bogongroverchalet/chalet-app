@@ -176,7 +176,12 @@ export default function Packing() {
           <Item {...props} label='1 x Moisturiser (30ml)' optional />
           <Item {...props} label='3 x Hair ties' optional />
           <Item {...props} label='1 x Snaplock bag to contain toiletries' optional />
-          <Item {...props} label='1 x USB phone charger cord' optional />
+          <Item
+            {...props}
+            label='1 x USB phone charger cord'
+            optional
+            info='There are plenty of USB chargers at the chalet.'
+          />
           <Item {...props} label='1 x Ear plugs' optional info='People snore - do yourself a favour!' />
           <Item
             {...props}
