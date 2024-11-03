@@ -93,23 +93,54 @@ export default function Packing() {
         </h2>
         <p className='max-w-md mb-4 italic'>Comes with you each day on tours.</p>
         <ul className='max-w-md mb-4'>
-          <Item {...props} label='1 x Lunch for Saturday' />
-          <Item {...props} label='1 x Skis (backcountry, not downhill)' />
-          <Item {...props} label='1 x Ski boots' />
-          <Item {...props} label='1 x Stocks/poles' />
-          <Item {...props} label='1 x Ski leashes' />
+          <Item {...props} label='1 x Lunch for Saturday' info='It needs to be nutritious.' />
+          <Item
+            {...props}
+            label='1 x Skis (backcountry, not downhill)'
+            info={
+              <>
+                <a href='https://bogongroverchalet.org.au/winter%20attendee%20information/winter-ski-gear/#ski-gear-overview'>
+                  Find out more about good skis to bring here.
+                </a>
+              </>
+            }
+          />
+          {/* TODO link to the website details. */}
+          <Item
+            {...props}
+            label='1 x Ski boots'
+            info={
+              <>
+                <a href='https://bogongroverchalet.org.au/winter%20attendee%20information/winter-ski-gear/#ski-gear-overview'>
+                  Find out more about good skis to bring here.
+                </a>
+              </>
+            }
+          />
+          <Item
+            {...props}
+            label='1 x Stocks/poles'
+            info={
+              <>
+                <a href='https://bogongroverchalet.org.au/winter%20attendee%20information/winter-ski-gear/#ski-gear-overview'>
+                  Find out more about good skis to bring here.
+                </a>
+              </>
+            }
+          />
+          <Item {...props} label='1 x Ski leashes' info='We can help you get a cheap pair at our briefing nights.' />
           <Item {...props} label='1 x Hike pack' />
-          <Item {...props} label='2 x Water bottle (2L)' />
+          <Item {...props} label='2 x Water bottle' info='Approximately a 2L capacity is good.' />
           <Item {...props} label='500g Scroggin (snacks)' />
           <Item {...props} label='1 x Sunscreen' />
           <Item {...props} label='1 x Lip balm' />
           <Item {...props} label='1 x Personal first aid kit' />
-          <Item {...props} label='1 x Head torch (+ spare batteries)' />
+          <Item {...props} label='1 x Head torch (+ spare batteries)' info='There is a AA+AAA charger in the chalet.' />
           <Item {...props} label='1 x Whistle' />
           <Item {...props} label='1 x Emergency blanket (space blanket)' />
           <Item {...props} label='1 x Whiteout cord (25m/50m)' />
           <Item {...props} label='1 x Compass' />
-          <Item {...props} label='1 x Mobile Phone' />
+          <Item {...props} label='1 x Mobile phone' />
           <Item
             {...props}
             label='Medication (personal)'
@@ -145,7 +176,7 @@ export default function Packing() {
         <p className='max-w-md mb-4 italic'>For using at the Chalet.</p>
         <ul className='max-w-md mb-4'>
           <Item {...props} label='1 x Single mattress fitted sheet' info='This is mandatory for hygene reasons.' />
-          <Item {...props} label='1 x Pillowcase' />
+          <Item {...props} label='1 x Pillowcase' info='This is mandatory for hygene reasons.' />
           <Item {...props} label='1 x Sleeping bag' />
           <Item {...props} label='1 x Pyjamas' />
           <Item
@@ -190,20 +221,25 @@ export default function Packing() {
             info="Please bring small denomination notes to purchase any merchandise you'd like."
           />
           <Item {...props} label='Party night accessories (lightweight)' optional />
-          <Item {...props} label='1kg MAX Over 18s only (incl. packaging)' optional />
+          <Item
+            {...props}
+            label='1kg MAX Over 18s only (incl. packaging)'
+            optional
+            info="Don't bring anything in glass bottles!"
+          />
         </ul>
         <h2 className='text-2xl my-4' id='chalet'>
           Friday night
         </h2>
         <p className='max-w-md mb-4 italic'>For Friday night at the Scout Hall — to be left in the car at Mt Beauty</p>
         <ul className='max-w-md mb-4'>
-          <Item {...props} label='1 x Breakfast for Saturday' />
+          <Item {...props} label='1 x Breakfast for Saturday' info='It needs to be nutritious.' />
           <Item {...props} label='1 x Sleeping mat' />
           <Item {...props} label='1 x Pillow' optional />
           <Item {...props} label='1 x Extra sleeping bag' optional />
           <Item {...props} label='1 x Spare clothes' optional />
           <Item {...props} label='1 x Spare torch' optional />
-          <Item {...props} label='1 x Bag' optional />
+          <Item {...props} label='1 x Bag' optional info='To keep it all together.' />
         </ul>
       </div>
       <hr />
