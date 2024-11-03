@@ -209,6 +209,12 @@ export default function Packing() {
           <Item {...props} label='1 x Snaplock bag to contain toiletries' optional />
           <Item
             {...props}
+            label='1 x Laundry wash bag'
+            optional
+            info='To keep your items together when in the washing machine.'
+          />
+          <Item
+            {...props}
             label='1 x USB phone charger cord'
             optional
             info='There are plenty of USB chargers at the chalet.'
