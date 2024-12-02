@@ -190,7 +190,11 @@ export default function Packing() {
           <Item {...props} label='1 x Travel soap' />
           <Item {...props} label='1 x Deodorant' />
           <Item {...props} label='1 x Toothbrush + toothpaste' />
-          <Item {...props} label='7 x Period items (if you menstruate)' />
+          <Item
+            {...props}
+            label='7 x Period items (if you menstruate)'
+            info="No period undies as they can't be washed at the chalet."
+          />
           <Item {...props} label='Space for communal food (2-3kg)' />
           <Item {...props} label='1 x Inner sheet' optional />
           <Item {...props} label='1 x Indoor t-shirt' optional />
