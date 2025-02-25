@@ -221,7 +221,6 @@ export const getLayersForTrip = (tripName) => {
     .uniq()
     .forEach((t) => {
       const gpxTrack = new leaflet.GPX(t, gpxOptions).eachLayer(function handleLayer(l) {
-        l.options.icon = leaflet.Icon.Default
         if (l.setStyle) l.setStyle({ color: 'red' })
         if (l.eachLayer) l.eachLayer(handleLayer)
       })
