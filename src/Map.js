@@ -267,11 +267,10 @@ function Tracks({ tripName, forDownload }) {
       const kmlTracks = getKmlTracks()
       map.addLayer(kmlTracks)
       map.eachLayer(function handleLayer(l) {
-        l.options.icon = leaflet.Icon.Default
+        if (l.setStyle) l.setStyle({ color: 'red' })
         if (l.eachLayer) l.eachLayer(handleLayer)
         if (l.get_name) {
           l.bindPopup(`<h2>${l.get_name()}</h2>`, { className: 'kml-popup' })
-          l.setStyle({ color: '#3388ff' })
         }
       })
       map.fitBounds(kmlTracks.getBounds(), { maxZoom: 17 })
