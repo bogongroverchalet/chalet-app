@@ -87,9 +87,11 @@ export default function Map({ edit }) {
                 />
               </button>
             </Tooltip>
-            <button className='ml-4' onClick={() => fileDownload(forDownload, `${tripName}.gpx`)}>
-              <DownloadIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
-            </button>
+            {tripName && (
+              <button className='ml-4' onClick={() => fileDownload(forDownload, `${tripName}.gpx`)}>
+                <DownloadIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
+              </button>
+            )}
           </div>
         </h1>
       </div>
