@@ -83,7 +83,7 @@ export default function App() {
           </Link>
         </li>
       </ul>
-      <p class='w-[20em]'>
+      <p className='w-[20em]'>
         The trips in this app should work offline, so it's great for planning your trips for the next day :-)
       </p>
     </Wrapper>
