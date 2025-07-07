@@ -227,7 +227,7 @@ export default function Packing() {
           <Item {...props} label='Party night accessories (lightweight)' optional />
           <Item
             {...props}
-            label='1kg MAX Over 18s only (incl. packaging)'
+            label='1kg MAX of beverages for over 18s only (incl. packaging)'
             optional
             info="Don't bring anything in glass bottles!"
           />
