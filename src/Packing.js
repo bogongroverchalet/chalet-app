@@ -1,18 +1,12 @@
 import EventEmitter from 'events'
 import { Link } from 'react-router-dom'
-import { useEffect, useRef, useMemo } from 'react'
-import { useLocalStorage, useUnmount, useBoolean, useClickAnyWhere } from 'usehooks-ts'
+import { useRef } from 'react'
+import { useUnmount } from 'usehooks-ts'
 import Wrapper from './Wrapper'
-import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
-import Tooltip from '@mui/material/Tooltip'
-import classnames from 'classnames'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import { Item, DontItem, YEAR } from './Checklists'
 import _ from 'lodash'
-
-const YEAR = 2024
 
 export default function Packing() {
   const resetStorageEventEmitter = useRef(_.tap(new EventEmitter(), (emitter) => emitter.setMaxListeners(100)))
@@ -289,63 +283,5 @@ export default function Packing() {
         </ul>
       </div>
     </Wrapper>
-  )
-}
-
-function Item({ label, resetStorageEventEmitter, info, optional }) {
-  const [checked, setChecked, removeValue] = useLocalStorage(`${YEAR}-${label}`, false)
-  useEffect(() => {
-    resetStorageEventEmitter.on('resetStorage', removeValue)
-    return () => resetStorageEventEmitter.removeListener('resetStorage', removeValue)
-  }, [removeValue, resetStorageEventEmitter])
-
-  label = useMemo(
-    () =>
-      optional ? (
-        <Tooltip title={<span className='text-lg'>Optional item.</span>} arrow>
-          <span className='italic'>{label}</span>
-        </Tooltip>
-      ) : (
-        label
-      ),
-    [optional, label]
-  )
-
-  return (
-    <li>
-      <InfoIcon {...{ info }} />
-      <FormControlLabel control={<Checkbox onChange={() => setChecked(!checked)} {...{ checked }} />} {...{ label }} />
-    </li>
-  )
-}
-
-function InfoIcon({ info }) {
-  const { value, setTrue, setFalse, toggle } = useBoolean(false)
-  const toggleRef = useRef()
-  useClickAnyWhere((e) => toggleRef.current.contains(e.target) || setFalse())
-
-  return (
-    <>
-      <span
-        ref={toggleRef}
-        onTouchStart={() => toggle()}
-        onMouseEnter={() => setTrue()}
-        onMouseLeave={() => setFalse()}
-        className={classnames(info ? '' : 'invisible', 'mr-1', 'cursor-pointer', '-ml-7')}
-      >
-        <Tooltip title={<div className='text-lg'>{info}</div>} arrow open={value}>
-          <InfoOutlinedIcon />
-        </Tooltip>
-      </span>
-    </>
-  )
-}
-
-function DontItem({ label, info }) {
-  return (
-    <li>
-      <InfoIcon {...{ info }} />
-      <FormControlLabel control={<span className='p-[9px]'>❌</span>} {...{ label }} />
-    </li>
   )
 }
