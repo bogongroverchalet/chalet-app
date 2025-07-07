@@ -253,7 +253,7 @@ export default function Packing() {
         </ul>
       </div>
       <hr />
-      <div>
+      <div className='max-sm:pl-8'>
         <h2 className='text-2xl my-4' id='dont-bring'>
           What not to bring!
         </h2>
