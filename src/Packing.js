@@ -73,7 +73,12 @@ export default function Packing() {
           <Item {...props} label='1 x Buff/scarf' optional />
           <Item {...props} label='1 x Glove liners' optional />
           <Item {...props} label='1 x Ski goggles' optional />
-          <Item {...props} label='1 x Ski straps' optional />
+          <Item
+            {...props}
+            label='1 x Ski straps'
+            optional
+            info='Straps for holding your skis together. (These are different to leashes.)'
+          />
         </ul>
         <h2 className='text-2xl my-4 font-bold'>Hot tip</h2>
         <p className='max-w-md mb-4 font-bold'>
@@ -122,7 +127,11 @@ export default function Packing() {
               </>
             }
           />
-          <Item {...props} label='1 x Ski leashes' info='We can help you get a cheap pair at our briefing nights.' />
+          <Item
+            {...props}
+            label='1 x Ski leashes'
+            info='We can help you get a cheap pair on Friday night. These are essential to prevent losing your skis.'
+          />
           <Item {...props} label='1 x Hike pack' />
           <Item {...props} label='2 x Water bottle' info='Approximately a 2L capacity is good.' />
           <Item {...props} label='500g Scroggin (snacks)' />
