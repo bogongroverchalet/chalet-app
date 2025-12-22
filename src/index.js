@@ -10,7 +10,10 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Map from './Map'
+import Nobs from './Nobs'
 import Videos from './Videos'
+import FullShutdown from './FullShutdown'
+import SemiShutdown from './SemiShutdown'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 
@@ -24,6 +27,9 @@ root.render(
         <Route path='/packing' element={<Packing />} />
         <Route path='/videos' element={<Videos />} />
         <Route path='/videos/:video' element={<Videos />} />
+        <Route path='/nobs' element={<Nobs />} />
+        <Route path='/nobs/full-shutdown' element={<FullShutdown />} />
+        <Route path='/nobs/semi-shutdown' element={<SemiShutdown />} />
         <Route path='/trips' element={<Trips />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
         <Route path='/trips/map/:tripName?' element={<Map />} />
