@@ -1,4 +1,5 @@
 import React from 'react'
+import classnames from 'classnames'
 import Wrapper from './Wrapper'
 import { Link } from 'react-router-dom'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
@@ -14,6 +15,12 @@ function TripLink({ tripName }) {
       </Link>
     </li>
   )
+}
+
+const descriptions = {
+  1: 'Simple',
+  2: 'Challenging',
+  3: 'Complex',
 }
 
 export default function Trips() {
@@ -39,7 +46,9 @@ export default function Trips() {
       </p>
       {['1', '2', '3'].map((level) => (
         <React.Fragment key={level}>
-          <h2 className='text-2xl mb-2'>Level {level}</h2>
+          <h2 className={classnames('text-2xl mb-2', level === '1' ? '' : 'mt-4')}>
+            Level {level} ({descriptions[level]})
+          </h2>
           <ul>
             {!groupedTripNames[level] ? (
               <div className='italic mb-2'>None</div>
@@ -49,9 +58,11 @@ export default function Trips() {
           </ul>
         </React.Fragment>
       ))}
-      <Link to='map' className='text-xl mb-2'>
-        Show all <ChevronRightIcon className='ml-1' />
-      </Link>
+      <div className='mt-2 mb-4'>
+        <Link to='map' className='text-2xl'>
+          Show all <ChevronRightIcon className='ml-1' />
+        </Link>
+      </div>
     </Wrapper>
   )
 }
