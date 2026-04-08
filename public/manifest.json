@@ -3,10 +3,6 @@
   "name": "Bogong Rover Chalet App",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "32x32",
-      "type": "image/x-icon"
-    }, {
       "src": "logo.png",
       "sizes": "512x512",
       "type": "image/png"
