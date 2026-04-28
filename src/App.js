@@ -7,6 +7,8 @@ import LaunchIcon from '@mui/icons-material/Launch'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
 import FileDownloadIcon from '@mui/icons-material/FileDownload'
 import pantryInventory from './Pantry_Inventory.pdf'
+import pantryByBay from './Pantry_by_bay.pdf'
+import pantryByItem from './Pantry_by_item.pdf'
 import snowboardInfo from './Snowboard_boots.pdf'
 
 export default function App() {
@@ -64,6 +66,30 @@ export default function App() {
                   requirements. Updated for 2024.
                 </div>
               }
+              arrow
+              classes={{ tooltip: 'text-center !text-[1rem]' }}
+            >
+              <FileDownloadIcon className='ml-2' />
+            </Tooltip>
+          </a>
+        </li>
+        <li className='mb-4'>
+          <a href={pantryByBay} download='Pantry_by_bay.pdf' className='flex items-center'>
+            Bulk pantry items by bay
+            <Tooltip
+              title={<div>A document listing where all the items are in the bulk pantry (by bay).</div>}
+              arrow
+              classes={{ tooltip: 'text-center !text-[1rem]' }}
+            >
+              <FileDownloadIcon className='ml-2' />
+            </Tooltip>
+          </a>
+        </li>
+        <li className='mb-4'>
+          <a href={pantryByItem} download='Pantry_by_item.pdf' className='flex items-center'>
+            Bulk pantry items bay finder (by item)
+            <Tooltip
+              title={<div>A document listing which bay all the items in the bulk pantry are in.</div>}
               arrow
               classes={{ tooltip: 'text-center !text-[1rem]' }}
             >
