@@ -7,6 +7,7 @@ import LaunchIcon from '@mui/icons-material/Launch'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
 import FileDownloadIcon from '@mui/icons-material/FileDownload'
 import pantryInventory from './Pantry_Inventory.pdf'
+import snowboardInfo from './Snowboard_boots.pdf'
 
 export default function App() {
   return (
@@ -68,6 +69,12 @@ export default function App() {
             >
               <FileDownloadIcon className='ml-2' />
             </Tooltip>
+          </a>
+        </li>
+        <li className='mb-4'>
+          <a href={snowboardInfo} download='Snowboard_boots.pdf' className='flex items-center'>
+            Snowboard boot and binding details
+            <FileDownloadIcon className='ml-2' />
           </a>
         </li>
         <li className='mb-4'>
