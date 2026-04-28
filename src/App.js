@@ -89,6 +89,13 @@ export default function App() {
             <LaunchIcon className='ml-2' />
           </Link>
         </li>
+        {
+          <li className='mb-4'>
+            <Link to='videos' className='flex items-center'>
+              Videos <ChevronRightIcon className='ml-1' fontSize='large' />
+            </Link>
+          </li>
+        }
       </ul>
       <p className='w-[20em]'>
         The trips in this app should work offline, so it's great for planning your trips for the next day :-)
