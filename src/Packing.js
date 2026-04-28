@@ -137,7 +137,11 @@ export default function Packing() {
           <Item {...props} label='500g Scroggin (snacks)' />
           <Item {...props} label='1 x Sunscreen' />
           <Item {...props} label='1 x Lip balm' />
-          <Item {...props} label='1 x Personal first aid kit' />
+          <Item
+            {...props}
+            label='1 x Personal first aid kit'
+            info='Including rigid strapping tape for preventing blisters. We suggest 5cm Leukoplast.'
+          />
           <Item {...props} label='1 x Head torch (+ spare batteries)' info='There is a AA+AAA charger in the chalet.' />
           <Item {...props} label='1 x Whistle' />
           <Item {...props} label='1 x Emergency blanket (space blanket)' />
