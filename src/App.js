@@ -60,6 +60,11 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
+          <Link to='videos' className='flex items-center'>
+            Videos <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
+        </li>
+        <li className='mb-4'>
           <a href={pantryInventory} download='Pantry_Inventory.pdf' className='flex items-center'>
             Winter pantry ingredient list
             <Tooltip

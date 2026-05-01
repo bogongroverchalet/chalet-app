@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Map from './Map'
 import Nobs from './Nobs'
+import Videos from './Videos'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 
@@ -22,6 +23,8 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/packing' element={<Packing />} />
+        <Route path='/videos' element={<Videos />} />
+        <Route path='/videos/:video' element={<Videos />} />
         <Route path='/nobs' element={<Nobs />} />
         <Route path='/trips' element={<Trips />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
