@@ -109,6 +109,9 @@ export default function App() {
       <p className='w-[20em]'>
         The trips in this app should work offline, so it's great for planning your trips for the next day :-)
       </p>
+      <p className='mt-4'>
+        <i>Build date: {process.env.REACT_APP_BUILD_DATE}</i>
+      </p>
     </Wrapper>
   )
 }

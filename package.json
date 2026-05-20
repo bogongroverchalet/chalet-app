@@ -61,8 +61,8 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "craco start",
-    "build": "craco build",
+    "start": "REACT_APP_BUILD_DATE=$(TZ=Australia/Melbourne date +'%Y-%m-%d') craco start",
+    "build": "REACT_APP_BUILD_DATE=$(TZ=Australia/Melbourne date +'%Y-%m-%d') craco build",
     "test": "craco test",
     "eject": "craco eject",
     "postinstall": "patch-package",
