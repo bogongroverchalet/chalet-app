@@ -8,6 +8,7 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
 import FileDownloadIcon from '@mui/icons-material/FileDownload'
 import pantryInventory from './Pantry_Inventory.pdf'
 import snowboardInfo from './Snowboard_boots.pdf'
+import codeOfConduct from './BRC-Code-of-Conduct-29-01-2026.pdf'
 
 export default function App() {
   return (
@@ -63,6 +64,11 @@ export default function App() {
           <Link to='videos' className='flex items-center'>
             Videos <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>
+        </li>
+        <li className='mb-4'>
+          <a href={codeOfConduct} download='BRC-Code-of-Conduct-29-01-2026.pdf' className='flex items-center'>
+            Code of conduct <FileDownloadIcon className='ml-2' />
+          </a>
         </li>
         <li className='mb-4'>
           <a href={pantryInventory} download='Pantry_Inventory.pdf' className='flex items-center'>
