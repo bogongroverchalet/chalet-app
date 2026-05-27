@@ -5,7 +5,7 @@ import 'react-pdf/dist/Page/TextLayer.css'
 import { useResizeObserver } from 'usehooks-ts'
 import { Link, Navigate, useLocation } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import { usePinch } from '@use-gesture/react'
+import { useGesture } from '@use-gesture/react'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -18,6 +18,8 @@ export default function PdfViewer() {
   const [numPages, setNumPages] = useState()
   const [containerWidth, setContainerWidth] = useState()
   const [zoom, setZoom] = useState(1)
+  const [offset, setOffset] = useState([0, 0])
+  const offsetRef = useRef([0, 0])
   const containerRef = useRef()
 
   const onResize = useCallback((entries) => {
@@ -27,9 +29,18 @@ export default function PdfViewer() {
 
   useResizeObserver({ ref: containerRef, onResize })
 
-  const bind = usePinch(
-    ({ offset: [scale] }) => setZoom(Math.min(3, Math.max(0.5, scale))),
-    { scaleBounds: { min: 0.5, max: 3 }, rubberband: true }
+  const bind = useGesture(
+    {
+      onDrag: ({ offset: [dx, dy] }) => {
+        offsetRef.current = [dx, dy]
+        setOffset([dx, dy])
+      },
+      onPinch: ({ offset: [scale] }) => setZoom(Math.min(3, Math.max(0.5, scale))),
+    },
+    {
+      drag: { from: () => offsetRef.current },
+      pinch: { scaleBounds: { min: 0.5, max: 3 }, rubberband: true },
+    }
   )
 
   if (!file) return <Navigate to='/' replace />
@@ -44,16 +55,28 @@ export default function PdfViewer() {
           </Link>
         </h1>
       </div>
-      <div ref={containerRef} {...bind()} className='flex flex-col items-center overflow-x-auto touch-none'>
-        <Document file={file} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
-          {Array.from({ length: numPages ?? 0 }, (_, i) => (
-            <Page
-              key={`page_${i + 1}`}
-              pageNumber={i + 1}
-              width={containerWidth * zoom}
-            />
-          ))}
-        </Document>
+      <div
+        ref={containerRef}
+        {...bind()}
+        className='overflow-hidden touch-none cursor-grab active:cursor-grabbing'
+      >
+        <div
+          style={{
+            transform: `translate(${offset[0]}px, ${offset[1]}px) scale(${zoom})`,
+            transformOrigin: 'top center',
+          }}
+          className='flex flex-col items-center'
+        >
+          <Document file={file} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
+            {Array.from({ length: numPages ?? 0 }, (_, i) => (
+              <Page
+                key={`page_${i + 1}`}
+                pageNumber={i + 1}
+                width={containerWidth}
+              />
+            ))}
+          </Document>
+        </div>
       </div>
     </div>
   )
