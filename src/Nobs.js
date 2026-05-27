@@ -3,7 +3,7 @@ import Wrapper from './Wrapper'
 import { Link } from 'react-router-dom'
 import Tooltip from '@mui/material/Tooltip'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
-import FileDownloadIcon from '@mui/icons-material/FileDownload'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import pantryByBay from './Pantry_by_bay.pdf'
 import pantryByItem from './Pantry_by_item.pdf'
 
@@ -23,28 +23,36 @@ export default function Nobs() {
       </p>
       <ul className='text-2xl'>
         <li className='mb-4'>
-          <a href={pantryByBay} download='Pantry_by_bay.pdf' className='flex items-center'>
+          <Link
+            to='/pdf'
+            state={{ file: pantryByBay, title: 'Bulk pantry items by bay' }}
+            className='flex items-center'
+          >
             Bulk pantry items by bay
             <Tooltip
               title={<div>A document listing where all the items are in the bulk pantry (by bay).</div>}
               arrow
               classes={{ tooltip: 'text-center !text-[1rem]' }}
             >
-              <FileDownloadIcon className='ml-2' />
+              <ChevronRightIcon className='ml-1' fontSize='large' />
             </Tooltip>
-          </a>
+          </Link>
         </li>
         <li className='mb-4'>
-          <a href={pantryByItem} download='Pantry_by_item.pdf' className='flex items-center'>
+          <Link
+            to='/pdf'
+            state={{ file: pantryByItem, title: 'Bulk pantry bay finder (by item)' }}
+            className='flex items-center'
+          >
             Bulk pantry bay finder (by item)
             <Tooltip
               title={<div>A document listing which bay all the items in the bulk pantry are in.</div>}
               arrow
               classes={{ tooltip: 'text-center !text-[1rem]' }}
             >
-              <FileDownloadIcon className='ml-2' />
+              <ChevronRightIcon className='ml-1' fontSize='large' />
             </Tooltip>
-          </a>
+          </Link>
         </li>
       </ul>
     </Wrapper>
