@@ -12,7 +12,9 @@ export default function Videos() {
       <h1 className='text-3xl my-4 -indent-12 max-sm:pl-10'>
         <Link to='..' relative='path'>
           <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
-          <span className='max-sm:hidden'>Bogong Rover Chalet {video ? `${video} video` : 'videos'} </span>
+          <span className='max-sm:hidden'>
+            Bogong Rover Chalet {video ? `${video.replace('-', ' ')} video` : 'videos'}{' '}
+          </span>
           <span className='sm:hidden'>{video ? `${upperFirst(video)} video` : 'Videos'} </span>
         </Link>
       </h1>
@@ -27,6 +29,12 @@ function VideoList() {
       <li className='mb-4'>
         <Link to='bathroom' className='flex items-center'>
           Bathroom <ChevronRightIcon className='ml-1' fontSize='large' />
+        </Link>
+        <Link to='blisters-pt1' className='flex items-center'>
+          Blisters part 1 <ChevronRightIcon className='ml-1' fontSize='large' />
+        </Link>
+        <Link to='blisters-pt2' className='flex items-center'>
+          Blisters part 2 <ChevronRightIcon className='ml-1' fontSize='large' />
         </Link>
       </li>
     </ul>
