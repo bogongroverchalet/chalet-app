@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Map from './Map'
 import Nobs from './Nobs'
 import Videos from './Videos'
+import PdfViewer from './PdfViewer'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 
@@ -27,6 +28,7 @@ root.render(
         <Route path='/videos/:video' element={<Videos />} />
         <Route path='/nobs' element={<Nobs />} />
         <Route path='/trips' element={<Trips />} />
+        <Route path='/pdf' element={<PdfViewer />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
         <Route path='/trips/map/:tripName?' element={<Map />} />
         <Route path='/trips/trip/:tripName' element={<TripInfo />} />

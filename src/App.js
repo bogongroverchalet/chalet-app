@@ -5,7 +5,6 @@ import Tooltip from '@mui/material/Tooltip'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import LaunchIcon from '@mui/icons-material/Launch'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
-import FileDownloadIcon from '@mui/icons-material/FileDownload'
 import pantryInventory from './Pantry_Inventory.pdf'
 import snowboardInfo from './Snowboard_boots.pdf'
 import codeOfConduct from './BRC-Code-of-Conduct-29-01-2026.pdf'
@@ -66,12 +65,16 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
-          <a href={codeOfConduct} download='BRC-Code-of-Conduct-29-01-2026.pdf' className='flex items-center'>
-            Code of conduct <FileDownloadIcon className='ml-2' />
-          </a>
+          <Link to='/pdf' state={{ file: codeOfConduct, title: 'Code of conduct' }} className='flex items-center'>
+            Code of conduct <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
         </li>
         <li className='mb-4'>
-          <a href={pantryInventory} download='Pantry_Inventory.pdf' className='flex items-center'>
+          <Link
+            to='/pdf'
+            state={{ file: pantryInventory, title: 'Winter pantry ingredient list' }}
+            className='flex items-center'
+          >
             Winter pantry ingredient list
             <Tooltip
               title={
@@ -83,15 +86,19 @@ export default function App() {
               arrow
               classes={{ tooltip: 'text-center !text-[1rem]' }}
             >
-              <FileDownloadIcon className='ml-2' />
+              <ChevronRightIcon className='ml-1' fontSize='large' />
             </Tooltip>
-          </a>
+          </Link>
         </li>
         <li className='mb-4'>
-          <a href={snowboardInfo} download='Snowboard_boots.pdf' className='flex items-center'>
+          <Link
+            to='/pdf'
+            state={{ file: snowboardInfo, title: 'Snowboard boot and binding details' }}
+            className='flex items-center'
+          >
             Snowboard boot and binding details
-            <FileDownloadIcon className='ml-2' />
-          </a>
+            <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
         </li>
         <li className='mb-4'>
           <Link to='http://www.bom.gov.au/vic/forecasts/fallscreek.shtml' className='flex items-center'>
