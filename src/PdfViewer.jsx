@@ -5,6 +5,7 @@ import 'react-pdf/dist/Page/TextLayer.css'
 import { useResizeObserver } from 'usehooks-ts'
 import { Link, Navigate, useLocation } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import { usePinch } from '@use-gesture/react'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -16,6 +17,7 @@ export default function PdfViewer() {
   const { file, title } = state ?? {}
   const [numPages, setNumPages] = useState()
   const [containerWidth, setContainerWidth] = useState()
+  const [zoom, setZoom] = useState(1)
   const containerRef = useRef()
 
   const onResize = useCallback((entries) => {
@@ -24,6 +26,11 @@ export default function PdfViewer() {
   }, [])
 
   useResizeObserver({ ref: containerRef, onResize })
+
+  const bind = usePinch(
+    ({ offset: [scale] }) => setZoom(Math.min(3, Math.max(0.5, scale))),
+    { scaleBounds: { min: 0.5, max: 3 }, rubberband: true }
+  )
 
   if (!file) return <Navigate to='/' replace />
 
@@ -37,13 +44,13 @@ export default function PdfViewer() {
           </Link>
         </h1>
       </div>
-      <div ref={containerRef} className='flex flex-col items-center'>
+      <div ref={containerRef} {...bind()} className='flex flex-col items-center overflow-x-auto touch-none'>
         <Document file={file} onLoadSuccess={({ numPages }) => setNumPages(numPages)}>
           {Array.from({ length: numPages ?? 0 }, (_, i) => (
             <Page
               key={`page_${i + 1}`}
               pageNumber={i + 1}
-              width={containerWidth}
+              width={containerWidth * zoom}
             />
           ))}
         </Document>
