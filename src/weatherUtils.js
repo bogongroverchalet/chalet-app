@@ -92,6 +92,32 @@ function aggregatePeriod(hours) {
   }
 }
 
+export function primeWeatherCache() {
+  fetch('/api/weather').catch(() => {})
+}
+
+export async function registerPeriodicSync() {
+  if (!('serviceWorker' in navigator)) return
+  try {
+    const reg = await navigator.serviceWorker.ready
+    if (!('periodicSync' in reg)) return
+    const perm = await navigator.permissions.query({ name: 'periodic-background-sync' })
+    if (perm.state === 'granted') {
+      await reg.periodicSync.register('weather-sync', { minInterval: 60 * 60 * 1000 })
+    }
+  } catch {
+    // Not supported or permission denied
+  }
+}
+
+export async function unregisterPeriodicSync() {
+  if (!('serviceWorker' in navigator)) return
+  try {
+    const reg = await navigator.serviceWorker.ready
+    if ('periodicSync' in reg) await reg.periodicSync.unregister('weather-sync')
+  } catch {}
+}
+
 const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 export function parseHourly(raw) {

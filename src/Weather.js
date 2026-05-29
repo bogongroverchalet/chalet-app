@@ -9,9 +9,14 @@ import Switch from '@mui/material/Switch'
 import Tooltip from '@mui/material/Tooltip'
 import classnames from 'classnames'
 import { filter } from 'lodash'
-import { parseHourly, wmoDescription, PERIODS, WEATHER_API_URL } from './weatherUtils'
-
-const tipClass = { tooltip: 'text-center !text-[0.9rem]' }
+import {
+  parseHourly,
+  wmoDescription,
+  PERIODS,
+  WEATHER_API_URL,
+  registerPeriodicSync,
+  unregisterPeriodicSync,
+} from './weatherUtils'
 
 export default function Weather() {
   const [weatherData, setWeatherData] = React.useState(null)
@@ -48,18 +53,11 @@ export default function Weather() {
 
   React.useEffect(() => {
     load()
-    window.addEventListener('online', load)
-    navigator.serviceWorker?.ready.then((reg) => {
-      if ('sync' in reg) reg.sync.register('weather-sync-once').catch(() => {})
-    })
     const onSwMessage = ({ data }) => {
       if (data?.type === 'weatherUpdated') load()
     }
     navigator.serviceWorker?.addEventListener('message', onSwMessage)
-    return () => {
-      window.removeEventListener('online', load)
-      navigator.serviceWorker?.removeEventListener('message', onSwMessage)
-    }
+    return () => navigator.serviceWorker?.removeEventListener('message', onSwMessage)
   }, [load])
 
   React.useEffect(() => {
@@ -237,28 +235,6 @@ function formatAge(fetchedAt) {
   const hours = Math.floor(mins / 60)
   if (hours < 24) return `${hours}h ago`
   return `${Math.floor(hours / 24)}d ago`
-}
-
-async function registerPeriodicSync() {
-  if (!('serviceWorker' in navigator)) return
-  try {
-    const reg = await navigator.serviceWorker.ready
-    if (!('periodicSync' in reg)) return
-    const perm = await navigator.permissions.query({ name: 'periodic-background-sync' })
-    if (perm.state === 'granted') {
-      await reg.periodicSync.register('weather-sync', { minInterval: 60 * 60 * 1000 })
-    }
-  } catch {
-    // Not supported or permission denied — on-mount and manual refresh only
-  }
-}
-
-async function unregisterPeriodicSync() {
-  if (!('serviceWorker' in navigator)) return
-  try {
-    const reg = await navigator.serviceWorker.ready
-    if ('periodicSync' in reg) await reg.periodicSync.unregister('weather-sync')
-  } catch {}
 }
 
 function InfoTooltip({ title, children }) {

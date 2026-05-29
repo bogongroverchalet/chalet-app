@@ -14,6 +14,7 @@ import Nobs from './Nobs'
 import Videos from './Videos'
 import PdfViewer from './PdfViewer'
 import Weather from './Weather'
+import { primeWeatherCache, registerPeriodicSync } from './weatherUtils'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 
@@ -45,8 +46,11 @@ root.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register()
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals()
+
+primeWeatherCache()
+if (localStorage.getItem('weatherPeriodicSync') !== 'false') registerPeriodicSync()
+navigator.serviceWorker?.ready.then((reg) => {
+  if ('sync' in reg) reg.sync.register('weather-sync-once').catch(() => {})
+})
+window.addEventListener('online', primeWeatherCache)
