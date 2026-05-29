@@ -115,6 +115,10 @@ export default function Weather() {
         </div>
       </div>
 
+      <div className='flex items-center gap-1 shrink-0 mb-2'>
+        <i>This feature is still a work in progress. Always be prepared for different weather than the forecast.</i>
+      </div>
+
       {isStale && (
         <Alert severity='warning' className='mb-3'>
           Forecast is over 6 hours old — connect to the internet and refresh for the latest.
