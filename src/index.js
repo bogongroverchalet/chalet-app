@@ -13,6 +13,7 @@ import Map from './Map'
 import Nobs from './Nobs'
 import Videos from './Videos'
 import PdfViewer from './PdfViewer'
+import Weather from './Weather'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 
@@ -33,6 +34,7 @@ root.render(
         <Route path='/trips/map/:tripName?' element={<Map />} />
         <Route path='/trips/trip/:tripName' element={<TripInfo />} />
         <Route path='/trips/trip/:tripName.pdf' element={<TripInfoPDF />} />
+        <Route path='/weather' element={<Weather />} />
         <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
     </BrowserRouter>

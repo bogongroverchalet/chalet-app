@@ -101,13 +101,15 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link to='http://www.bom.gov.au/vic/forecasts/fallscreek.shtml' className='flex items-center'>
-            Falls Creek weather
-            <LaunchIcon className='ml-2' />
+          <Link to='weather' className='flex items-center'>
+            Chalet weather forecast <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>
         </li>
         <li className='mb-4'>
-          <Link to='http://www.bom.gov.au/vic/warnings/' className='flex items-center'>
+          <Link
+            to='https://www.bom.gov.au/location/australia/victoria/north-east/bvic_pt022-falls-creek'
+            className='flex items-center'
+          >
             Weather alerts
             <LaunchIcon className='ml-2' />
           </Link>
