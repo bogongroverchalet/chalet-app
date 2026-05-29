@@ -51,3 +51,33 @@ body,
 .gps-loading-position {
   animation: fadein 0.5s linear alternate infinite;
 }
+
+/* Print utilities — used by nobs report forms */
+.print-only {
+  display: none;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .nobs-report-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15mm 20mm;
+    box-sizing: border-box;
+  }
+  .nobs-report-print-area,
+  .nobs-report-print-area * {
+    visibility: visible;
+  }
+  .nobs-report-print-area .no-print {
+    display: none !important;
+  }
+  .nobs-report-print-area .print-only {
+    display: block !important;
+    visibility: visible;
+  }
+}

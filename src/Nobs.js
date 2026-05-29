@@ -15,13 +15,18 @@ export default function Nobs() {
           <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
           <span className='max-sm:hidden'>Bogong Rover Chalet nobs </span>
           <span className='sm:hidden'>Nobs </span>
-          info
+          stuff
         </Link>
       </h1>
       <p className='max-w-md mb-4'>
         Need more details? Check the operating manuals - they're stored below the phone in the dining room.
       </p>
       <ul className='text-2xl'>
+        <li className='mb-4'>
+          <Link to='report' className='flex items-center'>
+            Fill in your Nobs report <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
+        </li>
         <li className='mb-4'>
           <Link
             to='/pdf'
