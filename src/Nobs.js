@@ -28,6 +28,11 @@ export default function Nobs() {
           </Link>
         </li>
         <li className='mb-4'>
+          <Link to='room-by-room' className='flex items-center'>
+            Room by Room orientation tour <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
+        </li>
+        <li className='mb-4'>
           <Link
             to='/pdf'
             state={{ file: pantryByBay, title: 'Bulk pantry items by bay' }}

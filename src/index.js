@@ -20,6 +20,8 @@ import NobsReportPA from './NobsReportPA'
 import NobsReportCE from './NobsReportCE'
 import NobsReportQM from './NobsReportQM'
 import NobsReportTL from './NobsReportTL'
+import RoomByRoom from './RoomByRoom'
+import RoomByRoomDetail from './RoomByRoomDetail'
 import { primeWeatherCache, registerPeriodicSync } from './weatherUtils'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
@@ -41,6 +43,8 @@ root.render(
         <Route path='/nobs/report/ce' element={<NobsReportCE />} />
         <Route path='/nobs/report/qm' element={<NobsReportQM />} />
         <Route path='/nobs/report/tl' element={<NobsReportTL />} />
+        <Route path='/nobs/room-by-room' element={<RoomByRoom />} />
+        <Route path='/nobs/room-by-room/:slug' element={<RoomByRoomDetail />} />
         <Route path='/trips' element={<Trips />} />
         <Route path='/pdf' element={<PdfViewer />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
