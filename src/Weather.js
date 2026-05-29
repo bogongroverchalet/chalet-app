@@ -91,11 +91,7 @@ export default function Weather() {
         </h1>
         <div className='flex items-center gap-1 shrink-0'>
           {syncSupported && (
-            <Tooltip
-              title={syncEnabled ? 'Hourly background refresh on' : 'Hourly background refresh off'}
-              arrow
-              classes={tipClass}
-            >
+            <InfoTooltip title={syncEnabled ? 'Hourly background refresh on' : 'Hourly background refresh off'}>
               <span className='flex items-center'>
                 <Switch
                   checked={syncEnabled}
@@ -104,7 +100,7 @@ export default function Weather() {
                   inputProps={{ 'aria-label': 'Background auto-refresh' }}
                 />
               </span>
-            </Tooltip>
+            </InfoTooltip>
           )}
           {fetchedAt != null && (
             <span className='text-sm text-slate-500 whitespace-nowrap'>{formatAge(fetchedAt)}</span>
@@ -173,11 +169,11 @@ function DayCard({ day, isToday }) {
         </span>
         <span className='flex items-center gap-2 text-sm'>
           {hasStorm && <span className='text-yellow-300 font-bold'>⚡ Storm</span>}
-          <Tooltip title='Full-day high / low (all 24 hours)' arrow classes={tipClass}>
+          <InfoTooltip title='Full-day high / low (all 24 hours)'>
             <span className='cursor-help'>
               {high}° / {low}°C
             </span>
-          </Tooltip>
+          </InfoTooltip>
         </span>
       </div>
 
@@ -203,11 +199,7 @@ function PeriodCell({ data }) {
   if (!data) return <div className='p-1 text-center text-xs text-slate-400'>N/A</div>
   return (
     <div className='p-1.5 flex flex-col gap-0.5 items-center text-center'>
-      <Tooltip
-        title='The dominant weather condition for this period — based on the most severe hour'
-        arrow
-        classes={tipClass}
-      >
+      <InfoTooltip title='The dominant weather condition for this period — based on the most severe hour'>
         <div
           className={classnames(
             'text-xs leading-tight cursor-help',
@@ -216,24 +208,24 @@ function PeriodCell({ data }) {
         >
           {wmoDescription(data.wmoCode)}
         </div>
-      </Tooltip>
+      </InfoTooltip>
       <div className='text-base font-bold'>{data.temp}°C</div>
-      <Tooltip title='Chance of precipitation · total amount for this period' arrow classes={tipClass}>
+      <InfoTooltip title='Chance of precipitation · total amount for this period'>
         <div className='text-xs text-slate-600 cursor-help'>
           {data.precipProb}%{data.precip > 0 ? ` / ${data.precip}mm` : ''}
         </div>
-      </Tooltip>
+      </InfoTooltip>
       {data.snowfall > 0 && (
-        <Tooltip title='Total snowfall expected in this period' arrow classes={tipClass}>
+        <InfoTooltip title='Total snowfall expected in this period'>
           <div className='text-xs font-semibold text-sky-600 cursor-help'>{data.snowfall}cm snow</div>
-        </Tooltip>
+        </InfoTooltip>
       )}
-      <Tooltip title='Max sustained wind speed · max gusts for this period' arrow classes={tipClass}>
+      <InfoTooltip title='Max sustained wind speed · max gusts for this period'>
         <div className='text-xs text-slate-500 leading-tight text-center cursor-help'>
           <div>{data.wind} km/h</div>
           <div>gusts of {data.gusts} km/h</div>
         </div>
-      </Tooltip>
+      </InfoTooltip>
     </div>
   )
 }
@@ -267,4 +259,18 @@ async function unregisterPeriodicSync() {
     const reg = await navigator.serviceWorker.ready
     if ('periodicSync' in reg) await reg.periodicSync.unregister('weather-sync')
   } catch {}
+}
+
+function InfoTooltip({ title, children }) {
+  return (
+    <Tooltip
+      title={title}
+      arrow
+      enterTouchDelay={0}
+      leaveTouchDelay={3000}
+      classes={{ tooltip: 'text-center !text-[0.9rem]' }}
+    >
+      {children}
+    </Tooltip>
+  )
 }
