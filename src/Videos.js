@@ -12,9 +12,7 @@ export default function Videos() {
       <h1 className='text-3xl my-4 -indent-12 max-sm:pl-10'>
         <Link to='..' relative='path'>
           <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
-          <span className='max-sm:hidden'>
-            Bogong Rover Chalet {video ? `${video.replace('-', ' ')} video` : 'videos'}{' '}
-          </span>
+          <span className='max-sm:hidden'>{video ? `${upperFirst(video).replace('-', ' ')} video` : 'Videos'} </span>
           <span className='sm:hidden'>{video ? `${upperFirst(video)} video` : 'Videos'} </span>
         </Link>
       </h1>
