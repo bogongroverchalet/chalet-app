@@ -1,0 +1,270 @@
+groups:
+  - name: Joeys
+    slug: joeys
+    description: Wood chopping and stacking
+    sections:
+      - items:
+          - rule: You must wear the steel-capped gumboots
+          - rule: Gloves and glasses are available for use
+          - rule: Only 2–3 people in the wood room during chopping
+            notes:
+              - Stay at a safe distance from any participants cutting wood
+              - Be mindful of people entering and exiting the room
+          - rule: Keep both hands on the axe when chopping
+          - check: "Chop and stack wood for:"
+            subitems:
+              - Stove
+              - Fireplace
+              - Theodore
+          - check: Use the wood sizing rings as a guide (these are hanging next to the axes and gumboots!)
+          - check: "Dining room wood stacking"
+            notes:
+              - "Top shelf: Small firewood for the kitchen stove"
+              - "Bottom shelf: Medium and large firewood for dining room fireplace"
+          - check: Theodore wood
+            notes:
+              - "Small, medium and large pieces, next to Theo"
+              - Make sure to split some finger sized kindling
+          - check: "'Ugly' or tough logs go by Theodore — size check with large D ring"
+          - check: Regularly check and restock wood during the day
+          - rule: If an axe or splitter breaks, stop use and report to CE or Nob immediately
+
+  - name: Slushies
+    slug: slushies
+    description: Dish washing
+    sections:
+      - items:
+          - check: Ensure the strainer is in the sink when the plug is removed
+          - check: Scrape all food waste into the food waste bin
+          - check: "Wipe grease and oil off plates & utensils and discard the paper towel in the fireplace (or bucket beside)"
+          - rule: Use very hot water — too hot to touch without gloves
+          - rule: "Use GREEN CHUX, sponges, brushes, and gloves to clean"
+          - check: "Wash all dishes, utensils & other kitchenware and then run through the sanitiser. Follow the instructions on the front of the sanitiser"
+          - check: "Dry and put away all cups, utensils & other kitchenware with a fresh tea towel"
+          - check: Allow ceramic dishes to air dry in the racks (takes 3–5 minutes) and then put away
+          - check: Wipe down slushies sink
+          - check: "Hang chux, sponges, brushes, and gloves (by fingertips)"
+          - check: Put dirty tea towels into metal pot on oven (with water inside)
+          - dont: Do not pour oil, fat, scraps or coffee grounds down the sink
+          - dont: Do not put any glass or sodastream bottles in the sanitiser
+          - dont: Do not use a tea towel for plates & bowls — let them air dry!
+      - title: Ask a Nob if you need any of the following
+        items:
+          - note: Additional dishwashing liquid is available under the slushies sink
+          - note: Additional scrubbers are in the Nobs cupboard
+          - note: Additional dishwashing gloves are in the Nobs cupboard — DO NOT USE BATHROOM GLOVES
+
+  - name: Slavies
+    slug: slavies
+    description: Cookware and bench cleaning
+    sections:
+      - items:
+          - check: Ensure the strainer is in the sink when the plug is removed
+          - check: Scrape all food waste into the food waste bin
+          - check: "Wipe grease and oil off pots & utensils and discard the paper towel in the fireplace (or bucket beside)"
+          - rule: Use very hot water — too hot to touch without gloves
+          - rule: "Use GREEN CHUX, sponges, brushes, and gloves to clean"
+          - check: "Clean all used cookware:"
+            notes:
+              - "1. Wash"
+              - "2. Dry with a tea towel"
+              - "3. Spray with sanitiser"
+              - "4. Air dry"
+              - "5. Put away"
+          - check: "Wipe down all bench surfaces and kitchen table:"
+            notes:
+              - "1. Wipe with hot soapy water using GREEN CHUX"
+              - "2. Spray with sanitiser and allow to air dry"
+          - check: "Hang chux, sponges, brushes, and gloves (by fingertips)"
+          - check: Put dirty tea towels into metal pot on oven (with water inside)
+          - dont: Do not pour oil, fat, scraps or coffee grounds down the sink
+          - dont: "No raw meat (must be cooked & cut into small pieces) in the food scraps bin"
+      - title: Ask a Nob if you need any of the following
+        items:
+          - note: Additional dishwashing liquid is available under the slushies sink
+          - note: Additional scrubbers are in the Nobs cupboard
+          - note: Additional dishwashing gloves are in the Nobs cupboard — DO NOT USE BATHROOM GLOVES
+
+  - name: Cooks
+    slug: cooks
+    description: Cooking...
+    sections:
+      - title: General
+        items:
+          - rule: "Wash hands with soap before, during (when changing task) & after handling food"
+          - check: Cook meals per cookbook quantities & dietary needs — check with QM if unsure
+          - check: Use ingredients from small kitchen pantry; ask QM if anything you need is missing
+          - check: For handling dietary meals follow strict processes to ensure no cross contamination — communicate with the people who have the dietary needs
+          - check: Serve meals to Stewards through servery window
+          - check: Return leftover ingredients to pantry
+          - check: Store leftover cooked food in fridge with "opened on" & "allergy" stickers
+          - check: Use minimal pots & pans to help slavies
+          - check: "For dirty baking dishes:"
+            notes:
+              - "1. Scrape"
+              - "2. Wipe oil and grease off with paper towel"
+              - "3. Put food scraps in food waste bin"
+              - "4. Fill tray with soapy water"
+          - rule: Use correct colour chopping boards for different categories of food
+          - rule: Use hot soapy water and the GREEN CHUX to wipe down surfaces
+          - check: "Cut any food scraps into small pieces, try to minimise food scraps"
+          - dont: Do not leave food in snow overnight
+          - dont: Do not take items from the bulk pantry
+          - dont: No raw meat to be placed in the food scraps bin (must be cooked and cut into small pieces)
+      - title: Dinner & evening
+        items:
+          - check: Bake bread in the afternoon / evening for next day's meals
+          - check: Prep porridge for morning — confirm who wants it
+      - title: Breakfast
+        items:
+          - check: Wake 30 mins before parade to make & deliver hot drinks. Fill air pots with boiling water (carried separately) before taking trolley upstairs
+          - check: Run hot water through the taps when filling kettles, to speed up boiling of kettles
+          - check: Clean ash from oven while kettle boils
+          - check: Prepare breakfast to be ready after parade
+          - check: "Sweep & mop kitchen floors (GREEN BROOM & MOP)"
+            notes:
+              - "Mix: 5L water + 100ml lemon disinfectant (in bathroom chemical cabinet)"
+              - Mop, bucket and broom are next to Theo
+
+  - name: Crew Leaders
+    slug: crew-leaders
+    description: Snow clearing, sweeping and washing
+    note: The Rover Advisor of the Day is appointed from the Crew Leaders
+    sections:
+      - items:
+          - check: Keep all exits and pathways clear of snow or obstructions
+            subitems:
+              - "Workshop Door (priority)"
+              - "Balcony (priority)"
+              - "Pygmy Shelter (priority)"
+              - "History Room Door (priority)"
+              - "Small-pantry window (priority)"
+              - "Kitchen Fridge Vent (priority)"
+              - "Games Room Door (priority)"
+              - Kitchen Area
+              - Emergency Shelter
+              - Workshop Roller Door
+              - Dining Room Stairway Door
+              - Pygmy shelter exhaust pipe
+              - Generator Door
+              - Balcony Stairs
+              - Wood Shed Roof
+          - check: "Sweep & vacuum sleeping areas, dining room, stairs, games room & pantry — use BLUE BROOM"
+            notes:
+              - "If not sufficiently sucking, check pipe/hose, filter or bag"
+          - check: Sweep drying room as needed — use BLACK BROOMS
+          - check: Empty vacuum into the general waste bin & change vacuum bags
+          - check: Recharge vacuum batteries and clear any filters (daily)
+          - check: Organise washing load
+            notes:
+              - "1. Gather clothes from participants"
+              - "2. Coordinate with CE on when to run washing machine"
+              - "3. Hang clothes in drying room"
+          - dont: Do not empty vacuum outside
+
+  - name: Stewards
+    slug: stewards
+    description: Table setting, serving and clearing
+    sections:
+      - items:
+          - check: "Before and after meals, clean tables:"
+            subitems:
+              - Clear and wipe with hot soapy water using BLUE CHUX
+              - Spray with sanitiser (under Slushies sink) and allow to air dry
+          - check: "Set tables with cutlery, cups, water, cordial & condiments"
+            notes:
+              - "For breakfast: also add juice & toasters"
+          - check: "Collect meals from servery, serve tables, and double-check dietary needs"
+          - check: "Clear tables during meals, put dirty dishes next to slushies sink"
+          - check: Chop large scraps before adding to food waste bin
+          - check: Remove excess food into food scrap bin, then place dishes at slushies sink
+          - check: Put away all condiments and anything left on tables
+      - title: Notes
+        items:
+          - note: Use BLUE CHUX for general cleaning outside of the kitchen
+
+  - name: "Pilgrims — Bathrooms"
+    slug: pilgrims-bathrooms
+    description: Bathroom cleaning (part 1 of 2)
+    note: "Part 2 is food scraps — instructions are in the kitchen / dining windows"
+    sections:
+      - title: General
+        items:
+          - rule: Always use wet floor signs
+          - check: "Restock:"
+            subitems:
+              - Toilet paper
+              - Sanitary bags
+              - Soap dispensers
+          - check: Pour excess cleaning water down central bathroom drain
+      - title: Order of cleaning
+        items:
+          - check: "1. Sweep floors"
+          - check: "2. Clean benches / basins / mirrors"
+          - check: "3. Clean toilets"
+          - check: "4. Clean partitions & floors"
+      - title: "Basins, partitions and frequently touched spots"
+        items:
+          - check: Mix 100ml lemon concentrate disinfectant with 4.9L of water using the RED MEASURING JUG
+          - check: Pour lemon mix into RED SPRAY PUMP and spray floors, partitions & benches
+          - check: Wipe benches and basins with RED CHUX
+          - check: Clean mirrors using windex & paper towel
+      - title: Toilet cleaning
+        items:
+          - rule: Wear supplied gloves
+          - check: Apply blue toilet gel around the inside toilet rim and scrub with toilet brush
+          - check: "Clean toilet exterior (cistern, lid, seat, bowl) with RED CHUX:"
+            notes:
+              - "Mix: 100ml lemon concentrate disinfectant + 4.9L water in square RED BUCKET"
+      - title: Bathroom floors
+        items:
+          - check: Sweep floors with RED BROOM
+          - check: Spray floors and partitions with the RED SPRAY PUMP using the mix made earlier
+          - check: Rinse floors using RED HOT WATER HOSE
+          - check: Scrub and push water to drains with RED BROOMS & SQUEEGEES
+
+  - name: "Pilgrims — Food Scraps"
+    slug: pilgrims-food-scraps
+    description: Food scraps and recycling (part 2 of 2)
+    note: "Part 1 is bathrooms — instructions are in the bathroom / dining windows"
+    sections:
+      - items:
+          - check: Empty kitchen food scraps into Bokashi bins in the workshop
+            notes:
+              - Use even-numbered bins on even weeks, odd-numbered bins on odd weeks
+              - "e.g. Week 3 = odd; Week 4 = even"
+          - check: Wipe food scraps bin with paper towel (discard in dining room fire or bin beside), then rinse bin in laundry trough
+          - check: "Take glass, plastic, cans & tins to the workshop — sort into labelled wheelie bins"
+          - check: "Empty fire ash:"
+            notes:
+              - "1. Empty into ash bucket"
+              - "2. Cool outside games room"
+              - "3. Place in labelled drums (wood shed roof)"
+          - check: "For general waste bags:"
+            notes:
+              - "1. Remove excess air from the bag"
+              - "2. Tie bag"
+              - "3. Place in the trailer and close the lid"
+          - check: Tell CE when bins are full
+
+  - name: Rover Advisor of the Day
+    slug: raod
+    description: Morning and evening duties (appointed from Crew Leaders)
+    sections:
+      - items:
+          - check: Set an alarm and make sure cooks are awake 30 mins before parade
+          - check: Stoke or light the dining room fire. Clear ash if required
+          - check: Run morning & evening parades
+          - check: Put out the Chalet flag (in the wardens flat)
+          - check: Record daily logbook (see principles)
+          - check: Ring bell for all meals
+          - check: After confirming with PL that outside activities have all concluded for the day (including snowplay or Homeslope — i.e. no one is outside) ring the bell for "Beer O'Clock"
+          - check: "Bring in flags before dark:"
+            subitems:
+              - Balcony flag
+              - "Warden's Flat flag"
+          - check: "Tea towels & aprons after dinner:"
+            notes:
+              - "1. Boil in big aluminium pot for 10 mins"
+              - "2. Wash as a separate load"
+              - "3. Hang in drying room"

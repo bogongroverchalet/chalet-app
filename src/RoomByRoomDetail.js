@@ -2,6 +2,7 @@ import React from 'react'
 import Wrapper from './Wrapper'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import data from './room-by-room.yaml'
 
 function Items({ items, depth = 0 }) {

@@ -22,6 +22,8 @@ import NobsReportQM from './NobsReportQM'
 import NobsReportTL from './NobsReportTL'
 import RoomByRoom from './RoomByRoom'
 import RoomByRoomDetail from './RoomByRoomDetail'
+import DutyGroups from './DutyGroups'
+import DutyGroupDetail from './DutyGroupDetail'
 import NobsReportMerch from './NobsReportMerch'
 import { primeWeatherCache, registerPeriodicSync } from './weatherUtils'
 
@@ -47,6 +49,8 @@ root.render(
         <Route path='/nobs/report/merch' element={<NobsReportMerch />} />
         <Route path='/nobs/room-by-room' element={<RoomByRoom />} />
         <Route path='/nobs/room-by-room/:slug' element={<RoomByRoomDetail />} />
+        <Route path='/chores' element={<DutyGroups />} />
+        <Route path='/chores/:slug' element={<DutyGroupDetail />} />
         <Route path='/trips' element={<Trips />} />
         <Route path='/pdf' element={<PdfViewer />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
