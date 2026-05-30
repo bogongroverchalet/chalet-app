@@ -7,6 +7,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 const ROLES = [
   { code: 'pl', label: 'Party Leader', abbr: 'PL' },
   { code: 'pa', label: 'Party Advisor', abbr: 'PA' },
+  { code: 'merch', label: 'Merchandise Sales', abbr: 'PA' },
   { code: 'ce', label: 'Chief Engineer', abbr: 'CE' },
   { code: 'qm', label: 'Quartermaster', abbr: 'QM' },
   { code: 'tl', label: 'Tow Leader', abbr: 'TL' },
@@ -21,7 +22,6 @@ export default function NobsReport() {
           Nobs reports
         </Link>
       </h1>
-      <p className='mb-4'>Select the Nobs report below :-)</p>
       <p className='mb-4 italic'>
         Don't forget to{' '}
         <a
@@ -34,6 +34,7 @@ export default function NobsReport() {
         </a>{' '}
         when done :-)
       </p>
+      <p className='mb-4 italic'>If anything goes wrong, please go back to the paper forms!</p>
       <ul className='text-2xl'>
         {ROLES.map(({ code, label, abbr }) => (
           <li key={code} className='mb-4'>
