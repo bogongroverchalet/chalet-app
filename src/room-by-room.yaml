@@ -1,0 +1,431 @@
+intro: >-
+  Suggestion: split the party into 2–3 groups, each with 1 NOB. Remaining NOB to sort out duty groups during this time.
+
+rooms:
+  - name: Dining room
+    slug: dining-room
+    sections:
+      - title: Fire extinguishers
+        items:
+          - Near kitchen door
+      - title: Light switches and power points
+        items:
+          - Multiple sections for light in the room
+          - Flood lights (near phone)
+          - text: Power points
+            items:
+              - Toasters — with generator
+          - text: Inverter powered (i.e. 24v) power points
+            items:
+              - "Bill's Bunk — phone charging etc. Please keep area tidy"
+              - Fireplace fan one
+              - Useful for cooks
+      - title: Other bits and pieces
+        items:
+          - Touring maps are in the bottom right drawer of the bookshelf
+          - Games in the bookshelf lower cupboard
+          - "Urn, air pots, coffee & tea cupboards, and toasters. Check for hot water in air pots before boiling the kettle"
+
+  - name: Games room, bulk pantry and store room
+    slug: games-room
+    sections:
+      - title: Participant notes
+        items:
+          - "Nob's cupboard — don't touch"
+          - Brooms — hang on the wall next to Theodore when not in use
+          - text: Theodore — don't touch
+            items:
+              - "CE's baby — do not touch unless asked by CE"
+              - Check with the engineer if it's okay to shower — generators need to be on to run the fan
+              - DO NOT TOUCH THE CHAINS — DO NOT TOUCH THEODORE
+          - text: Can crusher
+            items:
+              - "Don't over-crush (i.e. don't lower the handle too far) — it can damage the crusher"
+          - text: Table tennis & pool tables to stay inside
+            items:
+              - Spare bits are in the store room / small pantry
+          - "Don't chop wood in here — chop it in the wood shed"
+          - No smoking or vaping in here or out the door. Pygmy Possum shelter is the only place to smoke/vape
+          - text: Plaques
+            items:
+              - Encourage participants to add to their crew or create one if their crew is not already represented
+      - title: Store room / small pantry
+        items:
+          - text: "Close the fridge door hard, ensure it's closed"
+            items:
+              - This is where the QM stores the week's meat (fridge & freezer)
+          - Fresh veggies in baskets on shelves
+          - text: Scroggin boxes
+            items:
+              - Please name personal supplies and keep them here — not in bedrooms
+          - Ensure the door is closed
+          - text: Soda stream
+            items:
+              - Only use a reasonable amount
+              - Ensure bottles are available for other participants too
+      - title: Bulk pantry
+        items:
+          - Ensure the door is closed
+          - No entry for participants — but can show for interest
+      - title: Light switches and power points
+        items:
+          - Inverter powerpoint above door for air hockey and darts
+      - title: Emergency exit
+        items:
+          - Out the Games Room door
+      - title: Fire extinguishers
+        items:
+          - Left of exit door
+
+  - name: Bathroom
+    slug: bathroom
+    sections:
+      - title: Emergency exit
+        items:
+          - Out the Games Room door
+      - title: Fire extinguishers
+        items:
+          - Next to the emergency exit
+      - title: Participant notes
+        items:
+          - Leave showers clean and tidy
+          - Keep showers short
+          - Shower at least every 2 days (daily recommended)
+          - Exhaust fans need to be on when showering — check with CE that generator is on
+          - text: Point out bins for sanitary products — use paper bags provided
+            items:
+              - CE handles it after that
+          - If you use the last of the paper towel, please restock it
+          - text: No showers in the morning. Only in the afternoon and later (as per CE)
+            items:
+              - text: Menstruation needs are an exemption that allows morning showers
+                items:
+                  - They must be before breakfast with the windows open
+                  - Only one at a time
+                  - Need to talk to CE prior
+          - text: Washing machine
+            items:
+              - Use in the evening — check power situation with CE
+              - Communal loads — ensure others know they can add things in
+              - "Do not use a delicates bag to separate your washing as then the washing machine can't wash properly. Use a delicates bag for just delicate items (e.g. bras)"
+              - Soaking bucket
+          - text: Smaller parties may keep some showers and toilets closed
+            items:
+              - Always open the first and last toilet
+              - Need to use the last toilet for the septic
+      - title: Light switches and power points
+        items:
+          - Switches for lights
+          - Switches for fans
+          - Lights for the wood shed
+
+  - name: Wood store
+    slug: wood-store
+    sections:
+      - title: Emergency exit
+        items:
+          - Out the Games Room door
+      - title: Fire extinguishers
+        items:
+          - Near Theodore or generator shed
+      - title: Participant notes
+        items:
+          - Use wood on the downhill side of the chalet first
+          - "Don't leave the wood trolley in the walkway. Be mindful of the handle!"
+          - Wear steel capped gumboots when splitting wood — supplied
+          - text: Wood sizing guides — sizing rings
+            items:
+              - Small for stove
+              - Some medium for the Coonara/fireplace
+              - Some bigger for the Coonara/fireplace
+              - Big for Theo — also needs some smaller bits/kindling for lighting etc.
+          - text: The wood chopping gadget
+            items:
+              - "Use a mallet, not an axe/splitter"
+      - title: Light switches and power points
+        items:
+          - Use the flood light above the bathroom door if required
+          - Light switch is outside the door
+
+  - name: Generator shed
+    slug: generator-shed
+    sections:
+      - title: Emergency exit
+        items:
+          - Through Games Room exit or through generator door
+      - title: Fire extinguishers
+        items:
+          - "On wall next to exit door, or on wall in front of workbench"
+      - title: Participant notes
+        items:
+          - text: Not a place that a participant needs to visit
+            items:
+              - "Please don't come in unless looking for the CE"
+          - text: Mention the start/stop buttons
+            items:
+              - Participants are not to use them
+          - We have a large and a small generator
+
+  - name: Tool shed / Workshop
+    slug: tool-shed
+    sections:
+      - title: Participant notes
+        items:
+          - text: Garbage system
+            items:
+              - Everything is sorted as per the labels
+              - Compress containers to save space
+              - text: "Remove lids from bottles, jars, and UHT containers"
+                items:
+                  - Metal lids (e.g. from glass jars) go in the metal bins
+              - General rubbish in the trailer
+              - Inform CE if a bin is full — they can replace it
+              - Odd weeks use the odd numbered bokashi bin
+              - Even weeks use the even numbered bokashi bin
+          - text: Keep everything tidy
+            items:
+              - "If you use a tool, put it away"
+          - text: The Akja (rescue sled) is kept out and ready to use
+            items:
+              - Practising as part of a winter olympics is a fun way to learn to use the Akja
+              - The chain goes at the front — it's a brake under the base when dropped
+      - title: Light switches and power points
+        items:
+          - External lights near door (x2)
+
+  - name: History room
+    slug: history-room
+    sections:
+      - title: Emergency exit
+        items:
+          - Exit at the external History Room door
+      - title: Fire extinguishers
+        items:
+          - Next to external doorway
+      - title: Participant notes
+        items:
+          - There is a torch — keep it on the charger
+          - Outdoor light switches
+          - Displays and Chalet history
+          - Do not use the ladder (roof area) for hide and seek — not structural
+          - text: Radios
+            items:
+              - Use them
+              - "Keep in cupboard, on charge, when not in use"
+              - Channel 3
+              - "In an emergency, use channel 5"
+          - text: There is the main Chalet radio
+            items:
+              - text: Flip between "local" for room audio, or "remote" for dining room audio
+                items:
+                  - "Only audible on one or the other, not both"
+          - text: There are several vacuum cleaner options
+            items:
+              - The big vacuum — needs a generator
+              - text: The stick vacuum — runs off batteries
+                items:
+                  - It uses the same batteries as the drills in the workshop
+                  - "There is a charger above Bill's Bunk"
+                  - Usable when the generator isn't on
+              - Ensure you clean and empty them after use
+              - "Don't vacuum items you can pick up instead — it'll clog the vacuum"
+          - Fire safe — to keep our history protected
+      - title: Light switches and power points
+        items:
+          - External light near door
+          - Charging station for radios — store radios on charge
+
+  - name: Warden's flat
+    slug: wardens-flat
+    sections:
+      - title: Participant notes
+        items:
+          - "Has its own water supply, heating, cooking and generator start/stop buttons"
+          - Good study / quiet area / quarantine room
+          - "Do not use the toilet (unless the warden's flat water is on — talk to CE)"
+          - text: Put the Chalet flag out when the Chalet is occupied
+            items:
+              - Bring it in if shutting down the Chalet
+      - title: Warden's flat storage cupboards
+        items:
+          - Do not go in these. Talk to a nob
+
+  - name: Sleeping areas
+    slug: sleeping-areas
+    sections:
+      - title: Emergency exits
+        items:
+          - text: Balcony
+            items:
+              - text: Do not cover the emergency exit sign
+                items:
+                  - Use an eye mask
+          - History room
+      - title: Participant notes
+        items:
+          - text: No food up here
+            items:
+              - Use scroggin safes in small pantry
+          - Explain morning drink serving (if doing for the week)
+          - "Keep the centre of the rooms clear to allow safe passage"
+          - text: "Keep pack packed ready for fast evacuation if you're already in the bedrooms"
+            items:
+              - "If you are not already in the bedrooms, do NOT evacuate via them to get your pack"
+          - text: Tidiness is important
+            items:
+              - Consider hanging packs using pack clips to keep them off the floor
+          - text: Turn mattresses onto their edges each morning
+            items:
+              - Important for moisture
+              - Hang bedding from the rafters
+              - Do this ASAP to allow crew leaders to vacuum
+          - text: All pillows are to be covered by a personal pillowcase
+            items:
+              - text: PL can supply one if forgotten
+                items:
+                  - Must be washed at the end of the week
+          - Open windows and doors each morning to ventilate
+          - Keep alcohol out of sight at all times
+          - Be mindful of the poles in the Middle Bedroom
+          - text: "Nobs' room"
+            items:
+              - Not compulsory for Nobs to use it
+              - text: "Set the expectations for this week — e.g. whether to be used by Nobs, or for changing, etc."
+                items:
+                  - Balcony can be used as a communal 'quiet' area for reading, or just admiring the view
+              - text: Costumes under bunks
+                items:
+                  - Keep it tidy
+          - text: Balcony is used for parade (weather permitting)
+            items:
+              - RAOD and PL on balcony
+              - Point out where party gather
+      - title: Light switches and power points
+        items:
+          - text: "Don't push the generator buttons — they're not light switches"
+            items:
+              - "Near Nobs' room door"
+              - CE only
+          - text: Lots of lights — some have dimmers
+            items:
+              - Don't forget to turn off both kinds when going to bed
+              - "Nobs' room lights — inverter and generator on opposite sides (inside door)"
+          - Balcony external light beside door
+          - Many powerpoints — all require generators
+
+  - name: Kitchen
+    slug: kitchen
+    sections:
+      - title: Emergency exits
+        items:
+          - Out the kitchen door & Games Room
+      - title: Fire extinguishers
+        items:
+          - "In the dining room, just out the door or on the plasticware cupboard"
+          - Fire blanket is preferred for cooking fires — located next to the pantry
+      - title: Participant notes
+        items:
+          - Keep the pantry door shut
+          - text: The QM will stock the kitchen and pantry for you every day
+            items:
+              - Check with the QM if you feel like you're missing something
+          - Let the QM know if you are close to finishing an item — or do finish it
+          - text: "Ensure the fridge door is closed"
+            items:
+              - Don't overfill
+          - Point out where the recycling tubs and general waste bins are located
+          - text: Food scraps bin
+            items:
+              - "Only organic material — no tea bags, burn them in the fire"
+              - "Ensure it's there before putting things in"
+          - text: Bread tins
+            items:
+              - "Wipe out, not wash"
+              - Line with oil
+              - Store upside down — to avoid rat issues
+          - Check with CE before using large electrical appliances
+          - text: Non-cooks can cook but need to clean their own dishes
+            items:
+              - Need to confirm with QM
+          - text: Show where the gas shelter and BBQ are
+            items:
+              - text: Need to turn the gas on in the gas shed to use the BBQ
+                items:
+                  - Turn it off on completion
+          - Explain the hotbox
+          - Cutting boards and colour code guide
+          - Exhaust fan switch
+          - Follow the cupboard labels
+          - "Hand washing sink — please use it before, after & during cooking, blowing nose etc."
+          - text: Sanitize benches and tables
+            items:
+              - When and how
+          - Hot water may be very slow to come through. Be patient
+      - title: Light switches and power points
+        items:
+          - Lots (not all listed)
+          - Main switch is outside the door (in dining room)
+          - Pantry has both
+          - Gas store and outdoor lights near external door
+          - Exhaust fan near the pass
+
+  - name: Ski room
+    slug: ski-room
+    sections:
+      - title: Emergency exits
+        items:
+          - Out through the Pygmy Possum Shelter
+      - title: Participant notes
+        items:
+          - "Keep skis, stocks and coats in an orderly fashion so they are easy to find"
+          - Use the largest rack that your skis fit in to help shorter-skied people
+          - Don't leave skis outside
+
+  - name: Pygmy Possum shelter
+    slug: pygmy-possum-shelter
+    sections:
+      - title: Emergency exits
+        items:
+          - Out through the Pygmy Possum Shelter
+      - title: Participant notes
+        items:
+          - The only place smoking and vaping is allowed
+          - Do not leave butts on the ground
+          - Use the tin provided and empty it before you leave
+          - No smoking or vaping anywhere else in or around the chalet
+
+  - name: Gear store
+    slug: gear-store
+    sections:
+      - title: Participant notes
+        items:
+          - Nutcrackers for ski tow are stored here
+          - Spare ski poles for playing on slopes close to chalet are found here
+          - text: Snowboards & toboggans
+            items:
+              - Snowboards have a concordance table between boot sizes and snowboards. Make sure you pick the correct snowboard that fits your boots
+              - Snowboard boots must be dried in the drying room before going into storage in the big metal box
+          - Spare parts for Chalet repairs are also found here
+          - Water treatment system — do not touch
+
+  - name: Drying room
+    slug: drying-room
+    sections:
+      - title: Participant notes
+        items:
+          - Do not keep Gore-Tex in here as it will de-laminate and be ruined
+          - Boots should be kept upside down to keep snow from falling in
+          - CE only to adjust heater
+          - text: Items must be removed when they have dried to make room for others
+            items:
+              - It may earn a three minute talk to ensure consideration
+          - Hang clothes along the length of the room to allow for air flow
+
+  - name: Emergency refuge shelter
+    slug: emergency-refuge-shelter
+    sections:
+      - title: Participant notes
+        items:
+          - Show what is in there (logbook, rations, etc.)
+          - Fire place and food is for emergency use only
+          - A shovel is located on the wall above the door for digging in
