@@ -11,6 +11,7 @@ import { skipWaiting, clientsClaim } from 'workbox-core'
 import { precache, precacheAndRoute, createHandlerBoundToURL, cleanupOutdatedCaches } from 'workbox-precaching'
 import { createPartialResponse } from 'workbox-range-requests'
 import { registerRoute } from 'workbox-routing'
+import { CacheFirst } from 'workbox-strategies'
 import { cacheNames } from 'workbox-core'
 import { getCacheKeyForURL } from 'workbox-precaching'
 
@@ -90,6 +91,11 @@ precache([{ url: '/water-pt2.mp4', revision: '1' }])
 precache([{ url: '/water-pt3.mp4', revision: '1' }])
 precache([{ url: '/water-pt4.mp4', revision: '1' }])
 precache([{ url: '/water-pt5.mp4', revision: '1' }])
+
+registerRoute(
+  ({ url }) => url.pathname.startsWith('/merch/') && url.pathname.endsWith('.jpg'),
+  new CacheFirst({ cacheName: 'merch-images-v1' })
+)
 
 const WEATHER_CACHE = 'weather-v1'
 // Must match WEATHER_API_URL in weatherUtils.js

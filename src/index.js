@@ -26,6 +26,7 @@ import DutyGroups from './DutyGroups'
 import DutyGroupDetail from './DutyGroupDetail'
 import NobsReportMerch from './NobsReportMerch'
 import NobsVideos from './NobsVideos'
+import Merch from './Merch'
 import Safety from './Safety'
 import SafetyChildSafe from './SafetyChildSafe'
 import SafetySunProtection from './SafetySunProtection'
@@ -85,6 +86,7 @@ const router = createBrowserRouter([
       { path: '/nobs/pantry-by-item', element: <PantryByItem /> },
       { path: '/chores', element: <DutyGroups /> },
       { path: '/chores/:slug', element: <DutyGroupDetail /> },
+      { path: '/merch', element: <Merch /> },
       { path: '/safety', element: <Safety /> },
       { path: '/safety/child-safe', element: <SafetyChildSafe /> },
       { path: '/safety/sun-protection', element: <SafetySunProtection /> },
