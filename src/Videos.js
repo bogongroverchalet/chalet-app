@@ -34,6 +34,9 @@ function VideoList() {
         <Link to='blisters-pt2' className='flex items-center'>
           Blisters part 2 <ChevronRightIcon className='ml-1' fontSize='large' />
         </Link>
+        <Link to='tow-nutcracker' className='flex items-center'>
+          Tow nutcracker <ChevronRightIcon className='ml-1' fontSize='large' />
+        </Link>
       </li>
     </ul>
   )

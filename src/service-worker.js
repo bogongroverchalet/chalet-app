@@ -83,6 +83,7 @@ registerRoute(
 precache([{ url: '/bathroom.mp4', revision: '2' }])
 precache([{ url: '/blisters-pt1.mp4', revision: '1' }])
 precache([{ url: '/blisters-pt2.mp4', revision: '1' }])
+precache([{ url: '/tow-nutcracker.mp4', revision: '1' }])
 
 const WEATHER_CACHE = 'weather-v1'
 // Must match WEATHER_API_URL in weatherUtils.js
