@@ -248,6 +248,8 @@ trips:
     long-description: |
       Whilst the one way trip is easy, don't forget that as a tour you need to go twice as far 😀
 
+      Note: trips to the Falls Creek for any kind of adult-goods restocking are prohibited.
+
     route:
       - { gis-file: trip-data, layer: Paths, name: Falls Creek (windy corner) to Wallace Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Chalet to Wallace Turnoff }
@@ -392,6 +394,8 @@ trips:
     difficulty-level: 2
     long-description: |
       More exposed and more elevation than the normal way
+
+      Note: trips to the Falls Creek for any kind of adult-goods restocking are prohibited.
     route:
       - { gis-file: trip-data, layer: Paths, name: Chalet to Langford West Turnoff }
       - { gis-file: trip-data, layer: Paths, name: Langford West Turnoff to Cope Hut }
