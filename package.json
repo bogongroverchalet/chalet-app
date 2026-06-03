@@ -19,6 +19,7 @@
     "browser-util-inspect": "^0.2.0",
     "capitalize": "^2.0.4",
     "classnames": "^2.3.2",
+    "fuse.js": "^7.4.1",
     "gps-distance": "^0.0.4",
     "husky": "^8.0.3",
     "js-file-download": "^0.4.12",
@@ -90,5 +91,8 @@
   },
   "lint-staged": {
     "*.{css,js}": "prettier --write"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0"
   }
 }

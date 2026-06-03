@@ -1,0 +1,569 @@
+[
+  {
+    "bay": "A",
+    "label": "Bay A – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Instant Lasagna",
+          "Spiral Pasta",
+          "2 Minute Noodles",
+          "Muesli",
+          "Corn Flakes"
+        ]
+      },
+      {
+        "level": "2",
+        "note": null,
+        "items": [
+          "Spaghetti",
+          "Brown Sugar",
+          "Tomato Paste"
+        ]
+      },
+      {
+        "level": "3",
+        "note": null,
+        "items": [
+          "Chocolate Mousse",
+          "Cocoa Powder",
+          "Cream of Tartar",
+          "Gelatine",
+          "Baking Powder",
+          "Toothpicks",
+          "BiCarb Soda",
+          "100s & 1000s",
+          "Patty Pans",
+          "Yeast",
+          "Condensed Milk",
+          "Evaporated Milk",
+          "Jelly",
+          "Custard Powder",
+          "Vanilla Essence",
+          "Icing Sugar",
+          "White Sugar",
+          "Caster Sugar"
+        ]
+      },
+      {
+        "level": "4",
+        "note": null,
+        "items": [
+          "Chocolate Melts",
+          "Rolled Oats",
+          "Plain Flour",
+          "Self Raising Flour",
+          "Wholemeal Flour"
+        ]
+      },
+      {
+        "level": "5",
+        "note": null,
+        "items": [
+          "Pastry Mix",
+          "Lemon Cake Mix",
+          "Carrot Cake Mix",
+          "Chocolate Cake Mix",
+          "Vanilla Cake Mix",
+          "Golden Syrup",
+          "Instant Pudding",
+          "Coconut (Desiccated)",
+          "Popcorn Kernels",
+          "Yogurt (Assorted Flavours)",
+          "Coconut Milk Powder"
+        ]
+      },
+      {
+        "level": "6",
+        "note": null,
+        "items": [
+          "Potatoes"
+        ]
+      },
+      {
+        "level": "7",
+        "note": "Top Drawer",
+        "items": [
+          "Cous Cous",
+          "Sugar Substitute",
+          "Onion Replacer",
+          "Garlic Replacer",
+          "FODMAP Gravy Powder"
+        ]
+      },
+      {
+        "level": "8",
+        "note": null,
+        "items": [
+          "Snack Chickpeas & similar – Vegetarian touring lunch alternative",
+          "Vegan Tuna"
+        ]
+      },
+      {
+        "level": "9",
+        "note": null,
+        "items": [
+          "Snack Chickpeas & similar – Vegetarian touring lunch alternative",
+          "Indian Spice Blends",
+          "Coconut Whipping Cream"
+        ]
+      },
+      {
+        "level": "10",
+        "note": null,
+        "items": [
+          "Jelly - Diet",
+          "GF Vegemite",
+          "GF Sweet Mustard Pickle",
+          "Rice Flour",
+          "TVP (Celiac approved)"
+        ]
+      },
+      {
+        "level": "11",
+        "note": "Bottom drawer",
+        "items": [
+          "Gluten Free Biscuits",
+          "Gluten Free Cake Mix"
+        ]
+      }
+    ]
+  },
+  {
+    "bay": "B",
+    "label": "Bay B – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Corn Flakes",
+          "Rice Bubbles",
+          "Weetbix",
+          "Sardines (assorted flavours)",
+          "Tuna (assorted flavours)"
+        ]
+      },
+      {
+        "level": "2",
+        "note": null,
+        "items": [
+          "Baked Beans",
+          "Leg Ham",
+          "Spam",
+          "Corned Beef",
+          "Tinned Chicken",
+          "Spaghetti Sauce with Beef",
+          "Vegie Delights (Nutmeat, Nutolene, Casserole mix)",
+          "Braised Steak & Onion",
+          "Salmon",
+          "Tuna (assorted flavours)"
+        ]
+      },
+      {
+        "level": "3",
+        "note": null,
+        "items": [
+          "Tinned Tomatoes",
+          "Tinned Spaghetti",
+          "Tinned Creamed Corn",
+          "Tinned Corn Kernels",
+          "Tinned Baby Corn"
+        ]
+      },
+      {
+        "level": "4",
+        "note": null,
+        "items": [
+          "Tinned Bamboo Shoots",
+          "Tinned Water Chestnuts",
+          "Tinned Beetroot",
+          "Tinned Black Beans",
+          "Tinned Champignons",
+          "Tinned Straw Mushrooms",
+          "Tinned Borlotti Beans",
+          "Tinned Green Beans",
+          "Tinned Cannellini Beans",
+          "Tinned Butter Beans",
+          "Tinned Brown Lentils",
+          "Tinned Red Kidney Beans",
+          "Tinned Chickpeas"
+        ]
+      },
+      {
+        "level": "5",
+        "note": null,
+        "items": [
+          "Cup of Soups (assorted flavours)",
+          "Dried Peas",
+          "Dried Mushrooms",
+          "Textured Vegetable Protein (TVP)",
+          "Nutritional Yeast",
+          "Tinned Carrots",
+          "Deb"
+        ]
+      },
+      {
+        "level": "6",
+        "note": "top drawer",
+        "items": [
+          "Dried Five Bean Mix",
+          "Dried Soup Mix",
+          "Dried Borlotti Beans",
+          "Dried Green Lentils",
+          "Dried Red Lentils"
+        ]
+      },
+      {
+        "level": "7",
+        "note": "bottom drawer",
+        "items": [
+          "Dried Kidney Beans",
+          "Dried Chickpeas",
+          "Dried Split Peas"
+        ]
+      }
+    ]
+  },
+  {
+    "bay": "C",
+    "label": "Bay C – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Arnott’s Cream Biscuits",
+          "Marie Biscuits",
+          "Choc Ripple Biscuits",
+          "Savoys",
+          "Water Crackers"
+        ]
+      },
+      {
+        "level": "2",
+        "note": null,
+        "items": [
+          "Pepper",
+          "Salt",
+          "Poppy Seeds",
+          "Sesame Seeds",
+          "Hot Chilli Sauce",
+          "Minced Garlic",
+          "Minced Ginger",
+          "Hot English Mustard",
+          "Keens Mustard Powder"
+        ]
+      },
+      {
+        "level": "3",
+        "note": null,
+        "items": [
+          "Sundried Tomato Pesto",
+          "Basil Pesto",
+          "Thai Red Curry Paste",
+          "Green Curry Paste",
+          "Massaman Curry Paste",
+          "Lemon Juice",
+          "Chilli Oil",
+          "Pickled Cucumbers",
+          "Pecks Spreads (assorted flavours)",
+          "Tahini",
+          "Stock Powder (assorted flavours)"
+        ]
+      },
+      {
+        "level": "4",
+        "note": null,
+        "items": [
+          "Tomato Sauce",
+          "Soy Sauce",
+          "Black Bean Sauce",
+          "Sweet Chilli Sauce",
+          "Sesame Oil",
+          "BBQ Sauce",
+          "Mustard",
+          "Balsamic Glaze",
+          "Worcestershire Sauce",
+          "Oyster Sauce (incl. Vegetarian)",
+          "Chinese Cooking Wine"
+        ]
+      },
+      {
+        "level": "5",
+        "note": null,
+        "items": [
+          "Herbs & Spices (see below)"
+        ]
+      },
+      {
+        "level": "6",
+        "note": null,
+        "items": [
+          "Mint Jelly",
+          "Mint Sauce",
+          "Horseradish",
+          "Sundried Tomato",
+          "Roast Peppers",
+          "Jalapenos",
+          "Tomato Relish",
+          "Pickled Onions",
+          "Salsa",
+          "Olives",
+          "Gerkin Relish",
+          "Sweet Mustard Pickle",
+          "Mayo",
+          "Onion Flakes"
+        ]
+      },
+      {
+        "level": "7",
+        "note": null,
+        "items": [
+          "Bread Crumbs",
+          "Curry Powder",
+          "Raisings",
+          "Currants",
+          "Sultanas",
+          "Prunes"
+        ]
+      },
+      {
+        "level": "8",
+        "note": null,
+        "items": [
+          "Honey",
+          "Ginger Marmalade",
+          "Breakfast Marmalade",
+          "Apricot Jam",
+          "Raspberry Jam",
+          "Strawberry Jam",
+          "Plum Jam",
+          "Vegemite Peanut Butter – Smooth",
+          "Peanut Butter – Crunchy"
+        ]
+      },
+      {
+        "level": "9",
+        "note": null,
+        "items": [
+          "Dried Apple",
+          "Dried Apricots",
+          "Dried Dates",
+          "Almonds",
+          "Peanuts",
+          "Walnuts",
+          "Cinnamon Sugar",
+          "Cinnamon",
+          "Cloves",
+          "All Spice",
+          "Ginger",
+          "Nutmeg",
+          "Chinese 5 Spice",
+          "Cayenne Pepper (Hot)",
+          "Cajun Spice Blend",
+          "Chilli Flakes",
+          "Ground Coriander",
+          "Coriander Leaves",
+          "Coriander Seeds (Whole)",
+          "Cumin",
+          "Curry Powder",
+          "Garam Masala",
+          "Garlic Granules",
+          "Lemon Pepper",
+          "Italian Herb Blend / Mixed Herbs",
+          "Basil",
+          "Paprika",
+          "Chives",
+          "Parsley",
+          "Sage",
+          "Thyme",
+          "Turmeric",
+          "Bay Leaves"
+        ]
+      }
+    ]
+  },
+  {
+    "bay": "D",
+    "label": "Bay D – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Savoys",
+          "Saladas",
+          "Vita Wheats",
+          "Rice Crackers",
+          "Juice - Apple"
+        ]
+      },
+      {
+        "level": "2",
+        "note": null,
+        "items": [
+          "Fresh eggs",
+          "Saos",
+          "Rice Cakes"
+        ]
+      },
+      {
+        "level": "3",
+        "note": null,
+        "items": [
+          "Fresh eggs",
+          "Egg Powder (real)",
+          "Egg Substitutes – Easy Egg & No Egg"
+        ]
+      },
+      {
+        "level": "4",
+        "note": null,
+        "items": [
+          "Milk - Full Cream, Skim, Lactose Free, Soy, Almond, Oat & Rice"
+        ]
+      },
+      {
+        "level": "5",
+        "note": null,
+        "items": [
+          "Full Cream Milk",
+          "Custard UHT"
+        ]
+      }
+    ]
+  },
+  {
+    "bay": "E",
+    "label": "Bay E – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Juice (Pineapple, Apple & Mango, Breakfast, Orange, Pineapple & Orange)"
+        ]
+      },
+      {
+        "level": "2",
+        "note": null,
+        "items": [
+          "Parmesan Cheese",
+          "Thickened Cream",
+          "Powdered Milk",
+          "Tasty Cheese"
+        ]
+      },
+      {
+        "level": "3",
+        "note": null,
+        "items": [
+          "Copha",
+          "Extra Virgin Olive Oil",
+          "Ghee",
+          "Canola Oil",
+          "Rice – Basmati",
+          "Rice – Long Grain"
+        ]
+      },
+      {
+        "level": "4",
+        "note": null,
+        "items": [
+          "Margarine",
+          "Nuttelex",
+          "Apricot Nectar",
+          "Coconut Oil",
+          "Pie Apple",
+          "Pineapple Pieces"
+        ]
+      },
+      {
+        "level": "5",
+        "note": null,
+        "items": [
+          "Fruit Salad",
+          "Two Fruits",
+          "Pears",
+          "Apricots",
+          "Peaches",
+          "Excess Bread Mix"
+        ]
+      }
+    ]
+  },
+  {
+    "bay": "F",
+    "label": "Bay F – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Juice (Orange)",
+          "Cordial (Fruit Cup, Orange, Lemon, Raspberry)",
+          "Ribena"
+        ]
+      },
+      {
+        "level": "2",
+        "note": null,
+        "items": [
+          "Wholegrain Bread",
+          "Juice (Apple, Apple & Black Currant)",
+          "Diet Cordial"
+        ]
+      },
+      {
+        "level": "3",
+        "note": null,
+        "items": [
+          "Wholemeal Bread Mix",
+          "Tinned Tomato Soup"
+        ]
+      },
+      {
+        "level": "4",
+        "note": null,
+        "items": [
+          "Multigrain Bread Mix, Soup Bulk Mix (Chicken Noodle, Minestrone, Vegetable, French Onion, Potato & Leek, Pea & Ham), Gravy Mix, Tinned Soup (Cream of Asparagus, Cream of Mushroom, Cream of Chicken)"
+        ]
+      },
+      {
+        "level": "5",
+        "note": null,
+        "items": [
+          "Quick Oats",
+          "Bread Mix"
+        ]
+      }
+    ]
+  },
+  {
+    "bay": "G",
+    "label": "Bay G – Big Pantry",
+    "shelves": [
+      {
+        "level": "1",
+        "note": "Top",
+        "items": [
+          "Bread Mix",
+          "Corn Flour",
+          "French Onion Soup (Celiac friendly)",
+          "Spaghetti",
+          "Rice Noodles",
+          "Penne Pasta",
+          "Crispbread (Celiac friendly)",
+          "Weetbix",
+          "Cornflakes",
+          "Rice Bubbles",
+          "Plain Flour",
+          "Self Raising Flour"
+        ]
+      }
+    ]
+  }
+]

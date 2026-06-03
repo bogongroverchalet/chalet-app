@@ -27,6 +27,9 @@ import DutyGroupDetail from './DutyGroupDetail'
 import NobsReportMerch from './NobsReportMerch'
 import NobsVideos from './NobsVideos'
 import Safety from './Safety'
+import PantryByBay from './PantryByBay'
+import PantryByItem from './PantryByItem'
+import PantryInventory from './PantryInventory'
 import { primeWeatherCache, registerPeriodicSync } from './weatherUtils'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
@@ -57,6 +60,9 @@ root.render(
         <Route path='/chores/:slug' element={<DutyGroupDetail />} />
         <Route path='/safety' element={<Safety />} />
         <Route path='/trips' element={<Trips />} />
+        <Route path='/pdf/pantry-by-bay' element={<PantryByBay />} />
+        <Route path='/pdf/pantry-by-item' element={<PantryByItem />} />
+        <Route path='/pdf/pantry-inventory' element={<PantryInventory />} />
         <Route path='/pdf/:slug' element={<PdfViewer />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
         <Route path='/trips/map/:tripName?' element={<Map />} />

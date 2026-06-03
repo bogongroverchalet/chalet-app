@@ -1,0 +1,2834 @@
+[
+  {
+    "category": "Baking",
+    "product": "100's & 1000's",
+    "brand": "Black & Gold",
+    "weight": "250g",
+    "barcode": "9310077305627",
+    "ingredients": "(903), COLOURS (102, 133, 110, 122, 124, 123)"
+  },
+  {
+    "category": "Baking",
+    "product": "Baking cocoa",
+    "brand": "Cadbury",
+    "weight": "250g",
+    "barcode": "9300617432739",
+    "ingredients": "COCOA POWDER RICE FLOUR, SODIUM ACID PYROPHOSPHATE (450), SODIUM"
+  },
+  {
+    "category": "Baking",
+    "product": "Baking Powder Gluten Free",
+    "brand": "McKenzie's",
+    "weight": "125g",
+    "barcode": "9310061122865",
+    "ingredients": "BICARBONATE (500)"
+  },
+  {
+    "category": "Baking",
+    "product": "Caster sugar",
+    "brand": "CSR",
+    "weight": "1kg",
+    "barcode": "9313010102543",
+    "ingredients": "CANE SUGAR SUGAR, WHEAT FLOUR, WHOLEMEAL WHEAT FLOUR [VITAMINS (THIAMIN, FOLATE)1, NON-FAT MILK SOLIDS, DRIED CARROT (2%), WALNUT PIECES (2%), RAISING AGENTS (450, SODIUM BICARBONATE), TAPIOCA STARCH, VEGETABLE OIL, BURNT SUGAR, VEGETABLE GUM (XANTHAN), SPICES, NATURAL FLAVOUR. CONTAINS WHEAT, MILK AND WALNUTS. MAY BE PRESENT: EGG, SOY AND OTHER"
+  },
+  {
+    "category": "Baking",
+    "product": "Classic carrot cake mix",
+    "brand": "Green's",
+    "weight": "470g",
+    "barcode": "9310273723928",
+    "ingredients": "TREE NUTS. SUGAR, WHEAT FLOUR, COCOA POWDER (5%), VEGETABLE FAT [EMULSIFIERS (471, 477), ANTIOXIDANT (307)1, MALTODEXTRIN, RAISING AGENTS (450, SODIUM BICARBONATE), TAPIOCA STARCH, NON FAT MILK SOLIDS, SALT, NATURAL FLAVOUR, MINERAL SALT (501), VEGETABLE GUM (XANTHAN). CONTAINS WHEAT AND MILK. MAY BE PRESENT: EGG, SOY AND TREE"
+  },
+  {
+    "category": "Baking",
+    "product": "Classic Chocolate Cake mix",
+    "brand": "Green's",
+    "weight": "440g",
+    "barcode": "9310273112418",
+    "ingredients": "NUTS."
+  },
+  {
+    "category": "Baking",
+    "product": "Cream of tartar",
+    "brand": "McKenzie's",
+    "weight": "125g",
+    "barcode": "9310061018328",
+    "ingredients": "SUGAR, VEGETABLE FAT (PALM, SHEA), FAT REDUCED COCOA POWDER (15%), MILK FAT, EMULSIFIER (SOY LECITHINS), NATURAL FLAVOUR (VANILLA). CONTAINS: MILK, SOYBEANS AND TREE NUTS (SHEA NUT). MAY BE PRESENT: PEANUTS AND OTHER"
+  },
+  {
+    "category": "Baking",
+    "product": "Dark choc cooking block, compound choc",
+    "brand": "Woolworths",
+    "weight": "375g",
+    "barcode": "9300633446284",
+    "ingredients": "TREE NUTS. SUGAR, VEGETABLE FAT (PALM, SHEA), FAT REDUCED COCOA POWDER (15%), MILK FAT, EMULSIFIER (SOY LECITHINS), NATURAL FLAVOUR (VANILLA). CONTAINS: MILK, SOYBEANS AND TREE NUTS (SHEA NUT). MAY BE PRESENT: PEANUTS AND OTHER"
+  },
+  {
+    "category": "Baking",
+    "product": "Dark Chocolate Cooking Block",
+    "brand": "Woolworths",
+    "weight": "375g",
+    "barcode": "9300633446284",
+    "ingredients": "TREE NUTS. FINE DESICCATED COCONUT, PRESERVATIVE (220, 223)"
+  },
+  {
+    "category": "Baking",
+    "product": "Desiccated Coconut",
+    "brand": "Black & Gold",
+    "weight": "250g",
+    "barcode": "9310077214264",
+    "ingredients": "CONTAINS SULPHITES BOVINE HIDE GELATINE"
+  },
+  {
+    "category": "Baking",
+    "product": "Gelatine",
+    "brand": "Davis",
+    "weight": "50g",
+    "barcode": "9410251000505",
+    "ingredients": "CONTAINS SULPHITES"
+  },
+  {
+    "category": "Baking",
+    "product": "Golden syrup",
+    "brand": "Brookdale",
+    "weight": "500g",
+    "barcode": "4088700128183",
+    "ingredients": "CANE SUGAR, WATER SUGAR, MILK SOLIDS, VEGETABLE FAT [EMULSIFIERS (492, SOY LECITHIN)], SALT, FLAVOURS CONTAINS MILK, SOY"
+  },
+  {
+    "category": "Baking",
+    "product": "Milk Chocolate Melts",
+    "brand": "Nestle",
+    "weight": "290g",
+    "barcode": "9300605107502",
+    "ingredients": "MAY CONTAIN TREE NUTS WHEAT FLOUR, SUGAR, VEGETABLE FAT [EMULSIFIERS (471, 477), ANTIOXIDANT (307)], RAISING AGENTS (450, SODIUM BICARBONATE), SALT, NATURAL FLAVOUR, COLOUR (ANNATTO). CONTAINS WHEAT. MAY BE PRESENT: MILK, EGG, SOY AND"
+  },
+  {
+    "category": "Baking",
+    "product": "Moist Vanilla Cake mix",
+    "brand": "Green's",
+    "weight": "470g",
+    "barcode": "9310273112449",
+    "ingredients": "TREE NUTS."
+  },
+  {
+    "category": "Baking",
+    "product": "Icing sugar mixture",
+    "brand": "CSR",
+    "weight": "500g",
+    "barcode": "9313010000757",
+    "ingredients": "GLUTEN FREE WATER, IMITATION VANILLA FLAVOURS, COLOUR (150D), ACIDITY REGULATOR (330),"
+  },
+  {
+    "category": "Baking",
+    "product": "Vanilla flavouring (imitation)",
+    "brand": "Queen",
+    "weight": "100ml",
+    "barcode": "93641272",
+    "ingredients": "PRESERVATIVE (202) WHEAT FLOUR, SUGAR, VEGETABLE FAT [EMULSIFIERS (471, 477), ANTIOXIDANT (307)]. RAISING AGENTS (450, SODIUM BICARBONATE), SALT, NATURAL FLAVOUR, COLOUR (ANNATTO). CONTAINS WHEAT. MAY BE PRESENT: MILK, EGG. SOY AND"
+  },
+  {
+    "category": "Baking",
+    "product": "Vanilla moist cake mix",
+    "brand": "Green's",
+    "weight": "340g",
+    "barcode": "9310273112449",
+    "ingredients": "TREE NUTS."
+  },
+  {
+    "category": "Baking",
+    "product": "White sugar",
+    "brand": "Black & Gold",
+    "weight": "2kg",
+    "barcode": "9310077204265",
+    "ingredients": "CANE SUGAR"
+  },
+  {
+    "category": "Baking",
+    "product": "Self raising flour - plain",
+    "brand": "Black & Gold",
+    "weight": "1kg",
+    "barcode": "9310077200335",
+    "ingredients": "WHOLEMEAL WHEAT FLOUR"
+  },
+  {
+    "category": "Baking",
+    "product": "Wholemeal flour - plain",
+    "brand": "Whitewings",
+    "weight": "1kg",
+    "barcode": "9310047207197",
+    "ingredients": "CONTAINS GLUTEN-CONTAINING CEREAL WHEAT FLOUR"
+  },
+  {
+    "category": "Baking",
+    "product": "Plain flour",
+    "brand": "Black & Gold",
+    "weight": "1kg",
+    "barcode": "9310077200311",
+    "ingredients": "CONTAINS: WHEAT, GLUTEN UNBLEACHED WHEATEN FLOUR, NON IODISED SALT, MALT FLOUR, INACTIVE DRY YEAST, ASCORBIC ACID (VITAMIN C), ENZYMES, VITAMIN (THIAMINE, FOLIC ACID). YEAST SACHET: DRY YEAST, EMULSIFIER (E491)"
+  },
+  {
+    "category": "Baking",
+    "product": "Bread Mix",
+    "brand": "Laucke Flour",
+    "weight": "10kg",
+    "barcode": "9321885000017",
+    "ingredients": "CONTAINS: GLUTEN FLOUR (WHEAT, WHOLEMEAL WHEAT FLOUR, RYE FLOUR, MALT BARLEY FLOUR), YEAST, WATER, LODISED SEA SALT, VINEGAR, CANOLA OIL, SUGAR, WHEAT FIBRE, CHIA SEEDS, VITAMINS (THIAMIN & FOLATE). CONTAINS CEREALS CONTAINING GLUTEN"
+  },
+  {
+    "category": "Baking",
+    "product": "Bread crumbs",
+    "brand": "Black & Gold",
+    "weight": "500g",
+    "barcode": "9310077204951",
+    "ingredients": "(WHEAT, RYE, BARLEY)."
+  },
+  {
+    "category": "Baking",
+    "product": "Cornflour",
+    "brand": "Whitewings",
+    "weight": "300g",
+    "barcode": "9310047210258",
+    "ingredients": "MAIZE CORNFLOUR"
+  },
+  {
+    "category": "Baking",
+    "product": "Popping corn",
+    "brand": "Black & Gold",
+    "weight": "500g",
+    "barcode": "9310077289064",
+    "ingredients": "AUSTRALIAN CORN (100%)"
+  },
+  {
+    "category": "Baking",
+    "product": "Brown sugar",
+    "brand": "CSR",
+    "weight": "1kg",
+    "barcode": "9313010000801",
+    "ingredients": "BROWN SUGAR WHEAT FLOUR, VEGETABLE SHORTENING [ANTIOXIDANT (3 19)], RAISING AGENTS (450, 500, 341, 339), WHEATEN CORNFLOUR (WHEAT), SALT. CONTAINS: WHEAT, GLUTEN"
+  },
+  {
+    "category": "Baking",
+    "product": "Pastry mix",
+    "brand": "Lion",
+    "weight": "375g",
+    "barcode": "9300609110607",
+    "ingredients": "MAY BE PRESENT: MILK"
+  },
+  {
+    "category": "Baking",
+    "product": "Stevia",
+    "brand": "Whole earth",
+    "weight": "350g",
+    "barcode": "7630486400884",
+    "ingredients": "ERYTHRITOL, STEVIOL GYLCOSIDES STARCH (MAIZE, TAPIOCA), RICE FLOUR, THICKENERS (464, 415), RAISING AGENTS (450, 500), SALT. GLUTEN FREE FREE FROM WHEAT, GLUTEN, DAIRY &"
+  },
+  {
+    "category": "Baking",
+    "product": "Gluten Free Self Raising Flour",
+    "brand": "Whitewings",
+    "weight": "500g",
+    "barcode": "9310047220820",
+    "ingredients": "YEAST"
+  },
+  {
+    "category": "Baking",
+    "product": "Baking cocoa",
+    "brand": "Black & Gold",
+    "weight": "255g",
+    "barcode": "9310077311833",
+    "ingredients": "COCOA POWDER RECONSTITUTED APPLE JUICE (91.3%), MANGO (8.5%) (PUREE OR RECONSTITUTED), VITAMIN C, FOOD ACID"
+  },
+  {
+    "category": "Beverages",
+    "product": "Apple Mango Juice",
+    "brand": "Golden Circles",
+    "weight": "2L",
+    "barcode": "9310179008594",
+    "ingredients": "(MALIC ACID) WATER, APRICOT PUREE (35%), SUGAR, FLAVOUR, NATURAL COLOUR (160B), FOOD ACID (CITRIC), ANTIOXIDANT (ASCORBIC"
+  },
+  {
+    "category": "Beverages",
+    "product": "Apricot Nectar (Fruit drink)",
+    "brand": "Ardmona",
+    "weight": "405ml",
+    "barcode": "9310092000422",
+    "ingredients": "ACID) WATER, RECONSTITUTED JUICES [APPLE (48%), RASPBERRY (2%)], FOOD ACID (CITRIC), SWEETENERS (952, 950, 955), PRESERVATIVES (202, 223, [SULPHITES], NATURAL FLAVOURS, NATURAL COLOUR (163), VITAMIN C"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Diet - Apple Raspberry",
+    "brand": "Diet Rite",
+    "weight": "1L",
+    "barcode": "9345905005523",
+    "ingredients": "CONTAINS SULPHITES WATER, RECONSTITUTED JUICES [APPLE (30%), ORANGE (15%), PINEAPPLE (4%), PASSIONFRUIT (1%), FOOD ACID (CITRIC), NATURAL FLAVOURS, SWEETENERS (952, 950, 955), PRESERVATIVES (202, 223 [SULPHITES]), THICKENER (466), VITAMIN C, NATURAL COLOURS (150A, 100, 160A)."
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Diet - Fruit Cocktail",
+    "brand": "Diet Rite",
+    "weight": "1L",
+    "barcode": "9345905005530",
+    "ingredients": "CONTAINS SULPHITES WATER, RECONSTITUTED LEMON JUICE (50%), SWEETENERS (952, 950, 955), NATURAL FLAVOURS. PRESERVATIVES (202, 223), THICKENER (466), VITAMIN C, NATURAL COLOUR (LUTEIN), FOOD ACID"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Diet - Lemon",
+    "brand": "Diet Rite",
+    "weight": "1L",
+    "barcode": "9345905005752",
+    "ingredients": "(CITRIC). WATER, SUGAR, RECONSTITUTED FRUIT JUICE (23%) (PINEAPPLE, LEMON, ORANGE, PASSIONFRUIT), FOOD ACID (CITRIC ACID), NATURAL FLAVOUR, PRESERVATIVES (SODIUM METABISULPHITE (SULPHITES), SODIUM BENZOATE, NATURAL COLOURS (CAROTENE, CARMINE), STABILISER (466)"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Fruit Cup",
+    "brand": "Golden Circles",
+    "weight": "2L",
+    "barcode": "9310179005593",
+    "ingredients": "CONTAINS: SULPHITES RECONSTITUTED FRUIT JUICES (APPLE (34%), PINEAPPLE (10%), ORANGE (5%), PASSIONFRUIT (1%). WATER, SUGAR, FOOD ACID (330), NATURAL FLAVOURS, PRESERVATIVES (202, 223 , NATURAL COLOURS (CARMINES, LUTEIN), SWEETENER (955)."
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Fruit Cup",
+    "brand": "Community Co",
+    "weight": "1L",
+    "barcode": "9310246053380",
+    "ingredients": "CONTAINS SULPHITES. WATER, SUGAR, RECONSTITUTED LEMON JUICE (22%), FOOD ACID (SODIUM CITRATE), LEMON FLAVOUR, PRESERVATIVES (SODIUM METABISUIPHITE (SUIPHITES), SODIUM BENZOATE)."
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Lemon",
+    "brand": "Golden Circles",
+    "weight": "2L",
+    "barcode": "9310179188166",
+    "ingredients": "CONTAINS: SULPHITES RECONSTITUTED LEMON JUICE (50%), WATER, SUGAR, NATURAL FLAVOUR, PRESERVATIVES (202, 223), FOOD ACID (330), SWEETENER (955), NATURAL COLOUR (LUTEIN)"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Lemon",
+    "brand": "Community Co",
+    "weight": "1L",
+    "barcode": "9310246053397",
+    "ingredients": "CONTAINS SULPHITES RECONSTITUTED ORANGE JUICE (50%), WATER, SUGAR, FOOD ACID (330), NATURAL FLAVOUR, PRESERVATIVES (202, 223), SWEETENER (905), NATURAL COLOURS (CARMINES, LUTEIN)"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Orange",
+    "brand": "Community Co",
+    "weight": "1L",
+    "barcode": "9310246053403",
+    "ingredients": "CONTAINS SULPHITES WATER, SUGAR, FOOD ACIDS (CITRIC ACID, ACETIC ACID), PRESERVATIVES (SODIUM METABISULPHITE (SULPHITES), SODIUM BENZOATE, FLAVOUR, STABILISER (466), COLOUR (122)"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Raspberry",
+    "brand": "Golden Circles",
+    "weight": "2L",
+    "barcode": "9310179005630",
+    "ingredients": "CONTAINS: SULPHITES WATER, SUGAR, FOOD ACID (330), NATURAL FLAVOUR, NATURAL COLOUR (ANTHOCYANINS), PRESERVATIVES (211, 223), SWEETENER (955)."
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Raspberry",
+    "brand": "Community Co",
+    "weight": "1L",
+    "barcode": "9310246053373",
+    "ingredients": "CONTAINS SULPHITES. RECONSTITUTED ORANGE JUICE (99%), NATURAL FLAVOUR, VITAMIN C, FOOD ACID"
+  },
+  {
+    "category": "Beverages",
+    "product": "Orange juice",
+    "brand": "Black & Gold",
+    "weight": "2L",
+    "barcode": "9310077217401",
+    "ingredients": "(330). RECONSTITUTED FRUIT JUICE [PINEAPPLE (79.8%), ORANGE (20%)], FOOD ACID (CITRIC ACID), VITAMIN C, STABILISER"
+  },
+  {
+    "category": "Beverages",
+    "product": "Pine Orange Juice",
+    "brand": "Golden Circles",
+    "weight": "2L",
+    "barcode": "9310179081252",
+    "ingredients": "(PECTIN), NATURAL FLAVOURS RECONSTITUTED PINEAPPLE JUICE (99.7%), FOOD ACID (CITRIC ACID), VITAMIN C,"
+  },
+  {
+    "category": "Beverages",
+    "product": "Pineapple juice",
+    "brand": "Golden Circles",
+    "weight": "2L",
+    "barcode": "9310179008617",
+    "ingredients": "STABILISER (PECTIN), NATURAL FLAVOUR"
+  },
+  {
+    "category": "Beverages",
+    "product": "Cordial - Orange",
+    "brand": "Golden Cirrcle",
+    "weight": "2L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages",
+    "product": "Ribena",
+    "brand": "Ribena",
+    "weight": "1L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages",
+    "product": "Pineapple juice",
+    "brand": "Golden Cirrcle",
+    "weight": "2L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages",
+    "product": "Apple juice",
+    "brand": "Black & Gold",
+    "weight": "2L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages",
+    "product": "Apple & blackcurrant juice",
+    "brand": "Black & Gold",
+    "weight": "2L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages",
+    "product": "Multivitamin juice",
+    "brand": "Golden Cirrcle",
+    "weight": "2L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages",
+    "product": "Pineapple pieces in natural juice",
+    "brand": "Auttumn Fields",
+    "weight": "825g",
+    "barcode": "9318835006830",
+    "ingredients": "PINEAPPLE (59%), PINEAPPLE JUICE (41%)"
+  },
+  {
+    "category": "Beverages",
+    "product": "Corned beef with juices",
+    "brand": "Palm",
+    "weight": "326g",
+    "barcode": "940314501084",
+    "ingredients": "BEEF (98%), SALT, PRESERVATIVES (250) PERONSTLUTED LEMON JUICE (99,9%), ANTIOXIDANT (300), LEMON FLAVOUR PRESERVATIVE (223)"
+  },
+  {
+    "category": "Beverages",
+    "product": "Lemon Juice",
+    "brand": "Black & Gold",
+    "weight": "250ml",
+    "barcode": "9510077250989",
+    "ingredients": "CONTAINS: SULPHITES GLUCOSE SYRUP, VEGETABLE FAT, MINERAL SALTS (E340, E451), MILK PROTEIN, EMULSIFIERS (E471, E472E), ANTICAKING AGENT (E170), SALT, FLAVOURS."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Coffee mate",
+    "brand": "Nestle",
+    "weight": "400g",
+    "barcode": "8850124025685",
+    "ingredients": "CONTAINS MILK PROTEIN BARLEY, RYE, CHICORY, MALTED BARLEY - ROASTED"
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Decaf coffee",
+    "brand": "Nautre's Cuppa",
+    "weight": "125g",
+    "barcode": "9311367000284",
+    "ingredients": "CONTAINS BARLEY AND RYE. CEREALS (BARLEY, MALTED BARLEY, RYE) (86%), CHICORY."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Decaf coffee",
+    "brand": "Nestle Caro",
+    "weight": "150g",
+    "barcode": "4005500086062",
+    "ingredients": "CONTAINS BARLEY AND RYE. SUGAR, MILK SOLIDS, GLUCOSE SYRUP, COCOA (10%), COCONUT OIL, SALT, STABILISER (340), EMULSIFIER (471), FLAVOUR (VANILLIN CONTAINS MILK), SPICE (CINNAMON)"
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Hot Chocolate",
+    "brand": "Nestle",
+    "weight": "2kg",
+    "barcode": "9300605049123",
+    "ingredients": "CONTAINS MILK SUGAR, COCOA (COCOA SOLIDS 30%), MALTODEXTRIN (CORN), MILK SOLIDS, EMULSIFIER (SOY LECITHIN), SALT, FLAVOUR (VANILLA CONTAINS MILK)."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Hot Chocolate",
+    "brand": "Nestle Aspen Ble 1.4kg",
+    "weight": "",
+    "barcode": "9300605105188",
+    "ingredients": "CONTAINS MILK AND SOY. EXTRACT OF MALT BARLEY OR MALT BARLEY AND RICE (TOTAL EXTRACT 38%), MILK SOLIDS, SUGAR, COCOA, MINERALS (CALCIUM, IRON), MALTODEXTRIN (CORN), VITAMINS (C, B3, B6, B2, D, B12), EMULSIFIER (SOY LECITHIN)."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Milo",
+    "brand": "Nestle          1.1kg",
+    "weight": "",
+    "barcode": "9300605121010",
+    "ingredients": "CONTAINS GLUTEN, MILK AND SOY."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Nescafe Blend 43",
+    "brand": "Nescafe",
+    "weight": "100g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Nescafe Blend 43",
+    "brand": "Nescafe",
+    "weight": "650g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Nescafe Blend 43",
+    "brand": "Nescafe",
+    "weight": "",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Victoria coffee",
+    "brand": "Victoria",
+    "weight": "1kg",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Creama Ground Coffee",
+    "brand": "",
+    "weight": "1kg",
+    "barcode": "",
+    "ingredients": "SUGAR, MILK SOLIDS, GLUCOSE SYRUP, COCOA (10%), COCONUT OIL, SALT, STABILISER (340), EMULSIFIER (471), FLAVOUR (VANILLIN CONTAINS MILK), SPICE (CINNAMON)."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Hot Chocolate - complete mix",
+    "brand": "Nestle",
+    "weight": "2kg",
+    "barcode": "93100605049123",
+    "ingredients": "CONTAINS MILK. SUGAR, COCOA POWDER, MALTODEXTRIN, MILK SOLIDS, STARCH (MAIZE OR TAPIOCA), FLAVOUR, ANTICAKING AGENT (551, SALT. DRINKING CHOCOLATE CONTAINS COCOA SOLIDS 22%."
+  },
+  {
+    "category": "Beverages – Hot",
+    "product": "Hot chocolate - cafe blend",
+    "brand": "Cadbury         1.75kg",
+    "weight": "",
+    "barcode": "9300617366812",
+    "ingredients": "CONTAINS MILK WHEAT FLOUR, SUGAR, VEGETABLE OIL (ANTIOXIDANT [E307B FROM SOY)), BUTTER (FROM MILK), GOLDEN SYRUP, OATS, DESICCATED COCONUT, SALT, CONDENSED MILK, COCOA POWDER, BAKING POWDER, WHEAT STARCH, EGGS, MILK POWDER, FOOD COLOUR (CARAMEL III), ARROWROOT FLOUR, NATURAL FLAVOUR CONTAINS THE FOLLOWING BISCUITS: MILK COFFEE, TEDDY BEAR, CHOC RIPPLE, SCOTCH FINGER, BUTTERNUT SNAP, MILK"
+  },
+  {
+    "category": "Biscuits",
+    "product": "Family favourites biscuits",
+    "brand": "Arnott's",
+    "weight": "500g",
+    "barcode": "9310072013817",
+    "ingredients": "ARROWROOT & NICE WHEAT FLOUR, VEGETABLE OIL, SALT, YEAST, BAKING POWDER, SUGAR, MALT EXTRACT (FROM BARLEY). CONTAINS WHEAT, GLUTEN. MAY CONTAIN EGG, MILK, TREE NUTS,"
+  },
+  {
+    "category": "Biscuits",
+    "product": "Salada - original",
+    "brand": "Arnott's",
+    "weight": "250g",
+    "barcode": "9310072001524",
+    "ingredients": "PEANUT, SESAME, SOY. WHEAT FOUR, VEGETABLE OIL, SALT, YEAST, MALT EXTRACT, (FROM BARLEY), SUGAR, BAKING POWDER, EMULSIFIER (SOY LECITHIN), ANTIOXIDANT (E307B FROM SOY) , MILK SOLIDS CONTAINS GLUTEN CONTAINING CEREALS, MILK AND SOY MAY CONTAIN TRACES OF EGG, PEANUT,"
+  },
+  {
+    "category": "Biscuits",
+    "product": "Sao",
+    "brand": "Arnott's",
+    "weight": "250g",
+    "barcode": "9310072000480",
+    "ingredients": "SESAME AND TREE NUT. WHEAT FLOUR, VEGETABLE OIL (ANTIOXIDANT (E307B FROM SOY), SALT, SUGAR, YEAST, GOLDEN SYRUP, BAKING POWDER, HERB EXTRACT, MALT EXTRACT (FROM BARLEY), EMULSIFIER (SOY LECITHIN). CONTAINS WHEAT, GLUTEN, SOY. MAY CONTAIN EGG, MILK, TREE NUTS,"
+  },
+  {
+    "category": "Biscuits",
+    "product": "Savoy",
+    "brand": "Arnott's",
+    "weight": "225g",
+    "barcode": "91310072026428",
+    "ingredients": "PEANUT, SESAME. WHOLEGRAIN (91%) [WHEAT], VEGETABLE OIL, SALT, SUGAR. CONTAINS GLUTEN CONTAINING CEREALS. MAY CONTAIN TRACES OF EGG, MILK,"
+  },
+  {
+    "category": "Biscuits",
+    "product": "Vita-weat original",
+    "brand": "Arnott's",
+    "weight": "250g",
+    "barcode": "9310072004051",
+    "ingredients": "PEANUT, SESAME, SOY AND TREE NUT. WHEAT FLOUR, VEGETABLE OIL (CONTAINS SOY), SALT, BAKING POWDER. CONTAINS SOY AND GLUTEN CONTAINING CEREALS. MAY CONTAIN TRACES OF EGG, MILK,"
+  },
+  {
+    "category": "Biscuits",
+    "product": "Water Cracker",
+    "brand": "Arnott's",
+    "weight": "125g",
+    "barcode": "9310072001920",
+    "ingredients": "PEANUT, SESAME AND TREE NUT. CORN (92%), SUGAR, SALT, VITAMINS (VITAMIN E, NIACIN, VITAMIN B6, THIAMIN, RIBOFLAVIN, FOLATE), MINERALS (IRON,"
+  },
+  {
+    "category": "Cereal",
+    "product": "Corn flakes (Gluten Free)",
+    "brand": "Kellogg's",
+    "weight": "270g",
+    "barcode": "8801083672700",
+    "ingredients": "ZINC OXIDE). CORN (90%), SUGAR, SALT, BARLEY MALT EXTRACT, VITAMINS (VITAMIN E, NIACIN, VITAMIN B6, RIBOFLAVIN, FOLATE), MINERALS (IRON, ZINC OXIDE). CONTAINS GLUTEN. MAY CONTAIN WHEAT, PEANUT, TREE"
+  },
+  {
+    "category": "Cereal",
+    "product": "Cornflakes",
+    "brand": "Kellogg's",
+    "weight": "725g",
+    "barcode": "93100551559653",
+    "ingredients": "NUTS. CONTAINS GLUTEN CONTAINING INGREDIENTS, TREE NUTS, SOY AND SULPHITES WHOLE GRAIN ROLLED OUTS (72%), DRIED FRUITS [SULTANAS (8%), APRICOT (3%), CURRANTS (2%), APPLE (2%), (PRESERVATIVES (220, 223)*)1, WHEAT BRAN, RAW SUGAR, ALMONDS (0.5%), BARLEY MALT EXTRACT, VITAMIN E (SOY), EMULSIFIER (471). *SOME DRIED FRUIT CONTAIN SULPHITES TO MAINTAIN NATURAL COLOUR & SHELF LIFE MAY CONTAIN OTHER GLUTEN CONTAINING INGREDIENTS, MILK, OTHER TREE NUTS"
+  },
+  {
+    "category": "Cereal",
+    "product": "Natural Style - Swiss Blend Museli",
+    "brand": "Uncle Toby's",
+    "weight": "1kg",
+    "barcode": "9310060050039",
+    "ingredients": "AND LIPIN WHOLE WHITE RICE (91%), SUGAR, SALT, BARLEY MALT EXTRACT, MINERALS (IRON, ZINC OXIDE), VITAMINS (NIACIN, RIBOFLAVIN, VITAMIN B6, FOLATE). CONTAINS GLUTEN. MAY CONTAIN WHEAT, PEANUT, TREE"
+  },
+  {
+    "category": "Cereal",
+    "product": "Rice bubbles",
+    "brand": "Kellogg's",
+    "weight": "860g",
+    "barcode": "9310055105867",
+    "ingredients": "NUTS. 100% WHOLEGRAIN OATS"
+  },
+  {
+    "category": "Cereal",
+    "product": "Rolled Oats",
+    "brand": "Black & Gold",
+    "weight": "750g",
+    "barcode": "9310077200762",
+    "ingredients": "CONTAINS GLUTEN WHOLEGRAIN WHEAT (97%), RAW SUGAR, SALT, BARLEY MALT EXTRACT, VITAMINS (IACIN, THIAMIN, RIBOFLAVIN, FOLATE), MINERAL (IRON). CONTAINS: GLUTEN, WHEAT"
+  },
+  {
+    "category": "Cereal",
+    "product": "Weet-Bix",
+    "brand": "Sanitarium         1.2kg",
+    "weight": "",
+    "barcode": "9300652804959",
+    "ingredients": "MAY CONTAIN: LUPIN WHOLEGRAIN SORGHUM (96%), GOLDEN SYRUP, SALT, VITAMINS (E. NIACIN."
+  },
+  {
+    "category": "Cereal",
+    "product": "Weet-Bix (Gluten Free)",
+    "brand": "Sanitarium",
+    "weight": "375g",
+    "barcode": "9300652804874",
+    "ingredients": "THIAMIN. RIBONAVIN FOLATE). HYDROGENATED COCONUT OIL (99%),"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Copha - vegetable shortening",
+    "brand": "Copha",
+    "weight": "250g",
+    "barcode": "9310947004117",
+    "ingredients": "SOYBEAN LECITHIN."
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Canola Oil",
+    "brand": "Black & Gold",
+    "weight": "4L",
+    "barcode": "9310077278389",
+    "ingredients": "CANOLA OIL CERTIFIED ORGANIC UNREFINED EXTRA"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Extra Virgin Coconut Oil",
+    "brand": "Absolute organic 1.5L",
+    "weight": "",
+    "barcode": "9316131604392",
+    "ingredients": "VIRGIN COCONUT OIL. ALLERGEN FREE."
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Extra Virgin Coconut Oil",
+    "brand": "Kirkland",
+    "weight": "3L",
+    "barcode": "96619223077",
+    "ingredients": "EXTRA VIRGIN OLIVE OIL (100%) SESAME OIL"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Sesame Oil Gluten Free",
+    "brand": "Chang's",
+    "weight": "150ml",
+    "barcode": "93777070",
+    "ingredients": "CONTAINS: SESAME SEEDS VEGETABLE OILS (CONTAINING SUNFLOWER OIL 10%), WATER, SALT, EMULSIFIERS (471, SUNFLOWER LECITHIN), NATURAL FLAVOUR, VITAMINS A, D, E,"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Sunflower oil spread",
+    "brand": "Nuttelex",
+    "weight": "1L",
+    "barcode": "9310421000642",
+    "ingredients": "NATURAL COLOUR (BETA CAROTENE)."
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Australian Extra Virgin Olive Oil, Light Flav Cobram Estate",
+    "brand": "",
+    "weight": "750ml",
+    "barcode": "952696000242",
+    "ingredients": "100% AUSTRALIAN EXTRA VIRGIN OLIVE OIL"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Nutelex",
+    "brand": "",
+    "weight": "1kg",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Canola Oil",
+    "brand": "Auzure",
+    "weight": "4L",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Cow's Ghee",
+    "brand": "Britannia",
+    "weight": "500ml",
+    "barcode": "8901063405202",
+    "ingredients": "COW'S MILK FAT."
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Ghee",
+    "brand": "Puresoul        1L                          CLARIFIED BUTTER",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "CLARIFIED BUTTER MILK FAT (100%). MAY CONTAIN: GLUTEN, PEANUTS, TREE"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Ghee",
+    "brand": "Sabrini",
+    "weight": "850ml",
+    "barcode": "9325566031499",
+    "ingredients": "NUTS, SESAME SEEDS, SOY AND MILK"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Sesame oil",
+    "brand": "Coles",
+    "weight": "370g",
+    "barcode": "9310645290782",
+    "ingredients": "SESAME SEED OIL"
+  },
+  {
+    "category": "Cooking Fats",
+    "product": "Table spread (margarine)",
+    "brand": "Black & Gold       1kg                         SOY BASED - NO DAIRY",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "SOY BASED - NO DAIRY MILK, MILK SOLIDS, VEGETABLE GUM (CARRAGEENAN)"
+  },
+  {
+    "category": "Dairy",
+    "product": "Creamy evaporated milk",
+    "brand": "Nestle Carnation",
+    "weight": "340ml",
+    "barcode": "7501058649942",
+    "ingredients": "CONTAINS MILK MILK, SUGAR, MILK SOLIDS"
+  },
+  {
+    "category": "Dairy",
+    "product": "Sweetened condensed milk",
+    "brand": "Nestle",
+    "weight": "395g",
+    "barcode": "9300605121621",
+    "ingredients": "CONTAINS MILK POTATO STARCH, TAPIOCA STARCH, RAISING AGENT (CALCIUM CARBONATE), ACIDITY REGULATOR (CITRIC ACID),"
+  },
+  {
+    "category": "Dairy",
+    "product": "No egg - egg replacer",
+    "brand": "Orgran",
+    "weight": "200g",
+    "barcode": "720516025013",
+    "ingredients": "STABILISTER (METHYL CELLULOSE) MILK SOLIDS (99%) (EMULSIFIER (SOY LECITHIN)), LIVE YOGURT CULTURES (L.BULGARICUS, S.THERMOPHILUS, LACIDOPHILUS,L.RHAMNOSUS)."
+  },
+  {
+    "category": "Dairy",
+    "product": "Fresh yogurt - Greek style",
+    "brand": "Easiyo",
+    "weight": "170g",
+    "barcode": "9416892252006",
+    "ingredients": "CONTAINS MILK AND SOY PRODUCTS. MILK SOLIDS (99%) (EMULSIFIER (SOY LECITHIN)), LIVE YOGURT CULTURES (L. BULGARICUS, S. THERMOPHILUS, L.ACIDOPHILUS, L.RHAMNOSUS)."
+  },
+  {
+    "category": "Dairy",
+    "product": "Fresh yogurt - Natural",
+    "brand": "Easiyo",
+    "weight": "140g",
+    "barcode": "9416892200113",
+    "ingredients": "CONTAINS MILK, SOY. MILK SOLIDS (61%) (EMULSIFIER (SOY LECITHIN), SUGAR, LIVE YOGURT CULTURES (L.BULGARICUS, S. THERMOPHILUS, L.ACIDOPHILUS, L.RHAMNOSUS), NATURAL FLAVOUR, NATURAL COLOUR (BEETROOT RED)."
+  },
+  {
+    "category": "Dairy",
+    "product": "Fresh yogurt - Strawberry",
+    "brand": "Easiyo",
+    "weight": "230g",
+    "barcode": "9416892502088",
+    "ingredients": "CONTAINS MILK, SOY. MILK SOLIDS (64%) (EMULSIFIER (SOY LECITHIN)), SUGAR, NATURAL FLAVOUR, NATURAL COLOUR (BETA-CAROTENE), LIVE YOGURT CULTURES (S. THERMOPHILUS, L BULGARICUS, LRHAMNOSUS, LACIDOPHILUS)."
+  },
+  {
+    "category": "Dairy",
+    "product": "Fresh yogurt - Vanilla",
+    "brand": "Easiyo",
+    "weight": "230g",
+    "barcode": "9416892508004",
+    "ingredients": "CONTAINS MILK, SOY. MILK SOLIDS (63%) (EMULSIFIER (SOY LECITHIN)), SUGAR, NATURAL COLOURS (BEETROOT RED, ANTHOCYANIN), NATURAL FLAVOUR, LIVE YOGURT CULTURES (L.BULGARICUS, S.THERMOPHILUS, L.ACIDOPHILUS, L.RHAMNOSUS, B.LACTIS)."
+  },
+  {
+    "category": "Dairy",
+    "product": "Easiyo Fresh Yogurt - Blueberry",
+    "brand": "Easiyo",
+    "weight": "230g",
+    "barcode": "9416892525087",
+    "ingredients": "CONTAINS MILK AND SOY PRODUCTS. COCONUT (25%), WATER, GUAR GUM (412),"
+  },
+  {
+    "category": "Dairy",
+    "product": "Coconut Cream",
+    "brand": "Royal Line",
+    "weight": "400ml",
+    "barcode": "9310677001462",
+    "ingredients": "EMULSIFIERS (435,466). COCONUT (25%), WATER, GUAR GUM (412),"
+  },
+  {
+    "category": "Dairy",
+    "product": "Coconut Milk",
+    "brand": "TCC",
+    "weight": "400ml",
+    "barcode": "913106771001455",
+    "ingredients": "EMULSIFIERS (435,466). WHOLE EGG POWDER (100%)"
+  },
+  {
+    "category": "Dairy",
+    "product": "Whole Egg Powder",
+    "brand": "Pure Product Aust500g",
+    "weight": "",
+    "barcode": "9351937002737",
+    "ingredients": "CONTAINS EGG COCONUT MILK (94%), MALTODEXTRIN, MILK PROTEIN CONTAINS DAIRY"
+  },
+  {
+    "category": "Dairy",
+    "product": "Coconut milk powder",
+    "brand": "Ayam",
+    "weight": "150ml",
+    "barcode": "9556041609982",
+    "ingredients": "GLUTEN FREE FULL CREAM MILK."
+  },
+  {
+    "category": "Dairy",
+    "product": "Full cream long life milk",
+    "brand": "Black & Gold",
+    "weight": "1L",
+    "barcode": "9310077217807",
+    "ingredients": "CONTAINS MILK."
+  },
+  {
+    "category": "Dairy",
+    "product": "Full cream milk powder",
+    "brand": "Devondale",
+    "weight": "1kg",
+    "barcode": "9300639602967",
+    "ingredients": "MILK, EMULSIFIER (322, FROM SOY) FILTERED WATER, WHOLE OATS (MIN.8%), SUNFLOWER OIL, OAT FLOUR, GUM ARABIC, MINERALS (CALCIUM PHOSPHATE, CALCIUM CARBONATE), ACIDITY REGULATOR (POTASSIUM PHOSPHATE), NATURAL FLAVOUR, SEA SALT, VITAMIN D."
+  },
+  {
+    "category": "Dairy",
+    "product": "Oat milk",
+    "brand": "Vitasoy",
+    "weight": "1L",
+    "barcode": "9341650001599",
+    "ingredients": "CONTAINS GLUTEN. MILK, SALT, ANTICAKING AGENT (389), CULTURES, ENZYMES, CONTAINS MILK"
+  },
+  {
+    "category": "Dairy",
+    "product": "Parmesan",
+    "brand": "Kraft",
+    "weight": "250g",
+    "barcode": "9300657660529",
+    "ingredients": "TRACES OF WHEAT, EGG & SOY. FILTERED WATER, WHOLE BROWN RICE (MIN. 13%), SUNFLOWER OIL, MINERAL"
+  },
+  {
+    "category": "Dairy",
+    "product": "Rice milk",
+    "brand": "Vitasoy",
+    "weight": "1L",
+    "barcode": "9310232100401",
+    "ingredients": "(CALCIUM PHOSPHATE), SEA SALT. SKIM MILK."
+  },
+  {
+    "category": "Dairy",
+    "product": "Skim Milk",
+    "brand": "Black & Gold",
+    "weight": "1L",
+    "barcode": "9310077217814",
+    "ingredients": "CONTAINS MILK. WATER, SOY PROTEIN ISOLATE (4%), MALTODEXTRIN, VEGETABLE OIL (CANOLA OIL), SUGAR, MINERAL SALTS (450, 509, 526, 504), ACIDITY REGULATORS (338, 332), VITAMINS (RIBOFLAVIN, VITAMIN A, VITAMIN B12)"
+  },
+  {
+    "category": "Dairy",
+    "product": "Soy milk",
+    "brand": "Community Co",
+    "weight": "1L",
+    "barcode": "9310246048539",
+    "ingredients": "CONTAINS SOY CHEESE (PASTEURISED MILK, SALT, STARTER CULTURES, ENZYME (NON- ANIMAL RENNET))."
+  },
+  {
+    "category": "Dairy",
+    "product": "Tasty cheese",
+    "brand": "Devondale",
+    "weight": "500g",
+    "barcode": "9300639606071",
+    "ingredients": "CONTAINS MILK CREAM, MILK, MILK SOLIDS, EMULSIFIERS (SOY LECITHIN, 401, 40, 4I2, 415, 433, 471)."
+  },
+  {
+    "category": "Dairy",
+    "product": "Thickened cream",
+    "brand": "Devondale",
+    "weight": "250ml",
+    "barcode": "9300639609294",
+    "ingredients": "CONTAINS MILK AND SOY"
+  },
+  {
+    "category": "Dairy",
+    "product": "Coconut Milk",
+    "brand": "Black & Gold",
+    "weight": "400ml",
+    "barcode": "9310077281839",
+    "ingredients": "COCCONUT CREAM (COCONUT MILK, WATER) 90%, VIRGIN COCONUT OIL, COCONUT SUGAR, STABILIZER (GUAR GUM), VANILLA EXTRACT"
+  },
+  {
+    "category": "Dairy",
+    "product": "Coconut whipping cream",
+    "brand": "Nature's charm",
+    "weight": "400ml",
+    "barcode": "93856993404",
+    "ingredients": "MAY CONTAIN TRACES OF SULPHITES POTATO STARCH, TAPIOCA STARCH, RAISING AGENT (CALCIUM CARBONATE), ACIDITY REGULATOR CITRIC ACID),"
+  },
+  {
+    "category": "Dairy",
+    "product": "No Egg (Egg replacer)",
+    "brand": "Orgran",
+    "weight": "200g",
+    "barcode": "72051602501",
+    "ingredients": "STABILISER (METHYL CELLULOSE). INACTIVE DRIED YEAST, B VITAMINS (THIAMIN, RIBOFLAVIN, NIACIN, VITAMIN B6, VITAMIN B12), FOLIC ACID, IRON. CONTAINS NATURALLY OCCURING"
+  },
+  {
+    "category": "Dairy",
+    "product": "Nutritional yeast flakes",
+    "brand": "Absolute Natural",
+    "weight": "150g",
+    "barcode": "9316131605504",
+    "ingredients": "SULPHITES. CHICKPEA, CORN, STABILISER (METHYL CELLULOSE), VEGETABLE PROTEIN, DEXTROSO MONOHYDRATE, SALT, TURMERIC, RAISING AGENT (CALCIUM"
+  },
+  {
+    "category": "Dairy",
+    "product": "Vegan Easy Egg",
+    "brand": "Orgran",
+    "weight": "250g",
+    "barcode": "720516025020",
+    "ingredients": "CARBONATE), GARLIC POWDER. CREAM (MILK), MILK, MILK SOLIDS, EMULSIFIERS (SOY LECITHIN, 401, 410, 412, 415, 433, 471)"
+  },
+  {
+    "category": "Dairy",
+    "product": "Cream for whipping",
+    "brand": "Devondale",
+    "weight": "250ml",
+    "barcode": "9300639609294",
+    "ingredients": "CONTAINS: MILK, SOY COCONUT EXTRACT (65%), WATER,"
+  },
+  {
+    "category": "Dairy",
+    "product": "Coconut Cream",
+    "brand": "TCC",
+    "weight": "400ml",
+    "barcode": "8850367992102",
+    "ingredients": "STABILISER (466), EMULSIFIER (435) GELATINE (BEEF ORIGIN), ACIDITY REGULATOR (297), SWEETENERS (952, 950, 955),FLAVOURS, COLOURS (102,133)."
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - low sugar - lime flavour",
+    "brand": "Aeroplane",
+    "weight": "18g",
+    "barcode": "9300619513023",
+    "ingredients": "CONTAINS SULPHITES. GELATINE (BEEF ORIGIN), ACIDITY REGULATOR (297, 330), SWEETENERS (952, 955, 950), FLAVOUR, COLOURS (102,129)."
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - low sugar - pineaplle flavour",
+    "brand": "Aeroplane",
+    "weight": "18g",
+    "barcode": "9300619513054",
+    "ingredients": "CONTAINS SULPHITES. GELATINE (BEEF ORIGIN), FLAVOURS, SWEETENERS (952, 955, 950), ACIDITY REGULATOR (297), COLOURS (122, 133)."
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - low sugar - raspberry flavour",
+    "brand": "Aeroplane",
+    "weight": "18g",
+    "barcode": "9300619513085",
+    "ingredients": "CONTAINS SULPHITES. GELATINE (BEEF ORIGIN), SWEETENERS (952, 955, 950), ACIDITY REGULATOR (297), FLAVOUR, COLOUR (129)."
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - low sugar - strawberry flavour",
+    "brand": "Aeroplane",
+    "weight": "18g",
+    "barcode": "9300619513092",
+    "ingredients": "CONTAINS SULPHITES."
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - Raspberry flavour",
+    "brand": "Aeroplane",
+    "weight": "85g",
+    "barcode": "",
+    "ingredients": "SWEETENERS (ERYTHRITOL, SORBITOL, SIEVIOL GLYCOSIDES), POLYDEXTROSE, GELATINE (FROM BEEF), THICKENER (1442), COCOA POWDER (7%), FULLY HYDROGENATED VEGETABLE OIL, MILK (SOLIDS AND PROTEN), GLUCOSE, STABILISER (472A), COLOUR (150€), HUMECTANT (1520), FLAVOURS."
+  },
+  {
+    "category": "Dessert",
+    "product": "Mousse mix - low sugar (lite)",
+    "brand": "Aeroplane",
+    "weight": "53g",
+    "barcode": "9300619572402",
+    "ingredients": "CONTAINS MILK"
+  },
+  {
+    "category": "Dessert",
+    "product": "Orange Jelly Cyrstals",
+    "brand": "Aeroplane       85g                             MAIZE STARCH, WHEAT STARCH, SUGAR,",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "MAIZE STARCH, WHEAT STARCH, SUGAR, SALT, COLOURS (102, 110, 150D), FLAVOURS"
+  },
+  {
+    "category": "Dessert",
+    "product": "Custard powder",
+    "brand": "Foster Clarks",
+    "weight": "350g",
+    "barcode": "9300681399754",
+    "ingredients": "CONTAINS: WHEAT, GLUTEN WHEATEN CORNFLOUR (GLUTEN), SUGAR, SALT, VANILLA FLAVOUR, COLOURS (102, 110), VEGETABLE OIL (CANOLA OIL, SUNFLOWER OIL). CONTAINS: WHEAT, GLUTEN"
+  },
+  {
+    "category": "Dessert",
+    "product": "Custard powder",
+    "brand": "Black & Gold",
+    "weight": "350g",
+    "barcode": "9310077280764",
+    "ingredients": "MAY CONTAIN: MILK, EGG, SOY MAIZE STARCH, NATURAL VANILLA FLAVOUR, SALT, NATURAL COLOUR"
+  },
+  {
+    "category": "Dessert",
+    "product": "Custard powder (gluten free)",
+    "brand": "Woolworths",
+    "weight": "300g",
+    "barcode": "9339687080441",
+    "ingredients": "(ANNATTO) SWEETNERS (ERYTHRITOL, SORBITOL, STEVIOL, GLYCOSIDES), POLYDEXTROSE, GELATINE (FROM BEEF), THICKENER (1442), COCOA POWDER (7%), FULLY HYDROGENATED VEGETABLE OIL, MILK (SOLIDS AND PROTEIN), GLUCOSE, STABILISER (472A), COLOUR (150C), HUMECTANT (1520), FLAVOURS"
+  },
+  {
+    "category": "Dessert",
+    "product": "Chocolate mousse mix pkt",
+    "brand": "Aeroplane",
+    "weight": "53g",
+    "barcode": "9300619572402",
+    "ingredients": "CONTAINS: MILK GELATINE (BEEF ORIGIN) (SULPHITES), ACIDITY REGULATOR (297), SWEETENERS (952, 955, 950), FLAVOURS, PLANT EXTRACT (GARDENIA)."
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - low sugar - blueberry flavour",
+    "brand": "Aeroplane",
+    "weight": "18g",
+    "barcode": "9300619572464",
+    "ingredients": "CONTAINS: SULPHITES SUGAR, GELATINE (BEEF ORIGIN), ACIDITY REGULATORS (297, 331), FLAVOUR,"
+  },
+  {
+    "category": "Dessert",
+    "product": "Jelly - Lime flavour",
+    "brand": "Aeroplane",
+    "weight": "85g",
+    "barcode": "9300619501037",
+    "ingredients": "COLOUR (133). MALTODEXTRIN, NATURAL FLAVOUR"
+  },
+  {
+    "category": "FODMAP",
+    "product": "Onion replacer - low fodmap",
+    "brand": "FreeFod",
+    "weight": "72g",
+    "barcode": "9421905680011",
+    "ingredients": "(ONION EXTRACT)"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Dried Apples",
+    "brand": "Angas Park",
+    "weight": "200g",
+    "barcode": "9310121001635",
+    "ingredients": "DRIED APPLE, PRESERVATIVE (9220, 223) DRIED APRICOTS, PRESERVATIVES (220, 224)"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Dried Apricots",
+    "brand": "Angas Park",
+    "weight": "500g",
+    "barcode": "9310121011276",
+    "ingredients": "CONTAINS SULPHITES CURRANTS (99%), VEGETABLE OIL"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Dried Currants",
+    "brand": "Community Co",
+    "weight": "300g",
+    "barcode": "9310246053496",
+    "ingredients": "(SUNFLOWER OIL)"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Dried Pitted Dates",
+    "brand": "Angas Park",
+    "weight": "500g",
+    "barcode": "9310121001604",
+    "ingredients": "DRIED DATES, VEGETABLE OIL. RAISINS (99%), VEGETABLE OIL"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Dried raisins",
+    "brand": "Community Co",
+    "weight": "375g",
+    "barcode": "9310246053489",
+    "ingredients": "(COTTONSEED OIL)"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Whole Australian Prunes",
+    "brand": "Black & Gold",
+    "weight": "1kg",
+    "barcode": "9300602362928",
+    "ingredients": "PRUNES, PRESERVATUVES (202) AUSTRALIAN CURRANTS (99.5%),"
+  },
+  {
+    "category": "Fruit (Dried)",
+    "product": "Dried Currants",
+    "brand": "Sunbeam",
+    "weight": "300g",
+    "barcode": "9310162113007",
+    "ingredients": "SUNFLOUR OIL"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Apple Slices",
+    "brand": "Ardmona",
+    "weight": "800g",
+    "barcode": "9310092208224",
+    "ingredients": "APPLE SLICES (100%) APRICOT HALVES (53%), FRUIT JUICE"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Apricots canned",
+    "brand": "SPC",
+    "weight": "825g",
+    "barcode": "93100062319734",
+    "ingredients": "(PEAR/APPLE/GRAPE/PEACH). FRUIT SALAD (59%) (AUSTRALIAN GROWN DICED PEARS AND DICED PEACHES, IMPORTED PINEAPPLE PIECES), REFINED"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Fruit Salad in juice",
+    "brand": "SPC",
+    "weight": "825g",
+    "barcode": "9310006244973",
+    "ingredients": "FRUIT JUICE PEACH SLICES (59%), FRUIT JUICE"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Peaches sliced",
+    "brand": "SPC",
+    "weight": "825g",
+    "barcode": "9310006212972",
+    "ingredients": "(PEAR/APPLE/GRAPE/PEACH"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Pears sliced in juice",
+    "brand": "SPC",
+    "weight": "825g",
+    "barcode": "9310006222971",
+    "ingredients": "PEAR SLICES (59%), REFINED FRUIT JUICE."
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Pineapple pieces",
+    "brand": "Golden Circles",
+    "weight": "450g",
+    "barcode": "9310179004510",
+    "ingredients": "PINEAPPLE (69%), WATER, SUGAR TWO FRUITS (59%) (DICED PEARS AND PEACHES), REFINED FRUIT JUICE. FRUIT RATIOS MAY VARY DUE TO SEASONAL"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Two fruits diced in juice",
+    "brand": "SPC",
+    "weight": "825g",
+    "barcode": "9310006264971",
+    "ingredients": "AVAILABILITY"
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Pineapple rings",
+    "brand": "",
+    "weight": "",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Fruit (Tinned)",
+    "product": "Apricots canned",
+    "brand": "Woolworths",
+    "weight": "",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Plain rice crackers",
+    "brand": "Sakata",
+    "weight": "100g",
+    "barcode": "9319636000140",
+    "ingredients": "RICE (97%), RICE BRAN OIL, SALT. WHOLE GRAIN BROWN RICE"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Rice cakes",
+    "brand": "Sun Rice",
+    "weight": "150g",
+    "barcode": "9310140282527",
+    "ingredients": "PUFFED CEREAL GRAINS"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Gluten Free Penne Pasta",
+    "brand": "BuonTempo",
+    "weight": "600g",
+    "barcode": "720516026072",
+    "ingredients": "RICE FLOUR (87%), CORN FLOUR (13%) MAIZE STARCH, SOY FLOUR, POTATO STARCH, RICE STARCH"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Gluten Free Spaghetti",
+    "brand": "San Remo",
+    "weight": "350g",
+    "barcode": "9310155009553",
+    "ingredients": "CONTAINS SOY"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Vermicelli Rice Noodles (Gluten Free)",
+    "brand": "Chang's",
+    "weight": "250g",
+    "barcode": "9300777013090",
+    "ingredients": "RICE, CORN STARCH, WATER. GLUTEN FREE STARCHES (MAIZE, TAPIOCA), GLUTEN FREE FLOURS (RICE,"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Free from gluten, plain flour",
+    "brand": "Woolworths",
+    "weight": "750g",
+    "barcode": "9300633453084",
+    "ingredients": "MAIZE), RICE BRAN, THICKENERS (415) MAIZE STARCH, SOY FLOUR, POTATO STARCH, RICE STARCH"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Gluten free pasta",
+    "brand": "San Remo",
+    "weight": "350g",
+    "barcode": "9310155009652",
+    "ingredients": "CONTAINS SOY RICE FLOUR, POTATO STARCH, TAPIOCA STARCH, SUGAR, NON ALUMINIUM RAISING AGENTS (SODIUM ACID PYROPHASPHATE, SODIUM BICARBONATE, GLUCONO DELTRA- LACTONE), VEGETABLE EMULSIFIERS (MONO AND DIGLYCERIDES OF FATTY ACIDS, SODIUM STEAROYL LACTYLATE), DEXTROSE MONOHYDRATE, MODIFIED TAPIOCA STARCH, IODISED SALT, THICKENERS (SODIUM CARBOXYMEHYL"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Gluten Free Self Raising Flour",
+    "brand": "Well & Good",
+    "weight": "1kg",
+    "barcode": "9337096100286",
+    "ingredients": "CELLULOSE, XANTHAN GUM)"
+  },
+  {
+    "category": "Gluten Free",
+    "product": "Rice flour (gluten free)",
+    "brand": "McKenzies",
+    "weight": "375g",
+    "barcode": "9310061142207",
+    "ingredients": "RICE FLOUR"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Cooking Salt",
+    "brand": "Black & Gold",
+    "weight": "1kg",
+    "barcode": "9310077278723",
+    "ingredients": "SEA SALT, ANTI CAKING AGENT (535)"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Fine White Pepper",
+    "brand": "SAXA",
+    "weight": "50g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Ground Black Pepper",
+    "brand": "SAXA           50g                             NA",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "NA SEA SAL FROM THE SOUTHERN OCEAN, LOW SUGAR MAIZE MALTODEXTRIN, NATURAL VEGETABLE FLAVOUR, YEAST EXTRACT, CARAMELISED SUGAR SYRUP, CANE SUGAR, CANOLA OIL, EXTRA VIRGIN OLIVE OIL, POTASSIUM CHLORIDE,"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Stock powder - Beef style",
+    "brand": "Massel",
+    "weight": "168g",
+    "barcode": "810206000632",
+    "ingredients": "PARSLEY SEA SALT FROM THE GREAT SOUTHERN OCEAN, LOW SUGAR MAIZE MALTODEXTRIN, YEAST EXTRACT, NATURAL VEGETABLE FLAVOURS, POTASSIUM CHLORÍDE, CANOLA OIL,"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Stock powder - Chicken style",
+    "brand": "Massel",
+    "weight": "168g",
+    "barcode": "810206000649",
+    "ingredients": "TURMERIC GROUND MADRAS. SEA SALT FROM THE GREAT SOUTHERN OCEAN, LOW SUGAR MAIZE MALTODEXTRIN, YEAST EXTRACT, POTASSIUM CHLORIDE, DEHYDRATED VEGETABLES (SPINACH, CELERY), NATURAL VEGETABLE FLAVOURS, CANOLA"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Stock powder - Vegetables",
+    "brand": "Massel",
+    "weight": "168g",
+    "barcode": "810206000656",
+    "ingredients": "OIL"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Cayenne Pepper (Hot)",
+    "brand": "Coles",
+    "weight": "30g",
+    "barcode": "9300633927196",
+    "ingredients": "CAYENNE PEPPER (100%)"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Cayenne Pepper (Hot)",
+    "brand": "Masterfoods",
+    "weight": "30g",
+    "barcode": "93716543",
+    "ingredients": "MAY CONTAIN SESAME SEEDS"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Chilli crushed",
+    "brand": "Centuries Ahead",
+    "weight": "100g",
+    "barcode": "9337854005358",
+    "ingredients": "CHILLI"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Chilli flakes",
+    "brand": "Masterfoods",
+    "weight": "18g",
+    "barcode": "93782623",
+    "ingredients": "MAY CONTAIN SESAME SEEDS"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Cinnamon Sugar",
+    "brand": "Coles",
+    "weight": "60g",
+    "barcode": "9300633927363",
+    "ingredients": "SUGAR (88%), CINNAMON (12%)"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Coriander Leages",
+    "brand": "Masterfoods",
+    "weight": "5g",
+    "barcode": "913106771001455",
+    "ingredients": "MAY CONTAIN SESAME SEEDS"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Coriander Seeds - Ground",
+    "brand": "Woolworths",
+    "weight": "20g",
+    "barcode": "9300633927448",
+    "ingredients": "CORIANDER (100%) GINGER PUREE (GINGER, ACIDITY REGULATOR (ACETIC ACID), THICKENER (XANTHAN GUM (CONTAINS SOY)), SUGAR, PRESERVATIVE (SODIUM METABISULPHITE (SULPHITES))) 64%, WATER, VEGETABLE OIL, SALT, ACIDITY REGULAROR (ACETIC ACID), THICKENER (XANTHAN GUM (CONTAINS SOY) CONTAINS: SOY, SULPHITES"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Crushed Ginger",
+    "brand": "Masterfoods",
+    "weight": "160g",
+    "barcode": "93718950",
+    "ingredients": "MAY CONTAIN: PEANUT RICE FLOUR, TURMERIC, CORIANDER SEED, FENUGREEK, CUMIN, SALT, CINNAMON, CELERY SEED, GINGER,"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Curry powder - mild",
+    "brand": "Centuries Ahead",
+    "weight": "150g",
+    "barcode": "9337854005198",
+    "ingredients": "CLOVES, CASSIA, CHILLI, NUTMEG"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Ground Nutmeg",
+    "brand": "Woolworths",
+    "weight": "40g",
+    "barcode": "9300633928407",
+    "ingredients": "NUTMEG (100%)"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Ground paprika",
+    "brand": "Masterfoods",
+    "weight": "35g",
+    "barcode": "93716536",
+    "ingredients": "MAY CONTAIN SESAME SEEDS MARJORAM (31%), BASIL (28%), CAPSICUM (11%), ROSEMARY (9%), OREGANO (9%), PARSLEY, THYME"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Italian Herb Blend",
+    "brand": "Masterfoods",
+    "weight": "10g",
+    "barcode": "93716925",
+    "ingredients": "MAY CONTAIN SESAME SEEDS AND WHEAT"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Mustard powder",
+    "brand": "Keen's",
+    "weight": "50g",
+    "barcode": "9300683071276",
+    "ingredients": "MUSTARD POWDER"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Parsley flakes",
+    "brand": "Masterfoods",
+    "weight": "4g",
+    "barcode": "93716222",
+    "ingredients": "MAY CONTAIN SESAME SEEDS"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Sage Leaves Ground",
+    "brand": "Masterfoods",
+    "weight": "20g",
+    "barcode": "93716239",
+    "ingredients": "MAY CONTAIN SESAME SEEDS TUMERIC, CORIANDER, SALT, FENUGREEK, BLACK PEPPER, CHILLI, RICE FLOUR,"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Traditional curry powder",
+    "brand": "Keen's",
+    "weight": "50g",
+    "barcode": "9300683071559",
+    "ingredients": "ALLSPICE, CELERY"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Tumeric",
+    "brand": "Masterfoods",
+    "weight": "28g",
+    "barcode": "93716611",
+    "ingredients": "MAY CONTAIN SESAME SEEDS"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Whole Cloves",
+    "brand": "Coles",
+    "weight": "24g",
+    "barcode": "9300601569472",
+    "ingredients": "CLOVES"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Tumeric",
+    "brand": "Centuries Ahead",
+    "weight": "170g",
+    "barcode": "",
+    "ingredients": "CASTER SUGUR, MAIZE THICKENERS, MINERAL SALTS (339. 430), VANILLA FLAVOUR, SALT, COLOURS (102, 110) TRACES OF WHEAT, EGG, MILK, TREE"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Instant pudding - Vanilla",
+    "brand": "Collette's",
+    "weight": "100g",
+    "barcode": "9300657174101",
+    "ingredients": "NUTS, SESAME & SOY."
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Mixed herbs",
+    "brand": "Centuries Ahead",
+    "weight": "40g",
+    "barcode": "9337854004856",
+    "ingredients": "HERBS"
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Rosemary",
+    "brand": "Centuries Ahead",
+    "weight": "90g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Thyme",
+    "brand": "Centuries Ahead",
+    "weight": "50g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Parsley",
+    "brand": "Centuries Ahead",
+    "weight": "70g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Sesame seads",
+    "brand": "Centuries Ahead",
+    "weight": "180g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Thyme",
+    "brand": "Masterfoods",
+    "weight": "10g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Sesame seads",
+    "brand": "Masterfoods",
+    "weight": "",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Sweet Paprika",
+    "brand": "Centuries Ahead",
+    "weight": "130g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Herbs & Spices",
+    "product": "Chinese Spice",
+    "brand": "Centuries Ahead",
+    "weight": "120g",
+    "barcode": "",
+    "ingredients": "NAY BEANS (50%), RICH TOMATO SAUCE TOMATO PUREE (26%), WATER, SUGAR, MAIZE THICKENER (1422), SALT, SEASONING (CONTAINS NALTURAL FLAVOURS) FOOD ACID (CITRIC), ANTIOXIDANT (ASCORBIC ACID)"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Baked beans in tomato sauce",
+    "brand": "SPC",
+    "weight": "425g",
+    "barcode": "9310006004034",
+    "ingredients": "MAY CONTAIN SOYBEANS NAVY BEANS (49%), WATER, SUGAR, TOMATO PASTE (4%), MODIFIED MAIZE STARCH (1422), SALT, PAPRIKA, ONION"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Baked beans in tomato sauce",
+    "brand": "Black & Gold",
+    "weight": "420g",
+    "barcode": "9310077312786",
+    "ingredients": "POWDER, NATURAL FLAVOURS WATER, BEEF (16%), ONION (14%), TOMATO PASTE (3.54, WHEAT FLOUR, THICKENER (1422), TEXTURED SOY PROTEIN, HYDROLYSED VEGETABLE PROTEIN, SALT, FLAVOUR (CONTAINS FLAVOUR ENHANCER (MSG, 627, 631)], ACIDITY REGULATOR (450), COLOURS (CARAMEL I, CARAMEL IV),"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Braised Steak & Onion",
+    "brand": "Harvest",
+    "weight": "425g",
+    "barcode": "9300645041941",
+    "ingredients": "BLACK PEPPER. CHICKEN BREAST MEAT (83%), WATER (14%), SALT, THICKENER (1442), EMULSIFIERS (339, 450, 451), CHICKEN"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Chicken breast (Premium Chunk) - packed in water",
+    "brand": "Kirkland",
+    "weight": "354g",
+    "barcode": "96619527014",
+    "ingredients": "BROTH, FLAVOURS PURSE SEINE CAUGHT SKIPJACK TUNA (KATSUWONUS PELAMIS) (65%),"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Chunk style Tuna (in springwater)",
+    "brand": "John West",
+    "weight": "425g",
+    "barcode": "9300462349268",
+    "ingredients": "SPRINGWATER, SALT PURSE SEINE CAUGHT SKIPJACK TUNA (KATSUWONUS PELAMIS) (65%),"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Chunk style Tuna (in brine)",
+    "brand": "John West",
+    "weight": "425g",
+    "barcode": "9300462349268",
+    "ingredients": "SPRINGWATER, SALT PORK (85%), WATER, SALT. SUGAR, THICKENER (407), STABILISER (339), ANTIOXIDANT (316), SODIUM NITRITE (250). MAY ALSO CONTAIN TRACES OF"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Deli Style Leg Ham",
+    "brand": "Hydale",
+    "weight": "450g",
+    "barcode": "22012272",
+    "ingredients": "GLUTEN CEREALS AND SOY. PURSE SEINE CAUGHT SKIPJACK TUNA (KATSUWONUS PELAMIS) (65%), SUNFLOUR OIL (26%), CHILLI (4%), ROASTED GARLIC, LEMON ZEST (0.7%), SALT, LEMON JUICE POWDER, FOOD ACID (CITRIC), PARSLEY, BLACK PEPPER"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Deli Tuna - Chilli Infused Oil & Lemon Zest John West",
+    "brand": "",
+    "weight": "180g",
+    "barcode": "9300462121581",
+    "ingredients": "CONTAINS FISH PORK (84%), WATER, SALT, ACIDITY REGULATOR (451), THICKENER (407A), ANTIOXIDANT (316), ACIDITY REGULATOR"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Leg Ham",
+    "brand": "Plumrose",
+    "weight": "340g",
+    "barcode": "9341370002050",
+    "ingredients": "(508), PRESERVATIVE (250). PORK (85%), WATER, SALT. SUGAR, THICKENER (407), STABILISER (339),"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Leg Ham (Deli Style)",
+    "brand": "Hydale",
+    "weight": "450g",
+    "barcode": "22012272",
+    "ingredients": "ANTIOXIDANT (316), SODIUM NITRITE (250). PINK SALMON (ONCORHYNCHUS"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Pink Salmon",
+    "brand": "Kirkland",
+    "weight": "170g",
+    "barcode": "96619215478",
+    "ingredients": "GORBUSCHA) (99%), SALT CHICKEN BREAST MEAT (83%), WATER (14%), SALT, THICKENER (1442), EMULSIFIERS (339, 450, 451), CHICKEN"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Premium chunk chicken breast (packed in water)",
+    "brand": "Kirkland",
+    "weight": "354g",
+    "barcode": "96619527014",
+    "ingredients": "BROTH, FLAVOURS. RED SALMON (99%) (ONCORHYNCHUS"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Premium Red Salmon (Wild Pacific)",
+    "brand": "Ocean Rise",
+    "weight": "210g",
+    "barcode": "20002250",
+    "ingredients": "NERKA), SALT SARDINES (70%), HOT SAUCE (30%) (SUNFLOWER OIL, SALT, HOT CHILLI"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Sardines in hot sauce (Portugese style)",
+    "brand": "Santamaria",
+    "weight": "120g",
+    "barcode": "9310175217914",
+    "ingredients": "PEPPERS (O.92%), CHILLI POWDER). SARDINES (70%), SUNFLOWER OIL (29%),"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Sardines in oil (Portugese style)",
+    "brand": "Santamaria",
+    "weight": "120g",
+    "barcode": "9310175217891",
+    "ingredients": "SALT SARDINES (6,%), TOMATO SAUCE (35%) WATER, TOMATOES (10.6%), SUNFLOWER"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Sardines in tomato sauce (Portugese style)Santamaria",
+    "brand": "",
+    "weight": "120g",
+    "barcode": "91310175217907",
+    "ingredients": "OIL, SALT). PASTA (WHEAT FLOUR) (50%), RICH TOMATO SAUCE (TOMATO PUREE (34%), WATER, SUGAR, THICKENERS (1412, MAIZE STARCH), SALT, NATURAL FLAVOURS, COLOUR (160C), VEGETABLE POWDER, FOOD ACID (CITRIC)) CONTAINS: WHEAT, GLUTEN"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Spaghetti in tomato sauce",
+    "brand": "SPC",
+    "weight": "420g",
+    "barcode": "9310006004102",
+    "ingredients": "MAY CONTAIN: EGG TOMATO PUREE (58%) (FROM PASTE), ONION (12%), BEEF (12%), WATER (9%), TEXTURED SOY PRETEIN [CONTAINS COLOUR (CCARAMEL IV)], THICKENER (1142), HYDROLYSED VEGETABLE PROTEIN, FLAVOUR (CONTAINS FLAVOUR ENHANCERS (627, 631), CELERY, ONION), SUGAR, SALT, PEPPER"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Spaghetti sauce with Australian beef",
+    "brand": "Leggo's",
+    "weight": "580g",
+    "barcode": "9300645015461",
+    "ingredients": "CONTAINS SOY TOMATO PUREE (50%), BEEF (23%), CARROTS, ONIONS, SOY PROTEIN, MODIFIED STARCH (E1412 (FROM MAIZE)), SUGAR, GARLIC, SALT, VEGETABLE PROTEIN EXTRACT (FROM SOY), SPICE, FOOD COLOUR (CARAMEL IV), FLAVOUR ENHANCER (E635), YEAST EXTRACT"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Spaghetti sauce with beef",
+    "brand": "Campbell's",
+    "weight": "410g",
+    "barcode": "9300644093132",
+    "ingredients": "CONTAINS SOY PORK (92%), WATER, SALT, THICKENER (1442), SUGAR, PRESERVATIVE (250),"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Spam",
+    "brand": "",
+    "weight": "340g",
+    "barcode": "376003494536",
+    "ingredients": "COLOUR (160B), HUMECTANT (1520). YELLOWFIN TUNA (THUNNUS ALBACARES) (FISH) (81%), SUNFLOWER OIL (11%), WATER, EXTRA VIRGIN OLIVE OIL (2.7%), SALT, WHOLE CHILLI (0.5%), NATURAL COLOUR (160C)."
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Tuna - Yellowfin - Italian Style in Oil with Chilli",
+    "brand": "Ocean Rise",
+    "weight": "185g",
+    "barcode": "4088700053935",
+    "ingredients": "CONTAINS FISH. SARDINES (60%), SOYBEAN OIL (20%), WATER, SALT"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Sardines - Oil",
+    "brand": "Black & Gold",
+    "weight": "125g",
+    "barcode": "9310077203671",
+    "ingredients": "CONTAINS FISH AND SOY RED SALMON"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Salmon (red)",
+    "brand": "John West",
+    "weight": "210g",
+    "barcode": "9300462340074",
+    "ingredients": "CONTAINS FISH WATER, BEANS (15%), VEGETABLES (CAPSICUM, COM, ONION, CARROT), TOMATO PASTE, TOMATO, VEGETABLE PROTEIN (SOY), VEGETABLE OIL, SUGAR, GARLIC, SALT, YEAST EXTRACT, CHILLI (0.2%), VEGETABLE GUM (GUAR), GROUND CORIANDER, VEGETABLE PROTEIN EXTRACT (SOY), PEPPER. CONTAINS (ALLERGENS): SOY"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Chilli con carne",
+    "brand": "Vegie Delights",
+    "weight": "415g",
+    "barcode": "9349174000326",
+    "ingredients": "MAY CONTAIN TRACES: PEANUTS WATER, PEANUTS (20%), VEGETABLE PROTEIN (WHEAT), ONION, SALT, MINERALS (ZINC, IRON), VITAMIN B12 CONTAINS (ALLERGENS): PEANUTS AND CEREALS CONTAINING GLUTEN"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Nutmeat",
+    "brand": "Vegie Delights",
+    "weight": "415g",
+    "barcode": "9349174000692",
+    "ingredients": "MAY CONTAIN TRACES: SOY WATER, PEANUTS (47%), SALT, MINERALS (ZINC, IRON), VITAMIN B12. CONTAINS (ALLERGENS): PEANUTS"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Nutolene - Gluten Free",
+    "brand": "Vegie Delights",
+    "weight": "415g",
+    "barcode": "9349174000708",
+    "ingredients": "MAY CONTAIN TRACES: SOY WATER, LENTILS (17%), ONION, TOMATO PASTE, SALT, COLOUR (CARAMEL 150C), CURRY POWDER (GARLIC). CONTAINS (ALLERGENS): NIL"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Savoury Lentils - Gluten Free - VD",
+    "brand": "Vegie Delights",
+    "weight": "415g",
+    "barcode": "9349174000715",
+    "ingredients": "MAY CONTAIN TRACES: PEANUTS AND SOY WATER, WHEAT GLUTEN, PEANUTS, SOY FLOUR DEBTED, SOY PROTEIN (LECITHIN), TOMATO, FLAVOUR (WHEAT GLUTEN, SAT, CANOLA OIL, HERBS, MINERALS (ZINC, IRON), VITAMIN (B12), FLAVOUR (SOY, BARLEY, PAPRIKA OLEORESIN) CONTAINS (ALLERGENS): SOY, PEANUTS"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Vegetarian sausages - VD",
+    "brand": "Vegie Delights",
+    "weight": "425g",
+    "barcode": "9349174000739",
+    "ingredients": "AND CEREALS CONTAINING GLUTEN"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Ally Pink Salmon",
+    "brand": "Ally",
+    "weight": "210g",
+    "barcode": "",
+    "ingredients": "SALMON (FISH), SALT"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Wild Alaskan Red Salmon",
+    "brand": "John West        270g     NA                    CONTAINS FISH",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "CONTAINS FISH SALMON (F74%), WATER, SALT"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Wild Alaskan Red Salmon",
+    "brand": "Kirkland",
+    "weight": "170g",
+    "barcode": "9300462341026",
+    "ingredients": "CONTAINS FISH MSC CERTIFIED PURSE SEINE CAUGHT SHIPJACK TUNA (KATSUWONUS PELAMIS) (FIHS) (44%), WATER, REHYDRATED DICED MANGO (13%), VEGETABLE OIL, MANGO CHILLI SEASONING (CONTAINS WHEAT, SPICES), CHILLI (1.5%), SALT, DRIED CAPSICUM, SUGAR, GARLIC POWDER,"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Tuna with Mango Chilli",
+    "brand": "John West",
+    "weight": "95g",
+    "barcode": "9300462348414",
+    "ingredients": "FLAVOUR, COLOUR (PAPRIKA OLEORESINS) PURSE SEINE CAUGHT SHIPJACK TUNA (KATSUWONUS PELAMIS) (FISH) (56%), WATER, VEGETABLE OIL, VINEGAR, SALT, MUSTARD POWDER, SUGAR, SPICES (CONTAINS CHILLI, CELERY), PARSLEY, LEMON JUICE, FOOD ACID (CITRIC)"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Tuna with Zesty Vinaigrette",
+    "brand": "John West",
+    "weight": "95g",
+    "barcode": "9300462348278",
+    "ingredients": "CONTAINS FISH MSC CERTIFIED PURSE SEINE CAUGHT SHIPJACK TUNA (KATSUWONUS PELAMIS) (FISH) (58%), WATER, VEGETABLE OIL, SPICES (CONTAINS CHILLI, CELERY), FOOD ACID (CITRIC), CRACKED PEPPER (0.3%), SALT, LEMON JUICE POWDER (0.1%)"
+  },
+  {
+    "category": "Meat Tin",
+    "product": "Tuna with lemon & cracked pepper",
+    "brand": "John West",
+    "weight": "95g",
+    "barcode": "9300462348247",
+    "ingredients": "CONTAINS FISH DURUM WHEAT SEMOLINA MAY CONTAIN TRACES OF EGG AND SOY PRODUCT DOES NOT CONTAIN EGG AS AN"
+  },
+  {
+    "category": "Pasta",
+    "product": "Lasagna sheets",
+    "brand": "Community Co",
+    "weight": "250g",
+    "barcode": "9310246047532",
+    "ingredients": "INGREDIENT. DURUM WHEAT SEMOLINA MAY CONTAIN TRACES OF EGG & SOY. PRODUCT DOES NOT CONTAIN EGG AS AN"
+  },
+  {
+    "category": "Pasta",
+    "product": "Spaghetti",
+    "brand": "San Remo",
+    "weight": "500g",
+    "barcode": "9310155100434",
+    "ingredients": "INGREDIENT DURUM WHEAT SEMOLINA MAY CONTAIN TRACES OF EGG & SOY. PRODUCT DOES NOT CONTAIN EGG AS AN"
+  },
+  {
+    "category": "Pasta",
+    "product": "Pasta Spirals",
+    "brand": "San Remo",
+    "weight": "500g",
+    "barcode": "9310155202138",
+    "ingredients": "INGREDIENT SPAGHETTI (50%) (DURUM WHEAT SEMOLINA, WATER), WATER, TOMATO PASTE (6.4%), SUGAR, MODIFIED MAIZE STARCH, GLUCOSE-FRUCTOSE SYRUP, SALT, CHEESE POWDER (MILK), WHEY POWDER, NATURAL FLAVOURINGS, PAPRIKA, YEAST EXTRACT."
+  },
+  {
+    "category": "Pasta",
+    "product": "Spaghetti cans",
+    "brand": "Black & Gold",
+    "weight": "410g",
+    "barcode": "9310077312779",
+    "ingredients": "CONTAINS: GLUTEN (WHEAT), MILK"
+  },
+  {
+    "category": "Pasta",
+    "product": "Spirals",
+    "brand": "Black & Gold",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "DURUM WHEAT SEMOLINA CONTAINS: WHEAT, GLUTEN"
+  },
+  {
+    "category": "Pasta",
+    "product": "Pasta Spirals",
+    "brand": "Black & Gold",
+    "weight": "500g",
+    "barcode": "9310077289033",
+    "ingredients": "MAY BE PRESENT: EGG, SOY DURUM WHEAT SEMOLINA CONTAINS: WHEAT, GLUTEN"
+  },
+  {
+    "category": "Pasta",
+    "product": "Pasta Spaghetti",
+    "brand": "Coles",
+    "weight": "500g",
+    "barcode": "9310645247274",
+    "ingredients": "MAY BE PRESENT: EGG, SOY RECONSTITUED TOMATO PUREE (46%), SUGAR, SALT, THICKENERS (1422, 415), ACIDITY REGULATOR (26), MOLASSES, MALTODEXTRIN, COLOUR (150D) (CONTAINS SULPHITES), ONION, GARLIC, SPICES, FLAVOUR"
+  },
+  {
+    "category": "Sauce",
+    "product": "BBQ Sauce",
+    "brand": "Colway",
+    "weight": "500ml",
+    "barcode": "4088700034415",
+    "ingredients": "CONTAINS SULPHITES SUGAR, TOMATO PUREE, CHILLI (14%), WHITE VINEGAR, MALT VINEGAR (FROM WHEAT & BARLEY), SALT, CAPSICUM, MAIZE THICKENER (1442), SPICES, ONION POWDER, GARLIC POWDER, STABILISER (415), NATURAL FLAVOUR CONTAINS: WHEAT, GLUTEN"
+  },
+  {
+    "category": "Sauce",
+    "product": "Hot Chilli Sauce",
+    "brand": "Fountain",
+    "weight": "250ml",
+    "barcode": "9300681002081",
+    "ingredients": "MAY CONTAIN: SOY, PEANUT WATER, SOYBEANS (18%), WHEAT, SALT. CONTAINS WHEAT, SOY, 3.2% ALCOHOL"
+  },
+  {
+    "category": "Sauce",
+    "product": "Soy sauce",
+    "brand": "Kikkoman",
+    "weight": "600ml",
+    "barcode": "4901515118586",
+    "ingredients": "FROM THE NATURAL BREWING PROCESS. PARMIGIANO REGGIANO CHEESE 5% (MILK), MAIZE SOLUBLE FIBRE, WHEY POWDER (MILK), SALT, MILK PROTEIN, EXTRA VIRGIN OILVE OIL, SUGAR, BASIL EXTRACT, NATURAL FLAVOURINGS (MILK), ACIDITY REGULATOR: LACTIC ACID, GARLIC. CONTAINS CASHEWS AND MILK"
+  },
+  {
+    "category": "Sauce",
+    "product": "Basil pesto",
+    "brand": "Barilla",
+    "weight": "190g",
+    "barcode": "8076809513753",
+    "ingredients": "MAY CONTAIN OTHER TREE NUTS REONSTITUTED TOMATO PUREE (46%), SUGAR, SALT, THICKENERS (1422, 415), ACIDITY REGULAROT (260< MOLASSES, MALTODEXTRIN, COLOUR (150D), ONION, GARLIC, SPICES, FLAVOUR."
+  },
+  {
+    "category": "Sauce",
+    "product": "Barbeque Sauce",
+    "brand": "Colway",
+    "weight": "500g",
+    "barcode": "4088700034415",
+    "ingredients": "CONTAINS SULPHITES SOY SAUCE (WATER, SOYBEANS, SALT, RICE) (50%), SUGAR, WATER, SALTED BLACK BEANS (SOYBEANS, SALT), THICKENER (1422), CARAMEL (150A), GINGER, TANGERINE PEEL, FOOD ACIDS (260, 270), SALT."
+  },
+  {
+    "category": "Sauce",
+    "product": "Black Bean Sauce",
+    "brand": "Ayam",
+    "weight": "210g",
+    "barcode": "9311627610550",
+    "ingredients": "CONTAINS SOY WATER, ALCOHOL (16%), WHEAT, GLUTINOUS RICE, SALT (1.6%), FOOD"
+  },
+  {
+    "category": "Sauce",
+    "product": "Chinese Cooking Wine",
+    "brand": "Pandaroo",
+    "weight": "375ml",
+    "barcode": "9319224800527",
+    "ingredients": "ADDITIVE CARAMEL GHERKINS (GHERKINS (28%), WATER, SALT, FOOD ACID (ACETIC), FIRMING AGENT (CALCIUM CHLORIDE), PRESERVATIVE (SODIUM METABISUKPHITE)), SUGAR, WATER, THICKENER (MODIFIED CORNSTARCH), SALT, MUSTARD SEED (0.5%), COLOUR (CHLORLOPHYLL-COPPER COMPLEX & RIBOFLAVIN), SPICE EXTRACT CONTAINS: SUIPHITES"
+  },
+  {
+    "category": "Sauce",
+    "product": "Gherkin Relish",
+    "brand": "Masterfoods",
+    "weight": "260g",
+    "barcode": "9310012034551",
+    "ingredients": "MAY CONTAIN: PEANUTS & WHEAT BASIL (34%), WATER, CANOLA OIL, PECORINO CHEESE (9%) (MILK, SALT, CULTURES, ENZYMES, TAPIOCA STARCH, WHEY POWDER), NUTS (6%) (ALMONDS, CASHEWS), SUNFLOWER OIL, GARLIC (2%), SALT, NATURAL FLAVOUR (CONTAINS MILK), SUGAR, FOOD ACID (LACTIC), FIBRES (FRUIT, VEGETABLE). CONTAINS TREE NUTS AND MILK"
+  },
+  {
+    "category": "Sauce",
+    "product": "Basil pesto",
+    "brand": "Leggo's",
+    "weight": "190g",
+    "barcode": "93352192",
+    "ingredients": "MAY CONTAIN PEANUTS WATER, HORSERADISH (17%) (CONTAINS SULPHITES), MUSTARD SEED, SUGAR, VEGETABLE OIL, SALT, FOOD ACID (ACETIC), WHEY PROTEIN (CONTAINS MILK), CLARIFIED BUTTER (CONTAINS MILK), THICKENERS (MODIFIED CORNSTARCH, XANTHAN GUM (CONTAINS SOY)), FLLAVOURS, PRESERVATIVE (SODIUM METABISULPHITE), COLOUR (PAPRIKA OLEORESIN)"
+  },
+  {
+    "category": "Sauce",
+    "product": "Horseradish Cream Condiment",
+    "brand": "Masterfoods",
+    "weight": "175g",
+    "barcode": "93718738",
+    "ingredients": "CONTAINS: SULPINES, MILK AND SOY WATER, MUSTARD (24%) (MUSTARD SEEDS, MUSTARD FLOUR, MUSTARD POWDER), SUGAR, SALT, SPICES, ACIDITY"
+  },
+  {
+    "category": "Sauce",
+    "product": "Hot English Mustard",
+    "brand": "Colway",
+    "weight": "190g",
+    "barcode": "4088700020333",
+    "ingredients": "REGULATOR (330), MUSTARD OIL (0.2%) SUGAR, WATER, GLUCOSE SYRUP, FOOD ACIDS (ACETIC, CITRIC, SODIUM CITRATE), THICKENER (PECTIN), SALT, MINT 0 5%, VEGETABLE OIL, COLOUR (CHLOROSTY/&- COGGER COMPLEX, RIBOFLOVIN), MINT EXTRACTS."
+  },
+  {
+    "category": "Sauce",
+    "product": "Mint Jelly",
+    "brand": "Masterfoods",
+    "weight": "290g",
+    "barcode": "93718134",
+    "ingredients": "MAY CONTAIN PEANUTS. WATER, SUGAR, OYSER EXTRACT (11%) (OYSTERS, WATER, SALT), SALT, MODIFIED CORN STARCH (1442), FLAVOUR ENCHANCER (621), WHEAT FLOUR, COLOUR"
+  },
+  {
+    "category": "Sauce",
+    "product": "Oyser Sauce",
+    "brand": "Panda Brand Oyst907g",
+    "weight": "",
+    "barcode": "0788953000311",
+    "ingredients": "(150A). CONTAINS OYSTERS, WHEAT. WATER, SOYBEANS (18%), WHEAT, SALT. CONTAINS WHEAT, SOY, 3.2% ALCOHOL"
+  },
+  {
+    "category": "Sauce",
+    "product": "Soy Sauce",
+    "brand": "Kikkoman",
+    "weight": "500ml",
+    "barcode": "4901515118580",
+    "ingredients": "FROM THE NATURAL BREWING PROCESS. SUGAR, PICKLED RED CHILLI (21%), WATER,"
+  },
+  {
+    "category": "Sauce",
+    "product": "Sweet Chilli Sauce",
+    "brand": "Trident         730ml                          GARLIC, VINEGAR, SALT, STABILISER: (415).",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "VINEGAR, SALT, STABILISER: (415). WATER, SUGAR, GOLDEN SYRUP, SALT, THICKENERS (MODIFIED CORNSTARCH, XANTHAN GUM (CONTAINS SOY)), FOOD ACID (ACETIC), GARLIC 1%, PAPRIKA, HONEY 0.5%, GINGER, CHILLI 0.5% CONTAINS: SOY"
+  },
+  {
+    "category": "Sauce",
+    "product": "Sweet Chilli Sauce",
+    "brand": "Masterfoods",
+    "weight": "500ml",
+    "barcode": "9310012024248",
+    "ingredients": "MAY CONTAIN PEANUTS CAULIFLOWER, WATER, ONION, SUGAR, GHERKINS, ACIDITY REGULATOR (E260), MODIFIED STARCH (E1412), UNMODIFIED STARCH, MUSTARD FLOUR, CURRY, TURMERIC, FLAVOUR, GINGER (SPICE), BLACK PEPPER, NATURAL FLAVOUR,"
+  },
+  {
+    "category": "Sauce",
+    "product": "Sweet Mustard Pickle",
+    "brand": "Fletchers",
+    "weight": "395g",
+    "barcode": "9310181032136",
+    "ingredients": "TARTRAZINE (E102) CI19140 VEGETABLES 38% (ONION, CAULIFLOWER, CUCUMBER), WATER, MALT VINEGUR (BARLEY, WHEAT), (COLOUR 150 ) SUGAR, WHEAL FLOUR, SAL, MODLIED MAIZE STARCH (1422), TURMERIC, MUSTARD, COLOUR (102)."
+  },
+  {
+    "category": "Sauce",
+    "product": "Sweet Mustard Pickle",
+    "brand": "Three Threes",
+    "weight": "250g",
+    "barcode": "9310480333002",
+    "ingredients": "CONTAINS SULPHITES AND GLUTEN. WATER, SUGAR SYRUP, DEXTROSE, FOOD - ACIDS (260,330, 331, 332), REHYDRATED MINT, VEGETABLE GUMS (440, 415, 407, 410), MINERAL SALTS (41, 508), NATURAL"
+  },
+  {
+    "category": "Sauce",
+    "product": "Thick Mint Sauce",
+    "brand": "Fountain",
+    "weight": "250ml",
+    "barcode": "91300681195738",
+    "ingredients": "FLAVOUR, SALT, COLOURS (14,10). TOMATO PUREE (78%), SUGAR, SALT, FOOD"
+  },
+  {
+    "category": "Sauce",
+    "product": "Tomato Sauce",
+    "brand": "Fountain",
+    "weight": "500ml",
+    "barcode": "9300681008649",
+    "ingredients": "ACID (260), NATURAL FLAVOUR. SUNFLOWER OIL (ANTIORIDANT (320), WATER, SUGAR, FREE RANGE WHOLE EGG (4%), WHITE VINEGAR, MALT VINEGAR (BARLEY & WHEAT), SALT, VEGETABLE GUMS (415 FROM SOY, 405), FOOD ACID (330), NATURAL COLOUR (CARROT EXTRACT), FLAVOURS."
+  },
+  {
+    "category": "Sauce",
+    "product": "Traditional Mayo",
+    "brand": "Praise",
+    "weight": "490g",
+    "barcode": "9310047203489",
+    "ingredients": "CONTAINS EGG"
+  },
+  {
+    "category": "Sauce",
+    "product": "Chicken & Ham",
+    "brand": "Pecks",
+    "weight": "125g",
+    "barcode": "93695152",
+    "ingredients": "GET ONLINE"
+  },
+  {
+    "category": "Sauce",
+    "product": "Devilled Ham",
+    "brand": "Pecks",
+    "weight": "125g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Sauce",
+    "product": "Authentic Thai Massaman Curry Paste",
+    "brand": "Valcom",
+    "weight": "210g",
+    "barcode": "",
+    "ingredients": "SHALLOT, LEMONGRASS (15%), GARLIC, GALANGALL (13%), GREEN CHILLI (12%), WATER, SALT, SUGAR, COMANDER SEEDL, KAFFIR LIME PEEL, GINGER, TURMERIC, PEPPER (0,6%), DRIED CUMIN, ACIDITY REGULATOR (330) MAY CONTAIN: GLUTEN, CEREALS, CRUSTACEA, PEANUTS, SOY, FISH AND"
+  },
+  {
+    "category": "Sauce",
+    "product": "Green curry paste",
+    "brand": "Asia specialities 195g                           SESAME",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "SESAME WATER, GARLIC, GALANGAL (12%), LEMONGRASS (12%), SHALLOT, CORIANDER SEEDS, SALT, DRIED RED CHILLI (4.5%), SUGAR, MACE, CINNAMON, NUTMEG, KAFFIR LIME PEEL, CLOVE, CARDAMON, DRIED CUMIN, PEPPER (0.3%), ACIDITY REGULATOR (330). MAY CONTAIN: GLUTEN CEREALS, CRUSTACEA, PEANUTS, SOY, FISH AND"
+  },
+  {
+    "category": "Sauce",
+    "product": "Massaman Curry Paste",
+    "brand": "Asia specialities 195g                           SESAME",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "SESAME GRAPE MUST, BALSAMIC VINEGAR OF MODENA (35%), (COOKED GRAPE MUTT,"
+  },
+  {
+    "category": "Sauce",
+    "product": "Glaze with Balsamic Venifa of Modena",
+    "brand": "Community Co",
+    "weight": "250ml",
+    "barcode": "9310246047914",
+    "ingredients": "WINE VINEGAR), MODIFIED STARCH (1422). WHEAT FLOUR, MALTODEXTRIN (FROM CORN), MODIFIED STARCH (1422), LODISED SALT, SUGAR, YEAST EXTRACT, VEGETABLE FAT, FLAVOUR ENHANCERS (621, 635), COLOUR (150C), ONION POWDER, FLAVOURS, FOOD ACID (330), SPICE. CONTAINS WHEAT AND GLUTEN. MAY CONTAIN FISH, MILK, SOY, CELERY,"
+  },
+  {
+    "category": "Sauce",
+    "product": "Rich gravy mix",
+    "brand": "Maggi",
+    "weight": "2kg",
+    "barcode": "9400556006838",
+    "ingredients": "MUSTARD, CRUSTACEA AND SULPHITES. WATER, SUGAR, SALT, OYSTER EXTRACT (6%), THICKENER (1422), RICE FLOUR, CARAMEL (150A), OYSTER FLAVOUR, FOOD ACID (270), YEAST EXTRACT, VEGETABLE"
+  },
+  {
+    "category": "Sauce",
+    "product": "Oyster sauce",
+    "brand": "ayam",
+    "weight": "420ml",
+    "barcode": "9556041200202",
+    "ingredients": "GUM 416). WATER, ASPARAGUS (16%), WHEAT FLOUR, VEGETABLE OIL, SUGAR, SALT, CREAM (FROM MILK), MILK SOLIDS, BUTTER (FROM MILK), CORNFLOUR (MAIZE), VEGETABLE PROTEIN EXTRACT (FROM MAIZE, SOYBEAN), YEAST EXTRACT, NATURAL FLAVOURS, FOOD COLOURS (BETA CAROTENE, CARAMEL IV) CONTAINS GLUTEN CONTAINING CEREALS,"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Cream of asparagus condensed soup",
+    "brand": "Campbell's",
+    "weight": "420g",
+    "barcode": "9300644120210",
+    "ingredients": "MILK AND SOY WATER, CELERY (20%), WHEAT FLOUR, VEGETABLE OLIL, COMFOUR (MAINE), CREAM (FROM MILK), SALT, SUGAR, SOY PROTEIN, MILK SOLIDS, EMULSIFIER (SAY LECITHIN), NATURAL FLAVOURS, FOOD COLOUR (BETA CAROTENE) CONTAINS GLUTEN CONTAINING"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Cream of celery soup (condensed)",
+    "brand": "Campbell's",
+    "weight": "410g",
+    "barcode": "9300644116213",
+    "ingredients": "CEREALS, MILK AND SOY. WATER, CHICKEN (8%), VEGETABLES (8%) (CORN, CARROTS, CELERY, ONION), THICKENERS (1422, 1414). CREAM (2.7%) (CONTAINS MILK), FLAVOURS (CONTAIN WHEAT, BARLEY), SALT, SOY SAUCE EXTRACT, SUGAR, ROAST GARLIC, STABILISER (415). MINERAL SALTS (450,"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Cream of chicken (condensed soup)",
+    "brand": "Heinz",
+    "weight": "420g",
+    "barcode": "9300657005023",
+    "ingredients": "451), WHITE PEPPER."
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Cream of chicken (condensed soup)",
+    "brand": "Campbell's",
+    "weight": "410g",
+    "barcode": "",
+    "ingredients": "WATER, MUSHROOMS (11%), WHEAT FOUR, COMFLOUR (MAIZE), VEGETABLE OIL, SALT, CREAM (FROM MILK), FLAVOURS, MILK SOLIDS, SOY PROTEIN, SUGAR, YEAST EXTRACT, FOOD COLOUR, CARAMEL III), MALTODEXTRIN (FROM WHEAT) CONTAINS GLUTEN CONTAINING CEREALS,"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Cream of mushroom soup (condensed)",
+    "brand": "Campbell's",
+    "weight": "420g",
+    "barcode": "9300644126212",
+    "ingredients": "MILK AND SOY PUMPKIN (64%), WATER, TOMATOES, MAIZE THICKENER (1412), SUGAR, SALT, CREAM, WHEAT FLOUR, FLAVOURS (CONTAIN SOY"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Cream of pumpkin condensed soup",
+    "brand": "Heinz",
+    "weight": "420g",
+    "barcode": "9300657005610",
+    "ingredients": "& GARLIC) CHICKEN STOCK (WATER, CHICKEN, HERB EXTRACT, MARINATED CHICKEN (8%) (CHICKEN, WATER, SALT, MINERAL SALT (451)), CORNFLOUR, WHEAT FLOUR, VEGETABLE OIL, ONIONS, CREAM (0.7%) (FROM MILK), VEGETABLE FIBRE, POTATO STARCH, SALT, SUGAR, MILK SOLIDS, SOY PROTEIN, MINERAL SALT (508), NATURAL FLAVOURS (CONTAINS WHEAT), VEGETABLE PROTEN EXTRACT, YEAST EXTRACT, HERBS, PEPPER, FLAVOUR ENHANCERS (635), NATURAL FOOD COLOUR (BETA CAROTENE) CONTAINS GLUTEN CONTAINING CEREALS,"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Creamy chicken soup",
+    "brand": "Campbell's",
+    "weight": "405g",
+    "barcode": "9300644705080",
+    "ingredients": "MILK AND SOY BEEF STOCK (WATER, BEEF, SALT), VEGETABLES (95%) (POTATOES, CARROTS, TOMATO PUREE, ONIONS, GREAT NORTHERN BEANS, GREEN BEANS, PEAS, SWEET COM, SPINACH), MARINATED BEEF (9%) (BEEF, WATER, MINERAL SALT (451)), PEARLED BARLEY, POTATO STARCH, CORNFLOUR, SOY SAUCE (FROM SOYBEANS, WHEAT), SALT, VEGETABLE PROTEIN EXTRACT (FROM SOYBEAN), SUGAR, FOOD COLOUR (CARAMEL I), YEAST EXTRACT, SPICES, NATURAL FLAVOURS, HERBS. CONTAINS SOY AND GLUTEN CONTAINING"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Hearty Beef & Vegetable Soup",
+    "brand": "Campbell's",
+    "weight": "405g",
+    "barcode": "91300644704946",
+    "ingredients": "CEREALS PUMPKINS (60%), CHICKEN STOCK (WATER, CHICKEN, SAGE EXTRACT, NATURAL ANTIOXIDANT (ROSEMARY EXTRACT)), CREAM (FROM MILK) (1.9%), ONIONS, CARROT, CORNFLOUR, VEGETABLE OIL, SALT, GARLIC, MILK SOLIDS, YEAST EXTRACT, PEPPER, NATURAL FLAVOURS"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Rich & creamy pumpkin soup",
+    "brand": "Campbell's",
+    "weight": "",
+    "barcode": "9300644702409",
+    "ingredients": "CONTAINS MILK VEGETABLES (55%) (POTATOES, PUMPKINS, CARROTS, CELERY, TOMATO PUREE, TOMATOES, SWEET CORN, PINTO BEANS, GREEN BEANS, PEAS, SPINACH), WATER, PEARLED BARLEY, SALT, SUGAR, YEAST EXTRACTS (CONTAIN BARLEY), THICKENER (GUAR GUM), PARSLEY, GARLIC, PEPPER, MINERAL SALT (509)"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Farmhouse vegetable soup",
+    "brand": "Campbell's",
+    "weight": "400g",
+    "barcode": "9300644704953",
+    "ingredients": "CONTAINS GLUTEN CONTAINING CEREALS VEGETABLES (58%) (TOMATOES, POTATOES, CARROTS, ONION, CELERY, LEEK). WATER, MAIZE THICKENER (1422), PEAR BARLEY (CONTAINS TRACES OF WHEAT), SUGAR, SALT, YEAST EXTRACT,"
+  },
+  {
+    "category": "Soup (Canned)",
+    "product": "Vegetable soup (Condensed)",
+    "brand": "Heinz",
+    "weight": "420g",
+    "barcode": "9300657005108",
+    "ingredients": "ROAST GARLIC. NOODLE CAKE: WHEAT FLOUR, VEGETABLE OIL [ANTIOXIDANT (319)], SALT, MINERAL SALTS (508, 451, 501, 500, VEGETABLE GUM (412). FLAVOUR SACHET: MINERAL SALT (508), LODISED SALT, FLAVOUR ENHANCERS (621, 635), SUGAR, YEAST EXTRACT, FLAVOUR, COLOUR (CARAMEL ILL, VEGETABLE) FAT (ANTIOXIDANT (320), ONION, SOY SAUCE POWDER (SOY, WHEAT), FOOD ACID (CITRIC), WHITE PEPPER, ROSEMARY CONTAINS WHEAT AND SOY MAY CONTAIN CELERY, CRUSTACEAN,"
+  },
+  {
+    "category": "Soup (Cup)",
+    "product": "2 minute noodles - Beef",
+    "brand": "Maggi",
+    "weight": "370g",
+    "barcode": "9556001137791",
+    "ingredients": "FIST, MILK AND MUSTARD. NOODLE CAKE: WHEAT FLOUR, VEGETABLE OIL (ANTIOXIDANT (319), SALT, MINERAL SALTS (508,451, 501,500), VEGETABLE GUM (412). FLAVOUR SACHET: SALT, FLAVOUR ENHANCERS (621, 635), MINERAL SALT (508), MALTODEXTRIN, FLAVOURS (621) (WHEAT, SOY AND CELERY), SUGAR, ONION POWDER, VEGETABLE FAT [ANTIOXIDANT(320), PARSLEY FLAKES, COLOURS (TURMERIC, CARAMEL I), SOICES (CORIANDER, CUMIN, CARDAMOM, CHILLI POWDER, GINGER), CONTAINS WHEAT. SOY AND CELERY. MAY CONTAIN CRUSTACEAN, FISH, MILK"
+  },
+  {
+    "category": "Soup (Cup)",
+    "product": "Chicken 2 minute noodles",
+    "brand": "Maggi",
+    "weight": "",
+    "barcode": "9556001138033",
+    "ingredients": "AND MUSTARD STARCH (POTATO, CORN), MALTODEXTRIN, CREAMER [VEGETABLE OIL, GLUCOSE SYRUP, LACTOSE, MILK PROTEIN, MINERAL SALTS (340, 452)], NATURAL FLAVOURS, SALT, SUGAR, FLAVOUR ENHANCERS (621, 635), VEGETABLE OIL, YEAST EXTRACT, PARSLEY (0.1%), NATURAL COLOUR (TURMERIC) CONTAINS: MILK. MAY CONTAIN: WHEAT, GLUTEN, SOY, PEANUT, EGG, SESAME, TREE NUTS, FISH,"
+  },
+  {
+    "category": "Soup (Cup)",
+    "product": "Cream of chicken - soup in a cup",
+    "brand": "Continental",
+    "weight": "75g",
+    "barcode": "9300667029392",
+    "ingredients": "CRUSTACEAN, LUPIN. CORN STARCH, MALTODEXTRIN, SALT, NATURAL BEEF FLAVOURS, FLAVOUR ENHANCERS (621, 635), ONION POWDER, CREAMER [CONTAINS MILK, MINERAL SALTS (339 OR 340, 450 OR 451)], MINERAL SALT (POTASSIUM CHLORIDE), HYDROLYSED CORN PROTEIN, COLOUR (CARAMEL), SUNFLOWER OIL, SUGAR, PARSLEY, PEPPER EXTRACT. CONTAINS MILK. MAY CONTAIN WHEAT, SOYBEANS, PEANUTS, TREE NUTS, EGG, SESAME, FISH,"
+  },
+  {
+    "category": "Soup (Cup)",
+    "product": "Hearty beef - soup in a cup",
+    "brand": "Continental",
+    "weight": "55g",
+    "barcode": "9300667004320",
+    "ingredients": "CRUSTACEA AND LUPIN. NOODLE CAKE: WHEAT FLOUR, VEGETABLE OIL [ANTIOXIDANT (319)], SALT, MINERAL SALTS (508,451, 501,500), VEGETABLE GUM (412). FLAVOUR SACHET: FLAVOUR ENHANCERS (621,635,631), SOY SAUCE POWDER (WHEAT, SOY), MINERAL SALT (POTASSIUM CHLORIDE), FLAVOURS [FLAVOUR ENHANCERS (621, 627, 631), WHEAT, SOY), ONION, SUGAR, GINGER, SALT, GARLIC, COLOUR (CARAMEL 1), VEGETABLE FAT [ANTIOXIDANT (320)1, FOOD ACID (CITRIC). CONTAINS GLUTEN, WHEAT, SOY, MAY CONTAIN CELERY, CRUSTACEAN,"
+  },
+  {
+    "category": "Soup (Cup)",
+    "product": "Oriental 2 minute noodles",
+    "brand": "Maggi",
+    "weight": "370g",
+    "barcode": "9556001137678",
+    "ingredients": "FISH, MILK, MUSTARD SUGAR, STARCH (CORN, POTATO), VEGETABLES (TOMATO^ POWDER (16%), ONION POWDER), MALTODEXTRIN, SALT, CREAMER [VEGETABLE OIL, GLUCOSE SYRUP, LACTOSE, MILK PROTEIN, MINERAL SALTS (340, 452)], VEGETABLE OIL, FOOD ACID (CITRIC), FLAVOUR ENHANCER (635, 621), VEGETABLE GUM (XANTHAN), YEAST EXTRACT, NATURAL FLAVOUR, NATURAL COLOUR (CARMINE). CONTAINS: MILK. MAY CONTAIN: WHEAT, GLUTEN, SOY, PEANUT, TREE NUTS, EGG, SESAME, FISH,"
+  },
+  {
+    "category": "Soup (Cup)",
+    "product": "Tomato soup in a cup",
+    "brand": "Continental",
+    "weight": "80g",
+    "barcode": "9300667029422",
+    "ingredients": "CRUSTACEAN, LUPIN. GREEN PEAS (22.9%) (FLAKES AND PIECES), POTATO FLAKES, EMULSIFIER (471), PRESERVATIVE (SODIUM BISULPHITE)), MAIZE STARCH, CREAMER [VEGETABLE OLL, GLUCOSE SYRUP, MILK PROTEIN, MINERAL SALTS (339 OR 340, 450 OR 451), COLOUR (RIBOFLAVIN), THICKENER (1412), SUGAR, FLAVOURS (CONTAIN MILK), SUNFLOWER OIL, MINERAL SALT (POTASIUM CHLORIDE), SALT, SPINACH POWDER, ONION POWDER, YEAST EXTRACT, FLAVOUR ENHANCER (635), BLACK PEPPER, SPICE EXTRACT CONTAINS SULPHITES AND MILK PRODUCTS."
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Garden Pea & Ham soup mix",
+    "brand": "Continental       1.9kg",
+    "weight": "",
+    "barcode": "9300830044030",
+    "ingredients": "MAY CONTAIN EGG, FISH, SOYBEAN. TOMATO PURE (85%), SUGAR, ONIONS, MODIFIED TAPIOCA STARCH (E1442), SALT, GARLIC, ACIDITY REGULATOR (SODIUM BICARBONATE), THICKENER KANTHAN GUM), FOOD COLOUR (PAPRIKA EXTRACT,"
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Tomato soup (condensed)",
+    "brand": "Campbell's",
+    "weight": "420g",
+    "barcode": "9300644234511",
+    "ingredients": "HERBS, NATURAL FLAVOUR, SPICES"
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Chicken noodle soup mix",
+    "brand": "Continental       2.3kg",
+    "weight": "",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "French Onion soup mix",
+    "brand": "Continental       2.2kg",
+    "weight": "",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "French Onion soup mix",
+    "brand": "Maggi",
+    "weight": "2kg",
+    "barcode": "",
+    "ingredients": "VEGETABLES (40%) [CARROT, ONION, GREEN PEAS, CORN KERNELS, TOMATO], POTATO STARCH, MALTODEXTRIN (FROM CORN), MAIZE STARCH, YEAST EXTRACTS, VEGETABLE FAT, FLAVOURS, MINERAL SALT (508), LODISED SALT, FLAVOUR ENHANCER (635), HERB, VEGETABLE GUM (410), COLOUR (150C), TURMERIC. MAY CONTAIN FISH, MILK, SOY, MUSTARD,"
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Thick vegetable soup mix (gluten free)",
+    "brand": "Maggi             1.9kg",
+    "weight": "",
+    "barcode": "9400556012679",
+    "ingredients": "CELERY AND SULPHITES. SUGAR, SALT, MALTODEXTRINS (FROM MAIZE AND POTATO), CREAMER [VEGETABLE OIL, GLUCOSE SYRUP, MILK PROTEIN, MINERAL SALTS (339 OR 340, 450 OR 451), COLOUR (RIBOFLAVIN)], MINERAL SALT (POTASSIUM CHLORIDE), SUNFLOWER OIL, FLAVOUR ENHANCERS (635), THICKENER (XANTHAN), ONION POWDER, FOOD ACID (MALIC), YEAST EXTRACT, BLACK PEPPER, COLOUR (CARMINES), SPICE EXTRACT, GARLIC FLAVOUR. CONTAINS MILK PRODUCTS"
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Tomato soup mix",
+    "brand": "Continental     2.0kg",
+    "weight": "",
+    "barcode": "9300830044085",
+    "ingredients": "MAY CONTAIN EGG, FISH, SOYBEAN. STARCH, INULIN, POTATO (9.7%) (FLAKES, DICE), MILK SOLIDS, VEGETABLE OILS, MINERAL SALTS (POTASSIUM CHLORIDE, 452, 451, 340, 341, 450), CREAM POWDER (MILK), FLAVOURS (MILK), MALTODEXTRIN, LEEK PIECES 2.6%), GLUCOSE SYRUP, SOUR CREAM POWDER (MILK), SALT, ONION PIECES, SKIM MILK POWDER, SPINACH POWDER, SUGAR, FLAVOUR ENHANCER (635, 627), EMULSIFIER (471), PROCESSING AID (SULPHITES). CONTAINS: MILK, SULPHITES. MAY CONTAIN: EGG, PEANUT, SOY, TREE"
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Potato & Leek soup (Gluten Free)",
+    "brand": "Continental     1.7kg",
+    "weight": "",
+    "barcode": "93100830002122",
+    "ingredients": "NUTS. POTATO, ONION (PIECES, POWDER), GREEN PEAS, CARROT, CAPSICUM, LEEK, GREEN BEANS, CELERY, STARCH, MALTODEXTRIN, SUGAR, THICKENER (1412), PASTA (RICE FLOUR, POTATO STARCH, COLOUR (160A)), SALT, MINERAL SALT (POTASSIUM CHLORIDE), VEGETABLE OIL, FLAVOURS, YEAST EXTRACT, PARSLEY, BLACK PEPPER, FLAVOUR ENHANCER 635), PROCESSING AID (SULPHITES) CONTAINS: SULPHITES MAY CONTAIN: EGG, MILK, PEANUT, SOY &"
+  },
+  {
+    "category": "Soup (Dried)",
+    "product": "Minestrone soup mix (Gluten Free)",
+    "brand": "Continental      2.1kg",
+    "weight": "",
+    "barcode": "9300830044061",
+    "ingredients": "TREE NUTS SUGAR, APRICOT (40%), FOOD ACID (CITRIC"
+  },
+  {
+    "category": "Spread",
+    "product": "Apricot Jam",
+    "brand": "Cottee's",
+    "weight": "500g",
+    "barcode": "9300657801564",
+    "ingredients": "ACID), GELLING AGENT (PECTIN) SUGAR, APRICOT (40%), FOOD ACID (CITRIC, ASCORBIC), GELLING AGENT"
+  },
+  {
+    "category": "Spread",
+    "product": "Apricot Jam",
+    "brand": "IXL",
+    "weight": "480g",
+    "barcode": "9310013003280",
+    "ingredients": "(FRUIT PECTIN) SUGAR, ORANGE (27%) [JUICE & PEEL (CONTAINS PRESERVATIVE 223)], WATER, GELLING AGENT (PECTIN), FOOD ACID (CITRIC ACID), GRAPEFRUIT EXTRACT, MINERAL SALT (CALCIUM CHLORIDE),"
+  },
+  {
+    "category": "Spread",
+    "product": "Breakfast Marmalade",
+    "brand": "Cottee's",
+    "weight": "500g",
+    "barcode": "9300657801519",
+    "ingredients": "NATURAL ORANGE OIL (CONTAINS SOY) SUGAR, FRUIT (40%) [RASPBERRY, BLACKBERRY, STRAWBERRY, BOYSENBERRY, BLACKBURRANT], GELLING AGENT (FRUIT PECTIN), FOOD ACID (CITRIC), NATURAL COLOUR (GRAPE JUICE"
+  },
+  {
+    "category": "Spread",
+    "product": "Forest Fruits Jam",
+    "brand": "IXL",
+    "weight": "480g",
+    "barcode": "9310013003297",
+    "ingredients": "CONCENTRATE) SUGAR, ORANGE (24%), WATER, GELLING AGENT (FRUIT PECTIN), FOOD ACID"
+  },
+  {
+    "category": "Spread",
+    "product": "Marmalade (Breakfast)",
+    "brand": "IXL",
+    "weight": "480g",
+    "barcode": "9310013003273",
+    "ingredients": "(CITRIC), NATURAL ORANGE OIL ROASTED PEANUTS (86%), VEGETABLE OIL (CONTAINS ANTIOXIDANT (320)), SUGAR, SALT"
+  },
+  {
+    "category": "Spread",
+    "product": "Peanut Butter - Smooth",
+    "brand": "Bega",
+    "weight": "375g",
+    "barcode": "9352042000120",
+    "ingredients": "ALLERGENS: CONTAINS PEANUTS SUGAR, PLUMS (40%), GELLING AGENT (PECTIN), NATURAL COLOUR (GRAPE SKIN"
+  },
+  {
+    "category": "Spread",
+    "product": "Plum Jam",
+    "brand": "Cottee's",
+    "weight": "500g",
+    "barcode": "9300657801571",
+    "ingredients": "EXTRACT, FOOD ACID (CITRIC ACID)"
+  },
+  {
+    "category": "Spread",
+    "product": "Pure Honey",
+    "brand": "Community Co",
+    "weight": "500g",
+    "barcode": "9310246052796",
+    "ingredients": "AUSTRALIAN HONEY (100%) SUGAR, RASPBERRY (40%), GELLING AGENT (FRUIT PECTIN), FOOD ACID"
+  },
+  {
+    "category": "Spread",
+    "product": "Raspberry Jam",
+    "brand": "IXL",
+    "weight": "480g",
+    "barcode": "9310013003266",
+    "ingredients": "(CITRIC) SUGAR, RASPBERRY (40%), GELLING"
+  },
+  {
+    "category": "Spread",
+    "product": "Raspberry Jam",
+    "brand": "Cottee's",
+    "weight": "500g",
+    "barcode": "9300657801540",
+    "ingredients": "AGENT (PECTIN), FOOD ACID (CITRIC ACID) SUGAR, STRAWBERRY (40%), GELLING AGENT (PECTIN), FOOD ACID (CITRIC ACID),"
+  },
+  {
+    "category": "Spread",
+    "product": "Strawberry Jam",
+    "brand": "Cottee's",
+    "weight": "500g",
+    "barcode": "9300657801533",
+    "ingredients": "MINERAL SALT SUGAR, (CALCIUM STRAWBERRY CHLORIDE) (40%), GELLING AGENT (FRUIT PECTIN), FOOD ACID"
+  },
+  {
+    "category": "Spread",
+    "product": "Strawberry Jam",
+    "brand": "IXL",
+    "weight": "480g",
+    "barcode": "9310013003259",
+    "ingredients": "(CITRIC) YEAST EXTRACT (FROM YEAST GROWN ON BARLEY AND WHEAT), SALT, MINERAL, SALT (508), MALT EXTRACT (FROM BARLEY), COLOUR (150C), FLAVOURS, NIACIN, THIAMINE, RIBOFLAVIN, FOLATE ALLERGENS: CONTAINS BARLEY AND"
+  },
+  {
+    "category": "Spread",
+    "product": "Vegemite",
+    "brand": "Bega",
+    "weight": "455g",
+    "barcode": "9352042000335",
+    "ingredients": "WHEAT NATURAL UNHULLED SESAME SEEDS ALLERGEN ADVICE CONTAINS: SESAME"
+  },
+  {
+    "category": "Spread",
+    "product": "Tahini - unhulled",
+    "brand": "Mayver's",
+    "weight": "385g",
+    "barcode": "9310885115142",
+    "ingredients": "MAY BE PRESENT: PEANUTS, TREE NUTS. SALMON (51%), WHITE FISH (COD, POILACK), WATER, SALT, FLAVOUR ENHANCER (MONOSODIUM GLUTAMATE), MODIFIED CORN STARCH (1422), POTATO FIBRE, FOOD ACID (CITRIC ACID), THICKENERS (LOCUST BEAN GUM, CARRAGEENAN), LOBSTER EXTRACT (0,07%), COLOUR (CARAMEL V), ONION, GARLIC CONTAINS CRUSTACEA AND FISH"
+  },
+  {
+    "category": "Spread",
+    "product": "Salmon & Lobster",
+    "brand": "Pecks",
+    "weight": "125g",
+    "barcode": "93695176",
+    "ingredients": "INGREDIENTS"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Sundried Tomatoes Strips",
+    "brand": "Woolworths",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "POTATO FLAKE (84%) [CONTAINS EMULSIFIER (471), PRESERVATIVE (SODIUM BISULPHITE)], SUNFLOWER OIL, SALT, WHEY POWDER, SKIM MILK POWDER, FLAVOURS (CONTAIN MILK), CREAM POWDER, SPICE EXTRACT."
+  },
+  {
+    "category": "Vegetables",
+    "product": "Instant Mashed Potato - Deb",
+    "brand": "Deb Continental",
+    "weight": "",
+    "barcode": "9300667750030",
+    "ingredients": "CONTAINS MILK TOMATO PUREE (54%) (FROM PASTE), CANOLA OPIL, SUNDRIED TOMATOES (10%), CAPSICUM (9%), NUTS (6%) (CASHEWS, ALMONDS), SALT, GARLIC, HERBS, LEMON JUICE CONCENTRATE, THICKENERS (1442, XANTHAN GUM), NATURAL CHEESE FLAVOUR (CONTAINS MILK), PEPPER. CONTAINS TREE NUTS AND MILK"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Pesto sundried tomato",
+    "brand": "Leggo's            190g                            MAY CONTAIN PEANUTS",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "MAY CONTAIN PEANUTS AUSTRALIAN ONIONS (60%), WATER, SUGAR, FOOD ACIDS (260, 270), SALT, SPICE EXTRACT, MINERAL SALT (509), PRESERVATIVE (220)"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Australian Pickled Onions",
+    "brand": "Three Threes",
+    "weight": "520g",
+    "barcode": "9310480333514",
+    "ingredients": "CONTAINS: SULPHITES KALAMATA OLIVES (59%), WATER, SALT, OLIVE OIL, SUGAR, FOOD ACID (260),"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Kalamata Olives - Pitted",
+    "brand": "Always Fresh",
+    "weight": "670g",
+    "barcode": "9300602370923",
+    "ingredients": "COLOUR (150C). MIXED VEGETABLES (65%): (100% AUSTRALIAN GROWN PRODUCE - CAULIFLOWER, CARROTS, PEPPERS), (IMPORTED PRODUCE - GHERKINS, ONIONS, OLIVES), WATER, VINEGAR, MINERAL SALTS (509), PRESERVATIVES"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Giardiniera",
+    "brand": "Hoyt's",
+    "weight": "750g",
+    "barcode": "9300725000028",
+    "ingredients": "(223) ONIONS (60%), WATER, SUGAR, SALT, FOOD ACID (260), SPICES, CARAMEL COLOUR (150C), PRESERVATIVE (223),"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Southern Style Pickled Onions",
+    "brand": "Hoyt's",
+    "weight": "510g",
+    "barcode": "91500725011307",
+    "ingredients": "SULPHITES. REHYDRATED, SUNDRIED TOMATOES (54%), CANOLA OIL, SALT. HERBS, SUGAR, GARLIC, ANTIOXIDANT (300), ACIDITY"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Sundried Tomatoes Strips",
+    "brand": "Always Fresh",
+    "weight": "480g",
+    "barcode": "9300602366285",
+    "ingredients": "REGULATOR (330) TOMATO PASTE (99%), SALT, FOOD ACID"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Tomato Paste",
+    "brand": "Leggo's",
+    "weight": "280g",
+    "barcode": "9300645020823",
+    "ingredients": "(CITRIC)."
+  },
+  {
+    "category": "Vegetables",
+    "product": "Basmati Rice",
+    "brand": "Riviana",
+    "weight": "1kg",
+    "barcode": "9300602175344",
+    "ingredients": "NA"
+  },
+  {
+    "category": "Vegetables",
+    "product": "Medium grain rice",
+    "brand": "Sun Rice",
+    "weight": "1kg",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Vegetables",
+    "product": "Medium grain rice",
+    "brand": "Sun Rice",
+    "weight": "1kg",
+    "barcode": "9310140283746",
+    "ingredients": "NA BLACK BEANS (60%), WATER, SUGAR, SALT, FIRMING AGENT (509), FOOD ACID (ACETIC"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Black Beans",
+    "brand": "Edgell",
+    "weight": "400g",
+    "barcode": "9310082108657",
+    "ingredients": "ACID). LENTIS (60%), WATER, SALT, TOMATO PASTE, FIRMING AGENT (509),"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Brown Lentils",
+    "brand": "Edgell",
+    "weight": "400g",
+    "barcode": "9310082429981",
+    "ingredients": "ANTIOXIDANT (ASCORBIC ACID)."
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Chickpeas",
+    "brand": "Edgell",
+    "weight": "400g",
+    "barcode": "",
+    "ingredients": "YOUNG CORN (54.1%), WATER, SALT,"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Baby Corn In Brine",
+    "brand": "Pigeon Brand",
+    "weight": "425g",
+    "barcode": "8850035103083",
+    "ingredients": "ACIDITY REGULATOR (330) BAMBOO SHOOTS (62%), WATER, ACIDITY"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Bamboo Shoot Slices",
+    "brand": "Valcom",
+    "weight": "225g",
+    "barcode": "9310432180654",
+    "ingredients": "REGULATOR (330)."
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Corn Kernals",
+    "brand": "Edgell",
+    "weight": "240g",
+    "barcode": "9310082158089",
+    "ingredients": "SWEET CORN (58%), WATER, SALT CORN (60%), WATER, SUGAR, MAIZE"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Creamed Corn",
+    "brand": "Golden circle",
+    "weight": "410g",
+    "barcode": "9300657126025",
+    "ingredients": "THICKENER (1412), SALT TOMATOES (60%), TOMATO JUICE, ACIDITY,"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Italian Diced Tomatoes",
+    "brand": "Community Co",
+    "weight": "400g",
+    "barcode": "9310246056862",
+    "ingredients": "REGULATOR (CITRIC ACID)"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Sliced Green Beans",
+    "brand": "Edgell",
+    "weight": "410g",
+    "barcode": "9310082152520",
+    "ingredients": "GREEN BEANS (51%), WATER, SALT, SUGAR"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Straw Mushrooms",
+    "brand": "Chef's World       425g               NA         STRAW MUSHROOMS (47%), WATER, SALT.",
+    "weight": "",
+    "barcode": "",
+    "ingredients": "STRAW MUSHROOMS (47%), WATER, SALT. WATER CHESTNUT (60%), WATER, ACIDITY"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Water Chestnut Slices",
+    "brand": "Valcom",
+    "weight": "227g",
+    "barcode": "9310432180524",
+    "ingredients": "REGULATOR (330) CHAMPIGIONS (55%). WATER, SALT FOOD"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Whole champignons",
+    "brand": "Riviana",
+    "weight": "285g",
+    "barcode": "9300602362928",
+    "ingredients": "ACID (330) CANNELLINI BEANS (60%), WATER, SALT, ANTIODITANT (ASCORBIC ACID), FIRMING"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Cannellini Beans",
+    "brand": "Edgell",
+    "weight": "400g",
+    "barcode": "9310082429967",
+    "ingredients": "AGENT (509). CHICKPEAS"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Chickpeas",
+    "brand": "McKenzie's",
+    "weight": "375g",
+    "barcode": "9131006122100",
+    "ingredients": "MAY CONTAIN GLUTEN, SOY & LUPIN"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Creamed Corn",
+    "brand": "Golden circle",
+    "weight": "410g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Creamed Corn",
+    "brand": "Black & Gold",
+    "weight": "400g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Creamed Corn",
+    "brand": "Coles",
+    "weight": "420g",
+    "barcode": "",
+    "ingredients": ""
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Creamed Corn",
+    "brand": "Edgell",
+    "weight": "420g",
+    "barcode": "",
+    "ingredients": "BEETROOT (61%, WATER, SUGAR, FOOD"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Sliced beetroot",
+    "brand": "Edgell",
+    "weight": "225g",
+    "barcode": "9310082154548",
+    "ingredients": "ACID (ACETIC), SALT. BEETROOT (52%), WATER, SUGAR, BRANDY"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Sliced beetroot",
+    "brand": "Frisp",
+    "weight": "500g",
+    "barcode": "9349580005656",
+    "ingredients": "VINEGAR, CITRIC ACID"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Borlotti Beans",
+    "brand": "Annalisa",
+    "weight": "400g",
+    "barcode": "9317282700094",
+    "ingredients": "NA BEETROOT (58%), WATER, SUGAR, ACIDITY"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Sliced beetroot",
+    "brand": "Countree",
+    "weight": "420g",
+    "barcode": "6943750902610",
+    "ingredients": "REGULATOR (ACETIC ACID), SALT RED KIDNEY BEANS (SMALL RED VARIETY) (60%), WATER, SUGAR, SALT FIRMING"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Red Kidney Beans",
+    "brand": "Edgell",
+    "weight": "400g",
+    "barcode": "9310082116539",
+    "ingredients": "AGENT (509), FOOD ACID (ACETIC ACID). DICED TOMATOES (65%), TOMATO JUICE,"
+  },
+  {
+    "category": "Vegetables (Canned)",
+    "product": "Italian Diced Tomatoes",
+    "brand": "Sole Natura",
+    "weight": "400g",
+    "barcode": "9310175201166",
+    "ingredients": "ACIDITY REGULATOR (330). PEAS (93%), SUGAR, ACIDITY REGULATOR"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Dehydrated peas",
+    "brand": "Continental",
+    "weight": "100g",
+    "barcode": "9300667073524",
+    "ingredients": "(DOSIUM CITRATE, SODIUM CARBONATE) MIXED BEANS (CHICK PEAS, RED KIDNEY BEANS, WHITE BEANS, CRANBERRY BEANS,"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Five Bean Mix",
+    "brand": "McKenzie's",
+    "weight": "375g",
+    "barcode": "9310061125316",
+    "ingredients": "BLACK EYE BEANS) (100%) MAY CONTAIN GLUTEN, TREE NUTS,"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Onion Flake (White)",
+    "brand": "Hindustan",
+    "weight": "1kg",
+    "barcode": "9333616066674",
+    "ingredients": "SESAME SEEDS & DAIRY PRODUCTS CONTAINS GLUTEN"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Pearl Barkley",
+    "brand": "McKenzie's",
+    "weight": "500g",
+    "barcode": "9310061120106",
+    "ingredients": "MAY CONTAIN SOY & LUPIN. GREEN SPLIT PEAS MAY CONTAIN: WHEAT, BARLEY, OAT, RYE,"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Green split peas",
+    "brand": "McKenzie's",
+    "weight": "500g",
+    "barcode": "9310061121301",
+    "ingredients": "GLUTEN, SOY, LUPIN"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Soup Mix",
+    "brand": "McKenzie's",
+    "weight": "500g",
+    "barcode": "",
+    "ingredients": "MAY CONTAIN"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Red Kidney Beans",
+    "brand": "McKenzie's",
+    "weight": "375g",
+    "barcode": "9310061221506",
+    "ingredients": "GLUTEN, SOY & LUPIN,"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Split peas",
+    "brand": "Food Factory",
+    "weight": "800g",
+    "barcode": "",
+    "ingredients": "RED SPLIT LENTILS"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Red Split Lentils",
+    "brand": "McKenzie's",
+    "weight": "375g",
+    "barcode": "9310061121905",
+    "ingredients": "MAY CONTAIN GLUTEN, SOY & LUPIN PEAS (55%) (GREEN SPLIT PEAS, YELLOW SPLIT PEAS, CHICK PEAS), BEANS (30%) (WHITE BEANS, BLACKEYE BEANS, CRANBERRY BEANS, RED KIDNEY BEANS), LENTILS (15%) (RED LENTILS, WHOLE GREEN LENTILS) MAY CONTAIN: WHEAT, BARLEY, OATS,"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Italian Style Soup Mix",
+    "brand": "McKenzie's",
+    "weight": "375g",
+    "barcode": "9310061222008",
+    "ingredients": "RYE, GLUTEN, SOY, LUPIN AUSTRALIAN WHOLE GREEN LENTILS (100%) MAY CONTAIN: WHEAT, BARLEY, OATS,"
+  },
+  {
+    "category": "Vegetables (Dried)",
+    "product": "Green Lentils",
+    "brand": "McKenzie's",
+    "weight": "375g",
+    "barcode": "9310061121806",
+    "ingredients": "RYE, GLUTEN, SOY, LUPIN"
+  }
+]
