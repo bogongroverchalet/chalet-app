@@ -5,9 +5,6 @@ import Tooltip from '@mui/material/Tooltip'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import LaunchIcon from '@mui/icons-material/Launch'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
-import pantryInventory from './Pantry_Inventory.pdf'
-import snowboardInfo from './Snowboard_boots.pdf'
-import codeOfConduct from './BRC-Code-of-Conduct-29-01-2026.pdf'
 
 export default function App() {
   return (
@@ -60,6 +57,11 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
+          <Link to='safety' className='flex items-center'>
+            Safety docs &amp; activity plans <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
+        </li>
+        <li className='mb-4'>
           <Link to='nobs' className='flex items-center'>
             Stuff for Nobs <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>
@@ -70,16 +72,12 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link to='/pdf' state={{ file: codeOfConduct, title: 'Code of conduct' }} className='flex items-center'>
+          <Link to='/pdf/code-of-conduct' className='flex items-center'>
             Code of conduct <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>
         </li>
         <li className='mb-4'>
-          <Link
-            to='/pdf'
-            state={{ file: pantryInventory, title: 'Winter pantry ingredient list' }}
-            className='flex items-center'
-          >
+          <Link to='/pdf/pantry-inventory' className='flex items-center'>
             Winter pantry ingredient list
             <Tooltip
               title={
@@ -96,11 +94,7 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link
-            to='/pdf'
-            state={{ file: snowboardInfo, title: 'Snowboard boot and binding details' }}
-            className='flex items-center'
-          >
+          <Link to='/pdf/snowboard-boots' className='flex items-center'>
             Snowboard boot and binding details
             <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>

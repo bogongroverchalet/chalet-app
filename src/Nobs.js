@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 import Tooltip from '@mui/material/Tooltip'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import pantryByBay from './Pantry_by_bay.pdf'
-import pantryByItem from './Pantry_by_item.pdf'
 
 export default function Nobs() {
   return (
@@ -33,11 +31,7 @@ export default function Nobs() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link
-            to='/pdf'
-            state={{ file: pantryByBay, title: 'Bulk pantry items by bay' }}
-            className='flex items-center'
-          >
+          <Link to='/pdf/pantry-by-bay' className='flex items-center'>
             Bulk pantry items by bay
             <Tooltip
               title={<div>A document listing where all the items are in the bulk pantry (by bay).</div>}
@@ -49,11 +43,7 @@ export default function Nobs() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link
-            to='/pdf'
-            state={{ file: pantryByItem, title: 'Bulk pantry bay finder (by item)' }}
-            className='flex items-center'
-          >
+          <Link to='/pdf/pantry-by-item' className='flex items-center'>
             Bulk pantry bay finder (by item)
             <Tooltip
               title={<div>A document listing which bay all the items in the bulk pantry are in.</div>}

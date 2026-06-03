@@ -3,9 +3,10 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/Page/AnnotationLayer.css'
 import 'react-pdf/dist/Page/TextLayer.css'
 import { useResizeObserver } from 'usehooks-ts'
-import { Link, Navigate, useLocation } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import { useGesture } from '@use-gesture/react'
+import registry from './pdfRegistry'
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -13,8 +14,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString()
 
 export default function PdfViewer() {
-  const { state } = useLocation()
-  const { file, title } = state ?? {}
+  const { slug } = useParams()
+  const { file, title, backTo = '/' } = registry[slug] ?? {}
   const [numPages, setNumPages] = useState()
   const [containerWidth, setContainerWidth] = useState()
   const [zoom, setZoom] = useState(1)
@@ -49,7 +50,7 @@ export default function PdfViewer() {
     <div className='grid grid-rows-[min-content,1fr] min-h-screen max-sm:p-3'>
       <div className='text-center max-sm:text-left'>
         <h1 className='text-3xl my-4 -indent-12 max-sm:pl-10'>
-          <Link to='/'>
+          <Link to={backTo}>
             <ChevronLeftIcon sx={{ fontSize: 40, position: 'relative', top: -3 }} />
             {title}
           </Link>
