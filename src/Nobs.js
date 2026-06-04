@@ -31,6 +31,11 @@ export default function Nobs() {
           </Link>
         </li>
         <li className='mb-4'>
+          <Link to='videos' className='flex items-center'>
+            Videos <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
+        </li>
+        <li className='mb-4'>
           <Link to='/pdf/pantry-by-bay' className='flex items-center'>
             Bulk pantry items by bay
             <Tooltip
