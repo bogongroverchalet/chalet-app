@@ -16,6 +16,16 @@ function PdfLink({ slug }) {
   )
 }
 
+function PageLink({ to, title }) {
+  return (
+    <li className='mb-4'>
+      <Link to={to} className='flex items-center'>
+        {title} <ChevronRightIcon className='ml-1' fontSize='large' />
+      </Link>
+    </li>
+  )
+}
+
 function Section({ title, children }) {
   return (
     <section className='mt-8'>
@@ -43,30 +53,31 @@ export default function Safety() {
           Safety docs &amp; activity plans
         </Link>
       </h1>
+      <p className='italic'>These are current as of 2026.</p>
 
       <Section title='Policies'>
         <PdfLink slug='safety-cover' />
         <PdfLink slug='safety-alcohol-drugs' />
-        <PdfLink slug='safety-child-safe' />
+        <PageLink to='child-safe' title='Child safe policy' />
         <PdfLink slug='safety-child-safeguarding' />
         <PdfLink slug='safety-vehicles' />
-        <PdfLink slug='safety-sun-protection' />
-        <PdfLink slug='safety-ventolin-epipen' />
+        <PageLink to='sun-protection' title='Sun protection policy' />
+        <PageLink to='ventolin-epipen' title='Ventolin &amp; EpiPen policy' />
       </Section>
 
       <Section title='Guidelines'>
-        <PdfLink slug='safety-evacuated-participant' />
-        <PdfLink slug='safety-first-aiders' />
-        <PdfLink slug='safety-footwear' />
-        <PdfLink slug='safety-hearing' />
-        <PdfLink slug='safety-helmet' />
-        <PdfLink slug='safety-igloo' />
-        <PdfLink slug='safety-late-missing' />
-        <PdfLink slug='safety-off-mountain' />
-        <PdfLink slug='safety-medical-refusal' />
-        <PdfLink slug='safety-incident-reporting' />
-        <PdfLink slug='safety-sled' />
-        <PdfLink slug='safety-wood-chopping' />
+        <PageLink to='evacuated-participant' title='Evacuated participant guidelines' />
+        <PageLink to='first-aiders' title='First aiders guidelines' />
+        <PageLink to='footwear' title='Footwear guidelines' />
+        <PageLink to='hearing' title='Hearing safety guidelines' />
+        <PageLink to='helmet' title='Helmet guidelines' />
+        <PageLink to='igloo' title='Igloo sleepover guidelines' />
+        <PageLink to='late-missing' title='Late &amp; missing persons guidelines' />
+        <PageLink to='off-mountain' title='Off-mountain contact guidelines' />
+        <PageLink to='medical-refusal' title='Medical refusal guidelines' />
+        <PageLink to='incident-reporting' title='Incident reporting guidelines' />
+        <PageLink to='sled' title='Sled guidelines' />
+        <PageLink to='wood-chopping' title='Wood chopping guidelines' />
       </Section>
 
       <section className='mt-8'>
@@ -79,9 +90,9 @@ export default function Safety() {
         </SubSection>
         <SubSection title='Rope tow'>
           <PdfLink slug='safety-rope-tow-plan' />
-          <PdfLink slug='safety-rope-tow-notice' />
-          <PdfLink slug='safety-rope-tow-training' />
-          <PdfLink slug='safety-rope-tow-leader' />
+          <PageLink to='rope-tow-notice' title='Rope tow notice to users' />
+          <PageLink to='rope-tow-training' title='Rope tow training program' />
+          <PageLink to='rope-tow-leader' title='Rope tow leader info pack' />
           <PdfLink slug='safety-rope-tow-operators' />
           <PdfLink slug='safety-rope-tow-ra' />
         </SubSection>

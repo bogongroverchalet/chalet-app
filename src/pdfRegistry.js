@@ -17,7 +17,6 @@ const registry = {
     title: 'Alcohol, smoking & drugs policy',
     backTo: '/safety',
   },
-  'safety-child-safe': { file: safetyPdf('Child Safe Policy.pdf'), title: 'Child safe policy', backTo: '/safety' },
   'safety-child-safeguarding': {
     file: safetyPdf('Child Safeguarding Policy (SV 2021).pdf'),
     title: 'Child safeguarding policy',
@@ -26,64 +25,6 @@ const registry = {
   'safety-vehicles': {
     file: safetyPdf('Safe Operation of Vehicles and Mobile Plant Policy (SV 2023) (1).pdf'),
     title: 'Vehicle & mobile plant operation policy',
-    backTo: '/safety',
-  },
-  'safety-sun-protection': {
-    file: safetyPdf('Sun Protection Policy (SV 2020).pdf'),
-    title: 'Sun protection policy',
-    backTo: '/safety',
-  },
-  'safety-ventolin-epipen': {
-    file: safetyPdf('Ventolin & Epipen Policy.pdf'),
-    title: 'Ventolin & EpiPen policy',
-    backTo: '/safety',
-  },
-  'safety-evacuated-participant': {
-    file: safetyPdf('Evacuated Participant Guidelines.pdf'),
-    title: 'Evacuated participant guidelines',
-    backTo: '/safety',
-  },
-  'safety-first-aiders': {
-    file: safetyPdf('First Aiders Guidelines.pdf'),
-    title: 'First aiders guidelines',
-    backTo: '/safety',
-  },
-  'safety-footwear': { file: safetyPdf('Footwear guidelines.pdf'), title: 'Footwear guidelines', backTo: '/safety' },
-  'safety-hearing': {
-    file: safetyPdf('Hearing Safety Guidelines.pdf'),
-    title: 'Hearing safety guidelines',
-    backTo: '/safety',
-  },
-  'safety-helmet': { file: safetyPdf('Helmet Guidelines.pdf'), title: 'Helmet guidelines', backTo: '/safety' },
-  'safety-igloo': {
-    file: safetyPdf('Igloo Sleepover Guidelines.pdf'),
-    title: 'Igloo sleepover guidelines',
-    backTo: '/safety',
-  },
-  'safety-late-missing': {
-    file: safetyPdf('Late & Missing Persons Guidelines.pdf'),
-    title: 'Late & missing persons guidelines',
-    backTo: '/safety',
-  },
-  'safety-off-mountain': {
-    file: safetyPdf('Off Mountain Contact Guidelines (v1.2).pdf'),
-    title: 'Off-mountain contact guidelines',
-    backTo: '/safety',
-  },
-  'safety-medical-refusal': {
-    file: safetyPdf('Refusal Due To Medical Reasons Guidelines.pdf'),
-    title: 'Medical refusal guidelines',
-    backTo: '/safety',
-  },
-  'safety-incident-reporting': {
-    file: safetyPdf('Reporting of Incidents Guidelines.pdf'),
-    title: 'Incident reporting guidelines',
-    backTo: '/safety',
-  },
-  'safety-sled': { file: safetyPdf('Sled Guidelines.pdf'), title: 'Sled guidelines', backTo: '/safety' },
-  'safety-wood-chopping': {
-    file: safetyPdf('Wood Chopping Guidelines.pdf'),
-    title: 'Wood chopping guidelines',
     backTo: '/safety',
   },
 
@@ -100,21 +41,6 @@ const registry = {
   'safety-rope-tow-plan': {
     file: safetyPdf('Activity Plans & Risk Assessments/Rope Tow/BRC Rope Tow Activity Plan.pdf'),
     title: 'Rope tow activity plan',
-    backTo: '/safety',
-  },
-  'safety-rope-tow-notice': {
-    file: safetyPdf('Activity Plans & Risk Assessments/Rope Tow/BRC Rope Tow Notice to Users.pdf'),
-    title: 'Rope tow notice to users',
-    backTo: '/safety',
-  },
-  'safety-rope-tow-training': {
-    file: safetyPdf('Activity Plans & Risk Assessments/Rope Tow/BRC Rope Tow Training Program.pdf'),
-    title: 'Rope tow training program',
-    backTo: '/safety',
-  },
-  'safety-rope-tow-leader': {
-    file: safetyPdf('Activity Plans & Risk Assessments/Rope Tow/BRC Rope Tow Tow Leader Info Pack.pdf'),
-    title: 'Rope tow leader info pack',
     backTo: '/safety',
   },
   'safety-rope-tow-operators': {

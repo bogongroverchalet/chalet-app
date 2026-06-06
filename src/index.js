@@ -27,6 +27,24 @@ import DutyGroupDetail from './DutyGroupDetail'
 import NobsReportMerch from './NobsReportMerch'
 import NobsVideos from './NobsVideos'
 import Safety from './Safety'
+import SafetyChildSafe from './SafetyChildSafe'
+import SafetySunProtection from './SafetySunProtection'
+import SafetyVentolinEpipen from './SafetyVentolinEpipen'
+import SafetyEvacuatedParticipant from './SafetyEvacuatedParticipant'
+import SafetyFirstAiders from './SafetyFirstAiders'
+import SafetyFootwear from './SafetyFootwear'
+import SafetyHearing from './SafetyHearing'
+import SafetyHelmet from './SafetyHelmet'
+import SafetyIgloo from './SafetyIgloo'
+import SafetyLateMissing from './SafetyLateMissing'
+import SafetyOffMountain from './SafetyOffMountain'
+import SafetyMedicalRefusal from './SafetyMedicalRefusal'
+import SafetyIncidentReporting from './SafetyIncidentReporting'
+import SafetySled from './SafetySled'
+import SafetyWoodChopping from './SafetyWoodChopping'
+import SafetyRopeTowNotice from './SafetyRopeTowNotice'
+import SafetyRopeTowTraining from './SafetyRopeTowTraining'
+import SafetyRopeTowLeader from './SafetyRopeTowLeader'
 import PantryByBay from './PantryByBay'
 import PantryByItem from './PantryByItem'
 import PantryInventory from './PantryInventory'
@@ -59,9 +77,27 @@ root.render(
         <Route path='/chores' element={<DutyGroups />} />
         <Route path='/chores/:slug' element={<DutyGroupDetail />} />
         <Route path='/safety' element={<Safety />} />
+        <Route path='/safety/child-safe' element={<SafetyChildSafe />} />
+        <Route path='/safety/sun-protection' element={<SafetySunProtection />} />
+        <Route path='/safety/ventolin-epipen' element={<SafetyVentolinEpipen />} />
+        <Route path='/safety/evacuated-participant' element={<SafetyEvacuatedParticipant />} />
+        <Route path='/safety/first-aiders' element={<SafetyFirstAiders />} />
+        <Route path='/safety/footwear' element={<SafetyFootwear />} />
+        <Route path='/safety/hearing' element={<SafetyHearing />} />
+        <Route path='/safety/helmet' element={<SafetyHelmet />} />
+        <Route path='/safety/igloo' element={<SafetyIgloo />} />
+        <Route path='/safety/late-missing' element={<SafetyLateMissing />} />
+        <Route path='/safety/off-mountain' element={<SafetyOffMountain />} />
+        <Route path='/safety/medical-refusal' element={<SafetyMedicalRefusal />} />
+        <Route path='/safety/incident-reporting' element={<SafetyIncidentReporting />} />
+        <Route path='/safety/sled' element={<SafetySled />} />
+        <Route path='/safety/wood-chopping' element={<SafetyWoodChopping />} />
+        <Route path='/safety/rope-tow-notice' element={<SafetyRopeTowNotice />} />
+        <Route path='/safety/rope-tow-training' element={<SafetyRopeTowTraining />} />
+        <Route path='/safety/rope-tow-leader' element={<SafetyRopeTowLeader />} />
         <Route path='/trips' element={<Trips />} />
-        <Route path='/pdf/pantry-by-bay' element={<PantryByBay />} />
-        <Route path='/pdf/pantry-by-item' element={<PantryByItem />} />
+        <Route path='/nobs/pantry-by-bay' element={<PantryByBay />} />
+        <Route path='/nobs/pantry-by-item' element={<PantryByItem />} />
         <Route path='/pdf/pantry-inventory' element={<PantryInventory />} />
         <Route path='/pdf/:slug' element={<PdfViewer />} />
         <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />

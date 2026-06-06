@@ -36,7 +36,7 @@ export default function Nobs() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link to='/pdf/pantry-by-bay' className='flex items-center'>
+          <Link to='pantry-by-bay' className='flex items-center'>
             Bulk pantry items by bay
             <Tooltip
               title={<div>A document listing where all the items are in the bulk pantry (by bay).</div>}
@@ -48,7 +48,7 @@ export default function Nobs() {
           </Link>
         </li>
         <li className='mb-4'>
-          <Link to='/pdf/pantry-by-item' className='flex items-center'>
+          <Link to='pantry-by-item' className='flex items-center'>
             Bulk pantry bay finder (by item)
             <Tooltip
               title={<div>A document listing which bay all the items in the bulk pantry are in.</div>}
