@@ -8,7 +8,7 @@ import TripInfo from './TripInfo'
 import InitialDialog from './InitialDialog'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate, ScrollRestoration, Outlet } from 'react-router-dom'
 import Map from './Map'
 import Nobs from './Nobs'
 import Videos from './Videos'
@@ -52,62 +52,76 @@ import { primeWeatherCache, registerPeriodicSync } from './weatherUtils'
 
 const TripInfoPDF = React.lazy(() => import('./TripInfoPDF'))
 
+function Root() {
+  return (
+    <>
+      <ScrollRestoration />
+      <Outlet />
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    element: <Root />,
+    children: [
+      { path: '/', element: <App /> },
+      { path: '/packing', element: <Packing /> },
+      { path: '/videos', element: <Videos /> },
+      { path: '/videos/:video', element: <Videos /> },
+      { path: '/nobs', element: <Nobs /> },
+      { path: '/nobs/report', element: <NobsReport /> },
+      { path: '/nobs/report/pl', element: <NobsReportPL /> },
+      { path: '/nobs/report/pa', element: <NobsReportPA /> },
+      { path: '/nobs/report/ce', element: <NobsReportCE /> },
+      { path: '/nobs/report/qm', element: <NobsReportQM /> },
+      { path: '/nobs/report/tl', element: <NobsReportTL /> },
+      { path: '/nobs/report/merch', element: <NobsReportMerch /> },
+      { path: '/nobs/videos', element: <NobsVideos /> },
+      { path: '/nobs/videos/:video', element: <NobsVideos /> },
+      { path: '/nobs/room-by-room', element: <RoomByRoom /> },
+      { path: '/nobs/room-by-room/:slug', element: <RoomByRoomDetail /> },
+      { path: '/nobs/pantry-by-bay', element: <PantryByBay /> },
+      { path: '/nobs/pantry-by-item', element: <PantryByItem /> },
+      { path: '/chores', element: <DutyGroups /> },
+      { path: '/chores/:slug', element: <DutyGroupDetail /> },
+      { path: '/safety', element: <Safety /> },
+      { path: '/safety/child-safe', element: <SafetyChildSafe /> },
+      { path: '/safety/sun-protection', element: <SafetySunProtection /> },
+      { path: '/safety/ventolin-epipen', element: <SafetyVentolinEpipen /> },
+      { path: '/safety/evacuated-participant', element: <SafetyEvacuatedParticipant /> },
+      { path: '/safety/first-aiders', element: <SafetyFirstAiders /> },
+      { path: '/safety/footwear', element: <SafetyFootwear /> },
+      { path: '/safety/hearing', element: <SafetyHearing /> },
+      { path: '/safety/helmet', element: <SafetyHelmet /> },
+      { path: '/safety/igloo', element: <SafetyIgloo /> },
+      { path: '/safety/late-missing', element: <SafetyLateMissing /> },
+      { path: '/safety/off-mountain', element: <SafetyOffMountain /> },
+      { path: '/safety/medical-refusal', element: <SafetyMedicalRefusal /> },
+      { path: '/safety/incident-reporting', element: <SafetyIncidentReporting /> },
+      { path: '/safety/sled', element: <SafetySled /> },
+      { path: '/safety/wood-chopping', element: <SafetyWoodChopping /> },
+      { path: '/safety/rope-tow-notice', element: <SafetyRopeTowNotice /> },
+      { path: '/safety/rope-tow-training', element: <SafetyRopeTowTraining /> },
+      { path: '/safety/rope-tow-leader', element: <SafetyRopeTowLeader /> },
+      { path: '/trips', element: <Trips /> },
+      { path: '/trips/map/edit/:tripName?', element: <Map edit={true} /> },
+      { path: '/trips/map/:tripName?', element: <Map /> },
+      { path: '/trips/trip/:tripName', element: <TripInfo /> },
+      { path: '/trips/trip/:tripName.pdf', element: <TripInfoPDF /> },
+      { path: '/pdf/pantry-inventory', element: <PantryInventory /> },
+      { path: '/pdf/:slug', element: <PdfViewer /> },
+      { path: '/weather', element: <Weather /> },
+      { path: '*', element: <Navigate to='/' replace /> },
+    ],
+  },
+])
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <InitialDialog />
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/packing' element={<Packing />} />
-        <Route path='/videos' element={<Videos />} />
-        <Route path='/videos/:video' element={<Videos />} />
-        <Route path='/nobs' element={<Nobs />} />
-        <Route path='/nobs/report' element={<NobsReport />} />
-        <Route path='/nobs/report/pl' element={<NobsReportPL />} />
-        <Route path='/nobs/report/pa' element={<NobsReportPA />} />
-        <Route path='/nobs/report/ce' element={<NobsReportCE />} />
-        <Route path='/nobs/report/qm' element={<NobsReportQM />} />
-        <Route path='/nobs/report/tl' element={<NobsReportTL />} />
-        <Route path='/nobs/report/merch' element={<NobsReportMerch />} />
-        <Route path='/nobs/videos' element={<NobsVideos />} />
-        <Route path='/nobs/videos/:video' element={<NobsVideos />} />
-        <Route path='/nobs/room-by-room' element={<RoomByRoom />} />
-        <Route path='/nobs/room-by-room/:slug' element={<RoomByRoomDetail />} />
-        <Route path='/chores' element={<DutyGroups />} />
-        <Route path='/chores/:slug' element={<DutyGroupDetail />} />
-        <Route path='/safety' element={<Safety />} />
-        <Route path='/safety/child-safe' element={<SafetyChildSafe />} />
-        <Route path='/safety/sun-protection' element={<SafetySunProtection />} />
-        <Route path='/safety/ventolin-epipen' element={<SafetyVentolinEpipen />} />
-        <Route path='/safety/evacuated-participant' element={<SafetyEvacuatedParticipant />} />
-        <Route path='/safety/first-aiders' element={<SafetyFirstAiders />} />
-        <Route path='/safety/footwear' element={<SafetyFootwear />} />
-        <Route path='/safety/hearing' element={<SafetyHearing />} />
-        <Route path='/safety/helmet' element={<SafetyHelmet />} />
-        <Route path='/safety/igloo' element={<SafetyIgloo />} />
-        <Route path='/safety/late-missing' element={<SafetyLateMissing />} />
-        <Route path='/safety/off-mountain' element={<SafetyOffMountain />} />
-        <Route path='/safety/medical-refusal' element={<SafetyMedicalRefusal />} />
-        <Route path='/safety/incident-reporting' element={<SafetyIncidentReporting />} />
-        <Route path='/safety/sled' element={<SafetySled />} />
-        <Route path='/safety/wood-chopping' element={<SafetyWoodChopping />} />
-        <Route path='/safety/rope-tow-notice' element={<SafetyRopeTowNotice />} />
-        <Route path='/safety/rope-tow-training' element={<SafetyRopeTowTraining />} />
-        <Route path='/safety/rope-tow-leader' element={<SafetyRopeTowLeader />} />
-        <Route path='/trips' element={<Trips />} />
-        <Route path='/nobs/pantry-by-bay' element={<PantryByBay />} />
-        <Route path='/nobs/pantry-by-item' element={<PantryByItem />} />
-        <Route path='/pdf/pantry-inventory' element={<PantryInventory />} />
-        <Route path='/pdf/:slug' element={<PdfViewer />} />
-        <Route path='/trips/map/edit/:tripName?' element={<Map edit={true} />} />
-        <Route path='/trips/map/:tripName?' element={<Map />} />
-        <Route path='/trips/trip/:tripName' element={<TripInfo />} />
-        <Route path='/trips/trip/:tripName.pdf' element={<TripInfoPDF />} />
-        <Route path='/weather' element={<Weather />} />
-        <Route path='*' element={<Navigate to='/' replace />} />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 )
 
