@@ -9,6 +9,7 @@ import Button from '@mui/material/Button'
 import ClearFormDialog from './ClearFormDialog'
 import IconButton from '@mui/material/IconButton'
 import winterWeeks from './winter-weeks.yaml'
+import { getDefaultWeek, saveSelectedWeek } from './nobs-week'
 
 const YEAR = String(winterWeeks.year)
 
@@ -37,12 +38,7 @@ const END_CHECKS = [
   { key: 'ropeHooked', label: 'Rope hooked above road' },
 ]
 
-function detectCurrentWeek() {
-  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Melbourne' }).format(new Date())
-  return winterWeeks.weeks.find(({ start, end }) => today >= start && today <= end)?.name
-}
-
-const defaultWeek = detectCurrentWeek() ?? winterWeeks.weeks[0].name
+const defaultWeek = getDefaultWeek()
 
 function storageKey(weekName) {
   return `nobs-tl-${YEAR}-${weekName}`
@@ -187,7 +183,10 @@ export default function NobsReportTL() {
             <select
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
-              onChange={(e) => setSelectedWeek(e.target.value)}
+              onChange={(e) => {
+                saveSelectedWeek(e.target.value)
+                setSelectedWeek(e.target.value)
+              }}
             >
               {winterWeeks.weeks.map((w) => (
                 <option key={w.name} value={w.name}>

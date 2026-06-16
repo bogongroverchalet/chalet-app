@@ -7,6 +7,7 @@ import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import ClearFormDialog from './ClearFormDialog'
 import winterWeeks from './winter-weeks.yaml'
+import { getDefaultWeek, saveSelectedWeek } from './nobs-week'
 
 const YEAR = String(winterWeeks.year)
 
@@ -66,12 +67,7 @@ function InfoTooltip({ title, children }) {
   )
 }
 
-function detectCurrentWeek() {
-  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Melbourne' }).format(new Date())
-  return winterWeeks.weeks.find(({ start, end }) => today >= start && today <= end)?.name
-}
-
-const defaultWeek = detectCurrentWeek() ?? winterWeeks.weeks[0].name
+const defaultWeek = getDefaultWeek()
 
 function storageKey(weekName) {
   return `nobs-merch-${YEAR}-${weekName}`
@@ -248,7 +244,10 @@ export default function NobsReportMerch() {
             <select
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
-              onChange={(e) => setSelectedWeek(e.target.value)}
+              onChange={(e) => {
+                saveSelectedWeek(e.target.value)
+                setSelectedWeek(e.target.value)
+              }}
             >
               {winterWeeks.weeks.map((w) => (
                 <option key={w.name} value={w.name}>
