@@ -240,8 +240,11 @@ export default function NobsReportMerch() {
         {/* Week / Year / Name */}
         <div className='flex gap-6 mb-5 flex-wrap items-baseline'>
           <div className='flex items-baseline gap-2'>
-            <span className='font-bold'>Week:</span>
+            <label htmlFor='week-select' className='font-bold'>
+              Week:
+            </label>
             <select
+              id='week-select'
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
               onChange={(e) => {
@@ -262,8 +265,11 @@ export default function NobsReportMerch() {
             <span>{YEAR}</span>
           </div>
           <div className='flex items-baseline gap-2'>
-            <span className='font-bold whitespace-nowrap'>PA Name:</span>
+            <label htmlFor='merch-pa-name' className='font-bold whitespace-nowrap'>
+              PA Name:
+            </label>
             <input
+              id='merch-pa-name'
               type='text'
               className='no-print border-b border-slate-500 bg-transparent outline-none min-w-[12em]'
               value={fields.name}
@@ -305,6 +311,7 @@ export default function NobsReportMerch() {
                       <input
                         type='number'
                         min='0'
+                        aria-label={`${label} – # sold`}
                         className={numInp}
                         value={row.count}
                         onChange={(e) => updateItemField(key, 'count', e.target.value)}
@@ -366,6 +373,7 @@ export default function NobsReportMerch() {
                       <input
                         type='number'
                         min='0'
+                        aria-label={`${label} – cash`}
                         className={numInp}
                         value={row.cash}
                         onChange={(e) => updateItemField(key, 'cash', e.target.value)}
@@ -376,6 +384,7 @@ export default function NobsReportMerch() {
                       <input
                         type='number'
                         min='0'
+                        aria-label={`${label} – EFT`}
                         className={numInp}
                         value={row.eft}
                         onChange={(e) => updateItemField(key, 'eft', e.target.value)}
@@ -434,6 +443,7 @@ export default function NobsReportMerch() {
                           <input
                             type='number'
                             min='0'
+                            aria-label={`${label} – ${col.toUpperCase()}`}
                             className='no-print w-full bg-transparent outline-none text-center'
                             value={row[col]}
                             onChange={(e) => updateInvField(key, col, e.target.value)}

@@ -179,8 +179,11 @@ export default function NobsReportTL() {
         {/* Week / Year */}
         <div className='flex gap-8 mb-3 flex-wrap items-baseline'>
           <div className='flex items-baseline gap-2'>
-            <span className='font-bold'>Week:</span>
+            <label htmlFor='week-select' className='font-bold'>
+              Week:
+            </label>
             <select
+              id='week-select'
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
               onChange={(e) => {
@@ -204,8 +207,11 @@ export default function NobsReportTL() {
 
         {/* Tow Leader name */}
         <div className='flex items-baseline gap-2 border-b border-black pb-1 mb-6'>
-          <span className='font-bold whitespace-nowrap'>Tow Leader:</span>
+          <label htmlFor='tl-name' className='font-bold whitespace-nowrap'>
+            Tow Leader:
+          </label>
           <input
+            id='tl-name'
             type='text'
             className='no-print flex-1 bg-transparent outline-none min-w-0'
             value={fields.towLeader ?? ''}
@@ -424,6 +430,7 @@ export default function NobsReportTL() {
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
                         type='text'
+                        aria-label={`Tow operator ${idx + 1} name`}
                         className='no-print w-full bg-transparent outline-none'
                         value={row.name}
                         onChange={(e) => updateTowUser(idx, 'name', e.target.value)}
@@ -434,6 +441,7 @@ export default function NobsReportTL() {
                     <td className='border border-slate-300 px-2 py-1 text-center'>
                       <input
                         type='checkbox'
+                        aria-label={`Tow operator ${idx + 1} training provided`}
                         className='no-print w-4 h-4 cursor-pointer'
                         checked={row.trainingProvided ?? false}
                         onChange={(e) => updateTowUser(idx, 'trainingProvided', e.target.checked)}
@@ -443,6 +451,7 @@ export default function NobsReportTL() {
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
                         type='text'
+                        aria-label={`Tow operator ${idx + 1} notes`}
                         className='no-print w-full bg-transparent outline-none'
                         value={row.other}
                         onChange={(e) => updateTowUser(idx, 'other', e.target.value)}

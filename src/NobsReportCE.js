@@ -225,8 +225,11 @@ export default function NobsReportCE() {
         {/* Week / Year */}
         <div className='flex gap-8 mb-3 flex-wrap items-baseline'>
           <div className='flex items-baseline gap-2'>
-            <span className='font-bold'>Week:</span>
+            <label htmlFor='week-select' className='font-bold'>
+              Week:
+            </label>
             <select
+              id='week-select'
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
               onChange={(e) => {
@@ -250,8 +253,11 @@ export default function NobsReportCE() {
 
         {/* Name */}
         <div className='flex items-baseline gap-2 border-b border-black pb-1 mb-6'>
-          <span className='font-bold whitespace-nowrap'>Name of Chief Engineer:</span>
+          <label htmlFor='ce-name' className='font-bold whitespace-nowrap'>
+            Name of Chief Engineer:
+          </label>
           <input
+            id='ce-name'
             type='text'
             className='no-print flex-1 bg-transparent outline-none min-w-0'
             value={fields.name ?? ''}
@@ -413,6 +419,7 @@ export default function NobsReportCE() {
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
                         type='text'
+                        aria-label={`Bin ${bin} – beginning of week`}
                         className='no-print w-full bg-transparent outline-none'
                         value={fields[`bin${bin}Start`] ?? ''}
                         onChange={(e) => updateField(`bin${bin}Start`, e.target.value)}
@@ -423,6 +430,7 @@ export default function NobsReportCE() {
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
                         type='text'
+                        aria-label={`Bin ${bin} – end of week`}
                         className='no-print w-full bg-transparent outline-none'
                         value={fields[`bin${bin}End`] ?? ''}
                         onChange={(e) => updateField(`bin${bin}End`, e.target.value)}

@@ -207,8 +207,11 @@ export default function NobsReportQM() {
         {/* Week / Year */}
         <div className='flex gap-8 mb-3 flex-wrap items-baseline'>
           <div className='flex items-baseline gap-2'>
-            <span className='font-bold'>Week:</span>
+            <label htmlFor='week-select' className='font-bold'>
+              Week:
+            </label>
             <select
+              id='week-select'
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
               onChange={(e) => {
@@ -232,8 +235,11 @@ export default function NobsReportQM() {
 
         {/* Name */}
         <div className='flex items-baseline gap-2 border-b border-black pb-1 mb-6'>
-          <span className='font-bold whitespace-nowrap'>Name of Quartermaster:</span>
+          <label htmlFor='qm-name' className='font-bold whitespace-nowrap'>
+            Name of Quartermaster:
+          </label>
           <input
+            id='qm-name'
             type='text'
             className='no-print flex-1 bg-transparent outline-none min-w-0'
             value={fields.name ?? ''}
@@ -252,8 +258,11 @@ export default function NobsReportQM() {
 
           <div className='flex gap-6 mb-4 flex-wrap text-sm'>
             <div className='flex items-baseline gap-2'>
-              <span className='font-semibold'>Number of participants in party:</span>
+              <label htmlFor='participant-count' className='font-semibold'>
+                Number of participants in party:
+              </label>
               <input
+                id='participant-count'
                 type='text'
                 inputMode='numeric'
                 className='no-print border-b border-slate-500 bg-transparent outline-none w-24'
@@ -264,8 +273,11 @@ export default function NobsReportQM() {
               <span className='print-only min-w-[6rem] border-b border-black'>{fields.participantCount}</span>
             </div>
             <div className='flex items-baseline gap-2'>
-              <span className='font-semibold'>Total weight of meat & tofu received:</span>
+              <label htmlFor='total-meat-tofu' className='font-semibold'>
+                Total weight of meat & tofu received:
+              </label>
               <input
+                id='total-meat-tofu'
                 type='text'
                 inputMode='decimal'
                 className='no-print border-b border-slate-500 bg-transparent outline-none w-24'

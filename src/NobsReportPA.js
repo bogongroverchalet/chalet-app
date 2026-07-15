@@ -149,8 +149,11 @@ export default function NobsReportPA() {
         {/* Week / Year */}
         <div className='flex gap-8 mb-3 flex-wrap items-baseline'>
           <div className='flex items-baseline gap-2'>
-            <span className='font-bold'>Week:</span>
+            <label htmlFor='week-select' className='font-bold'>
+              Week:
+            </label>
             <select
+              id='week-select'
               className='no-print border-b border-slate-500 bg-transparent py-0.5'
               value={selectedWeek}
               onChange={(e) => {
@@ -174,8 +177,11 @@ export default function NobsReportPA() {
 
         {/* Name */}
         <div className='flex items-baseline gap-2 border-b border-black pb-1 mb-6'>
-          <span className='font-bold whitespace-nowrap'>Name of Party Advisor:</span>
+          <label htmlFor='pa-name' className='font-bold whitespace-nowrap'>
+            Name of Party Advisor:
+          </label>
           <input
+            id='pa-name'
             type='text'
             className='no-print flex-1 bg-transparent outline-none min-w-0'
             value={fields.name}
@@ -253,8 +259,11 @@ export default function NobsReportPA() {
           <h2 className='text-xl font-bold mb-3'>Investiture list</h2>
           <div className='flex gap-6 mb-3 flex-wrap text-sm'>
             <div className='flex items-baseline gap-2'>
-              <span className='font-semibold'>Date:</span>
+              <label htmlFor='investiture-date' className='font-semibold'>
+                Date:
+              </label>
               <input
+                id='investiture-date'
                 type='date'
                 className='no-print border-b border-slate-500 bg-transparent outline-none'
                 value={fields.investitureDate}
@@ -263,8 +272,11 @@ export default function NobsReportPA() {
               <span className='print-only'>{fields.investitureDate}</span>
             </div>
             <div className='flex items-baseline gap-2'>
-              <span className='font-semibold'>Invested by:</span>
+              <label htmlFor='invested-by' className='font-semibold'>
+                Invested by:
+              </label>
               <input
+                id='invested-by'
                 type='text'
                 className='no-print border-b border-slate-500 bg-transparent outline-none'
                 value={fields.investedBy}
@@ -290,6 +302,7 @@ export default function NobsReportPA() {
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
                         type='text'
+                        aria-label={`Investiture ${idx + 1} name`}
                         className='no-print w-full bg-transparent outline-none'
                         value={row.name}
                         onChange={(e) => updateInvestiture(idx, 'name', e.target.value)}
@@ -299,6 +312,7 @@ export default function NobsReportPA() {
                     </td>
                     <td className='border border-slate-300 px-2 py-1'>
                       <select
+                        aria-label={`Investiture ${idx + 1} crew`}
                         className='no-print bg-transparent'
                         value={row.crew}
                         onChange={(e) => updateInvestiture(idx, 'crew', e.target.value)}
