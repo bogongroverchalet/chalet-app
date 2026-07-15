@@ -296,7 +296,7 @@ export default function NobsReportQM() {
                       <input
                         type='text'
                         inputMode='decimal'
-                        className='no-print w-full bg-transparent outline-none'
+                        className='no-print w-full bg-transparent outline-none border-b border-slate-400'
                         value={fields[key] ?? ''}
                         onChange={(e) => updateField(key, e.target.value)}
                       />
@@ -404,7 +404,7 @@ export default function NobsReportQM() {
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
                         type='text'
-                        className='no-print w-full bg-transparent outline-none'
+                        className='no-print w-full bg-transparent outline-none border-b border-slate-400'
                         value={fields[`alt_${key}`] ?? ''}
                         onChange={(e) => updateField(`alt_${key}`, e.target.value)}
                         placeholder='If changed…'
@@ -483,11 +483,11 @@ export default function NobsReportQM() {
                 {STOCK_ITEMS.map(({ key, label, unit }) => (
                   <tr key={key}>
                     <td className='border border-slate-300 px-2 py-1 w-56'>{label}</td>
-                    <td className='border border-slate-300 px-2 py-1'>
+                    <td className='border border-slate-300 px-2 py-1 min-w-[6rem]'>
                       <input
                         type='text'
                         inputMode='decimal'
-                        className='no-print w-full bg-transparent outline-none'
+                        className='no-print w-full bg-transparent outline-none border-b border-slate-400'
                         value={fields[`stock_${key}`] ?? ''}
                         onChange={(e) => updateField(`stock_${key}`, e.target.value)}
                       />
