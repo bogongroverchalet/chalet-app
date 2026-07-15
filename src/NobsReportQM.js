@@ -290,10 +290,19 @@ export default function NobsReportQM() {
               <tbody>
                 {MEAT_ITEMS.map(({ key, butcherLabel, label, unit }) => (
                   <tr key={key}>
-                    <td className='border border-slate-300 px-2 py-1'>{butcherLabel}</td>
-                    <td className='border border-slate-300 px-2 py-1'>{label}</td>
+                    <td className='border border-slate-300 px-2 py-1'>
+                      <label htmlFor={`meat-input-${key}`} className='block cursor-pointer'>
+                        {butcherLabel}
+                      </label>
+                    </td>
+                    <td className='border border-slate-300 px-2 py-1'>
+                      <label htmlFor={`meat-input-${key}`} className='block cursor-pointer'>
+                        {label}
+                      </label>
+                    </td>
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
+                        id={`meat-input-${key}`}
                         type='text'
                         inputMode='decimal'
                         className='no-print w-full bg-transparent outline-none border-b border-slate-400'
@@ -302,7 +311,11 @@ export default function NobsReportQM() {
                       />
                       <span className='print-only'>{fields[key]}</span>
                     </td>
-                    <td className='border border-slate-300 px-2 py-1 text-slate-500'>{unit}</td>
+                    <td className='border border-slate-300 px-2 py-1 text-slate-500'>
+                      <label htmlFor={`meat-input-${key}`} className='block cursor-pointer'>
+                        {unit}
+                      </label>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -399,10 +412,19 @@ export default function NobsReportQM() {
               <tbody>
                 {MENU_DAYS.map(({ key, day, suggested }) => (
                   <tr key={key}>
-                    <td className='border border-slate-300 px-2 py-1 font-semibold'>{day}</td>
-                    <td className='border border-slate-300 px-2 py-1 text-slate-600'>{suggested}</td>
+                    <td className='border border-slate-300 px-2 py-1 font-semibold'>
+                      <label htmlFor={`menu-input-${key}`} className='block cursor-pointer'>
+                        {day}
+                      </label>
+                    </td>
+                    <td className='border border-slate-300 px-2 py-1 text-slate-600'>
+                      <label htmlFor={`menu-input-${key}`} className='block cursor-pointer'>
+                        {suggested}
+                      </label>
+                    </td>
                     <td className='border border-slate-300 px-2 py-1'>
                       <input
+                        id={`menu-input-${key}`}
                         type='text'
                         className='no-print w-full bg-transparent outline-none border-b border-slate-400'
                         value={fields[`alt_${key}`] ?? ''}
@@ -482,9 +504,14 @@ export default function NobsReportQM() {
               <tbody>
                 {STOCK_ITEMS.map(({ key, label, unit }) => (
                   <tr key={key}>
-                    <td className='border border-slate-300 px-2 py-1 w-56'>{label}</td>
+                    <td className='border border-slate-300 px-2 py-1 w-56'>
+                      <label htmlFor={`stock-input-${key}`} className='block cursor-pointer'>
+                        {label}
+                      </label>
+                    </td>
                     <td className='border border-slate-300 px-2 py-1 min-w-[6rem]'>
                       <input
+                        id={`stock-input-${key}`}
                         type='text'
                         inputMode='decimal'
                         className='no-print w-full bg-transparent outline-none border-b border-slate-400'
@@ -493,7 +520,11 @@ export default function NobsReportQM() {
                       />
                       <span className='print-only'>{fields[`stock_${key}`]}</span>
                     </td>
-                    <td className='border border-slate-300 px-2 py-1 text-slate-500 w-36'>{unit}</td>
+                    <td className='border border-slate-300 px-2 py-1 text-slate-500 w-36'>
+                      <label htmlFor={`stock-input-${key}`} className='block cursor-pointer'>
+                        {unit}
+                      </label>
+                    </td>
                   </tr>
                 ))}
               </tbody>

@@ -227,9 +227,14 @@ export default function NobsReportTL() {
                 { key: 'totalRunningHours', label: 'Total running hours for the week' },
               ].map(({ key, label }) => (
                 <tr key={key}>
-                  <td className='border border-slate-300 px-2 py-1'>{label}</td>
+                  <td className='border border-slate-300 px-2 py-1'>
+                    <label htmlFor={`tl-gen-${key}`} className='block cursor-pointer'>
+                      {label}
+                    </label>
+                  </td>
                   <td className='border border-slate-300 px-2 py-1 w-32'>
                     <input
+                      id={`tl-gen-${key}`}
                       type='text'
                       inputMode='decimal'
                       className='no-print w-full bg-transparent outline-none'

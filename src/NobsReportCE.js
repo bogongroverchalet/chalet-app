@@ -57,9 +57,10 @@ function emptyFields() {
 }
 
 function GeneratorTable({ prefix, fields, updateField }) {
-  const numField = (key) => (
+  const numField = (key, id) => (
     <>
       <input
+        id={id}
         type='text'
         inputMode='decimal'
         className='no-print w-20 bg-transparent outline-none border-b border-slate-400'
@@ -85,16 +86,30 @@ function GeneratorTable({ prefix, fields, updateField }) {
           </td>
           <td className='border border-slate-300 px-2 py-1' rowSpan={3}>
             <div className='font-semibold text-xs mb-1'>Generator Tank</div>
-            <div className='flex items-center gap-1 text-xs'>Litres: {numField(`${prefix}ListerFuel`)}</div>
+            <div className='flex items-center gap-1 text-xs'>
+              Litres: {numField(`${prefix}ListerFuel`, `gen-${prefix}ListerFuel`)}
+            </div>
           </td>
         </tr>
         <tr>
-          <td className='border border-slate-300 px-2 py-1'>Resettable Hours</td>
-          <td className='border border-slate-300 px-2 py-1'>{numField(`${prefix}ListerResettable`)}</td>
+          <td className='border border-slate-300 px-2 py-1'>
+            <label htmlFor={`gen-${prefix}ListerResettable`} className='block cursor-pointer'>
+              Resettable Hours
+            </label>
+          </td>
+          <td className='border border-slate-300 px-2 py-1'>
+            {numField(`${prefix}ListerResettable`, `gen-${prefix}ListerResettable`)}
+          </td>
         </tr>
         <tr>
-          <td className='border border-slate-300 px-2 py-1'>Total Hours</td>
-          <td className='border border-slate-300 px-2 py-1'>{numField(`${prefix}ListerTotal`)}</td>
+          <td className='border border-slate-300 px-2 py-1'>
+            <label htmlFor={`gen-${prefix}ListerTotal`} className='block cursor-pointer'>
+              Total Hours
+            </label>
+          </td>
+          <td className='border border-slate-300 px-2 py-1'>
+            {numField(`${prefix}ListerTotal`, `gen-${prefix}ListerTotal`)}
+          </td>
         </tr>
         <tr>
           <td className='border border-slate-300 px-2 py-1 font-semibold bg-slate-50' colSpan={2}>
@@ -102,16 +117,30 @@ function GeneratorTable({ prefix, fields, updateField }) {
           </td>
           <td className='border border-slate-300 px-2 py-1' rowSpan={3}>
             <div className='font-semibold text-xs mb-1'>Drying Room Tank</div>
-            <div className='flex items-center gap-1 text-xs'>Litres: {numField(`${prefix}PetterFuel`)}</div>
+            <div className='flex items-center gap-1 text-xs'>
+              Litres: {numField(`${prefix}PetterFuel`, `gen-${prefix}PetterFuel`)}
+            </div>
           </td>
         </tr>
         <tr>
-          <td className='border border-slate-300 px-2 py-1'>Resettable Hours</td>
-          <td className='border border-slate-300 px-2 py-1'>{numField(`${prefix}PetterResettable`)}</td>
+          <td className='border border-slate-300 px-2 py-1'>
+            <label htmlFor={`gen-${prefix}PetterResettable`} className='block cursor-pointer'>
+              Resettable Hours
+            </label>
+          </td>
+          <td className='border border-slate-300 px-2 py-1'>
+            {numField(`${prefix}PetterResettable`, `gen-${prefix}PetterResettable`)}
+          </td>
         </tr>
         <tr>
-          <td className='border border-slate-300 px-2 py-1'>Total Hours</td>
-          <td className='border border-slate-300 px-2 py-1'>{numField(`${prefix}PetterTotal`)}</td>
+          <td className='border border-slate-300 px-2 py-1'>
+            <label htmlFor={`gen-${prefix}PetterTotal`} className='block cursor-pointer'>
+              Total Hours
+            </label>
+          </td>
+          <td className='border border-slate-300 px-2 py-1'>
+            {numField(`${prefix}PetterTotal`, `gen-${prefix}PetterTotal`)}
+          </td>
         </tr>
       </tbody>
     </table>
