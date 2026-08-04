@@ -195,35 +195,51 @@ export function TLDocument({ week, year, fields, logoUrl }) {
           <Text style={{ fontSize: 9, fontWeight: 'bold' }}>Have you completed your incident reports?</Text>
         </View>
 
-        <Text style={s.sectionTitle}>Designated Tow Operators</Text>
+        <Text style={s.sectionTitle}>Tow User Competency</Text>
+        <Text style={{ fontSize: 8, fontStyle: 'italic', marginBottom: 4 }}>
+          Record the competency level(s) each party member has achieved this week, per the BRC Rope Tow Competencies
+          Database.
+        </Text>
         {fields.towUsers?.length > 0 ? (
           <>
             <View style={s.tableRow}>
-              <View style={[s.cell, s.cellBg, { width: '8%' }]}>
+              <View style={[s.cell, s.cellBg, { width: '6%' }]}>
                 <Text style={s.bold}>#</Text>
               </View>
-              <View style={[s.cell, s.cellBg, { width: '45%' }]}>
+              <View style={[s.cell, s.cellBg, { width: '30%' }]}>
                 <Text style={s.bold}>Name</Text>
               </View>
-              <View style={[s.cell, s.cellBg, { width: '22%', textAlign: 'center' }]}>
-                <Text style={s.bold}>Training Provided</Text>
+              <View style={[s.cell, s.cellBg, { width: '16%', textAlign: 'center' }]}>
+                <Text style={s.bold}>Trained Tow User</Text>
               </View>
-              <View style={[s.cell, s.cellBg, { width: '25%' }]}>
-                <Text style={s.bold}>Other</Text>
+              <View style={[s.cell, s.cellBg, { width: '16%', textAlign: 'center' }]}>
+                <Text style={s.bold}>Tow Supervisor</Text>
+              </View>
+              <View style={[s.cell, s.cellBg, { width: '16%', textAlign: 'center' }]}>
+                <Text style={s.bold}>Tow Operator</Text>
+              </View>
+              <View style={[s.cell, s.cellBg, { width: '16%' }]}>
+                <Text style={s.bold}>Notes</Text>
               </View>
             </View>
             {fields.towUsers.map((row, idx) => (
               <View key={idx} style={s.tableRow}>
-                <View style={[s.cell, { width: '8%' }]}>
+                <View style={[s.cell, { width: '6%' }]}>
                   <Text>{idx + 1}</Text>
                 </View>
-                <View style={[s.cell, { width: '45%' }]}>
+                <View style={[s.cell, { width: '30%' }]}>
                   <Text>{row.name}</Text>
                 </View>
-                <View style={[s.cell, { width: '22%', alignItems: 'center' }]}>
-                  <Text>{row.trainingProvided ? '✓' : ' '}</Text>
+                <View style={[s.cell, { width: '16%', alignItems: 'center' }]}>
+                  <Text>{row.trainedTowUser ? '✓' : ' '}</Text>
                 </View>
-                <View style={[s.cell, { width: '25%' }]}>
+                <View style={[s.cell, { width: '16%', alignItems: 'center' }]}>
+                  <Text>{row.towSupervisor ? '✓' : ' '}</Text>
+                </View>
+                <View style={[s.cell, { width: '16%', alignItems: 'center' }]}>
+                  <Text>{row.towOperator ? '✓' : ' '}</Text>
+                </View>
+                <View style={[s.cell, { width: '16%' }]}>
                   <Text>{row.other}</Text>
                 </View>
               </View>
@@ -232,31 +248,43 @@ export function TLDocument({ week, year, fields, logoUrl }) {
         ) : (
           <>
             <View style={s.tableRow}>
-              <View style={[s.cell, s.cellBg, { width: '8%' }]}>
+              <View style={[s.cell, s.cellBg, { width: '6%' }]}>
                 <Text style={s.bold}>#</Text>
               </View>
-              <View style={[s.cell, s.cellBg, { width: '45%' }]}>
+              <View style={[s.cell, s.cellBg, { width: '30%' }]}>
                 <Text style={s.bold}>Name</Text>
               </View>
-              <View style={[s.cell, s.cellBg, { width: '22%', textAlign: 'center' }]}>
-                <Text style={s.bold}>Training Provided</Text>
+              <View style={[s.cell, s.cellBg, { width: '16%', textAlign: 'center' }]}>
+                <Text style={s.bold}>Trained Tow User</Text>
               </View>
-              <View style={[s.cell, s.cellBg, { width: '25%' }]}>
-                <Text style={s.bold}>Other</Text>
+              <View style={[s.cell, s.cellBg, { width: '16%', textAlign: 'center' }]}>
+                <Text style={s.bold}>Tow Supervisor</Text>
+              </View>
+              <View style={[s.cell, s.cellBg, { width: '16%', textAlign: 'center' }]}>
+                <Text style={s.bold}>Tow Operator</Text>
+              </View>
+              <View style={[s.cell, s.cellBg, { width: '16%' }]}>
+                <Text style={s.bold}>Notes</Text>
               </View>
             </View>
             {Array.from({ length: 10 }).map((_, idx) => (
               <View key={idx} style={s.tableRow}>
-                <View style={[s.cell, { width: '8%' }]}>
+                <View style={[s.cell, { width: '6%' }]}>
                   <Text>{idx + 1}</Text>
                 </View>
-                <View style={[s.cell, { width: '45%' }]}>
+                <View style={[s.cell, { width: '30%' }]}>
                   <Text> </Text>
                 </View>
-                <View style={[s.cell, { width: '22%' }]}>
+                <View style={[s.cell, { width: '16%' }]}>
                   <Text> </Text>
                 </View>
-                <View style={[s.cell, { width: '25%' }]}>
+                <View style={[s.cell, { width: '16%' }]}>
+                  <Text> </Text>
+                </View>
+                <View style={[s.cell, { width: '16%' }]}>
+                  <Text> </Text>
+                </View>
+                <View style={[s.cell, { width: '16%' }]}>
                   <Text> </Text>
                 </View>
               </View>

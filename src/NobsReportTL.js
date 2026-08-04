@@ -109,7 +109,10 @@ export default function NobsReportTL() {
   const isEndChecked = (day, checkKey) => !!fields.endChecks[`${day}_${checkKey}`]
 
   const addTowUser = () =>
-    updateField('towUsers', [...fields.towUsers, { name: '', trainingProvided: false, other: '' }])
+    updateField('towUsers', [
+      ...fields.towUsers,
+      { name: '', trainedTowUser: false, towSupervisor: false, towOperator: false, other: '' },
+    ])
 
   const updateTowUser = (idx, key, value) =>
     updateField(
@@ -408,66 +411,80 @@ export default function NobsReportTL() {
           </label>
         </div>
 
-        {/* Tow Operators list */}
+        {/* Tow User Competency list */}
         <div className='mb-6'>
-          <h2 className='text-xl font-bold mb-3'>Designated Tow Operators</h2>
+          <h2 className='text-xl font-bold mb-1'>Tow User Competency</h2>
+          <p className='text-sm italic mb-2'>
+            Record the competency level(s) each party member has achieved this week, per the BRC Rope Tow Competencies
+            Database.
+          </p>
 
           {fields.towUsers.length > 0 && (
-            <table className='text-sm border-collapse w-full mb-2'>
-              <thead>
-                <tr>
-                  <th className='border border-slate-300 px-2 py-1 text-left w-8'>#</th>
-                  <th className='border border-slate-300 px-2 py-1 text-left'>Name</th>
-                  <th className='border border-slate-300 px-2 py-1 text-center w-28'>Training Provided</th>
-                  <th className='border border-slate-300 px-2 py-1 text-left'>Other</th>
-                  <th className='no-print border border-slate-300 px-1 py-1 w-8'></th>
-                </tr>
-              </thead>
-              <tbody>
-                {fields.towUsers.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className='border border-slate-300 px-2 py-1 text-slate-400 text-center'>{idx + 1}</td>
-                    <td className='border border-slate-300 px-2 py-1'>
-                      <input
-                        type='text'
-                        aria-label={`Tow operator ${idx + 1} name`}
-                        className='no-print w-full bg-transparent outline-none'
-                        value={row.name}
-                        onChange={(e) => updateTowUser(idx, 'name', e.target.value)}
-                        placeholder='Full name…'
-                      />
-                      <span className='print-only'>{row.name}</span>
-                    </td>
-                    <td className='border border-slate-300 px-2 py-1 text-center'>
-                      <input
-                        type='checkbox'
-                        aria-label={`Tow operator ${idx + 1} training provided`}
-                        className='no-print w-4 h-4 cursor-pointer'
-                        checked={row.trainingProvided ?? false}
-                        onChange={(e) => updateTowUser(idx, 'trainingProvided', e.target.checked)}
-                      />
-                      <span className='print-only'>{row.trainingProvided ? '✓' : ''}</span>
-                    </td>
-                    <td className='border border-slate-300 px-2 py-1'>
-                      <input
-                        type='text'
-                        aria-label={`Tow operator ${idx + 1} notes`}
-                        className='no-print w-full bg-transparent outline-none'
-                        value={row.other}
-                        onChange={(e) => updateTowUser(idx, 'other', e.target.value)}
-                        placeholder='Notes…'
-                      />
-                      <span className='print-only'>{row.other}</span>
-                    </td>
-                    <td className='no-print border border-slate-300 px-1 py-1 text-center'>
-                      <IconButton size='small' onClick={() => removeTowUser(idx)}>
-                        <DeleteIcon fontSize='small' />
-                      </IconButton>
-                    </td>
+            <div className='overflow-x-auto'>
+              <table className='text-sm border-collapse w-full mb-2'>
+                <thead>
+                  <tr>
+                    <th className='border border-slate-300 px-2 py-1 text-left w-8'>#</th>
+                    <th className='border border-slate-300 px-2 py-1 text-left'>Name</th>
+                    <th className='border border-slate-300 px-2 py-1 text-center w-24'>Trained Tow User</th>
+                    <th className='border border-slate-300 px-2 py-1 text-center w-24'>Tow Supervisor</th>
+                    <th className='border border-slate-300 px-2 py-1 text-center w-24'>Tow Operator</th>
+                    <th className='border border-slate-300 px-2 py-1 text-left'>Notes</th>
+                    <th className='no-print border border-slate-300 px-1 py-1 w-8'></th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {fields.towUsers.map((row, idx) => (
+                    <tr key={idx}>
+                      <td className='border border-slate-300 px-2 py-1 text-slate-400 text-center'>{idx + 1}</td>
+                      <td className='border border-slate-300 px-2 py-1'>
+                        <input
+                          type='text'
+                          aria-label={`Tow user ${idx + 1} name`}
+                          className='no-print w-full bg-transparent outline-none'
+                          value={row.name}
+                          onChange={(e) => updateTowUser(idx, 'name', e.target.value)}
+                          placeholder='Full name…'
+                        />
+                        <span className='print-only'>{row.name}</span>
+                      </td>
+                      {[
+                        { key: 'trainedTowUser', label: 'Trained Tow User' },
+                        { key: 'towSupervisor', label: 'Tow Supervisor' },
+                        { key: 'towOperator', label: 'Tow Operator' },
+                      ].map(({ key, label }) => (
+                        <td key={key} className='border border-slate-300 px-2 py-1 text-center'>
+                          <input
+                            type='checkbox'
+                            aria-label={`Tow user ${idx + 1} ${label}`}
+                            className='no-print w-4 h-4 cursor-pointer'
+                            checked={row[key] ?? false}
+                            onChange={(e) => updateTowUser(idx, key, e.target.checked)}
+                          />
+                          <span className='print-only'>{row[key] ? '✓' : ''}</span>
+                        </td>
+                      ))}
+                      <td className='border border-slate-300 px-2 py-1'>
+                        <input
+                          type='text'
+                          aria-label={`Tow user ${idx + 1} notes`}
+                          className='no-print w-full bg-transparent outline-none'
+                          value={row.other}
+                          onChange={(e) => updateTowUser(idx, 'other', e.target.value)}
+                          placeholder='Notes…'
+                        />
+                        <span className='print-only'>{row.other}</span>
+                      </td>
+                      <td className='no-print border border-slate-300 px-1 py-1 text-center'>
+                        <IconButton size='small' onClick={() => removeTowUser(idx)}>
+                          <DeleteIcon fontSize='small' />
+                        </IconButton>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           )}
 
           <div className='no-print'>
