@@ -1,7 +1,7 @@
 import { groupBy, map, mapValues, keyBy, filter, meanBy, sumBy, maxBy, minBy, some } from 'lodash'
 
 export const WEATHER_API_URL =
-  'https://api.open-meteo.com/v1/forecast?latitude=-36.90407103087054&longitude=147.30311304330826&hourly=temperature_2m,weathercode,precipitation_probability,precipitation,snowfall,windspeed_10m,windgusts_10m&timezone=Australia%2FMelbourne&forecast_days=10&wind_speed_unit=kmh'
+  'https://api.open-meteo.com/v1/forecast?latitude=-36.90407103087054&longitude=147.30311304330826&hourly=temperature_2m,weathercode,precipitation_probability,precipitation,snowfall,windspeed_10m,windgusts_10m&daily=sunrise,sunset&timezone=Australia%2FMelbourne&forecast_days=10&wind_speed_unit=kmh'
 
 const WMO_DESCRIPTIONS = {
   0: 'Clear sky',
@@ -120,6 +120,15 @@ export async function unregisterPeriodicSync() {
 
 const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
+function formatTimeOfDay(iso) {
+  if (!iso) return null
+  const hour = parseInt(iso.slice(11, 13), 10)
+  const minute = iso.slice(14, 16)
+  const suffix = hour < 12 ? 'am' : 'pm'
+  const hour12 = hour % 12 === 0 ? 12 : hour % 12
+  return `${hour12}:${minute}${suffix}`
+}
+
 export function parseHourly(raw) {
   const {
     time,
@@ -144,6 +153,15 @@ export function parseHourly(raw) {
     windgusts_10m: windgusts_10m[i] ?? 0,
   }))
 
+  const sunByDate = keyBy(
+    (raw.daily?.time ?? []).map((date, i) => ({
+      date,
+      sunrise: formatTimeOfDay(raw.daily.sunrise?.[i]),
+      sunset: formatTimeOfDay(raw.daily.sunset?.[i]),
+    })),
+    'date'
+  )
+
   return {
     days: map(groupBy(entries, 'date'), (dayHours, date) => {
       const periods = mapValues(keyBy(PERIODS, 'key'), ({ hourStart, hourEnd }) =>
@@ -157,6 +175,8 @@ export function parseHourly(raw) {
         high: Math.round(maxBy(dayHours, 'temperature_2m').temperature_2m),
         low: Math.round(minBy(dayHours, 'temperature_2m').temperature_2m),
         hasStorm: some(periods, 'isStorm'),
+        sunrise: sunByDate[date]?.sunrise ?? null,
+        sunset: sunByDate[date]?.sunset ?? null,
         periods,
       }
     }),

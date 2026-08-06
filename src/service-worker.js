@@ -100,7 +100,7 @@ registerRoute(
 const WEATHER_CACHE = 'weather-v1'
 // Must match WEATHER_API_URL in weatherUtils.js
 const WEATHER_API_URL =
-  'https://api.open-meteo.com/v1/forecast?latitude=-36.90407103087054&longitude=147.30311304330826&hourly=temperature_2m,weathercode,precipitation_probability,precipitation,snowfall,windspeed_10m,windgusts_10m&timezone=Australia%2FMelbourne&forecast_days=7&wind_speed_unit=kmh'
+  'https://api.open-meteo.com/v1/forecast?latitude=-36.90407103087054&longitude=147.30311304330826&hourly=temperature_2m,weathercode,precipitation_probability,precipitation,snowfall,windspeed_10m,windgusts_10m&daily=sunrise,sunset&timezone=Australia%2FMelbourne&forecast_days=7&wind_speed_unit=kmh'
 
 async function fetchAndCacheWeather() {
   const response = await fetch(WEATHER_API_URL)

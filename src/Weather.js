@@ -153,7 +153,7 @@ export default function Weather() {
 }
 
 function DayCard({ day, isToday }) {
-  const { dayName, dateLabel, high, low, hasStorm, periods } = day
+  const { dayName, dateLabel, high, low, hasStorm, sunrise, sunset, periods } = day
   return (
     <div className='mb-3 border border-slate-300 rounded-lg overflow-hidden'>
       <div
@@ -174,6 +174,13 @@ function DayCard({ day, isToday }) {
           </InfoTooltip>
         </span>
       </div>
+
+      {(sunrise || sunset) && (
+        <div className='px-3 py-1 flex justify-center gap-4 bg-amber-50 border-b border-slate-200 text-xs text-slate-600'>
+          {sunrise && <span>☀️ Sunrise {sunrise}</span>}
+          {sunset && <span>🌙 Sunset {sunset}</span>}
+        </div>
+      )}
 
       <div className='grid grid-cols-4 bg-slate-100 border-b border-slate-200 text-center text-xs'>
         {PERIODS.map(({ key, label, sublabel }) => (
