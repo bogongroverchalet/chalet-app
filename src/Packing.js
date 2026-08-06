@@ -145,7 +145,7 @@ export default function Packing() {
           <Item {...props} label='1 x Head torch (+ spare batteries)' info='There is a AA+AAA charger in the chalet.' />
           <Item {...props} label='1 x Whistle' />
           <Item {...props} label='1 x Emergency blanket (space blanket)' />
-          <Item {...props} label='1 x Whiteout cord (25m/50m)' />
+          <Item {...props} info='At least 25m, 50m is preferrable but not essential' label='1 x Whiteout cord (25m)' />
           <Item {...props} label='1 x Compass' />
           <Item {...props} label='1 x Mobile phone' />
           <Item
