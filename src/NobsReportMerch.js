@@ -19,8 +19,8 @@ export const MERCH_ITEMS = [
   { key: 'nalgene-blue', label: 'Nalgene Bottle – Blue', price: 25 },
   { key: 'nalgene-glow', label: 'Nalgene Bottle – Glow', price: 25 },
   { key: 'nalgene-easy-sippers', label: 'Nalgene Easy Sippers', price: 5 },
-  { key: 'bucket-hats', label: 'Bucket Hats', price: 15, hasSizes: true },
-  { key: 'beanies', label: 'Beanies', price: 15, hasSizes: true },
+  { key: 'bucket-hats', label: 'Bucket Hats', price: 15 },
+  { key: 'beanies', label: 'Beanies', price: 15 },
   { key: 'buff-rover-skiing', label: 'Buffs – Rover Skiing', price: 15 },
   { key: 'buff-milky-way', label: 'Buffs – Chalet Milky Way', price: 15 },
   { key: 'buff-bogong-map', label: 'Buffs – Bogong Map', price: 15 },
@@ -121,6 +121,22 @@ function mergeWithEmpty(saved) {
     ),
     investiture: { ...base.investiture, ...saved.investiture },
   }
+}
+
+// Adds a Merch-page cart ({ 'key' or 'key:SIZE': qty }) onto the week's saved form, paid by 'cash' or 'eft'.
+export function addCartToForm(weekName, cart, method) {
+  const fields = mergeWithEmpty(loadSaved(weekName))
+  const add = (value, n) => String((parseFloat(value) || 0) + n)
+  for (const [cartKey, qty] of Object.entries(cart)) {
+    const [key, size] = cartKey.split(':')
+    const item = MERCH_ITEMS.find((i) => i.key === key)
+    if (!qty || !item) continue
+    const row = fields.items[key]
+    row.count = add(row.count, qty)
+    row[method] = add(row[method], qty * item.price)
+    if (SIZES.includes(size)) row.sizes[size] = add(row.sizes[size], qty)
+  }
+  localStorage.setItem(storageKey(weekName), JSON.stringify(fields))
 }
 
 export function rowTotal(row) {
