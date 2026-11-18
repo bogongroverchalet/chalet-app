@@ -14,6 +14,7 @@ import Nobs from './Nobs'
 import Videos from './Videos'
 import PdfViewer from './PdfViewer'
 import Weather from './Weather'
+import Contacts from './Contacts'
 import NobsReport from './NobsReport'
 import NobsReportPL from './NobsReportPL'
 import NobsReportPA from './NobsReportPA'
@@ -114,6 +115,7 @@ const router = createBrowserRouter([
       { path: '/pdf/pantry-inventory', element: <PantryInventory /> },
       { path: '/pdf/:slug', element: <PdfViewer /> },
       { path: '/weather', element: <Weather /> },
+      { path: '/contacts', element: <Contacts /> },
       { path: '*', element: <Navigate to='/' replace /> },
     ],
   },

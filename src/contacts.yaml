@@ -1,0 +1,33 @@
+intro:
+  - In case of life threatening emergency contact 000 first.
+  - For other emergencies, contact the Wardens team first.
+  - For booking changes, including bus transfer changes, contact the Bookings Officer.
+
+groups:
+  - title: Emergency services
+    contacts:
+      - role: Police / Fire / Ambulance
+        phone: '000'
+      - role: Police (non-emergency)
+        phone: 131 444
+  - title: Bogong Rover Chalet
+    contacts:
+      - role: Chalet landline
+        phone: (03) 5159 1241
+      - role: Chief Warden
+        name: Matt Anderson
+        phone: 0407 681 340
+      - role: Assistant Warden
+        name: Linda Moore
+        phone: 0409 172 417
+      - role: Deputy Warden
+        name: Bryce Gibson
+        phone: 0413 229 227
+      - role: Bookings
+        phone: 0407 242 538
+  - title: Scouts Victoria
+    contacts:
+      - role: Emergency notification & support
+        phone: 03 8543 9877
+      - role: Child safe hotline
+        phone: 1800 870 772

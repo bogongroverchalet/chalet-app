@@ -62,6 +62,11 @@ export default function App() {
           </Link>
         </li>
         <li className='mb-4'>
+          <Link to='contacts' className='flex items-center'>
+            Contacts <ChevronRightIcon className='ml-1' fontSize='large' />
+          </Link>
+        </li>
+        <li className='mb-4'>
           <Link to='safety' className='flex items-center'>
             Safety docs &amp; activity plans <ChevronRightIcon className='ml-1' fontSize='large' />
           </Link>
