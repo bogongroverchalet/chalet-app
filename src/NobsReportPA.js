@@ -7,9 +7,11 @@ import AddIcon from '@mui/icons-material/Add'
 import DeleteIcon from '@mui/icons-material/Delete'
 import Button from '@mui/material/Button'
 import ClearFormDialog from './ClearFormDialog'
+import SubmitReport, { SubmitHint } from './SubmitReport'
 import IconButton from '@mui/material/IconButton'
 import winterWeeks from './winter-weeks.yaml'
-import { getDefaultWeek, saveSelectedWeek } from './nobs-week'
+import { getDefaultWeek } from './nobs-week'
+import WeekSelect from './WeekSelect'
 
 const YEAR = String(winterWeeks.year)
 
@@ -95,13 +97,17 @@ export default function NobsReportPA() {
       fields.investiture.filter((_, i) => i !== idx)
     )
 
+  const makePdf = async () => {
+    const { pdf } = await import('@react-pdf/renderer')
+    const { PADocument } = await import('./NobsReportPAPDF')
+    const logoUrl = `${window.location.origin}/bcmg-logo.png`
+    return pdf(<PADocument week={selectedWeek} year={YEAR} fields={fields} logoUrl={logoUrl} />).toBlob()
+  }
+
   const handleShare = async () => {
     setSharing(true)
     try {
-      const { pdf } = await import('@react-pdf/renderer')
-      const { PADocument } = await import('./NobsReportPAPDF')
-      const logoUrl = `${window.location.origin}/bcmg-logo.png`
-      const blob = await pdf(<PADocument week={selectedWeek} year={YEAR} fields={fields} logoUrl={logoUrl} />).toBlob()
+      const blob = await makePdf()
       const filename = `PA-Report-${selectedWeek.replace(/\W+/g, '-')}.pdf`
       const file = new File([blob], filename, { type: 'application/pdf' })
       if (navigator.canShare?.({ files: [file] })) {
@@ -130,6 +136,7 @@ export default function NobsReportPA() {
             Party Advisor report
           </Link>
         </h1>
+        <SubmitHint />
       </div>
 
       <div className='nobs-report-print-area max-w-2xl mx-auto px-4 pb-4'>
@@ -152,21 +159,7 @@ export default function NobsReportPA() {
             <label htmlFor='week-select' className='font-bold'>
               Week:
             </label>
-            <select
-              id='week-select'
-              className='no-print border-b border-slate-500 bg-transparent py-0.5'
-              value={selectedWeek}
-              onChange={(e) => {
-                saveSelectedWeek(e.target.value)
-                setSelectedWeek(e.target.value)
-              }}
-            >
-              {winterWeeks.weeks.map((w) => (
-                <option key={w.name} value={w.name}>
-                  {w.name} ({w.dates})
-                </option>
-              ))}
-            </select>
+            <WeekSelect value={selectedWeek} onChange={setSelectedWeek} />
             <span className='print-only border-b border-black pb-0.5 min-w-[12em]'>{selectedWeek}</span>
           </div>
           <div className='flex items-baseline gap-2'>
@@ -346,9 +339,18 @@ export default function NobsReportPA() {
           </p>
         </div>
 
+        <SubmitReport
+          role='pa'
+          title='Party Advisor report'
+          week={selectedWeek}
+          nameId='pa-name'
+          name={fields.name}
+          fields={fields}
+          makePdf={makePdf}
+        />
+
         <p className='no-print text-sm text-slate-500 mb-3'>
-          Use the <strong>Share / Download</strong> (or <strong>Print</strong>) button below to save this report to your
-          phone, then share it with your Party Leader.
+          You can also use <strong>Share / Download</strong> (or <strong>Print</strong>) to keep a copy.
         </p>
 
         {/* Actions */}
@@ -356,7 +358,7 @@ export default function NobsReportPA() {
           <Button variant='outlined' startIcon={<PrintIcon />} onClick={() => window.print()}>
             Print
           </Button>
-          <Button variant='contained' startIcon={<ShareIcon />} onClick={handleShare} disabled={sharing}>
+          <Button variant='outlined' startIcon={<ShareIcon />} onClick={handleShare} disabled={sharing}>
             {sharing ? 'Generating…' : 'Share / Download'}
           </Button>
           <Button variant='outlined' color='error' onClick={() => setClearing(true)}>

@@ -5,8 +5,10 @@ import PrintIcon from '@mui/icons-material/Print'
 import ShareIcon from '@mui/icons-material/Share'
 import Button from '@mui/material/Button'
 import ClearFormDialog from './ClearFormDialog'
+import SubmitReport, { SubmitHint } from './SubmitReport'
 import winterWeeks from './winter-weeks.yaml'
-import { getDefaultWeek, saveSelectedWeek } from './nobs-week'
+import { getDefaultWeek } from './nobs-week'
+import WeekSelect from './WeekSelect'
 
 const YEAR = String(winterWeeks.year)
 
@@ -48,23 +50,27 @@ export default function NobsReportPL() {
     })
   }
 
+  const makePdf = async () => {
+    const { pdf } = await import('@react-pdf/renderer')
+    const { PLDocument } = await import('./NobsReportPLPDF')
+    const logoUrl = `${window.location.origin}/bcmg-logo.png`
+    const doc = (
+      <PLDocument
+        week={selectedWeek}
+        year={YEAR}
+        name={fields.name ?? ''}
+        winterPartyReport={fields.winterPartyReport ?? ''}
+        leadershipTeam={fields.leadershipTeam ?? ''}
+        logoUrl={logoUrl}
+      />
+    )
+    return pdf(doc).toBlob()
+  }
+
   const handleShare = async () => {
     setSharing(true)
     try {
-      const { pdf } = await import('@react-pdf/renderer')
-      const { PLDocument } = await import('./NobsReportPLPDF')
-      const logoUrl = `${window.location.origin}/bcmg-logo.png`
-      const doc = (
-        <PLDocument
-          week={selectedWeek}
-          year={YEAR}
-          name={fields.name ?? ''}
-          winterPartyReport={fields.winterPartyReport ?? ''}
-          leadershipTeam={fields.leadershipTeam ?? ''}
-          logoUrl={logoUrl}
-        />
-      )
-      const blob = await pdf(doc).toBlob()
+      const blob = await makePdf()
       const filename = `PL-Report-${selectedWeek.replace(/\W+/g, '-')}.pdf`
       const file = new File([blob], filename, { type: 'application/pdf' })
       if (navigator.canShare?.({ files: [file] })) {
@@ -93,6 +99,7 @@ export default function NobsReportPL() {
             Party Leader report
           </Link>
         </h1>
+        <SubmitHint />
       </div>
 
       <div className='nobs-report-print-area max-w-2xl mx-auto px-4 pb-4'>
@@ -115,21 +122,7 @@ export default function NobsReportPL() {
             <label htmlFor='week-select' className='font-bold'>
               Week:
             </label>
-            <select
-              id='week-select'
-              className='no-print border-b border-slate-500 bg-transparent py-0.5'
-              value={selectedWeek}
-              onChange={(e) => {
-                saveSelectedWeek(e.target.value)
-                setSelectedWeek(e.target.value)
-              }}
-            >
-              {winterWeeks.weeks.map((w) => (
-                <option key={w.name} value={w.name}>
-                  {w.name} ({w.dates})
-                </option>
-              ))}
-            </select>
+            <WeekSelect value={selectedWeek} onChange={setSelectedWeek} />
             <span className='print-only border-b border-black pb-0.5 min-w-[12em]'>{selectedWeek}</span>
           </div>
           <div className='flex items-baseline gap-2'>
@@ -186,18 +179,20 @@ export default function NobsReportPL() {
           <div className='print-only min-h-[200px] whitespace-pre-wrap text-sm'>{fields.leadershipTeam}</div>
         </div>
 
+        <SubmitReport
+          role='pl'
+          title='Party Leader report'
+          week={selectedWeek}
+          nameId='pl-name'
+          name={fields.name}
+          fields={fields}
+          makePdf={makePdf}
+        />
+
         <p className='no-print text-sm text-slate-500 mb-3'>
-          Use the <strong>Share / Download</strong> (or <strong>Print</strong>) button below to save this report to your
-          phone, then{' '}
-          <a
-            href='https://www.dropbox.com/request/pLxk8watNOTyhy1PuTvo'
-            target='_blank'
-            rel='noreferrer'
-            className='underline'
-          >
-            upload it
-          </a>
-          .
+          <strong>Mark as done</strong> sends this report by itself. Use <strong>Upload photos / paper reports</strong>{' '}
+          only for extra photos or paper forms, and <strong>Share / Download</strong> (or <strong>Print</strong>) to
+          keep a copy.
         </p>
 
         {/* Actions */}
@@ -205,7 +200,7 @@ export default function NobsReportPL() {
           <Button variant='outlined' startIcon={<PrintIcon />} onClick={() => window.print()}>
             Print
           </Button>
-          <Button variant='contained' startIcon={<ShareIcon />} onClick={handleShare} disabled={sharing}>
+          <Button variant='outlined' startIcon={<ShareIcon />} onClick={handleShare} disabled={sharing}>
             {sharing ? 'Generating…' : 'Share / Download'}
           </Button>
           <Button
@@ -215,7 +210,7 @@ export default function NobsReportPL() {
             target='_blank'
             rel='noreferrer'
           >
-            Upload all reports
+            Upload photos / paper reports
           </Button>
           <Button variant='outlined' color='error' onClick={() => setClearing(true)}>
             Clear

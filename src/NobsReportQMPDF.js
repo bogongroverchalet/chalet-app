@@ -2,8 +2,12 @@ import React from 'react'
 import { Document, Font, Image, Page, StyleSheet, Text, View } from '@react-pdf/renderer'
 import openSans from 'npm-font-open-sans/fonts/Regular/OpenSans-Regular.ttf'
 import openSansBold from 'npm-font-open-sans/fonts/Bold/OpenSans-Bold.ttf'
+import openSansItalic from 'npm-font-open-sans/fonts/Italic/OpenSans-Italic.ttf'
 
-Font.register({ family: 'Open Sans', fonts: [{ src: openSans }, { src: openSansBold, fontWeight: 'bold' }] })
+Font.register({
+  family: 'Open Sans',
+  fonts: [{ src: openSans }, { src: openSansBold, fontWeight: 'bold' }, { src: openSansItalic, fontStyle: 'italic' }],
+})
 
 const MEAT_ITEMS = [
   { key: 'chicken', butcherLabel: 'Breast Fillet', label: 'Chicken', unit: 'kg' },

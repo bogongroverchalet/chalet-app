@@ -6,8 +6,10 @@ import ShareIcon from '@mui/icons-material/Share'
 import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import ClearFormDialog from './ClearFormDialog'
+import SubmitReport, { SubmitHint } from './SubmitReport'
 import winterWeeks from './winter-weeks.yaml'
-import { getDefaultWeek, saveSelectedWeek } from './nobs-week'
+import { getDefaultWeek } from './nobs-week'
+import WeekSelect from './WeekSelect'
 
 const YEAR = String(winterWeeks.year)
 
@@ -197,15 +199,17 @@ export default function NobsReportMerch() {
     setClearing(false)
   }
 
+  const makePdf = async () => {
+    const { pdf } = await import('@react-pdf/renderer')
+    const { MerchDocument } = await import('./NobsReportMerchPDF')
+    const logoUrl = `${window.location.origin}/bcmg-logo.png`
+    return pdf(<MerchDocument week={selectedWeek} year={YEAR} fields={fields} logoUrl={logoUrl} />).toBlob()
+  }
+
   const handleShare = async () => {
     setSharing(true)
     try {
-      const { pdf } = await import('@react-pdf/renderer')
-      const { MerchDocument } = await import('./NobsReportMerchPDF')
-      const logoUrl = `${window.location.origin}/bcmg-logo.png`
-      const blob = await pdf(
-        <MerchDocument week={selectedWeek} year={YEAR} fields={fields} logoUrl={logoUrl} />
-      ).toBlob()
+      const blob = await makePdf()
       const filename = `Merch-Sales-${selectedWeek.replace(/\W+/g, '-')}.pdf`
       const file = new File([blob], filename, { type: 'application/pdf' })
       if (navigator.canShare?.({ files: [file] })) {
@@ -241,6 +245,7 @@ export default function NobsReportMerch() {
             Merchandise sales record
           </Link>
         </h1>
+        <SubmitHint />
       </div>
 
       <div className='nobs-report-print-area max-w-3xl mx-auto px-4 pb-4'>
@@ -259,21 +264,7 @@ export default function NobsReportMerch() {
             <label htmlFor='week-select' className='font-bold'>
               Week:
             </label>
-            <select
-              id='week-select'
-              className='no-print border-b border-slate-500 bg-transparent py-0.5'
-              value={selectedWeek}
-              onChange={(e) => {
-                saveSelectedWeek(e.target.value)
-                setSelectedWeek(e.target.value)
-              }}
-            >
-              {winterWeeks.weeks.map((w) => (
-                <option key={w.name} value={w.name}>
-                  {w.name} ({w.dates})
-                </option>
-              ))}
-            </select>
+            <WeekSelect value={selectedWeek} onChange={setSelectedWeek} />
             <span className='print-only border-b border-black pb-0.5 min-w-[10em]'>{selectedWeek}</span>
           </div>
           <div className='flex items-baseline gap-2'>
@@ -532,16 +523,25 @@ export default function NobsReportMerch() {
           </p>
         </div>
 
+        <SubmitReport
+          role='merch'
+          title='Merchandise report'
+          week={selectedWeek}
+          nameId='merch-pa-name'
+          name={fields.name}
+          fields={fields}
+          makePdf={makePdf}
+        />
+
         <p className='no-print text-sm text-slate-500 mb-3'>
-          Use the <strong>Share / Download</strong> (or <strong>Print</strong>) button below to save this report to your
-          phone, then share it with your Party Leader.
+          You can also use <strong>Share / Download</strong> (or <strong>Print</strong>) to keep a copy.
         </p>
 
         <div className='no-print flex gap-3 flex-wrap'>
           <Button variant='outlined' startIcon={<PrintIcon />} onClick={() => window.print()}>
             Print
           </Button>
-          <Button variant='contained' startIcon={<ShareIcon />} onClick={handleShare} disabled={sharing}>
+          <Button variant='outlined' startIcon={<ShareIcon />} onClick={handleShare} disabled={sharing}>
             {sharing ? 'Generating…' : 'Share / Download'}
           </Button>
           <Button variant='outlined' color='error' onClick={() => setClearing(true)}>

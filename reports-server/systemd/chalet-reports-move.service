@@ -1,0 +1,7 @@
+[Unit]
+Description=Move app-submitted NOBs reports from the Dropbox app folder into the File requests reports folder
+
+[Service]
+Type=oneshot
+# Server-side move with the full-access remote; the web container only has the app-folder token.
+ExecStart=/usr/bin/rclone move "dropbox:Apps/Bogong Nobs Reports" "dropbox:File requests/Bogong Rover Chalet Nobs reports" --delete-empty-src-dirs -v

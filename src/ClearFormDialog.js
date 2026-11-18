@@ -29,6 +29,7 @@ export default function ClearFormDialog({ open, weekName, onClose, onConfirm }) 
         <p style={{ marginBottom: 12 }}>
           Type <strong>{shortName}</strong> to clear all saved data for this week.
         </p>
+        <p style={{ marginBottom: 12 }}>This only clears this phone. A report you’ve already sent stays sent.</p>
         <TextField
           autoFocus
           size='small'

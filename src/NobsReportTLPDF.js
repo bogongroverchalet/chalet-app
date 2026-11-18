@@ -2,8 +2,12 @@ import React from 'react'
 import { Document, Font, Image, Page, StyleSheet, Text, View } from '@react-pdf/renderer'
 import openSans from 'npm-font-open-sans/fonts/Regular/OpenSans-Regular.ttf'
 import openSansBold from 'npm-font-open-sans/fonts/Bold/OpenSans-Bold.ttf'
+import openSansItalic from 'npm-font-open-sans/fonts/Italic/OpenSans-Italic.ttf'
 
-Font.register({ family: 'Open Sans', fonts: [{ src: openSans }, { src: openSansBold, fontWeight: 'bold' }] })
+Font.register({
+  family: 'Open Sans',
+  fonts: [{ src: openSans }, { src: openSansBold, fontWeight: 'bold' }, { src: openSansItalic, fontStyle: 'italic' }],
+})
 
 const DAYS = ['sat', 'sun', 'mon', 'tue', 'wed', 'thu', 'fri']
 const DAY_LABELS = ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri']

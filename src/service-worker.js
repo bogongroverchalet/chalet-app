@@ -14,6 +14,7 @@ import { registerRoute } from 'workbox-routing'
 import { CacheFirst } from 'workbox-strategies'
 import { cacheNames } from 'workbox-core'
 import { getCacheKeyForURL } from 'workbox-precaching'
+import { flushOutbox, sentNotification } from './report-outbox'
 
 skipWaiting()
 clientsClaim()
@@ -147,6 +148,19 @@ self.addEventListener('sync', (event) => {
     fetchAndCacheWeather().then(async () => {
       const clients = await self.clients.matchAll({ type: 'window' })
       clients.forEach((client) => client.postMessage({ type: 'weatherUpdated', fetchedAt: Date.now() }))
+    })
+  )
+})
+
+// NOBs reports queued by SubmitReport: sent when connectivity returns, even with the app closed
+self.addEventListener('sync', (event) => {
+  if (event.tag !== 'reports-sync') return
+  event.waitUntil(
+    flushOutbox(async (e) => {
+      const clients = await self.clients.matchAll({ type: 'window' })
+      clients.forEach((client) => client.postMessage({ type: 'reportSent' }))
+      if (e.kind === 'done' && Notification.permission === 'granted')
+        await self.registration.showNotification(...sentNotification(e))
     })
   )
 })

@@ -1,0 +1,25 @@
+services:
+  app:
+    image: oven/bun:1.3-alpine
+    restart: always
+    working_dir: /app
+    command: bun server.js
+    user: '1000:1000'
+    read_only: true
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+    volumes:
+      - ./server.js:/app/server.js:ro
+      - ./data:/data
+    healthcheck:
+      test: ['CMD', 'wget', '-qO-', 'http://127.0.0.1:3000/health']
+      interval: 60s
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: always
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    depends_on: [app]
