@@ -128,7 +128,8 @@ function mergeWithEmpty(saved) {
 // Adds a Merch-page cart ({ 'key' or 'key:SIZE': qty }) onto the week's saved form, paid by 'cash' or 'eft'.
 export function addCartToForm(weekName, cart, method) {
   const fields = mergeWithEmpty(loadSaved(weekName))
-  const add = (value, n) => String((parseFloat(value) || 0) + n)
+  // A row undone back to 0 goes blank, like one that never sold.
+  const add = (value, n) => String((parseFloat(value) || 0) + n || '')
   for (const [cartKey, qty] of Object.entries(cart)) {
     const [key, size] = cartKey.split(':')
     const item = MERCH_ITEMS.find((i) => i.key === key)
