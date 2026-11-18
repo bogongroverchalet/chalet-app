@@ -161,7 +161,7 @@ self.addEventListener('sync', (event) => {
       clients.forEach((client) => client.postMessage({ type: 'reportSent' }))
       if (e.kind === 'done' && Notification.permission === 'granted')
         await self.registration.showNotification(...sentNotification(e))
-    })
+    }, 'sw')
   )
 })
 

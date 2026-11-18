@@ -18,6 +18,7 @@ function deviceId() {
 }
 
 // Only Chromium (Android) can send after the app is closed; iOS sends only while the page is open.
+// shortcut: wording says "usually" because closed-app sync didn't fire in a real Android 10 test (2026-11-18); firm it up once proven.
 const backgroundSync = () => 'SyncManager' in window && !!navigator.serviceWorker?.controller
 
 // Android Chrome: hand off to the service worker's `sync`, which runs even after the app is closed.
@@ -42,7 +43,7 @@ async function flushNow(reg) {
       if (e.kind !== 'done' || window.Notification?.permission !== 'granted') return
       if (reg) await reg.showNotification(...sentNotification(e))
       else new Notification(...sentNotification(e))
-    })
+    }, 'page')
   } catch {
     // offline: retried on the next `online` event or app open
   }
@@ -129,7 +130,8 @@ export default function SubmitReport({ role, title, week, name, nameId, fields, 
     status = `The chalet server rejected this report (error ${done.error}) — please use Share / Download below instead.`
   else if (doneCurrent && done.sentAt) status = `Submitted ${time(done.sentAt)}. Nothing more to do.`
   else if (doneCurrent && backgroundSync())
-    status = 'Marked as done — it will send by itself next time you have signal. You don’t need to Share it.'
+    status =
+      'Marked as done but not sent yet (no signal). It usually sends by itself once you have reception — if this still says Waiting, open the app again.'
   else if (doneCurrent)
     status = 'Marked as done but NOT SENT YET (no signal). Open this page again when you have signal to send it.'
   else if (done && !hasContent(fields))
@@ -148,7 +150,7 @@ export default function SubmitReport({ role, title, week, name, nameId, fields, 
       <p className='text-sm text-slate-600 mb-2'>
         When the report is finished, press <strong>Mark as done</strong> and it’s sent to the Chalet for you.{' '}
         {backgroundSync()
-          ? 'No signal? It sends by itself once you have reception, even if you close the app.'
+          ? 'No signal? It usually sends by itself once you have reception. If it still says Waiting, open the app again.'
           : 'No signal? It sends the next time you open this page with reception.'}
         {window.Notification?.permission === 'default' && ' We’ll ask to notify you when it’s delivered.'}
       </p>

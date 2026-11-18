@@ -1,7 +1,7 @@
 // Receives NOBs reports from the PWA and files them into Dropbox at /<year>/Week N/<Role>/.
 // Every upload lands on local disk first; a retry loop pushes pending files to Dropbox, so a
 // Dropbox outage never loses a report.
-import { mkdir, readdir, rename, writeFile } from 'node:fs/promises'
+import { appendFile, mkdir, readdir, rename, writeFile } from 'node:fs/promises'
 import { join, dirname } from 'node:path'
 
 const DATA = process.env.DATA_DIR ?? '/data'
@@ -52,7 +52,7 @@ function cors(req) {
   return {
     'Access-Control-Allow-Origin': ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0] ?? '',
     'Access-Control-Allow-Methods': 'PUT, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, X-Device-Id, X-Reporter-Name',
+    'Access-Control-Allow-Headers': 'Content-Type, X-Device-Id, X-Reporter-Name, X-Sent-By, X-Queued-At',
     Vary: 'Origin',
   }
 }
@@ -82,7 +82,19 @@ async function handle(req) {
   await mkdir(dirname(path), { recursive: true })
   await writeFile(path + '.tmp', body)
   await rename(path + '.tmp', path)
-  console.log(new Date().toISOString(), 'saved', base, target.rel)
+  // Device details for debugging delivery (e.g. how long Android's background sync took)
+  const queuedAt = Number(req.headers.get('x-queued-at')) || null
+  const meta = {
+    at: new Date().toISOString(),
+    kind: target.kind,
+    file: target.rel,
+    via: req.headers.get('x-sent-by'),
+    delaySec: queuedAt && Math.round((Date.now() - queuedAt) / 1000),
+    ua: req.headers.get('user-agent'),
+    country: req.headers.get('cf-ipcountry'),
+  }
+  console.log(JSON.stringify(meta))
+  await appendFile(join(DATA, 'uploads.log'), JSON.stringify(meta) + '\n')
   if (target.kind === 'done') flushPending()
   return reply(204)
 }

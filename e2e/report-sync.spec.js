@@ -27,6 +27,8 @@ test('PL report: draft queued offline, backed up when online, then submitted as 
   const draft = puts.at(-1)
   expect(draft.url).toMatch(/\/api\/reports\/\d{4}\/Week%20\d+\/pl\/draft$/)
   expect(decodeURIComponent(draft.headers['x-reporter-name'])).toBe('Zoë O’Brien')
+  expect(draft.headers['x-sent-by']).toBe('page')
+  expect(Number(draft.headers['x-queued-at'])).toBeGreaterThan(0)
   expect(JSON.parse(draft.body.toString()).winterPartyReport).toBe('Great week.')
 
   await done.click()

@@ -27,7 +27,8 @@ export const getEntry = (key) => withStore('readonly', (s) => s.get(key))
 export const putEntry = (entry) => withStore('readwrite', (s) => s.put(entry))
 
 // Uploads every unsent entry. Throws on network failure so a `sync` event gets retried by the browser.
-export async function flushOutbox(onSent) {
+// `via` ('sw' | 'page') and the queue time go to the server log, to debug delivery on real phones.
+export async function flushOutbox(onSent, via) {
   const entries = await withStore('readonly', (s) => s.getAll())
   for (const e of entries.filter((e) => e.sentVersion !== e.version)) {
     const res = await fetch(`${REPORTS_URL}/api/reports/${e.key}`, {
@@ -36,6 +37,8 @@ export async function flushOutbox(onSent) {
         'Content-Type': e.body.type,
         'X-Device-Id': e.deviceId,
         'X-Reporter-Name': encodeURIComponent(e.name ?? ''),
+        'X-Sent-By': via,
+        'X-Queued-At': String(e.version),
       },
       body: e.body,
     })
