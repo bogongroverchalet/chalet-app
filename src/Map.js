@@ -3,7 +3,7 @@ import leaflet from 'leaflet'
 import { renderToString } from 'react-dom/server'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import { MapContainer, Marker, Popup, useMap } from 'react-leaflet'
+import { Circle, MapContainer, Marker, Popup, useMap } from 'react-leaflet'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { PMTiles, leafletRasterLayer } from 'pmtiles'
 import _ from 'lodash'
@@ -59,7 +59,7 @@ export default function Map({ edit }) {
   }
   const toggleShowPosition = () => {
     setShowPosition(!showPosition)
-    setPositionStatus(false)
+    setPositionStatus(undefined)
   }
   return (
     <div className='grid grid-rows-[min-content,1fr] h-screen overflow-hidden'>
@@ -135,43 +135,39 @@ const LocationIcon = leaflet.divIcon({
 })
 
 function MyLocation({ onPositionStatus }) {
-  const map = useMap()
   const [position, setPosition] = React.useState()
   const [accuracy, setAccuracy] = React.useState()
-  const positionError = React.useRef()
+  const onStatus = React.useRef(onPositionStatus)
+  onStatus.current = onPositionStatus
   React.useEffect(() => {
-    let animate = false
-    let oldPosition = position
+    let lastStatus
+    const report = (status) => {
+      if (status === lastStatus || (status?.message && status.message === lastStatus?.message)) return
+      lastStatus = status
+      onStatus.current(status)
+    }
+    // Start the watch once; restarting it on every render loses the GPS lock and serves stale cached fixes.
     const watchId = navigator.geolocation.watchPosition(
-      (position) => {
-        onPositionStatus(true)
-        const newPosition = [position.coords.latitude, position.coords.longitude]
-        if (!_.isEqual(accuracy, position.coords.accuracy)) {
-          setAccuracy(position.coords.accuracy)
-        }
-        if (_.isEqual(newPosition, oldPosition)) return
-        setPosition(newPosition)
-        if (false) {
-          // TODO
-          map.panTo(new window.L.LatLng(position.coords.latitude, position.coords.longitude), null, { animate })
-          animate = true
-        }
+      ({ coords }) => {
+        report(true)
+        setAccuracy(Math.round(coords.accuracy))
+        setPosition((old) =>
+          old?.[0] === coords.latitude && old?.[1] === coords.longitude ? old : [coords.latitude, coords.longitude]
+        )
       },
-      (e) => {
-        if (positionError.current?.message !== e.message) {
-          positionError.current = e
-          onPositionStatus(e)
-        }
-      },
-      { enableHighAccuracy: true, maximumAge: 5 * 60e3, timeout: 30e3 }
+      report,
+      { enableHighAccuracy: true, maximumAge: 10e3, timeout: 30e3 }
     )
     return () => navigator.geolocation.clearWatch(watchId)
-  })
+  }, [])
   return (
     position && (
-      <Marker position={position} icon={LocationIcon} zIndexOffset={10}>
-        <Popup>Me{accuracy && ` - accuracy: ${accuracy}m`}</Popup>
-      </Marker>
+      <>
+        <Circle center={position} radius={accuracy} interactive={false} pathOptions={{ weight: 1 }} />
+        <Marker position={position} icon={LocationIcon} zIndexOffset={10}>
+          <Popup>Me{accuracy != null && ` - accuracy: ${accuracy}m`}</Popup>
+        </Marker>
+      </>
     )
   )
 }
