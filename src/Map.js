@@ -58,6 +58,12 @@ export default function Map({ edit }) {
     return <Navigate replace to='../..' relative='path' />
   }
   const toggleShowPosition = () => {
+    // Ask for permission inside the tap itself; the watch starts later in an effect, which Chrome flags.
+    if (!showPosition)
+      navigator.geolocation.getCurrentPosition(
+        () => {},
+        () => {}
+      )
     setShowPosition(!showPosition)
     setPositionStatus(undefined)
   }
