@@ -96,3 +96,25 @@ test('clearing a submitted report says it was already submitted', async ({ page 
   await page.getByRole('dialog').getByRole('button', { name: 'Clear' }).click()
   await expect(page.getByRole('status')).toContainText('already submitted')
 })
+
+test('hidden Testing week: 5 taps on the build date reveals it', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('InitialDialogDone', 'true'))
+  const puts = []
+  await page.route('https://reports.bogongroverchalet.org.au/**', (route) => {
+    if (route.request().method() === 'PUT') puts.push(route.request().url())
+    return route.fulfill({ status: 204, headers: { 'Access-Control-Allow-Origin': '*' } })
+  })
+  await page.goto('/nobs/report/pl')
+  await expect(page.locator('#week-select option[value="Testing"]')).toHaveCount(0)
+
+  await page.goto('/')
+  for (let i = 0; i < 5; i++) await page.getByText('Build date:').click()
+  await expect(page.getByRole('status')).toContainText('Testing mode on')
+
+  await page.goto('/nobs/report/pl')
+  await page.locator('#week-select').selectOption('Testing')
+  await page.locator('#pl-name').fill('Sam')
+  await page.getByRole('button', { name: 'Mark as done' }).click()
+  await expect(page.getByRole('status')).toContainText('Submitted', { timeout: 20000 })
+  expect(puts).toContainEqual(expect.stringMatching(/\/\d{4}\/Testing\/pl\/done$/))
+})

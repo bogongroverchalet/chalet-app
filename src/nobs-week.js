@@ -14,7 +14,32 @@ export const SUMMER_EVENTS = [
   'Food working bee',
 ]
 
-const isKnownWeek = (name) => SUMMER_EVENTS.includes(name) || winterWeeks.weeks.some((w) => w.name === name)
+// Hidden week for trying out report sending; only offered in testing mode (5 taps on the home page's build date).
+// The server files it under <year>/Testing, which the move into the real reports folder skips.
+export const TEST_WEEK = 'Testing'
+const TESTING_KEY = 'nobsTestingMode'
+
+export function isTestingMode() {
+  try {
+    return localStorage.getItem(TESTING_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
+export function toggleTestingMode() {
+  const on = !isTestingMode()
+  try {
+    if (on) localStorage.setItem(TESTING_KEY, '1')
+    else localStorage.removeItem(TESTING_KEY)
+  } catch {}
+  return on
+}
+
+const isKnownWeek = (name) =>
+  SUMMER_EVENTS.includes(name) ||
+  winterWeeks.weeks.some((w) => w.name === name) ||
+  (name === TEST_WEEK && isTestingMode())
 
 function detectCurrentWeek() {
   const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Melbourne' }).format(new Date())

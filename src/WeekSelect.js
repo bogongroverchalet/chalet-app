@@ -1,6 +1,6 @@
 import React from 'react'
 import winterWeeks from './winter-weeks.yaml'
-import { SUMMER_EVENTS, saveSelectedWeek } from './nobs-week'
+import { SUMMER_EVENTS, TEST_WEEK, isTestingMode, saveSelectedWeek } from './nobs-week'
 
 // Week picker shared by the NOBs report forms.
 export default function WeekSelect({ value, onChange }) {
@@ -26,6 +26,11 @@ export default function WeekSelect({ value, onChange }) {
           <option key={name}>{name}</option>
         ))}
       </optgroup>
+      {(isTestingMode() || value === TEST_WEEK) && (
+        <optgroup label='Testing'>
+          <option value={TEST_WEEK}>Testing (ignore)</option>
+        </optgroup>
+      )}
     </select>
   )
 }

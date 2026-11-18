@@ -5,8 +5,22 @@ import Tooltip from '@mui/material/Tooltip'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import LaunchIcon from '@mui/icons-material/Launch'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
+import { toggleTestingMode } from './nobs-week'
 
 export default function App() {
+  const taps = React.useRef([])
+  const [testingMsg, setTestingMsg] = React.useState('')
+  // Hidden switch: 5 taps within 3s on the build date toggles the Nobs report "Testing" week
+  const tapBuildDate = () => {
+    const now = Date.now()
+    taps.current = [...taps.current.filter((t) => now - t < 3000), now]
+    if (taps.current.length < 5) return
+    taps.current = []
+    setTestingMsg(
+      toggleTestingMode() ? 'Testing mode on: Nobs reports can use the "Testing" week.' : 'Testing mode off.'
+    )
+  }
+
   return (
     <Wrapper>
       <h1 className='text-3xl my-4'>Bogong Rover Chalet App</h1>
@@ -128,8 +142,16 @@ export default function App() {
         The trips in this app should work offline, so it's great for planning your trips for the next day :-)
       </p>
       <p className='mt-4'>
-        <i>Build date: {process.env.REACT_APP_BUILD_DATE}</i>
+        {/* select-none: rapid taps would otherwise select the text and trigger Chrome's tap-to-search sheet */}
+        <i onClick={tapBuildDate} className='select-none touch-manipulation'>
+          Build date: {process.env.REACT_APP_BUILD_DATE}
+        </i>
       </p>
+      {testingMsg && (
+        <p className='mt-2 text-sm' role='status'>
+          {testingMsg}
+        </p>
+      )}
     </Wrapper>
   )
 }

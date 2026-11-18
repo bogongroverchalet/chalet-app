@@ -31,7 +31,7 @@ export function parseUpload(url, headers) {
   }
   // Bare numbers are from clients queued before week folder names were sent
   if (/^\d{1,2}$/.test(week)) week = `Week ${week}`
-  if (!/^(Week \d{1,2}|Summer week|[\p{L} ]{1,30} working bee)$/u.test(week)) return null
+  if (!/^(Week \d{1,2}|Summer week|Testing|[\p{L} ]{1,30} working bee)$/u.test(week)) return null
   const device = headers.get('x-device-id') ?? ''
   if (!ROLE_FOLDER[role] || !/^[a-zA-Z0-9-]{8,64}$/.test(device)) return null
   let name = headers.get('x-reporter-name') ?? ''

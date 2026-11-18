@@ -34,6 +34,7 @@ test('summer week and named working bee folders; legacy numeric week', () => {
   ).toBe('2027/Australia Day working bee/qm-abcdef123456.json')
   expect(parseUpload(url('/api/reports/2026/Week%207/tl/done'), dev).rel).toMatch(/^2026\/Week 7\/Tow\//)
   expect(parseUpload(url('/api/reports/2026/7/tl/done'), dev).rel).toMatch(/^2026\/Week 7\/Tow\//)
+  expect(parseUpload(url('/api/reports/2026/Testing/ce/done'), dev).rel).toMatch(/^2026\/Testing\/CE\//)
 })
 
 test('rejects other week folder names', () => {
