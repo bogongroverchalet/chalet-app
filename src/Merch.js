@@ -1,6 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
+import Button from '@mui/material/Button'
+import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
+import DialogContent from '@mui/material/DialogContent'
+import DialogTitle from '@mui/material/DialogTitle'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import Switch from '@mui/material/Switch'
 import { addCartToForm, SIZES } from './NobsReportMerch'
@@ -157,6 +162,26 @@ function SmallItem({ id, label, price, photo, onPhotoClick, cartProps }) {
   )
 }
 
+// useState mirrored to localStorage as JSON; storage failures just mean it isn't remembered.
+function useStored(key, initial) {
+  const [value, setValue] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem(key)) ?? initial
+    } catch {
+      return initial
+    }
+  })
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value))
+    } catch {}
+  }, [key, value])
+  return [value, setValue]
+}
+
+const formatTime = (iso) =>
+  new Date(iso).toLocaleString('en-AU', { weekday: 'short', hour: 'numeric', minute: '2-digit' })
+
 export default function Merch() {
   const [lightbox, setLightbox] = useState(null)
 
@@ -165,30 +190,12 @@ export default function Merch() {
 
   // Manual tally for the Party Advisor; keyed by NobsReportMerch MERCH_ITEMS key, kept in localStorage until cleared.
   // Opt-in so the page stays a plain catalogue for everyone else; remembered per browser.
-  const [tally, setTally] = useState(() => {
-    try {
-      return localStorage.getItem('merchTallyEnabled') === 'true'
-    } catch {
-      return false
-    }
-  })
-  useEffect(() => {
-    try {
-      localStorage.setItem('merchTallyEnabled', tally)
-    } catch {}
-  }, [tally])
-  const [cart, setCart] = useState(() => {
-    try {
-      return JSON.parse(localStorage.getItem('merchCart')) ?? {}
-    } catch {
-      return {}
-    }
-  })
-  useEffect(() => {
-    try {
-      localStorage.setItem('merchCart', JSON.stringify(cart))
-    } catch {}
-  }, [cart])
+  const [tally, setTally] = useStored('merchTallyEnabled', false)
+  const [cart, setCart] = useStored('merchCart', {})
+  const [buyer, setBuyer] = useStored('merchCartName', '')
+  // Every sale added to the sales record, newest first.
+  const [history, setHistory] = useStored('merchHistory', [])
+  const [confirmClear, setConfirmClear] = useState(false)
   const [added, setAdded] = useState(null)
   const cartProps = (id) => ({
     qty: cart[id],
@@ -197,11 +204,11 @@ export default function Merch() {
       setCart((c) => ({ ...c, [id]: n }))
     },
   })
-  const prices = Object.fromEntries(
-    [...CLOTHING, ...ACCESSORIES, ...SMALL_ITEMS].flatMap(({ id, price, variants }) =>
-      (variants || [{ id }]).map((v) => [v.id, price])
-    )
+  const cartItems = [...CLOTHING, ...ACCESSORIES, ...SMALL_ITEMS].flatMap(({ id, label, price, variants }) =>
+    (variants || [{ id }]).map((v) => ({ id: v.id, label: v.label ? `${label} ${v.label}` : label, price }))
   )
+  const prices = Object.fromEntries(cartItems.map(({ id, price }) => [id, price]))
+  const labels = Object.fromEntries(cartItems.map(({ id, label }) => [id, label]))
   const count = Object.keys(prices).reduce((sum, id) => sum + (cart[id] || 0), 0)
   const total = Object.keys(prices).reduce((sum, id) => sum + (cart[id] || 0) * prices[id], 0)
 
@@ -212,9 +219,22 @@ export default function Merch() {
     addedCart.current = cart
     const week = getDefaultWeek()
     // Only ids shown on this page, so a stale saved cart can't add items nobody can see.
-    addCartToForm(week, Object.fromEntries(Object.keys(prices).map((id) => [id, cart[id] || 0])), method)
+    const items = Object.fromEntries(Object.keys(prices).flatMap((id) => (cart[id] ? [[id, cart[id]]] : [])))
+    addCartToForm(week, items, method)
+    setHistory((h) => [{ at: new Date().toISOString(), week, method, name: buyer.trim(), items, total }, ...h])
     setCart({})
+    setBuyer('')
     setAdded({ week, total, method })
+  }
+
+  // Undo subtracts the sale back off the form it went to; the entry stays in history, marked undone.
+  const undoing = useRef(new Set())
+  const undo = (entry) => {
+    if (entry.undone || undoing.current.has(entry.at)) return
+    undoing.current.add(entry.at)
+    addCartToForm(entry.week, Object.fromEntries(Object.entries(entry.items).map(([id, n]) => [id, -n])), entry.method)
+    setHistory((h) => h.map((e) => (e.at === entry.at ? { ...e, undone: true } : e)))
+    setAdded(null)
   }
 
   return (
@@ -267,7 +287,18 @@ export default function Merch() {
             </button>
           </div>
           <div className='max-w-3xl mx-auto px-4 pb-3 flex items-center justify-end gap-2 text-sm'>
-            <span className='text-slate-600'>Add to sales record:</span>
+            <label className='sr-only' htmlFor='merch-buyer'>
+              Buyer name (optional)
+            </label>
+            <input
+              id='merch-buyer'
+              type='text'
+              className='min-w-0 flex-1 border-b border-slate-400 bg-transparent outline-none text-base'
+              placeholder='Name (optional)'
+              value={buyer}
+              onChange={(e) => setBuyer(e.target.value)}
+            />
+            <span className='text-slate-600 shrink-0'>Add:</span>
             <button
               type='button'
               onClick={() => addToForm('cash')}
@@ -297,6 +328,71 @@ export default function Merch() {
           </div>
         </div>
       )}
+
+      {tally && history.length > 0 && (
+        <details className='mt-8'>
+          <summary className='text-xl font-bold cursor-pointer'>Sales history ({history.length})</summary>
+          <ul className='mt-3 border border-slate-200 rounded-lg bg-white divide-y divide-slate-100'>
+            {history.map((entry) => (
+              <li key={entry.at} className={`p-3 text-sm flex gap-3 ${entry.undone ? 'text-slate-400' : ''}`}>
+                <div className={`flex-1 ${entry.undone ? 'line-through' : ''}`}>
+                  <div className='font-semibold'>
+                    {formatTime(entry.at)}
+                    {entry.name && ` · ${entry.name}`} · ${entry.total} {entry.method === 'eft' ? 'EFT' : 'cash'}
+                  </div>
+                  <div className='text-slate-500'>
+                    {Object.entries(entry.items)
+                      .map(([id, n]) => `${n}× ${labels[id] ?? id}`)
+                      .join(', ')}
+                  </div>
+                  <div className='text-xs text-slate-400'>{entry.week}</div>
+                </div>
+                {entry.undone ? (
+                  <span className='shrink-0 self-center'>Undone</span>
+                ) : (
+                  <button
+                    type='button'
+                    onClick={() => undo(entry)}
+                    aria-label={`Undo ${formatTime(entry.at)} $${entry.total} ${
+                      entry.method === 'eft' ? 'EFT' : 'cash'
+                    } sale${entry.name ? ` to ${entry.name}` : ''}`}
+                    className='shrink-0 self-center px-3 py-1 rounded border border-slate-300'
+                  >
+                    Undo
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
+          <button
+            type='button'
+            onClick={() => setConfirmClear(true)}
+            className='mt-3 px-3 py-1 rounded border border-slate-300 text-sm'
+          >
+            Clear history
+          </button>
+        </details>
+      )}
+      <Dialog open={confirmClear} onClose={() => setConfirmClear(false)}>
+        <DialogTitle>Clear sales history?</DialogTitle>
+        <DialogContent>
+          This only removes the list on this phone. The sales record isn’t changed, and cleared sales can’t be undone
+          from here any more.
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setConfirmClear(false)}>Cancel</Button>
+          <Button
+            color='error'
+            variant='contained'
+            onClick={() => {
+              setHistory([])
+              setConfirmClear(false)
+            }}
+          >
+            Clear history
+          </Button>
+        </DialogActions>
+      </Dialog>
 
       {lightbox && (
         <div className='fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4' onClick={closePhoto}>
