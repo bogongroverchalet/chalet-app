@@ -11,10 +11,11 @@ import { skipWaiting, clientsClaim } from 'workbox-core'
 import { precache, precacheAndRoute, createHandlerBoundToURL, cleanupOutdatedCaches } from 'workbox-precaching'
 import { createPartialResponse } from 'workbox-range-requests'
 import { registerRoute } from 'workbox-routing'
-import { CacheFirst } from 'workbox-strategies'
+import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies'
 import { cacheNames } from 'workbox-core'
 import { getCacheKeyForURL } from 'workbox-precaching'
 import { flushOutbox, sentNotification } from './report-outbox'
+import pdfRegistry from './pdfRegistry'
 
 skipWaiting()
 clientsClaim()
@@ -61,6 +62,15 @@ registerRoute(
   }
 )
 
+// The page asks on every app start; resumes any video downloads a killed worker didn't finish.
+// The home page's offline status sends it too, so a run already in progress is reused rather than doubled.
+let videosRun
+self.addEventListener('message', (event) => {
+  if (event.data !== 'cacheVideos') return
+  videosRun ??= cacheVideos().finally(() => (videosRun = null))
+  event.waitUntil(videosRun)
+})
+
 self.addEventListener('message', async ({ data, source }) => {
   if (data !== 'isMapDataReady') return
 
@@ -73,25 +83,57 @@ self.addEventListener('message', async ({ data, source }) => {
   source.postMessage('mapDataReady')
 })
 
+// Videos (~62 MB) are cached after install instead of precached, so the app shell and map work offline
+// within seconds of the first visit rather than only once every video has downloaded.
+// Bump VIDEOS_CACHE when any video changes.
+const VIDEOS_CACHE = 'videos-v2'
+const VIDEOS = ['bathroom', 'blisters-pt1', 'blisters-pt2', 'tow-nutcracker', 'dip-stick']
+  .concat([1, 2, 3, 4, 5].map((n) => `water-pt${n}`))
+  .map((name) => `/${name}.mp4`)
+
+// The viewer's PDFs live in public/, so they aren't in the build's precache manifest; without this they only
+// open offline while the browser's own HTTP cache still holds them (24h, must-revalidate on Netlify).
+// Fetched with the videos (first, as they're small) and served stale-while-revalidate so edits still arrive.
+const PDFS_CACHE = 'pdfs-v1'
+const PDFS = [...new Set(Object.values(pdfRegistry).map(({ file }) => file))]
+registerRoute(({ url }) => url.pathname.endsWith('.pdf'), new StaleWhileRevalidate({ cacheName: PDFS_CACHE }))
+
+// Progress goes to every window (including the not-yet-controlled first visit) for the home page's offline status.
+async function cacheVideos() {
+  const pdfs = await caches.open(PDFS_CACHE)
+  await Promise.all(PDFS.map(async (url) => (await pdfs.match(url)) || pdfs.add(url).catch(() => {})))
+  const cache = await caches.open(VIDEOS_CACHE)
+  const post = async (msg) =>
+    (await self.clients.matchAll({ type: 'window', includeUncontrolled: true })).forEach((c) => c.postMessage(msg))
+  let done = 0
+  for (const url of VIDEOS) {
+    if (!(await cache.match(url))) await cache.add(url).catch(() => {})
+    if (await cache.match(url)) done++
+    await post({ type: 'videoProgress', done, total: VIDEOS.length, finished: false })
+  }
+  await post({ type: 'videoProgress', done, total: VIDEOS.length, finished: true })
+}
+
 registerRoute(
   ({ url }) => url.pathname.endsWith('.mp4'),
   async ({ request, url }) => {
-    const cache = await caches.open(cacheNames.precache)
-    const response = await cache.match(getCacheKeyForURL(url.pathname))
+    const response = await caches.match(url.pathname, {
+      cacheName: VIDEOS_CACHE,
+    })
     if (!response) return fetch(request)
     return createPartialResponse(request, response)
   }
 )
-precache([{ url: '/bathroom.mp4', revision: '2' }])
-precache([{ url: '/blisters-pt1.mp4', revision: '1' }])
-precache([{ url: '/blisters-pt2.mp4', revision: '1' }])
-precache([{ url: '/tow-nutcracker.mp4', revision: '1' }])
-precache([{ url: '/dip-stick.mp4', revision: '1' }])
-precache([{ url: '/water-pt1.mp4', revision: '1' }])
-precache([{ url: '/water-pt2.mp4', revision: '1' }])
-precache([{ url: '/water-pt3.mp4', revision: '1' }])
-precache([{ url: '/water-pt4.mp4', revision: '1' }])
-precache([{ url: '/water-pt5.mp4', revision: '1' }])
+
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(keys.filter((k) => k.startsWith('videos-') && k !== VIDEOS_CACHE).map((k) => caches.delete(k)))
+      )
+  )
+})
 
 registerRoute(
   ({ url }) => url.pathname.startsWith('/merch/') && url.pathname.endsWith('.jpg'),

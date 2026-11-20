@@ -77,7 +77,11 @@ export default function Map({ edit }) {
           <span className='max-sm:hidden'>Bogong Rover Chalet map{tripName ? ':' : ''}</span> {tripName}
           <div className='whitespace-nowrap inline-block'>
             <Tooltip
-              title={positionStatus?.message}
+              title={
+                positionStatus?.code === 1 // PERMISSION_DENIED
+                  ? 'Location is blocked for this app. Allow it in Chrome’s site settings (or Settings › Apps), then tap again.'
+                  : positionStatus?.message
+              }
               arrow
               open={!!positionStatus?.message}
               classes={{ tooltip: 'text-center !text-[1rem]' }}

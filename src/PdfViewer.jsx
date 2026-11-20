@@ -23,10 +23,8 @@ export default function PdfViewer() {
   const offsetRef = useRef([0, 0])
   const containerRef = useRef()
 
-  const onResize = useCallback((entries) => {
-    const [entry] = entries
-    if (entry) setContainerWidth(entry.contentRect.width)
-  }, [])
+  // usehooks-ts v3 passes a { width, height } size, not ResizeObserver entries
+  const onResize = useCallback(({ width }) => setContainerWidth(width), [])
 
   useResizeObserver({ ref: containerRef, onResize })
 

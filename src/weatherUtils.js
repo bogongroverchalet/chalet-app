@@ -1,7 +1,7 @@
 import { groupBy, map, mapValues, keyBy, filter, meanBy, sumBy, maxBy, minBy, some } from 'lodash'
 
 export const WEATHER_API_URL =
-  'https://api.open-meteo.com/v1/forecast?latitude=-36.90407103087054&longitude=147.30311304330826&hourly=temperature_2m,weathercode,precipitation_probability,precipitation,snowfall,windspeed_10m,windgusts_10m&daily=sunrise,sunset&timezone=Australia%2FMelbourne&forecast_days=10&wind_speed_unit=kmh'
+  'https://api.open-meteo.com/v1/forecast?latitude=-36.90407103087054&longitude=147.30311304330826&hourly=temperature_2m,weathercode,precipitation_probability,precipitation,snowfall,windspeed_10m,windgusts_10m&daily=sunrise,sunset&timezone=Australia%2FMelbourne&forecast_days=7&wind_speed_unit=kmh'
 
 const WMO_DESCRIPTIONS = {
   0: 'Clear sky',

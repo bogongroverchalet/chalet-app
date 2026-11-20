@@ -47,7 +47,7 @@ export default function SafetyIncidentReporting() {
       <h2 className='text-xl font-bold mt-6 mb-2'>Scouts Victoria Emergency Line</h2>
       <p className='mb-3'>
         In addition to completing an incident report, you must contact Scouts Victoria via the Emergency Line on{' '}
-        <a href='tel:0385439877'>
+        <a href='tel:0385439877' className='whitespace-nowrap'>
           <strong>03 8543 9877</strong>
         </a>{' '}
         for incidents meeting the following criteria:

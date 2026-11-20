@@ -3,6 +3,7 @@ import Wrapper from './Wrapper'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import { useParams, Link } from 'react-router-dom'
+import { Video } from './Videos'
 
 const VIDEOS = [
   { slug: 'dip-stick', label: 'Dip stick' },
@@ -40,15 +41,5 @@ function VideoList() {
         </li>
       ))}
     </ul>
-  )
-}
-
-function Video({ name }) {
-  return (
-    <div>
-      <video controls width='600' preload='auto'>
-        <source src={`/${name}.mp4`} type='video/mp4' />
-      </video>
-    </div>
   )
 }

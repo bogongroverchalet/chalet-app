@@ -42,12 +42,17 @@ function VideoList() {
   )
 }
 
-function Video({ name }) {
+// Shared with NobsVideos. Offline, a video the service worker hasn't downloaded yet just shows a broken player.
+export function Video({ name }) {
+  const [failed, setFailed] = React.useState(false)
   return (
     <div>
-      <video controls width='600' preload='auto'>
-        <source src={`/${name}.mp4`} type='video/mp4' />
-      </video>
+      <video controls width='600' preload='auto' src={`/${name}.mp4`} onError={() => setFailed(true)} />
+      {failed && (
+        <p className='mt-2 text-amber-800' role='alert'>
+          This video hasn’t downloaded to your phone yet. Open the app when you have signal to finish downloading it.
+        </p>
+      )}
     </div>
   )
 }

@@ -57,11 +57,19 @@ export default function Weather() {
       if (data?.type === 'weatherUpdated') load()
     }
     navigator.serviceWorker?.addEventListener('message', onSwMessage)
-    return () => navigator.serviceWorker?.removeEventListener('message', onSwMessage)
+    window.addEventListener('online', load)
+    return () => {
+      navigator.serviceWorker?.removeEventListener('message', onSwMessage)
+      window.removeEventListener('online', load)
+    }
   }, [load])
 
   React.useEffect(() => {
-    navigator.serviceWorker?.ready.then((reg) => setSyncSupported('periodicSync' in reg))
+    // Chrome exposes periodicSync in every tab; it only works once the browser grants the permission (installed app)
+    navigator.serviceWorker?.ready
+      .then((reg) => 'periodicSync' in reg && navigator.permissions.query({ name: 'periodic-background-sync' }))
+      .then((perm) => setSyncSupported(perm?.state === 'granted'))
+      .catch(() => {})
   }, [])
 
   React.useEffect(() => {

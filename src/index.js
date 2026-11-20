@@ -139,5 +139,6 @@ primeWeatherCache()
 if (localStorage.getItem('weatherPeriodicSync') !== 'false') registerPeriodicSync()
 navigator.serviceWorker?.ready.then((reg) => {
   if ('sync' in reg) reg.sync.register('weather-sync-once').catch(() => {})
+  reg.active?.postMessage('cacheVideos')
 })
 window.addEventListener('online', primeWeatherCache)

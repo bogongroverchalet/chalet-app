@@ -1,5 +1,6 @@
 import React from 'react'
 import Wrapper from './Wrapper'
+import OfflineStatus from './OfflineStatus'
 import { Link } from 'react-router-dom'
 import Tooltip from '@mui/material/Tooltip'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
@@ -32,6 +33,7 @@ export default function App() {
         </a> location, <a href='https://what3words.com/clanking.advisable.bamboo'>{'///clanking.advisable.bamboo'}</a>.
         <br />
       </p>
+      <OfflineStatus />
       <ul className='text-2xl'>
         <li className='mb-4'>
           <Link to='trips' className='flex items-center'>
